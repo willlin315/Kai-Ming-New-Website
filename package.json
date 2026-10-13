@@ -1,0 +1,18 @@
+{
+  "name": "kai-ming-new-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "check": "node scripts/check-content.mjs"
+  },
+  "dependencies": {
+    "next": "16.4.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "html-react-parser": "5.2.13",
+    "dom-serializer": "2.0.0"
+  }
+}

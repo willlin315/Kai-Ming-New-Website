@@ -1,0 +1,6 @@
+html,body { margin:0; }
+.km-gallery { position:relative; overflow:hidden; min-height:320px; height:100%; background:#e5eaec; }
+.km-gallery-photo { display:block; width:100%; height:100%; min-height:320px; object-fit:cover; }
+.km-gallery-controls { position:absolute; bottom:16px; left:50%; transform:translateX(-50%); display:flex; gap:12px; align-items:center; padding:8px 12px; border-radius:24px; background:rgba(0,0,0,.7); color:white; font:14px/1.5 Arial,sans-serif; }
+.km-gallery-controls button { border:0; background:transparent; color:white; cursor:pointer; font:inherit; padding:4px 8px; }
+.km-gallery-controls button:focus-visible { outline:2px solid white; outline-offset:2px; }
