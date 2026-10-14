@@ -10,12 +10,16 @@ import FormDropdown from './FormDropdown';
 import enrollmentFields from '../content/enrollment-fields.json';
 import { navigationFromNodes, markResponsiveNode } from '../lib/responsive';
 import responsiveCss from '../content/responsive-css.json';
+import EligibilityCalculator from './EligibilityCalculator';
 
 export default function PageView({ page }) {
   const options = {
     replace(node) {
       if (node.type !== 'tag') return;
       markResponsiveNode(node);
+      if (node.attribs.id === 'comp-muoke23s') {
+        return <EligibilityCalculator attributes={attributesToProps(node.attribs)} />;
+      }
       if (node.name === 'button' && node.attribs?.['data-hook'] === 'dropdown-base') {
         const match = (node.attribs['aria-labelledby'] || '').match(/form-field-label-([a-f0-9-]{36})-/i);
         const field = match && enrollmentFields[match[1]];

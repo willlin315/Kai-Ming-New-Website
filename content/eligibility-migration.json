@@ -1,0 +1,24 @@
+{
+  "sourcePage": "https://willlin3.wixsite.com/kai-ming-head-start/how-to-enroll",
+  "sourceComponentId": "comp-muoke23s",
+  "sourceHtml": "https://willlin3-wixsite-com.filesusr.com/html/903b4f_6078d3a942548b8c30fcc5b3c71d27e5.html",
+  "retrievedOn": "2026-10-14",
+  "sourceSha256": "1a328be392b196d84923ab0fff8696d2cfeeddc69f3176360e1393c04964f1fc",
+  "localHtml": "public/widgets/eligibility.html",
+  "preserved": [
+    "Original FY2026–27 income limits and classification logic",
+    "English, Traditional Chinese and Spanish text",
+    "Family situation checkboxes",
+    "Family size default: 4",
+    "Yearly/monthly income entry",
+    "Original layout and responsive rules"
+  ],
+  "adaptations": [
+    "Local hosting independent of Wix",
+    "Iframe height reporting",
+    "Results connect to the existing enrollment tabs",
+    "Inactive income controls disabled for keyboard access",
+    "Live results announced to screen readers"
+  ],
+  "verification": "All 9 family-size rows and income thresholds, monthly conversion, categorical selection, missing income, resize messages and both form tab links passed; Next.js build and existing dropdown regression checks passed."
+}

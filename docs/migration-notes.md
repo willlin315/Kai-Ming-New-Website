@@ -56,3 +56,7 @@ Set NEXT_PUBLIC_BASE_PATH=/Kai-Ming-New-Website for GitHub Pages. Leave it empty
 - Source empty backplate boxes are excluded from narrow-screen flow; background photo columns retain space.
 - Validation: production build and asset checks; DOM interaction checks on all 24 English pages; regression checks for both tabbed pages and all 16 enrollment dropdowns. These tests do not measure browser layout.
 - Browser visual QA was unavailable in this session. Confirm text wrapping, photo crops, footer spacing and actual horizontal overflow at 375px, 390px, 768px, 1000px and desktop width before production launch.
+
+## Enrollment eligibility calculator (2026-10-14)
+
+The original exported HTML contained an empty HtmlComponent at comp-muoke23s. Recovered its published iframe code and copied it to public/widgets/eligibility.html. EligibilityCalculator renders the local widget, adjusts its height, and connects its Apply Online and Submit Inquiry messages to the existing tabs. The source translations, FY2026–27 income table and decision logic are preserved; no Wix service is required at runtime. The original Google Fonts stylesheet is retained. Input remains in the widget and is not submitted or stored. Provenance and source hash are in content/eligibility-migration.json. Income tables are a copied source snapshot and require the company's normal review when guidelines change.
