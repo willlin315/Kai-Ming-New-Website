@@ -6,6 +6,7 @@ import Gallery from './Gallery';
 import Interactions from './Interactions';
 import BlogList from './BlogList';
 import Tabs from './Tabs';
+import EligibilityBridge from './EligibilityBridge';
 
 export default function PageView({ page }) {
   const options = {
@@ -47,5 +48,6 @@ export default function PageView({ page }) {
     <style dangerouslySetInnerHTML={{ __html: page.css }} />
     {parse(page.html, options)}
     <Interactions />
+    <EligibilityBridge />
   </>;
 }
