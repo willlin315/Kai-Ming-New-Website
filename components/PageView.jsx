@@ -6,11 +6,18 @@ import Gallery from './Gallery';
 import Interactions from './Interactions';
 import BlogList from './BlogList';
 import Tabs from './Tabs';
+import FormDropdown from './FormDropdown';
+import enrollmentFields from '../content/enrollment-fields.json';
 
 export default function PageView({ page }) {
   const options = {
     replace(node) {
       if (node.type !== 'tag') return;
+      if (node.name === 'button' && node.attribs?.['data-hook'] === 'dropdown-base') {
+        const match = (node.attribs['aria-labelledby'] || '').match(/form-field-label-([a-f0-9-]{36})-/i);
+        const field = match && enrollmentFields[match[1]];
+        if (field) return <FormDropdown field={{ ...field, id: match[1] }} attributes={attributesToProps(node.attribs)} />;
+      }
       if ((node.attribs?.class || '').split(/\s+/).includes('wixui-tabs')) {
         const descendants = [];
         const walk = (nodes) => nodes.forEach((child) => {
