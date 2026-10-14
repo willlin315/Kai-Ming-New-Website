@@ -8,11 +8,14 @@ import BlogList from './BlogList';
 import Tabs from './Tabs';
 import FormDropdown from './FormDropdown';
 import enrollmentFields from '../content/enrollment-fields.json';
+import { navigationFromNodes, markResponsiveNode } from '../lib/responsive';
+import responsiveCss from '../content/responsive-css.json';
 
 export default function PageView({ page }) {
   const options = {
     replace(node) {
       if (node.type !== 'tag') return;
+      markResponsiveNode(node);
       if (node.name === 'button' && node.attribs?.['data-hook'] === 'dropdown-base') {
         const match = (node.attribs['aria-labelledby'] || '').match(/form-field-label-([a-f0-9-]{36})-/i);
         const field = match && enrollmentFields[match[1]];
@@ -42,7 +45,7 @@ export default function PageView({ page }) {
       }
       if (node.name === 'km-site-header' || node.name === 'km-site-footer') {
         const Component = node.name === 'km-site-header' ? SiteHeader : SiteFooter;
-        return <Component attributes={attributesToProps(node.attribs)} html={render(node.children)} />;
+        return <Component attributes={attributesToProps(node.attribs)} html={render(node.children)} groups={navigationFromNodes(node.children)} />;
       }
       if (node.name === 'km-news-list') return <BlogList />;
       if (node.attribs?.['data-gallery']) {
@@ -50,9 +53,10 @@ export default function PageView({ page }) {
       }
     },
   };
-  return <>
+  return <div className="km-responsive">
     <style dangerouslySetInnerHTML={{ __html: page.css }} />
+    <style dangerouslySetInnerHTML={{ __html: responsiveCss }} />
     {parse(page.html, options)}
     <Interactions />
-  </>;
+  </div>;
 }
