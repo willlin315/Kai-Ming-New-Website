@@ -25,7 +25,7 @@ export default function EligibilityCalculator({ attributes }) {
     return () => window.removeEventListener('message', receive);
   }, []);
   return <div {...attributes} style={{ ...attributes.style, height: 'auto' }}>
-    <iframe ref={frame} src={`${basePath}/widgets/eligibility.html?lang=en`}
+    <iframe ref={frame} src={`${basePath}/widgets/eligibility/?lang=en`}
       title="Eligibility checker for free or low-cost tuition" sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox"
       style={{ display: 'block', width: '100%', height, border: 0 }} />
   </div>;
