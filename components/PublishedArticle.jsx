@@ -48,7 +48,6 @@ export default function PublishedArticle({locale='en'}){
  const next=currentIndex>=0&&currentIndex<ordered.length-1?ordered[currentIndex+1]:null;
  const date=post?.publishedAt||post?.published_at||post?.date||post?.createdAt;
  const formattedDate=date&&!Number.isNaN(new Date(date).getTime())?new Intl.DateTimeFormat(locale==='zh-Hant'?'zh-TW':locale,{year:'numeric',month:'long',day:'numeric'}).format(new Date(date)):null;
- const views=post?.viewCount??post?.view_count??post?.views;
  return <main lang={locale} className="km-published-article">
   <LanguageSwitcher locale={locale} story/>
   <a className="km-story-back" href={`${basePath}/${localePaths[locale]}/blog/`}>← {t.back}</a>
@@ -58,7 +57,6 @@ export default function PublishedArticle({locale='en'}){
     <h1>{post.title}</h1>
     <div className="km-story-meta">
      <span>{post.author||'Kai Ming Head Start'}{formattedDate?' · '+formattedDate:''}</span>
-     {typeof views==='number'&&Number.isFinite(views)&&<span className="km-story-views"><Icon name="eye"/> {views.toLocaleString()} {t.views}</span>}
     </div>
    </header>
    {safeImage(post.image)&&<img className="km-article-cover" src={safeImage(post.image)} alt={post.title}/>}
@@ -82,14 +80,10 @@ export default function PublishedArticle({locale='en'}){
     {recommendations.length>0?<div className="km-story-related-grid">{recommendations.map(item=>{
      const translated=localizedRecord(item,locale);
      const image=safeImage(item.image?.replaceAll('__BASE__',basePath));
-     const count=item.viewCount??item.view_count??item.views;
-     const comments=item.commentCount??item.comment_count;
      return <a className="km-recent-card" href={storyUrl(item,locale)} key={item.id||item.slug}>
       {image?<img src={image} alt="" loading="lazy"/>:<div className="km-recent-placeholder" aria-hidden="true"/>}
       <div className="km-recent-card-content"><h3>{translated.title}</h3>
        <div className="km-recent-card-stats">
-        {typeof count==='number'&&Number.isFinite(count)&&<span><Icon name="eye"/> {count}</span>}
-        {typeof comments==='number'&&Number.isFinite(comments)&&<span>{comments} comments</span>}
         <span className="km-recent-read">{t.read} →</span>
        </div>
       </div>
