@@ -30,7 +30,7 @@ export default function CmsEditor(){
  useEffect(()=>{if(!dirty)return;const warn=e=>{e.preventDefault();e.returnValue=''};window.addEventListener('beforeunload',warn);return()=>window.removeEventListener('beforeunload',warn)},[dirty]);
  useEffect(()=>{if(section==='people'&&draft&&!dialog.current?.open)dialog.current?.showModal()},[section,draft]);
  function cacheDatabasePreview(next){try{localStorage.setItem('km-cms-db-preview',JSON.stringify({url:connection?.url||localStorage.getItem('km-cms-api-url'),data:next}))}catch{}}
- function persist(next){try{localStorage.setItem(CMS_KEY,JSON.stringify(next));setData(next);setMessage('Drafts saved in this browser. Website content has not been published.');return true}catch{setData(next);setMessage('Browser storage is full or unavailable. Export a backup to keep your changes.');return false}}
+ function persist(next){try{localStorage.setItem(CMS_KEY,JSON.stringify(next));localStorage.removeItem('km-cms-db-preview');setData(next);setMessage('Drafts saved in this browser. Website content has not been published.');return true}catch{setData(next);setMessage('Browser storage is full or unavailable. Export a backup to keep your changes.');return false}}
  function leave(){return !dirty||window.confirm('Discard unsaved changes?')}
  function close(){if(working||!leave())return;dialog.current?.close();setDraft(null);setSelected(null);setDirty(false)}
  function choose(item){if(working||!leave())return;setEditLocale('en');setSelected(item?.id||null);setDraft({...item||{...(section==='posts'?emptyPost:emptyPerson),id:crypto.randomUUID()},...(section==='posts'?{bodyHtml:item?.bodyHtml??'<p>'+escapeText(item?.body||'').replaceAll('\n','<br>')+'</p>'}:{})});setDirty(false);setPreview(false)}
