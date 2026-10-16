@@ -1,0 +1,1196 @@
+{
+  "pages": [
+    {
+      "page": "home",
+      "title": "Home Draft | Kai Ming Head Start",
+      "wixImages": 15,
+      "htmlImages": 15,
+      "restoredImages": 14,
+      "backgroundsAdded": 0,
+      "galleries": [],
+      "unmatchedPlaceholders": []
+    },
+    {
+      "page": "our-story",
+      "title": "Our Story | Kai Ming Head Start",
+      "wixImages": 10,
+      "htmlImages": 10,
+      "restoredImages": 9,
+      "backgroundsAdded": 0,
+      "galleries": [],
+      "unmatchedPlaceholders": []
+    },
+    {
+      "page": "our-mission-1",
+      "title": "Our Mission | Kai Ming Head Start",
+      "wixImages": 13,
+      "htmlImages": 13,
+      "restoredImages": 12,
+      "backgroundsAdded": 0,
+      "galleries": [],
+      "unmatchedPlaceholders": []
+    },
+    {
+      "page": "our-people",
+      "title": "Our People | Kai Ming Head Start",
+      "wixImages": 8,
+      "htmlImages": 8,
+      "restoredImages": 7,
+      "backgroundsAdded": 0,
+      "galleries": [],
+      "unmatchedPlaceholders": []
+    },
+    {
+      "page": "blog",
+      "title": "News & Story | Kai Ming Head Start",
+      "wixImages": 11,
+      "htmlImages": 11,
+      "restoredImages": 10,
+      "backgroundsAdded": 0,
+      "galleries": [],
+      "unmatchedPlaceholders": []
+    },
+    {
+      "page": "preschool",
+      "title": "Preschool | Kai Ming Head Start",
+      "wixImages": 11,
+      "htmlImages": 11,
+      "restoredImages": 10,
+      "backgroundsAdded": 0,
+      "galleries": [],
+      "unmatchedPlaceholders": []
+    },
+    {
+      "page": "infantandtoddler",
+      "title": "Infant & Toddler | Kai Ming Head Start",
+      "wixImages": 11,
+      "htmlImages": 11,
+      "restoredImages": 10,
+      "backgroundsAdded": 0,
+      "galleries": [],
+      "unmatchedPlaceholders": []
+    },
+    {
+      "page": "prenatalandhomebased",
+      "title": "Prenatal & Home-Based | Kai Ming Head Start",
+      "wixImages": 8,
+      "htmlImages": 8,
+      "restoredImages": 7,
+      "backgroundsAdded": 0,
+      "galleries": [],
+      "unmatchedPlaceholders": []
+    },
+    {
+      "page": "learningapproach",
+      "title": "Learning Approach | Kai Ming Head Start",
+      "wixImages": 11,
+      "htmlImages": 11,
+      "restoredImages": 10,
+      "backgroundsAdded": 0,
+      "galleries": [],
+      "unmatchedPlaceholders": []
+    },
+    {
+      "page": "familysupport",
+      "title": "Family Support | Kai Ming Head Start",
+      "wixImages": 14,
+      "htmlImages": 14,
+      "restoredImages": 13,
+      "backgroundsAdded": 0,
+      "galleries": [
+        {
+          "component": "comp-mv0539x4",
+          "photos": 3
+        }
+      ],
+      "unmatchedPlaceholders": []
+    },
+    {
+      "page": "copy-of-family-support",
+      "title": "Our Center | Kai Ming Head Start",
+      "wixImages": 9,
+      "htmlImages": 9,
+      "restoredImages": 8,
+      "backgroundsAdded": 0,
+      "galleries": [],
+      "unmatchedPlaceholders": []
+    },
+    {
+      "page": "copy-of-broadway-center-1",
+      "title": "Geary Center | Kai Ming Head Start",
+      "wixImages": 9,
+      "htmlImages": 9,
+      "restoredImages": 8,
+      "backgroundsAdded": 0,
+      "galleries": [
+        {
+          "component": "comp-mu1f72tm",
+          "photos": 8
+        }
+      ],
+      "unmatchedPlaceholders": []
+    },
+    {
+      "page": "copy-of-learning-approach-1",
+      "title": "Broadway Center | Kai Ming Head Start",
+      "wixImages": 9,
+      "htmlImages": 9,
+      "restoredImages": 8,
+      "backgroundsAdded": 0,
+      "galleries": [
+        {
+          "component": "comp-mtm09voe",
+          "photos": 9
+        }
+      ],
+      "unmatchedPlaceholders": []
+    },
+    {
+      "page": "copy-of-broadway-center-2",
+      "title": "North Beach Center | Kai Ming Head Start",
+      "wixImages": 9,
+      "htmlImages": 9,
+      "restoredImages": 8,
+      "backgroundsAdded": 0,
+      "galleries": [
+        {
+          "component": "comp-mu1fqthr",
+          "photos": 8
+        }
+      ],
+      "unmatchedPlaceholders": []
+    },
+    {
+      "page": "copy-of-north-beach-center",
+      "title": "PMsquare Children’s Center | Kai Ming Head Start",
+      "wixImages": 9,
+      "htmlImages": 9,
+      "restoredImages": 8,
+      "backgroundsAdded": 0,
+      "galleries": [
+        {
+          "component": "comp-mu1g6mlv",
+          "photos": 7
+        }
+      ],
+      "unmatchedPlaceholders": []
+    },
+    {
+      "page": "copy-of-broadway-center",
+      "title": "Dr. T.K.L Center | Kai Ming Head Start",
+      "wixImages": 9,
+      "htmlImages": 9,
+      "restoredImages": 8,
+      "backgroundsAdded": 0,
+      "galleries": [
+        {
+          "component": "comp-mtxl6740",
+          "photos": 5
+        }
+      ],
+      "unmatchedPlaceholders": []
+    },
+    {
+      "page": "copy-of-rainbow-center-2",
+      "title": "Sunset Center | Kai Ming Head Start",
+      "wixImages": 9,
+      "htmlImages": 9,
+      "restoredImages": 8,
+      "backgroundsAdded": 0,
+      "galleries": [
+        {
+          "component": "comp-mu342y4x",
+          "photos": 8
+        }
+      ],
+      "unmatchedPlaceholders": []
+    },
+    {
+      "page": "copy-of-rainbow-center-1",
+      "title": "St. Luke’s Center | Kai Ming Head Start",
+      "wixImages": 9,
+      "htmlImages": 9,
+      "restoredImages": 8,
+      "backgroundsAdded": 0,
+      "galleries": [
+        {
+          "component": "comp-mu33r06o",
+          "photos": 8
+        }
+      ],
+      "unmatchedPlaceholders": []
+    },
+    {
+      "page": "copy-of-rainbow-center",
+      "title": "Richmond Center | Kai Ming Head Start",
+      "wixImages": 9,
+      "htmlImages": 9,
+      "restoredImages": 8,
+      "backgroundsAdded": 0,
+      "galleries": [
+        {
+          "component": "comp-mun53r0x",
+          "photos": 6
+        }
+      ],
+      "unmatchedPlaceholders": []
+    },
+    {
+      "page": "copy-of-pmsquare-children-s-center",
+      "title": "Rainbow Center | Kai Ming Head Start",
+      "wixImages": 9,
+      "htmlImages": 9,
+      "restoredImages": 8,
+      "backgroundsAdded": 0,
+      "galleries": [
+        {
+          "component": "comp-mu1if25q",
+          "photos": 8
+        }
+      ],
+      "unmatchedPlaceholders": []
+    },
+    {
+      "page": "how-to-enroll",
+      "title": "Enrollment | Kai Ming Head Start",
+      "wixImages": 11,
+      "htmlImages": 11,
+      "restoredImages": 10,
+      "backgroundsAdded": 0,
+      "galleries": [],
+      "unmatchedPlaceholders": []
+    },
+    {
+      "page": "copy-of-our-story-2",
+      "title": "Careers | Kai Ming Head Start",
+      "wixImages": 7,
+      "htmlImages": 7,
+      "restoredImages": 6,
+      "backgroundsAdded": 0,
+      "galleries": [],
+      "unmatchedPlaceholders": []
+    },
+    {
+      "page": "copy-of-careers",
+      "title": "Volunteer | Kai Ming Head Start",
+      "wixImages": 7,
+      "htmlImages": 7,
+      "restoredImages": 6,
+      "backgroundsAdded": 0,
+      "galleries": [],
+      "unmatchedPlaceholders": []
+    },
+    {
+      "page": "donate",
+      "title": "Donate | Kai Ming Head Start",
+      "wixImages": 9,
+      "htmlImages": 9,
+      "restoredImages": 8,
+      "backgroundsAdded": 0,
+      "galleries": [],
+      "unmatchedPlaceholders": []
+    }
+  ],
+  "assets": [
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_065be0ef91ba457a8c184422f51c6103f000.jpg/v1/fit/w_1920,h_1920,q_90/903b4f_065be0ef91ba457a8c184422f51c6103f000.jpg",
+      "path": "public/media/4ee2d0f7d5ab171fcc71.webp",
+      "bytes": 185180
+    },
+    {
+      "url": "https://static.wixstatic.com/media/11062b_5284033ec2fb42d8bc99de91af966ce1~mv2.jpg/v1/crop/x_667,y_0,w_2667,h_2667/fill/w_240,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_5284033ec2fb42d8bc99de91af966ce1~mv2.jpg",
+      "path": "public/media/3036b56b4e16e2bd2eda.jpg",
+      "bytes": 15419
+    },
+    {
+      "url": "https://static.wixstatic.com/media/11062b_bbf1074f4da247d4ae3de70c52b303aa~mv2.jpg/v1/crop/x_800,y_0,w_3200,h_3200/fill/w_240,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_bbf1074f4da247d4ae3de70c52b303aa~mv2.jpg",
+      "path": "public/media/b9bbe28cc0af2de48d3a.jpg",
+      "bytes": 20125
+    },
+    {
+      "url": "https://static.wixstatic.com/media/11062b_f751e427124b4f34b8ca8e0093cb8cac~mv2.jpg/v1/crop/x_863,y_0,w_3635,h_3635/fill/w_240,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_f751e427124b4f34b8ca8e0093cb8cac~mv2.jpg",
+      "path": "public/media/a78726d62e9f7c7620c1.jpg",
+      "bytes": 36556
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_b364267aba3446c5b06a5ff92d368b43~mv2.png/v1/fill/w_478,h_120,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/sep_cdss.png",
+      "path": "public/media/8345fea8c61c0cf1a278.png",
+      "bytes": 68608
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_119ead5fe9b046c89161576064624c11~mv2.png/v1/fill/w_524,h_120,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/sep_sfec.png",
+      "path": "public/media/2fb700221a182dbda49e.png",
+      "bytes": 47346
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_1cde21f8de46490891cc5ce2e1908633~mv2.png/v1/fill/w_334,h_120,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/sep_caledu.png",
+      "path": "public/media/415fb6a780ed6e793e97.png",
+      "bytes": 74824
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_51f01d103bbe4b64baaea72dfc320144~mv2.png/v1/fill/w_280,h_120,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Sep-HeadStart.png",
+      "path": "public/media/4858c93671b2e1e4246d.png",
+      "bytes": 34862
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_8738da0bbcdc4701b9cc89cf9e61c3c2~mv2.png/v1/fill/w_280,h_120,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Sep-CACFP.png",
+      "path": "public/media/5aaa5d048623833e7fb2.png",
+      "bytes": 37406
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_d54dbf355dc74f3ba339a769fdb9197a~mv2.jpg/v1/fit/w_1920,h_1920,q_90/903b4f_d54dbf355dc74f3ba339a769fdb9197a~mv2.jpg",
+      "path": "public/media/358c195c94bbb61ebcd8.webp",
+      "bytes": 254324
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_2405d540c795496fa6b37c83f38bb9d6~mv2.png/v1/fill/w_158,h_122,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ChatGPT%20Image%20Sep%2024%2C%202026%2C%2004_00_09%20PM.png",
+      "path": "public/media/2bae2359ffd7c859470e.png",
+      "bytes": 18968
+    },
+    {
+      "url": "https://static.wixstatic.com/media/11062b_366f7fdbcafc4effaeddb0dba92014c1~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_366f7fdbcafc4effaeddb0dba92014c1~mv2.png",
+      "path": "public/media/1343d28d5c024a833f7e.png",
+      "bytes": 1928
+    },
+    {
+      "url": "https://static.wixstatic.com/media/11062b_6e9638ad803e4099a6116eb750b5a584~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_6e9638ad803e4099a6116eb750b5a584~mv2.png",
+      "path": "public/media/8f490e385d4e73f638df.png",
+      "bytes": 2691
+    },
+    {
+      "url": "https://static.wixstatic.com/media/11062b_60c5fc4a3ecd49f2a697206b09eeace1~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_60c5fc4a3ecd49f2a697206b09eeace1~mv2.png",
+      "path": "public/media/1b485e8b43d55a92d7a9.png",
+      "bytes": 2141
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_1572810d9297489587ee7a84dac12cb8~mv2.png/v1/fit/w_1920,h_1920,q_90/903b4f_1572810d9297489587ee7a84dac12cb8~mv2.png",
+      "path": "public/media/8995c911240a37f605c5.webp",
+      "bytes": 129482
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_acd993159782479db0f5c265583b67f4~mv2.png/v1/fit/w_1920,h_1920,q_90/903b4f_acd993159782479db0f5c265583b67f4~mv2.png",
+      "path": "public/media/5081e5bea8c61970736a.webp",
+      "bytes": 102730
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_11c8119e9ef5476eb7f72383e5cb2b7d~mv2.png/v1/crop/x_6,y_275,w_1914,h_713/fill/w_1914,h_713,al_c,q_90,enc_avif,quality_auto/1.png",
+      "path": "public/media/d4d56851041d3ce41cf4.webp",
+      "bytes": 92966
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_b58fbd9fc9524df8930303863d63f611~mv2.jpg/v1/crop/x_774,y_0,w_2484,h_3024/fill/w_920,h_1120,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_0584_JPG.jpg",
+      "path": "public/media/de55a13342d73c40cdc8.webp",
+      "bytes": 217364
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_be96a30206b343169c408aaf423364f0~mv2.jpg/v1/crop/x_1303,y_0,w_3154,h_3840/fill/w_920,h_1120,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/kai-ming_53678620752_o.jpg",
+      "path": "public/media/4fcf8973a57dc41ed710.webp",
+      "bytes": 167502
+    },
+    {
+      "url": "https://static.wixstatic.com/media/11062b_d219d0c00ab9439ea0ad10dbae2760df~mv2.jpg/v1/fit/w_1920,h_1920,q_90/11062b_d219d0c00ab9439ea0ad10dbae2760df~mv2.jpg",
+      "path": "public/media/1d0adc9bb712f932bc97.webp",
+      "bytes": 176458
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_47d590f0b02c4e96b8acf05570cba17c~mv2.jpg/v1/fit/w_1920,h_1920,q_90/903b4f_47d590f0b02c4e96b8acf05570cba17c~mv2.jpg",
+      "path": "public/media/91183c11add5cb568e51.webp",
+      "bytes": 406336
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_271045d0e6eb47668525c4e471bbe3a2~mv2.png/v1/fill/w_420,h_688,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screenshot%202023-08-28%20at%204_40_24%20PM.png",
+      "path": "public/media/dd43822e8d917fa0a190.webp",
+      "bytes": 83690
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_b37c01d6778b4d67a111164eeb07a6fd~mv2.jpg/v1/fill/w_420,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/DJ7A9621.jpg",
+      "path": "public/media/45dc5b4222e9cf9c0e75.jpg",
+      "bytes": 82741
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_e96c376e4a0642168b865ac6b5a5c359~mv2.jpg/v1/fill/w_420,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/att__JEXi-KdxV-IM_AbTILFT9WjfU8luoew74SXQeilZtA.jpg",
+      "path": "public/media/5850dacb7e2aa5f891f6.jpg",
+      "bytes": 81454
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_9c0eff82739e4336aba4d1cfa7d7d4d8~mv2.jpg/v1/fill/w_420,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/DJ7A2250.jpg",
+      "path": "public/media/908302a47d137c81529f.jpg",
+      "bytes": 76945
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_0f7eabf0dc2148c8b4104bf09ed520e8~mv2.jpg/v1/crop/x_1131,y_0,w_2741,h_3337/fill/w_920,h_1120,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/DJ7A2162.jpg",
+      "path": "public/media/53860d6a069afa6e08c5.webp",
+      "bytes": 124604
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_209ceff2db9f4b238512d9e2f219fcf7~mv2.jpg/v1/crop/x_0,y_175,w_3024,h_3681/fill/w_920,h_1120,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_8686_JPG.jpg",
+      "path": "public/media/fc20d05cb965440cbea6.webp",
+      "bytes": 240230
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_bcec6b72471d49aea95ee25e23054725~mv2.png/v1/fill/w_720,h_720,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Professional%20Corporate%20Headshot.png",
+      "path": "public/media/6e175d369bade87b3a40.webp",
+      "bytes": 33798
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_8c06203154fd4a82bfaf192dde1433d8~mv2.png/v1/fill/w_400,h_400,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Centered%20annual%20report%20headshot-4.png",
+      "path": "public/media/b3256cb8b675c2f8a7bb.webp",
+      "bytes": 15996
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_0a5314c5d3ac4c21af5d28a9b4baaa79~mv2.png/v1/fill/w_300,h_300,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Portrait%20on%20a%20pure%20white%20background-3.png",
+      "path": "public/media/acc67d73271438c13d5e.webp",
+      "bytes": 9382
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_581da7836e6748fca49a0567e5e261e2~mv2.jpeg/v1/fill/w_333,h_250,fp_0.50_0.50,q_30,blur_30,enc_avif,quality_auto/903b4f_581da7836e6748fca49a0567e5e261e2~mv2.webp",
+      "path": "public/media/0a66838651e58f6f932f.jpeg",
+      "bytes": 5598
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_e2282c9d50ac4edbadc7f78acfb1cd18~mv2.png/v1/fit/w_1920,h_1920,q_90/903b4f_e2282c9d50ac4edbadc7f78acfb1cd18~mv2.png",
+      "path": "public/media/f4bf4da45bd287189c26.webp",
+      "bytes": 390850
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_9bde3f360d9d4581af8900370462318b~mv2.jpg/v1/fit/w_1920,h_1920,q_90/903b4f_9bde3f360d9d4581af8900370462318b~mv2.jpg",
+      "path": "public/media/2a317bff4e879b86b4a3.webp",
+      "bytes": 274946
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_4baf822ae97041b9ab507922a2662f62~mv2.png/v1/fill/w_420,h_688,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screenshot%202023-09-27%20at%209_59_56%20AM.png",
+      "path": "public/media/715720a4cb07c16b2fd4.webp",
+      "bytes": 96268
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_dc8461b2955149428a8a6a5c7f93fe98~mv2.jpg/v1/crop/x_576,y_0,w_3456,h_3456/fill/w_420,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/P2210451_JPG.jpg",
+      "path": "public/media/dc37c3ee7afd82a18dea.webp",
+      "bytes": 96854
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_649e8bf334e34fd4b2f023379448041e~mv2.png/v1/crop/x_14,y_0,w_1522,h_1522/fill/w_420,h_688,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screenshot%202023-10-16%20at%205_02_53%E2%80%AFPM.png",
+      "path": "public/media/289c8cbe1d2acf2ddc55.webp",
+      "bytes": 106832
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_70c1012634204151af608c06c6c090df~mv2.jpg/v1/fill/w_420,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/kai-ming_53678621177_o.jpg",
+      "path": "public/media/b8ecd73a80ac52e93906.jpg",
+      "bytes": 67196
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_9c61fe7cee9d4912897a133c8a4a609a~mv2.jpg/v1/fit/w_1920,h_1920,q_90/903b4f_9c61fe7cee9d4912897a133c8a4a609a~mv2.jpg",
+      "path": "public/media/040a4bdbfd6ca5809d43.webp",
+      "bytes": 189206
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_ea60f291d3b840aeb7409a3984a9cbda~mv2.png/v1/fit/w_1920,h_1920,q_90/903b4f_ea60f291d3b840aeb7409a3984a9cbda~mv2.png",
+      "path": "public/media/940cc0d7ab3267391690.webp",
+      "bytes": 542936
+    },
+    {
+      "url": "https://static.wixstatic.com/media/nsplsh_a2887487532e4e6d9eaf8679d616122d~mv2.jpg/v1/fill/w_420,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Image%20by%20AMONWAT%20DUMKRUT.jpg",
+      "path": "public/media/0533d20e20baf006f9f0.jpg",
+      "bytes": 60849
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_c76314f8cea84d32bba5bbe12741001b~mv2.jpg/v1/crop/x_1120,y_0,w_4480,h_4480/fill/w_420,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/DJ7A0042.jpg",
+      "path": "public/media/4e1cd575c5065d0dc843.jpg",
+      "bytes": 98848
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_c44322a3992842cc8bf6906a1c111df7~mv2.jpg/v1/crop/x_964,y_0,w_3959,h_3959/fill/w_420,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/DJ7A2193%20(1).jpg",
+      "path": "public/media/ecfddafc03962f793fca.jpg",
+      "bytes": 97507
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_07c2aec340c74ea0a446e40b7f48cb46~mv2.jpg/v1/fill/w_420,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/DJ7A9640.jpg",
+      "path": "public/media/b5ed893772e02089eff7.jpg",
+      "bytes": 52702
+    },
+    {
+      "url": "https://static.wixstatic.com/media/11062b_0d4a07d382f24851a16311fa0d6433df~mv2.jpg/v1/fit/w_1920,h_1920,q_90/11062b_0d4a07d382f24851a16311fa0d6433df~mv2.jpg",
+      "path": "public/media/948701c4e47f320453eb.webp",
+      "bytes": 200036
+    },
+    {
+      "url": "https://static.wixstatic.com/media/11062b_5284033ec2fb42d8bc99de91af966ce1~mv2.jpg/v1/fit/w_1920,h_1920,q_90/11062b_5284033ec2fb42d8bc99de91af966ce1~mv2.jpg",
+      "path": "public/media/3d701cee7b8ca6e388cc.webp",
+      "bytes": 115970
+    },
+    {
+      "url": "https://static.wixstatic.com/media/11062b_fe53258478df448499098f8d6fc7dbff~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/11062b_fe53258478df448499098f8d6fc7dbff~mv2.jpeg",
+      "path": "public/media/b0f21cf42943ab63f4a3.webp",
+      "bytes": 216198
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_5d8e2714e2ff4cf9b388de9c9bba5ded~mv2.jpg/v1/fit/w_1920,h_1920,q_90/903b4f_5d8e2714e2ff4cf9b388de9c9bba5ded~mv2.jpg",
+      "path": "public/media/e59dc516ce06c1517be5.webp",
+      "bytes": 274130
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_5211141796704684aa590833b77b3bc6~mv2.jpg/v1/fit/w_1920,h_1920,q_90/903b4f_5211141796704684aa590833b77b3bc6~mv2.jpg",
+      "path": "public/media/b6c1e828bd6e31d34d8e.webp",
+      "bytes": 212488
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_2e1baab4a29240999977ccfe374ab068~mv2.jpg/v1/fill/w_420,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/DJ7A2250.jpg",
+      "path": "public/media/01ba4ab0fa3d97304700.jpg",
+      "bytes": 76945
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_9eb9fb09b3bc4034ab6be4177d4cb4dd~mv2.jpg/v1/fill/w_420,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/P2210451_JPG.jpg",
+      "path": "public/media/f194f7a37dde65394de3.jpg",
+      "bytes": 90527
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_6da1fa37567e4f1486f8b9757c2e42f6~mv2.jpg/v1/fill/w_420,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/P2211312_JPG.jpg",
+      "path": "public/media/49e41d664005ad153b4b.jpg",
+      "bytes": 57729
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_7dc0773997ef4a7f9cb066808924324f~mv2.jpg/v1/fill/w_420,h_688,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/DSC00048%20(1)_JPG.jpg",
+      "path": "public/media/82501d49826ae0ed87b3.jpg",
+      "bytes": 69857
+    },
+    {
+      "url": "https://static.wixstatic.com/media/11062b_7898ab21fa2f4be3a52fe1d86c7a9831~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/11062b_7898ab21fa2f4be3a52fe1d86c7a9831~mv2.jpeg",
+      "path": "public/media/a5f0cbd25ade9648e817.webp",
+      "bytes": 126670
+    },
+    {
+      "url": "https://static.wixstatic.com/media/11062b_2bdc3812ee0e40cdb9f782330e05e724~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/11062b_2bdc3812ee0e40cdb9f782330e05e724~mv2.jpeg",
+      "path": "public/media/fb43343dfc289a72b332.webp",
+      "bytes": 114782
+    },
+    {
+      "url": "https://static.wixstatic.com/media/11062b_72eae2b058a6484f8a5b41274689ae0e~mv2.jpg/v1/fit/w_1920,h_1920,q_90/11062b_72eae2b058a6484f8a5b41274689ae0e~mv2.jpg",
+      "path": "public/media/9d1e56c754f75b62bcaa.webp",
+      "bytes": 150272
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_aa04fb7076a146f796f10419cde3aef6~mv2.png/v1/fill/w_632,h_493,q_90,enc_avif,quality_auto/903b4f_aa04fb7076a146f796f10419cde3aef6~mv2.png",
+      "path": "public/media/4b1b56a93ab3834435d4.webp",
+      "bytes": 53348
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_0573c7df9aa84c96994025a94d3789dd~mv2.jpg/v1/fill/w_493,h_493,q_90,enc_avif,quality_auto/903b4f_0573c7df9aa84c96994025a94d3789dd~mv2.jpg",
+      "path": "public/media/20fffedb549c0942d1d2.jpg",
+      "bytes": 70230
+    },
+    {
+      "url": "https://static.wixstatic.com/media/11062b_681c6c82d3344ca09a024b18998e0f66~mv2.png/v1/fill/w_48,h_48,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_681c6c82d3344ca09a024b18998e0f66~mv2.png",
+      "path": "public/media/f08475e4d8b1cb71665b.png",
+      "bytes": 2193
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_aa04fb7076a146f796f10419cde3aef6~mv2.png/v1/fit/w_1920,h_1920,q_90/903b4f_aa04fb7076a146f796f10419cde3aef6~mv2.png",
+      "path": "public/media/9bcffcfa62fbafedce2d.webp",
+      "bytes": 230634
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_0573c7df9aa84c96994025a94d3789dd~mv2.jpg/v1/fit/w_1920,h_1920,q_90/903b4f_0573c7df9aa84c96994025a94d3789dd~mv2.jpg",
+      "path": "public/media/13f2480a2e37449274df.webp",
+      "bytes": 115954
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_6cf2af4004844690b358d959cf8dd6ae~mv2.jpg/v1/fit/w_1920,h_1920,q_90/903b4f_6cf2af4004844690b358d959cf8dd6ae~mv2.jpg",
+      "path": "public/media/be90903ab7484fed849c.webp",
+      "bytes": 83406
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_4394aa5932f94693af51792325498233~mv2.jpg/v1/fit/w_1920,h_1920,q_90/903b4f_4394aa5932f94693af51792325498233~mv2.jpg",
+      "path": "public/media/855870afef8f6b9f284c.webp",
+      "bytes": 506776
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_5531636b49824feeaa02a6b5d855ebb4~mv2.jpeg/v1/fill/w_739,h_493,q_90,enc_avif,quality_auto/903b4f_5531636b49824feeaa02a6b5d855ebb4~mv2.jpeg",
+      "path": "public/media/ff2ae9eb24b516b7f5d0.jpeg",
+      "bytes": 80708
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_2e4ca1d4f34941e3b400f7f76a47cfd5~mv2.jpeg/v1/fill/w_798,h_493,q_90,enc_avif,quality_auto/903b4f_2e4ca1d4f34941e3b400f7f76a47cfd5~mv2.jpeg",
+      "path": "public/media/d75e883e05432fd3fa68.jpeg",
+      "bytes": 87440
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_e17eb53248c34195bd62d8bfb85ad51d~mv2.png/v1/fit/w_1920,h_1920,q_90/903b4f_e17eb53248c34195bd62d8bfb85ad51d~mv2.png",
+      "path": "public/media/b2a3b639b5d0862495ac.webp",
+      "bytes": 105924
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_f7d5a0e658cd4df78a52a0220ccd2c81~mv2.png/v1/fit/w_1920,h_1920,q_90/903b4f_f7d5a0e658cd4df78a52a0220ccd2c81~mv2.png",
+      "path": "public/media/08d51e5e083e0b8571c2.webp",
+      "bytes": 102558
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_5531636b49824feeaa02a6b5d855ebb4~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_5531636b49824feeaa02a6b5d855ebb4~mv2.jpeg",
+      "path": "public/media/b20b908c5e798806a299.webp",
+      "bytes": 491940
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_2e4ca1d4f34941e3b400f7f76a47cfd5~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_2e4ca1d4f34941e3b400f7f76a47cfd5~mv2.jpeg",
+      "path": "public/media/bac36b9a4b6aa69870b0.webp",
+      "bytes": 354410
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_958c4794a4bf4089b5233be1161e18eb~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_958c4794a4bf4089b5233be1161e18eb~mv2.jpeg",
+      "path": "public/media/457744ca84c24859a03f.webp",
+      "bytes": 434560
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_7f43c08af86f4f2f83feab829d2c0ad8~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_7f43c08af86f4f2f83feab829d2c0ad8~mv2.jpeg",
+      "path": "public/media/98e7e41e12c6849cf97d.webp",
+      "bytes": 613736
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_cd66d73a94eb4f71870906b84bc24a84~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_cd66d73a94eb4f71870906b84bc24a84~mv2.jpeg",
+      "path": "public/media/dffc64d77f5d954df80d.webp",
+      "bytes": 487984
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_79c9b15e95994271bee1c3a7b88ada8c~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_79c9b15e95994271bee1c3a7b88ada8c~mv2.jpeg",
+      "path": "public/media/1344f185be5f1b5d85bb.webp",
+      "bytes": 324322
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_8a1d229e995c4af08421ad0e141c8bbc~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_8a1d229e995c4af08421ad0e141c8bbc~mv2.jpeg",
+      "path": "public/media/b8ddb56f4e8d2c652c09.webp",
+      "bytes": 485864
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_5f24c0b691bf4495ab76961ef52ce424~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_5f24c0b691bf4495ab76961ef52ce424~mv2.jpeg",
+      "path": "public/media/2051b36f2edffbd922e2.webp",
+      "bytes": 357714
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_e5a1c372d8f943a9ad499bc193c083f2~mv2.jpeg/v1/fill/w_739,h_493,q_90,enc_avif,quality_auto/903b4f_e5a1c372d8f943a9ad499bc193c083f2~mv2.jpeg",
+      "path": "public/media/a7fabb7bf67a70940eba.jpeg",
+      "bytes": 84147
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_4068d14d60b14de9a1e5e3d2c75e2b15~mv2.jpeg/v1/fill/w_707,h_493,q_90,enc_avif,quality_auto/903b4f_4068d14d60b14de9a1e5e3d2c75e2b15~mv2.jpeg",
+      "path": "public/media/a70bd189cb9143bcf45c.jpeg",
+      "bytes": 80876
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_ae77d05a57cb479a9538a45f5339d0bd~mv2.png/v1/fit/w_1920,h_1920,q_90/903b4f_ae77d05a57cb479a9538a45f5339d0bd~mv2.png",
+      "path": "public/media/03fe414342cfb7b64c6c.webp",
+      "bytes": 79574
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_dfeb215cf8b54581bdb46d29f377c832~mv2.png/v1/fit/w_1920,h_1920,q_90/903b4f_dfeb215cf8b54581bdb46d29f377c832~mv2.png",
+      "path": "public/media/b4ac0180d9e6e3d6cea3.webp",
+      "bytes": 73618
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_e5a1c372d8f943a9ad499bc193c083f2~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_e5a1c372d8f943a9ad499bc193c083f2~mv2.jpeg",
+      "path": "public/media/f94f9ffaae8762356463.webp",
+      "bytes": 447020
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_4068d14d60b14de9a1e5e3d2c75e2b15~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_4068d14d60b14de9a1e5e3d2c75e2b15~mv2.jpeg",
+      "path": "public/media/b3621bdef4153305fe06.webp",
+      "bytes": 547730
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_6acc83911d774cb0a2eaafd36c171abf~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_6acc83911d774cb0a2eaafd36c171abf~mv2.jpeg",
+      "path": "public/media/35a9f92461a0b1782025.webp",
+      "bytes": 408168
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_279a8eaf8d72497ab3bbcd213fae5c9b~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_279a8eaf8d72497ab3bbcd213fae5c9b~mv2.jpeg",
+      "path": "public/media/506fc0a4df4b7adac6dc.webp",
+      "bytes": 418194
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_fc7046f8cbeb4c46baf73d479aefe1a3~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_fc7046f8cbeb4c46baf73d479aefe1a3~mv2.jpeg",
+      "path": "public/media/a74347bf4c14cb4c068c.webp",
+      "bytes": 260026
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_d6a1fa2a54fc4daf9b4631137169a69a~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_d6a1fa2a54fc4daf9b4631137169a69a~mv2.jpeg",
+      "path": "public/media/8fc0aa248f62d916e202.webp",
+      "bytes": 269856
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_6253d16a2bf340bd9cf08d3d83995125~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_6253d16a2bf340bd9cf08d3d83995125~mv2.jpeg",
+      "path": "public/media/982235bc97fd75c051b1.webp",
+      "bytes": 239646
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_2a5348dba4e84e9d97d68fc357bcbdda~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_2a5348dba4e84e9d97d68fc357bcbdda~mv2.jpeg",
+      "path": "public/media/0144737638efbdbdbfae.webp",
+      "bytes": 859818
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_bb9db59a5b4146efa026dbae85d991fc~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_bb9db59a5b4146efa026dbae85d991fc~mv2.jpeg",
+      "path": "public/media/4512c4fb4c1fc6283c64.webp",
+      "bytes": 641544
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_07fa5ae4a5e6414e82fc1677c6fd3f34~mv2.jpeg/v1/fill/w_739,h_493,q_90,enc_avif,quality_auto/903b4f_07fa5ae4a5e6414e82fc1677c6fd3f34~mv2.jpeg",
+      "path": "public/media/2ea9ed0ef685b4bcde66.jpeg",
+      "bytes": 69966
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_de3b52ad8755464b9a5df9a077f55a7a~mv2.jpeg/v1/fill/w_707,h_493,q_90,enc_avif,quality_auto/903b4f_de3b52ad8755464b9a5df9a077f55a7a~mv2.jpeg",
+      "path": "public/media/6ae51df8f2a8d5ce6411.jpeg",
+      "bytes": 80876
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_5061b6a620bb4c148c4c97f5699d8a18~mv2.png/v1/fit/w_1920,h_1920,q_90/903b4f_5061b6a620bb4c148c4c97f5699d8a18~mv2.png",
+      "path": "public/media/28b1f3cf937c21fc4282.webp",
+      "bytes": 134892
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_904739d9e89f4bc3844efaba5a51872f~mv2.png/v1/fit/w_1920,h_1920,q_90/903b4f_904739d9e89f4bc3844efaba5a51872f~mv2.png",
+      "path": "public/media/30591b961b9d5572f4ee.webp",
+      "bytes": 159414
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_07fa5ae4a5e6414e82fc1677c6fd3f34~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_07fa5ae4a5e6414e82fc1677c6fd3f34~mv2.jpeg",
+      "path": "public/media/c0d2e73d18718f8aab18.webp",
+      "bytes": 417380
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_de3b52ad8755464b9a5df9a077f55a7a~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_de3b52ad8755464b9a5df9a077f55a7a~mv2.jpeg",
+      "path": "public/media/5429b39fb5d99a618468.webp",
+      "bytes": 547730
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_9495417d66c7462092fc359895217f75~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_9495417d66c7462092fc359895217f75~mv2.jpeg",
+      "path": "public/media/21ff2f888fe7ef052d9f.webp",
+      "bytes": 641544
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_962268bacd4f48faa1462c59d2b54d0d~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_962268bacd4f48faa1462c59d2b54d0d~mv2.jpeg",
+      "path": "public/media/bb814b48c5c1fd58d55a.webp",
+      "bytes": 268986
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_c35c864a066a45a998909eaab5a56928~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_c35c864a066a45a998909eaab5a56928~mv2.jpeg",
+      "path": "public/media/96fd98d4dd0583dba85a.webp",
+      "bytes": 353718
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_02baee3a03fa4b0f8d70e0514ba5e7a6~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_02baee3a03fa4b0f8d70e0514ba5e7a6~mv2.jpeg",
+      "path": "public/media/f6a6307baded93b9eb55.webp",
+      "bytes": 265046
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_337a6d2ab01d4fe3bf402619c249ea09~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_337a6d2ab01d4fe3bf402619c249ea09~mv2.jpeg",
+      "path": "public/media/7874ad4fbdab3a589938.webp",
+      "bytes": 274592
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_8d11c47d3c0840a2b56a55e49d7c498a~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_8d11c47d3c0840a2b56a55e49d7c498a~mv2.jpeg",
+      "path": "public/media/1cacfaf960cb4882bf29.webp",
+      "bytes": 254832
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_49b40bbf20324a07b3f40d135db55074~mv2.jpg/v1/fill/w_739,h_493,q_90,enc_avif,quality_auto/903b4f_49b40bbf20324a07b3f40d135db55074~mv2.jpg",
+      "path": "public/media/18cfe62d8efcd8f91103.jpg",
+      "bytes": 84958
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_f6c040b0ec4c4911ab274e91ec2fade9~mv2.jpg/v1/fill/w_739,h_493,q_90,enc_avif,quality_auto/903b4f_f6c040b0ec4c4911ab274e91ec2fade9~mv2.jpg",
+      "path": "public/media/6808616de32bda7ea904.jpg",
+      "bytes": 91648
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_3eadf5f3303e43e3a3096f34f04e5fff~mv2.png/v1/fit/w_1920,h_1920,q_90/903b4f_3eadf5f3303e43e3a3096f34f04e5fff~mv2.png",
+      "path": "public/media/99bdf083bf46040eb46e.webp",
+      "bytes": 88574
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_24140ea6b1b34e728ae223e207d0189d~mv2.png/v1/fit/w_1920,h_1920,q_90/903b4f_24140ea6b1b34e728ae223e207d0189d~mv2.png",
+      "path": "public/media/52a69fe994186d0ba1bc.webp",
+      "bytes": 160546
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_49b40bbf20324a07b3f40d135db55074~mv2.jpg/v1/fit/w_1920,h_1920,q_90/903b4f_49b40bbf20324a07b3f40d135db55074~mv2.jpg",
+      "path": "public/media/62e12f454d5bdf499ff2.webp",
+      "bytes": 416364
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_f6c040b0ec4c4911ab274e91ec2fade9~mv2.jpg/v1/fit/w_1920,h_1920,q_90/903b4f_f6c040b0ec4c4911ab274e91ec2fade9~mv2.jpg",
+      "path": "public/media/0fd9d70fd25b7558c7e4.webp",
+      "bytes": 607370
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_d466cce67d684813a32ec3a865234980~mv2.jpg/v1/fit/w_1920,h_1920,q_90/903b4f_d466cce67d684813a32ec3a865234980~mv2.jpg",
+      "path": "public/media/ab217161df5507f7e3cf.webp",
+      "bytes": 245050
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_5df0bb4385f544dd8e7c6088a8efd8dc~mv2.jpg/v1/fit/w_1920,h_1920,q_90/903b4f_5df0bb4385f544dd8e7c6088a8efd8dc~mv2.jpg",
+      "path": "public/media/ea287edcea894c03221e.webp",
+      "bytes": 352182
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_4c4d83dac7a14820895734bc502c4473~mv2.jpg/v1/fit/w_1920,h_1920,q_90/903b4f_4c4d83dac7a14820895734bc502c4473~mv2.jpg",
+      "path": "public/media/633f61900de2643d20a8.webp",
+      "bytes": 948580
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_d5947ed476ea4d5fb8b318233dfdee57~mv2.jpg/v1/fit/w_1920,h_1920,q_90/903b4f_d5947ed476ea4d5fb8b318233dfdee57~mv2.jpg",
+      "path": "public/media/5499066239b6b7d2b13a.webp",
+      "bytes": 830156
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_de8ab4a8dfb7490ca7e7e07332c65688~mv2.jpg/v1/fit/w_1920,h_1920,q_90/903b4f_de8ab4a8dfb7490ca7e7e07332c65688~mv2.jpg",
+      "path": "public/media/1cf0437d4d05b4efea48.webp",
+      "bytes": 353922
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_460080a32a534f4c9f3e412042233223~mv2.jpeg/v1/fill/w_739,h_493,q_90,enc_avif,quality_auto/903b4f_460080a32a534f4c9f3e412042233223~mv2.jpeg",
+      "path": "public/media/4593a95fb8b739a44838.jpeg",
+      "bytes": 81279
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_41d4556133514ed08e4da8e5836e7c59~mv2.jpeg/v1/fill/w_739,h_493,q_90,enc_avif,quality_auto/903b4f_41d4556133514ed08e4da8e5836e7c59~mv2.jpeg",
+      "path": "public/media/20b1a5eb2e6bb65695c6.jpeg",
+      "bytes": 77470
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_2690c16a9cd5466c98eea6e7ef0ddc6e~mv2.png/v1/fill/w_440,h_440,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Sally_An.png",
+      "path": "public/media/06e3e3a39a4222393413.webp",
+      "bytes": 23638
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_dfeb215cf8b54581bdb46d29f377c832~mv2.png/v1/fill/w_440,h_440,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Humberto_Felix.png",
+      "path": "public/media/76c1840186fe1aaef96c.webp",
+      "bytes": 15910
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_460080a32a534f4c9f3e412042233223~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_460080a32a534f4c9f3e412042233223~mv2.jpeg",
+      "path": "public/media/ea4f28d142aec2d476f9.webp",
+      "bytes": 389070
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_41d4556133514ed08e4da8e5836e7c59~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_41d4556133514ed08e4da8e5836e7c59~mv2.jpeg",
+      "path": "public/media/712f96d5d089062fecfc.webp",
+      "bytes": 303874
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_72868b582b15445ca10548ca20a196df~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_72868b582b15445ca10548ca20a196df~mv2.jpeg",
+      "path": "public/media/daad530ad2344c1855b6.webp",
+      "bytes": 222840
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_fba944c6578748e78e5b765858419ed3~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_fba944c6578748e78e5b765858419ed3~mv2.jpeg",
+      "path": "public/media/d3aea1c379c4c52e4ece.webp",
+      "bytes": 293380
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_6378a057c1984b148097f2af27c7780a~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_6378a057c1984b148097f2af27c7780a~mv2.jpeg",
+      "path": "public/media/0fa6784a4b594735c7b1.webp",
+      "bytes": 394510
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_03ee03bcc1b54de0980222425784b377~mv2.jpeg/v1/fill/w_739,h_493,q_90,enc_avif,quality_auto/903b4f_03ee03bcc1b54de0980222425784b377~mv2.jpeg",
+      "path": "public/media/5a5a4dcd9cce234aaf95.jpeg",
+      "bytes": 72573
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_68e4dea61f0a497c9b784ff32b7af6f3~mv2.jpeg/v1/fill/w_739,h_493,q_90,enc_avif,quality_auto/903b4f_68e4dea61f0a497c9b784ff32b7af6f3~mv2.jpeg",
+      "path": "public/media/f7324100fa21efc662dd.jpeg",
+      "bytes": 81704
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_2ad088c355c24185a3ad849c91856700~mv2.png/v1/fit/w_1920,h_1920,q_90/903b4f_2ad088c355c24185a3ad849c91856700~mv2.png",
+      "path": "public/media/f75a2d4b505661c6eb61.webp",
+      "bytes": 113356
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_080d5ebfbf9e4aa3b4595bb265b067b5~mv2.png/v1/fit/w_1920,h_1920,q_90/903b4f_080d5ebfbf9e4aa3b4595bb265b067b5~mv2.png",
+      "path": "public/media/b6f9fa4f53d4289fecfa.webp",
+      "bytes": 71338
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_03ee03bcc1b54de0980222425784b377~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_03ee03bcc1b54de0980222425784b377~mv2.jpeg",
+      "path": "public/media/e8034976fa77900a5a01.webp",
+      "bytes": 310060
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_68e4dea61f0a497c9b784ff32b7af6f3~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_68e4dea61f0a497c9b784ff32b7af6f3~mv2.jpeg",
+      "path": "public/media/666e4445fb2238cb7733.webp",
+      "bytes": 335568
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_0990c55212d94266a801d48fb90b3a99~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_0990c55212d94266a801d48fb90b3a99~mv2.jpeg",
+      "path": "public/media/8d9feb9dc17698172942.webp",
+      "bytes": 256802
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_e6ea1c1831bd4579acb0705ab96de580~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_e6ea1c1831bd4579acb0705ab96de580~mv2.jpeg",
+      "path": "public/media/d59b01cccc598ed16a13.webp",
+      "bytes": 274712
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_7073b9f8fb374ec997af953c97e35599~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_7073b9f8fb374ec997af953c97e35599~mv2.jpeg",
+      "path": "public/media/fab89271b8bc0ffaad64.webp",
+      "bytes": 647016
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_5896ff54381d4ce3b84287e708b272ed~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_5896ff54381d4ce3b84287e708b272ed~mv2.jpeg",
+      "path": "public/media/94cc7a11a1022b433b7f.webp",
+      "bytes": 265210
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_53f14adbef684d32abbe111e4b0b0b87~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_53f14adbef684d32abbe111e4b0b0b87~mv2.jpeg",
+      "path": "public/media/c50dad375cc7055b1c84.webp",
+      "bytes": 356164
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_fd95463af06a44a98ab0fb529dfdf278~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_fd95463af06a44a98ab0fb529dfdf278~mv2.jpeg",
+      "path": "public/media/baceba2fc0eccb4429e4.webp",
+      "bytes": 355598
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_6f8d53de9c59484cbb49724e902f9ce3~mv2.jpeg/v1/fill/w_739,h_493,q_90,enc_avif,quality_auto/903b4f_6f8d53de9c59484cbb49724e902f9ce3~mv2.jpeg",
+      "path": "public/media/00642e7b1c7ea29f7286.jpeg",
+      "bytes": 76213
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_50b8725fd39e46d19d375ca7270d263a~mv2.jpeg/v1/fill/w_739,h_493,q_90,enc_avif,quality_auto/903b4f_50b8725fd39e46d19d375ca7270d263a~mv2.jpeg",
+      "path": "public/media/baa8f0e577461430f208.jpeg",
+      "bytes": 70753
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_0636dca3a90146c58b876027bc7edfff~mv2.png/v1/fit/w_1920,h_1920,q_90/903b4f_0636dca3a90146c58b876027bc7edfff~mv2.png",
+      "path": "public/media/b6a17e374eab9199799c.webp",
+      "bytes": 161974
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_e141fec71a7d49348a60706df25d262a~mv2.png/v1/fit/w_1920,h_1920,q_90/903b4f_e141fec71a7d49348a60706df25d262a~mv2.png",
+      "path": "public/media/90e2f8b2662f32052de6.webp",
+      "bytes": 145274
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_6f8d53de9c59484cbb49724e902f9ce3~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_6f8d53de9c59484cbb49724e902f9ce3~mv2.jpeg",
+      "path": "public/media/7a1f2a3efa9ecdd447ef.webp",
+      "bytes": 438928
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_50b8725fd39e46d19d375ca7270d263a~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_50b8725fd39e46d19d375ca7270d263a~mv2.jpeg",
+      "path": "public/media/6c90cee05cccbc7c00d4.webp",
+      "bytes": 342196
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_3f9f3d2960c541d79b37cf88f82c84d8~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_3f9f3d2960c541d79b37cf88f82c84d8~mv2.jpeg",
+      "path": "public/media/6a83914a0251e34ccc7c.webp",
+      "bytes": 444410
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_ed5329112bcd4296bc9571a0e1e270ce~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_ed5329112bcd4296bc9571a0e1e270ce~mv2.jpeg",
+      "path": "public/media/e7c9d5708b6c930bcead.webp",
+      "bytes": 551042
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_91b876f1d07d4d45b7acea4195f95116~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_91b876f1d07d4d45b7acea4195f95116~mv2.jpeg",
+      "path": "public/media/5c025294902e1313c736.webp",
+      "bytes": 424784
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_1b347bff65d44a8d89be224d927fb349~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_1b347bff65d44a8d89be224d927fb349~mv2.jpeg",
+      "path": "public/media/e6563b2b0ce4f66dfaac.webp",
+      "bytes": 645362
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_300dcf8f961547b4b6dc98f3f41f7d97~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_300dcf8f961547b4b6dc98f3f41f7d97~mv2.jpeg",
+      "path": "public/media/3c996e75ea396b4ec850.webp",
+      "bytes": 638306
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_b7c2fdc966fd4e66b85ef55b994e6fc9~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_b7c2fdc966fd4e66b85ef55b994e6fc9~mv2.jpeg",
+      "path": "public/media/2f8a1be26eabe72c8054.webp",
+      "bytes": 446522
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_fcf586a2301447dd8edda1add2c08095~mv2.jpg/v1/fill/w_739,h_493,q_90,enc_avif,quality_auto/903b4f_fcf586a2301447dd8edda1add2c08095~mv2.jpg",
+      "path": "public/media/cd3ed52aa7387262862e.jpg",
+      "bytes": 83860
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_81b04405170742d0a8cf098a949f7c50~mv2.jpg/v1/fill/w_739,h_493,q_90,enc_avif,quality_auto/903b4f_81b04405170742d0a8cf098a949f7c50~mv2.jpg",
+      "path": "public/media/bebca58e8ecd29ba85b0.jpg",
+      "bytes": 88150
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_951e9ae9a5c249ca82dd10043a11eb90~mv2.png/v1/fill/w_440,h_440,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Kelly_Li.png",
+      "path": "public/media/95467dc889db08e17f74.webp",
+      "bytes": 17314
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_970f75f48dec4aadb65d5f121bd01fb7~mv2.png/v1/fill/w_440,h_440,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Sasha_Caamal.png",
+      "path": "public/media/98a3526581f3a0c4489a.webp",
+      "bytes": 29968
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_fcf586a2301447dd8edda1add2c08095~mv2.jpg/v1/fit/w_1920,h_1920,q_90/903b4f_fcf586a2301447dd8edda1add2c08095~mv2.jpg",
+      "path": "public/media/d8bc4130623ce9599e36.webp",
+      "bytes": 493922
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_81b04405170742d0a8cf098a949f7c50~mv2.jpg/v1/fit/w_1920,h_1920,q_90/903b4f_81b04405170742d0a8cf098a949f7c50~mv2.jpg",
+      "path": "public/media/be43925a95bdfbc18b2c.webp",
+      "bytes": 413342
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_e6a529e94d784f889988ed30a19b13ef~mv2.jpg/v1/fit/w_1920,h_1920,q_90/903b4f_e6a529e94d784f889988ed30a19b13ef~mv2.jpg",
+      "path": "public/media/6cce60e41a4780a6ae5c.webp",
+      "bytes": 1013628
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_82095ee066a546f481cb8a2386dde9bf~mv2.jpg/v1/fit/w_1920,h_1920,q_90/903b4f_82095ee066a546f481cb8a2386dde9bf~mv2.jpg",
+      "path": "public/media/c7bdc7dcd066e033fed9.webp",
+      "bytes": 972512
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_c01d837340c547a98c56956bb986c3c6~mv2.jpg/v1/fit/w_1920,h_1920,q_90/903b4f_c01d837340c547a98c56956bb986c3c6~mv2.jpg",
+      "path": "public/media/0a1ff3d46fa1f5005878.webp",
+      "bytes": 585506
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_aaca86d79ddb4bddaa4d324e64d1f736~mv2.jpg/v1/fit/w_1920,h_1920,q_90/903b4f_aaca86d79ddb4bddaa4d324e64d1f736~mv2.jpg",
+      "path": "public/media/6dd46644cf8fb1fdef9a.webp",
+      "bytes": 411158
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_9be9aa889dd746cf85fb959bbb5601be~mv2.jpeg/v1/fill/w_739,h_493,q_90,enc_avif,quality_auto/903b4f_9be9aa889dd746cf85fb959bbb5601be~mv2.jpeg",
+      "path": "public/media/83b81bb5a660d981454a.jpeg",
+      "bytes": 67441
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_c5d292a3ecc641c0a4f743c6df283539~mv2.jpeg/v1/fill/w_739,h_493,q_90,enc_avif,quality_auto/903b4f_c5d292a3ecc641c0a4f743c6df283539~mv2.jpeg",
+      "path": "public/media/7c6ccf5fe1f0ab4cd26d.jpeg",
+      "bytes": 70009
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_65a8693b5fac4bdfacec8f2ec6cee63f~mv2.png/v1/fill/w_440,h_440,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Tracy_Chen.png",
+      "path": "public/media/e6db86bcf594e2bde787.webp",
+      "bytes": 21794
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_6a8ce4bd028647cfbd994d176f6ff982~mv2.png/v1/fill/w_440,h_440,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Jenny_Zhong.png",
+      "path": "public/media/7d318257384fa442125b.webp",
+      "bytes": 17506
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_9be9aa889dd746cf85fb959bbb5601be~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_9be9aa889dd746cf85fb959bbb5601be~mv2.jpeg",
+      "path": "public/media/4ea7d0204bf2a903c1bb.webp",
+      "bytes": 383274
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_c5d292a3ecc641c0a4f743c6df283539~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_c5d292a3ecc641c0a4f743c6df283539~mv2.jpeg",
+      "path": "public/media/b9093831010caab5d15f.webp",
+      "bytes": 293548
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_780a3cd7bf2d43598b78eaf0faa2882d~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_780a3cd7bf2d43598b78eaf0faa2882d~mv2.jpeg",
+      "path": "public/media/f0f5c432fcf38065ccb4.webp",
+      "bytes": 652010
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_280583dfb98f42749ccadc8eb55e6ce7~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_280583dfb98f42749ccadc8eb55e6ce7~mv2.jpeg",
+      "path": "public/media/47e774bc0c7e0889419c.webp",
+      "bytes": 630602
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_66cacc134ce24da486352a7eb3cdf526~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_66cacc134ce24da486352a7eb3cdf526~mv2.jpeg",
+      "path": "public/media/6b41a834a098cac6fc36.webp",
+      "bytes": 503106
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_a7103015f22747cc8656d109aeb82720~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_a7103015f22747cc8656d109aeb82720~mv2.jpeg",
+      "path": "public/media/8fa695308bc315cb20de.webp",
+      "bytes": 325904
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_33537cea808a4ee0ba9a7dac20c49d2a~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_33537cea808a4ee0ba9a7dac20c49d2a~mv2.jpeg",
+      "path": "public/media/134003ea771a5561c2e6.webp",
+      "bytes": 228638
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_7de22320ced5440386447bb646aed733~mv2.jpeg/v1/fit/w_1920,h_1920,q_90/903b4f_7de22320ced5440386447bb646aed733~mv2.jpeg",
+      "path": "public/media/46a53744affb77e9e865.webp",
+      "bytes": 494330
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_e4f884681f8345b6b70ed3dc60c15805~mv2.png/v1/fit/w_1920,h_1920,q_90/903b4f_e4f884681f8345b6b70ed3dc60c15805~mv2.png",
+      "path": "public/media/2063362d3add9b90017c.webp",
+      "bytes": 148556
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_f03799594b07449389c791ad0f946fd2~mv2.png/v1/fit/w_1920,h_1920,q_90/903b4f_f03799594b07449389c791ad0f946fd2~mv2.png",
+      "path": "public/media/dca38262d664902425c1.webp",
+      "bytes": 146670
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_10ef0eebaa7a416483d407052533e84f~mv2.png/v1/fit/w_1920,h_1920,q_90/903b4f_10ef0eebaa7a416483d407052533e84f~mv2.png",
+      "path": "public/media/ee47cdd7aa1e95432603.webp",
+      "bytes": 115058
+    },
+    {
+      "url": "https://static.parastorage.com/services/linguist-flags/1.1005.0/assets/flags/square/USA_2x.png",
+      "path": "public/media/d3c406db805d3063dbdd.jpg",
+      "bytes": 3250
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_3c5c080438f4419ebc2e2ed6428bff4b~mv2.png/v1/fit/w_1920,h_1920,q_90/903b4f_3c5c080438f4419ebc2e2ed6428bff4b~mv2.png",
+      "path": "public/media/817e3b9fd4835f0b5d92.webp",
+      "bytes": 372488
+    },
+    {
+      "url": "https://static.wixstatic.com/media/c3401269172848ea9a1b42592f2fc6a1.jpg/v1/fit/w_1920,h_1920,q_90/c3401269172848ea9a1b42592f2fc6a1.jpg",
+      "path": "public/media/e1588d7d74de6f439488.webp",
+      "bytes": 291234
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_e52f80baea65486fa9345190ce173672~mv2.jpg/v1/fit/w_1920,h_1920,q_90/903b4f_e52f80baea65486fa9345190ce173672~mv2.jpg",
+      "path": "public/media/42c856f54197ef265e3b.webp",
+      "bytes": 163356
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_cede0640150a4bb794f442f7c6ba517f~mv2.jpg/v1/fit/w_1920,h_1920,q_90/903b4f_cede0640150a4bb794f442f7c6ba517f~mv2.jpg",
+      "path": "public/media/cf157548bb0251f84ba9.webp",
+      "bytes": 513190
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_51f4d52d04134be987b6c511760abce1~mv2.jpg/v1/fit/w_1920,h_1920,q_90/903b4f_51f4d52d04134be987b6c511760abce1~mv2.jpg",
+      "path": "public/media/c2d694fb4931d2c262f3.webp",
+      "bytes": 382532
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_e280eec0387844228c12fe2e9c30bd2d~mv2.png/v1/fill/w_580,h_848,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Smiling%20child%20powers%20classroom%20blender-2.png",
+      "path": "public/media/9c2cbf7f5cab781953b4.webp",
+      "bytes": 86810
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_e41ff78b88634e4ab110064ca5687114~mv2.png/v1/fill/w_580,h_848,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Mother%20and%20toddlers%20with%20flowers%20and%20hearts-1.png",
+      "path": "public/media/bc00cd22fa4bc8a3c7cd.webp",
+      "bytes": 93848
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_e6c1ca3805884b799cfd4171b98532a5~mv2.png/v1/fill/w_580,h_848,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Preschoolers%20painting%20with%20a%20caring%20teacher-3.png",
+      "path": "public/media/0ad13449638afe0ee4e5.webp",
+      "bytes": 113530
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_581da7836e6748fca49a0567e5e261e2~mv2.jpeg/v1/fill/w_454,h_341,fp_0.50_0.50,q_90,enc_avif,quality_auto/903b4f_581da7836e6748fca49a0567e5e261e2~mv2.webp",
+      "path": "public/media/6a90e14076e637e6a950.webp",
+      "bytes": 42786
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_72361b39d12a4c759a6a3ae08c66de41~mv2.jpg/v1/fill/w_454,h_341,fp_0.50_0.50,q_90,enc_avif,quality_auto/903b4f_72361b39d12a4c759a6a3ae08c66de41~mv2.webp",
+      "path": "public/media/0eb0cae33226009a438a.webp",
+      "bytes": 47038
+    },
+    {
+      "url": "https://static.wixstatic.com/media/903b4f_20aacb2b43be4d6c8423cc98d0fda364~mv2.png/v1/fill/w_454,h_341,fp_0.50_0.50,q_95,enc_avif,quality_auto/903b4f_20aacb2b43be4d6c8423cc98d0fda364~mv2.webp",
+      "path": "public/media/014e89351bc590118a83.webp",
+      "bytes": 55828
+    }
+  ]
+}

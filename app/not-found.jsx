@@ -1,0 +1,4 @@
+import Link from 'next/link';
+export default function NotFound() {
+  return <main style={{maxWidth: 720, margin:'80px auto', padding:24, fontFamily:'Arial,sans-serif'}}><h1>Page not found</h1><p><Link href="/en/">Return to Kai Ming Head Start</Link></p></main>;
+}
