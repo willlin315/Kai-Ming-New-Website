@@ -1,3 +1,5 @@
+import PersonPlacement from './PersonPlacement';
+import peopleRecords from '../content/people.json';
 import PeopleDirectory from './PeopleDirectory';
 import parse, { attributesToProps, domToReact } from 'html-react-parser';
 import render from 'dom-serializer';
@@ -18,6 +20,8 @@ export default function PageView({ page }) {
     replace(node) {
       if (node.type !== 'tag') return;
       if (page.key === 'our-people' && node.name === 'main') return <main id={node.attribs.id} tabIndex={-1}><PeopleDirectory /></main>;
+      const person = peopleRecords.find(p => p.placements?.some(slot => slot.nodeId && slot.page === page.key && slot.nodeId === node.attribs.id));
+      if (person) return <PersonPlacement person={person} placement={person.placements.find(slot => slot.nodeId === node.attribs.id)} attributes={attributesToProps(node.attribs)} html={render(node.children)} />;
       markResponsiveNode(node);
       if (node.attribs.id === 'comp-muoke23s') {
         return <EligibilityCalculator attributes={attributesToProps(node.attribs)} />;

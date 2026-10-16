@@ -11,7 +11,16 @@
     "order": 0,
     "sourceUrl": "https://willlin3.wixsite.com/kai-ming-head-start/our-people",
     "sourcePhoto": "https://static.wixstatic.com/media/903b4f_bcec6b72471d49aea95ee25e23054725~mv2.png",
-    "featured": true
+    "featured": true,
+    "phone": "",
+    "placements": [
+      {
+        "page": "our-people",
+        "label": "Our People",
+        "section": "Executive Director",
+        "position": 1
+      }
+    ]
   },
   {
     "id": "2c6ca67a-d10e-4437-a074-3953a74ba976",
@@ -25,7 +34,16 @@
     "order": 1,
     "sourceUrl": "https://willlin3.wixsite.com/kai-ming-head-start/our-people",
     "sourcePhoto": "https://static.wixstatic.com/media/903b4f_8c06203154fd4a82bfaf192dde1433d8~mv2.png/v1/fill/w_200,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Centered%20annual%20report%20headshot-4.png",
-    "featured": false
+    "featured": false,
+    "phone": "",
+    "placements": [
+      {
+        "page": "our-people",
+        "label": "Our People",
+        "section": "Our Team",
+        "position": 1
+      }
+    ]
   },
   {
     "id": "46aad306-ea17-4163-bb66-d722d4faf9a0",
@@ -39,7 +57,16 @@
     "order": 2,
     "sourceUrl": "https://willlin3.wixsite.com/kai-ming-head-start/our-people",
     "sourcePhoto": "https://static.wixstatic.com/media/903b4f_183c4d72fcd1492fa00695a6a5192309~mv2.png/v1/fill/w_200,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Centered%20annual%20report%20headshot-4.png",
-    "featured": false
+    "featured": false,
+    "phone": "",
+    "placements": [
+      {
+        "page": "our-people",
+        "label": "Our People",
+        "section": "Our Team",
+        "position": 2
+      }
+    ]
   },
   {
     "id": "bb13cf95-b55a-4f74-992e-1d9066b46bac",
@@ -53,7 +80,16 @@
     "order": 3,
     "sourceUrl": "https://willlin3.wixsite.com/kai-ming-head-start/our-people",
     "sourcePhoto": "https://static.wixstatic.com/media/903b4f_a1825f4d694a4ad0b5a34c5cf1aa2280~mv2.png/v1/fill/w_200,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Centered%20annual%20report%20headshot-4.png",
-    "featured": false
+    "featured": false,
+    "phone": "",
+    "placements": [
+      {
+        "page": "our-people",
+        "label": "Our People",
+        "section": "Our Team",
+        "position": 3
+      }
+    ]
   },
   {
     "id": "b46a015c-8ca0-4210-b94c-a8f1ed69eccb",
@@ -67,7 +103,16 @@
     "order": 4,
     "sourceUrl": "https://willlin3.wixsite.com/kai-ming-head-start/our-people",
     "sourcePhoto": "https://static.wixstatic.com/media/903b4f_510ad219d5db47d7bf222f5368011e8e~mv2.png/v1/fill/w_200,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Centered%20annual%20report%20headshot-4.png",
-    "featured": false
+    "featured": false,
+    "phone": "",
+    "placements": [
+      {
+        "page": "our-people",
+        "label": "Our People",
+        "section": "Our Team",
+        "position": 4
+      }
+    ]
   },
   {
     "id": "e8d0eb8b-0894-47ed-8a6f-be1888220107",
@@ -81,7 +126,16 @@
     "order": 5,
     "sourceUrl": "https://willlin3.wixsite.com/kai-ming-head-start/our-people",
     "sourcePhoto": "https://static.wixstatic.com/media/903b4f_9e71bbf14f3e4baea9ae7f126d32a576~mv2.png/v1/fill/w_200,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Centered%20annual%20report%20headshot-4.png",
-    "featured": false
+    "featured": false,
+    "phone": "",
+    "placements": [
+      {
+        "page": "our-people",
+        "label": "Our People",
+        "section": "Our Team",
+        "position": 5
+      }
+    ]
   },
   {
     "id": "fe8df676-e363-4b3c-8a20-7082cb61aa81",
@@ -95,7 +149,16 @@
     "order": 6,
     "sourceUrl": "https://willlin3.wixsite.com/kai-ming-head-start/our-people",
     "sourcePhoto": "https://static.wixstatic.com/media/903b4f_a7470d0bf6ee498bb128403c4c2f5c6f~mv2.png/v1/fill/w_200,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Centered%20annual%20report%20headshot-4.png",
-    "featured": false
+    "featured": false,
+    "phone": "",
+    "placements": [
+      {
+        "page": "our-people",
+        "label": "Our People",
+        "section": "Our Team",
+        "position": 6
+      }
+    ]
   },
   {
     "id": "9afe15b9-f764-4c37-b68e-fb0760cac3bb",
@@ -109,7 +172,16 @@
     "order": 7,
     "sourceUrl": "https://willlin3.wixsite.com/kai-ming-head-start/our-people",
     "sourcePhoto": "https://static.wixstatic.com/media/903b4f_0a5314c5d3ac4c21af5d28a9b4baaa79~mv2.png/v1/fill/w_150,h_150,al_c,q_85,usm_0.66_1.00_0.01,blur_3,enc_avif,quality_auto/Portrait%20on%20a%20pure%20white%20background-3.png",
-    "featured": false
+    "featured": false,
+    "phone": "",
+    "placements": [
+      {
+        "page": "our-people",
+        "label": "Our People",
+        "section": "Board Members",
+        "position": 1
+      }
+    ]
   },
   {
     "id": "3afc2094-c104-4f15-85a1-af2a6d3105da",
@@ -123,7 +195,16 @@
     "order": 8,
     "sourceUrl": "https://willlin3.wixsite.com/kai-ming-head-start/our-people",
     "sourcePhoto": "https://static.wixstatic.com/media/903b4f_6b0ca3ed4cff46469d65a3b4e43e687e~mv2.png/v1/fill/w_150,h_150,al_c,q_85,usm_0.66_1.00_0.01,blur_3,enc_avif,quality_auto/Portrait%20on%20a%20pure%20white%20background-3.png",
-    "featured": false
+    "featured": false,
+    "phone": "",
+    "placements": [
+      {
+        "page": "our-people",
+        "label": "Our People",
+        "section": "Board Members",
+        "position": 2
+      }
+    ]
   },
   {
     "id": "187b29df-4e9e-4599-82b9-e59b6ccc4ab4",
@@ -137,7 +218,16 @@
     "order": 9,
     "sourceUrl": "https://willlin3.wixsite.com/kai-ming-head-start/our-people",
     "sourcePhoto": "https://static.wixstatic.com/media/903b4f_a91c4442b7e94ac0a203c6d158eb65c8~mv2.png/v1/fill/w_150,h_150,al_c,q_85,usm_0.66_1.00_0.01,blur_3,enc_avif,quality_auto/Portrait%20on%20a%20pure%20white%20background-3.png",
-    "featured": false
+    "featured": false,
+    "phone": "",
+    "placements": [
+      {
+        "page": "our-people",
+        "label": "Our People",
+        "section": "Board Members",
+        "position": 3
+      }
+    ]
   },
   {
     "id": "3ca3086a-1921-46e6-b6e2-5dcae04bceb5",
@@ -151,7 +241,16 @@
     "order": 10,
     "sourceUrl": "https://willlin3.wixsite.com/kai-ming-head-start/our-people",
     "sourcePhoto": "https://static.wixstatic.com/media/903b4f_2e0ad4cf36434fc2b7ad15bce3f63ffa~mv2.png/v1/fill/w_150,h_150,al_c,q_85,usm_0.66_1.00_0.01,blur_3,enc_avif,quality_auto/Portrait%20on%20a%20pure%20white%20background-3.png",
-    "featured": false
+    "featured": false,
+    "phone": "",
+    "placements": [
+      {
+        "page": "our-people",
+        "label": "Our People",
+        "section": "Board Members",
+        "position": 4
+      }
+    ]
   },
   {
     "id": "7f5b0f3c-a00a-4119-95c5-4d9dc1977c9c",
@@ -165,7 +264,16 @@
     "order": 11,
     "sourceUrl": "https://willlin3.wixsite.com/kai-ming-head-start/our-people",
     "sourcePhoto": "https://static.wixstatic.com/media/903b4f_5654c4e23bcd42fd9f95923bef378750~mv2.png/v1/fill/w_150,h_150,al_c,q_85,usm_0.66_1.00_0.01,blur_3,enc_avif,quality_auto/Portrait%20on%20a%20pure%20white%20background-3.png",
-    "featured": false
+    "featured": false,
+    "phone": "",
+    "placements": [
+      {
+        "page": "our-people",
+        "label": "Our People",
+        "section": "Board Members",
+        "position": 5
+      }
+    ]
   },
   {
     "id": "701ac266-8cf0-4c22-aa8a-d14e2d6cafd3",
@@ -179,7 +287,16 @@
     "order": 12,
     "sourceUrl": "https://willlin3.wixsite.com/kai-ming-head-start/our-people",
     "sourcePhoto": "https://static.wixstatic.com/media/903b4f_171cdc6dee3f48d28310773ae859292f~mv2.png/v1/fill/w_150,h_150,al_c,q_85,usm_0.66_1.00_0.01,blur_3,enc_avif,quality_auto/Portrait%20on%20a%20pure%20white%20background-3.png",
-    "featured": false
+    "featured": false,
+    "phone": "",
+    "placements": [
+      {
+        "page": "our-people",
+        "label": "Our People",
+        "section": "Board Members",
+        "position": 6
+      }
+    ]
   },
   {
     "id": "a3589289-e6a0-4c02-aac3-db85dff6e2df",
@@ -193,7 +310,16 @@
     "order": 13,
     "sourceUrl": "https://willlin3.wixsite.com/kai-ming-head-start/our-people",
     "sourcePhoto": "https://static.wixstatic.com/media/903b4f_4ffbe53de04544c49a4be4aa7917c642~mv2.png/v1/fill/w_150,h_150,al_c,q_85,usm_0.66_1.00_0.01,blur_3,enc_avif,quality_auto/Portrait%20on%20a%20pure%20white%20background-3.png",
-    "featured": false
+    "featured": false,
+    "phone": "",
+    "placements": [
+      {
+        "page": "our-people",
+        "label": "Our People",
+        "section": "Board Members",
+        "position": 7
+      }
+    ]
   },
   {
     "id": "807d5b10-e72b-44ef-898c-03f629902dc8",
@@ -207,6 +333,555 @@
     "order": 14,
     "sourceUrl": "https://willlin3.wixsite.com/kai-ming-head-start/our-people",
     "sourcePhoto": "https://static.wixstatic.com/media/903b4f_c88dae1097b6464f9bebd90189ded521~mv2.png/v1/fill/w_150,h_150,al_c,q_85,usm_0.66_1.00_0.01,blur_3,enc_avif,quality_auto/Portrait%20on%20a%20pure%20white%20background-3.png",
-    "featured": false
+    "featured": false,
+    "phone": "",
+    "placements": [
+      {
+        "page": "our-people",
+        "label": "Our People",
+        "section": "Board Members",
+        "position": 8
+      }
+    ]
+  },
+  {
+    "id": "center-copy-of-learning-approach-1-1",
+    "name": "Carmen Ngan",
+    "title": "Broadway Center Site Manager",
+    "photo": "/media/03fe414342cfb7b64c6c.webp",
+    "email": "carmen.ngan@kaiming.org",
+    "phone": "(415) 982-4777 Ext. 250",
+    "bio": "Welcome to Kai Ming Head Start Broadway Center. May all of us work together to build a harmonious and nurturing learning environment for our young children.",
+    "center": "Broadway Center",
+    "department": "Center Staff",
+    "featured": false,
+    "order": 15,
+    "sourceUrl": "https://willlin3.wixsite.com/kai-ming-head-start/copy-of-learning-approach-1",
+    "placements": [
+      {
+        "page": "copy-of-learning-approach-1",
+        "label": "Broadway Center",
+        "section": "Center team",
+        "position": 1,
+        "nodeId": "comp-mtm1cdxi2__072d0ab6-6763-4e9a-8d93-c7cf7898f5d8",
+        "fields": {
+          "comp-mtm1cdyp5__072d0ab6-6763-4e9a-8d93-c7cf7898f5d8": "name",
+          "comp-mtm1cdyp__072d0ab6-6763-4e9a-8d93-c7cf7898f5d8": "title",
+          "comp-mtm1cdyq2__072d0ab6-6763-4e9a-8d93-c7cf7898f5d8": "email",
+          "comp-mupr7bxn__072d0ab6-6763-4e9a-8d93-c7cf7898f5d8": "phone",
+          "comp-mupr7bxs__072d0ab6-6763-4e9a-8d93-c7cf7898f5d8": "bio"
+        }
+      }
+    ]
+  },
+  {
+    "id": "center-copy-of-learning-approach-1-2",
+    "name": "Humberto Felix",
+    "title": "Broadway Center  Family Service Specialist",
+    "photo": "/media/b4ac0180d9e6e3d6cea3.webp",
+    "email": "humberto.felix@kaiming.org",
+    "phone": "(415) 982-4777 Ext. 229",
+    "bio": "“Let us remember: One book, one pen, one child and one teacher can change the world.” - Malala Yousafzai",
+    "center": "Broadway Center",
+    "department": "Center Staff",
+    "featured": false,
+    "order": 16,
+    "sourceUrl": "https://willlin3.wixsite.com/kai-ming-head-start/copy-of-learning-approach-1",
+    "placements": [
+      {
+        "page": "copy-of-learning-approach-1",
+        "label": "Broadway Center",
+        "section": "Center team",
+        "position": 2,
+        "nodeId": "comp-mtm1cdxi2__17b3457b-498f-40a1-9b46-30516312f8d0",
+        "fields": {
+          "comp-mtm1cdyp5__17b3457b-498f-40a1-9b46-30516312f8d0": "name",
+          "comp-mtm1cdyp__17b3457b-498f-40a1-9b46-30516312f8d0": "title",
+          "comp-mtm1cdyq2__17b3457b-498f-40a1-9b46-30516312f8d0": "email",
+          "comp-mupr7bxn__17b3457b-498f-40a1-9b46-30516312f8d0": "phone",
+          "comp-mupr7bxs__17b3457b-498f-40a1-9b46-30516312f8d0": "bio"
+        }
+      }
+    ]
+  },
+  {
+    "id": "center-copy-of-broadway-center-2-1",
+    "name": "Nesanna Lee",
+    "title": "North Beach Center Site Manager",
+    "photo": "/media/28b1f3cf937c21fc4282.webp",
+    "email": "nesanna.lee@kaiming.org",
+    "phone": "(415) 982-4777 Ext. 260",
+    "bio": "I'm here for you. Our center is always full of joy, and very diverse environment.",
+    "center": "North Beach Center",
+    "department": "Center Staff",
+    "featured": false,
+    "order": 17,
+    "sourceUrl": "https://willlin3.wixsite.com/kai-ming-head-start/copy-of-broadway-center-2",
+    "placements": [
+      {
+        "page": "copy-of-broadway-center-2",
+        "label": "North Beach Center",
+        "section": "Center team",
+        "position": 1,
+        "nodeId": "comp-mu1fqtin5__5f8991df-11e2-4604-9ad9-927d5b53a94b",
+        "fields": {
+          "comp-mu1fqtiv10__5f8991df-11e2-4604-9ad9-927d5b53a94b": "name",
+          "comp-mu1fqtiv4__5f8991df-11e2-4604-9ad9-927d5b53a94b": "title",
+          "comp-mu1fqtiw5__5f8991df-11e2-4604-9ad9-927d5b53a94b": "email",
+          "comp-mupr7zgd__5f8991df-11e2-4604-9ad9-927d5b53a94b": "phone",
+          "comp-mupr7zge__5f8991df-11e2-4604-9ad9-927d5b53a94b": "bio"
+        }
+      }
+    ]
+  },
+  {
+    "id": "center-copy-of-broadway-center-2-2",
+    "name": "Venus Kong",
+    "title": "North Beach Center Family Service Specialist",
+    "photo": "/media/30591b961b9d5572f4ee.webp",
+    "email": "venus.kong@kaiming.org",
+    "phone": "(415) 982-4777 Ext. 261",
+    "bio": "Venus has been working for Kai Ming Head Start as a Family Advocate for many years. She is happy to have the opportunity to work closely with children and families.",
+    "center": "North Beach Center",
+    "department": "Center Staff",
+    "featured": false,
+    "order": 18,
+    "sourceUrl": "https://willlin3.wixsite.com/kai-ming-head-start/copy-of-broadway-center-2",
+    "placements": [
+      {
+        "page": "copy-of-broadway-center-2",
+        "label": "North Beach Center",
+        "section": "Center team",
+        "position": 2,
+        "nodeId": "comp-mu1fqtin5__af00de80-1ff5-4027-b5a9-19bc77dce5f7",
+        "fields": {
+          "comp-mu1fqtiv10__af00de80-1ff5-4027-b5a9-19bc77dce5f7": "name",
+          "comp-mu1fqtiv4__af00de80-1ff5-4027-b5a9-19bc77dce5f7": "title",
+          "comp-mu1fqtiw5__af00de80-1ff5-4027-b5a9-19bc77dce5f7": "email",
+          "comp-mupr7zgd__af00de80-1ff5-4027-b5a9-19bc77dce5f7": "phone",
+          "comp-mupr7zge__af00de80-1ff5-4027-b5a9-19bc77dce5f7": "bio"
+        }
+      }
+    ]
+  },
+  {
+    "id": "center-copy-of-pmsquare-children-s-center-1",
+    "name": "Tracy Chen",
+    "title": "Rainbow Center Site Manager",
+    "photo": "/media/e6db86bcf594e2bde787.webp",
+    "email": "yanhui.chen@kaiming.org",
+    "phone": "(415) 982-4777 Ext. 220",
+    "bio": "Being Center Manager gives me the joy of helping children thrive and families feel supported. Together, we create a warm and caring environment where every child feels safe, valued and empowered to grow.",
+    "center": "Rainbow Center",
+    "department": "Center Staff",
+    "featured": false,
+    "order": 19,
+    "sourceUrl": "https://willlin3.wixsite.com/kai-ming-head-start/copy-of-pmsquare-children-s-center",
+    "placements": [
+      {
+        "page": "copy-of-pmsquare-children-s-center",
+        "label": "Rainbow Center",
+        "section": "Center team",
+        "position": 1,
+        "nodeId": "comp-mu1if27f__f3ce9327-1b62-46e2-b3b4-5105eac0b48d",
+        "fields": {
+          "comp-mu1if27q4__f3ce9327-1b62-46e2-b3b4-5105eac0b48d": "name",
+          "comp-mu1if27p1__f3ce9327-1b62-46e2-b3b4-5105eac0b48d": "title",
+          "comp-mu1if27r__f3ce9327-1b62-46e2-b3b4-5105eac0b48d": "email",
+          "comp-mupr7jvy__f3ce9327-1b62-46e2-b3b4-5105eac0b48d": "phone",
+          "comp-mupr7jvz__f3ce9327-1b62-46e2-b3b4-5105eac0b48d": "bio"
+        }
+      }
+    ]
+  },
+  {
+    "id": "center-copy-of-pmsquare-children-s-center-2",
+    "name": "Jenny Zhong",
+    "title": "Rainbow Center Family Service Specialist",
+    "photo": "/media/7d318257384fa442125b.webp",
+    "email": "jenny.zhong@kaiming.org",
+    "phone": "(415) 982-4777 Ext. 221",
+    "bio": "I support children’s development by creating activities to intrigue their interest and work with families to achieve predetermined goals.",
+    "center": "Rainbow Center",
+    "department": "Center Staff",
+    "featured": false,
+    "order": 20,
+    "sourceUrl": "https://willlin3.wixsite.com/kai-ming-head-start/copy-of-pmsquare-children-s-center",
+    "placements": [
+      {
+        "page": "copy-of-pmsquare-children-s-center",
+        "label": "Rainbow Center",
+        "section": "Center team",
+        "position": 2,
+        "nodeId": "comp-mu1if27f__c2f338ad-c4a7-4385-8070-0bee9e1f52f2",
+        "fields": {
+          "comp-mu1if27q4__c2f338ad-c4a7-4385-8070-0bee9e1f52f2": "name",
+          "comp-mu1if27p1__c2f338ad-c4a7-4385-8070-0bee9e1f52f2": "title",
+          "comp-mu1if27r__c2f338ad-c4a7-4385-8070-0bee9e1f52f2": "email",
+          "comp-mupr7jvy__c2f338ad-c4a7-4385-8070-0bee9e1f52f2": "phone",
+          "comp-mupr7jvz__c2f338ad-c4a7-4385-8070-0bee9e1f52f2": "bio"
+        }
+      }
+    ]
+  },
+  {
+    "id": "center-copy-of-rainbow-center-1-1",
+    "name": "Sherry Tao",
+    "title": "St. Luke’s Center Site Manager",
+    "photo": "/media/b6a17e374eab9199799c.webp",
+    "email": "sherry.tao@kaiming.org",
+    "phone": "(415) 982-4777 Ext. 229",
+    "bio": "Sherry graduated from National Taipei University of Education with a Bachelor’s degree in Early Childhood and Family Education. She has been working with children for 3 years in Taiwan. She believes that the most important thing as a teacher is to remain supportive and accessible to all kids and be ready to provide guidance whenever this is needed.",
+    "center": "St. Luke’s Center",
+    "department": "Center Staff",
+    "featured": false,
+    "order": 21,
+    "sourceUrl": "https://willlin3.wixsite.com/kai-ming-head-start/copy-of-rainbow-center-1",
+    "placements": [
+      {
+        "page": "copy-of-rainbow-center-1",
+        "label": "St. Luke’s Center",
+        "section": "Center team",
+        "position": 1,
+        "nodeId": "comp-mu33r07y5__d5807114-f74f-42f8-b06a-34eaedc6e791",
+        "fields": {
+          "comp-mu33r0809__d5807114-f74f-42f8-b06a-34eaedc6e791": "name",
+          "comp-mu33r0803__d5807114-f74f-42f8-b06a-34eaedc6e791": "title",
+          "comp-mu33r081__d5807114-f74f-42f8-b06a-34eaedc6e791": "email",
+          "comp-mupr87ds__d5807114-f74f-42f8-b06a-34eaedc6e791": "phone",
+          "comp-mupr87dt__d5807114-f74f-42f8-b06a-34eaedc6e791": "bio"
+        }
+      }
+    ]
+  },
+  {
+    "id": "center-copy-of-rainbow-center-1-2",
+    "name": "Daysi Martinez",
+    "title": "St. Luke’s Center Family Service Specialist",
+    "photo": "/media/90e2f8b2662f32052de6.webp",
+    "email": "daysi.martinez@kaiming.org",
+    "phone": "(415) 982-4777 Ext. 229",
+    "bio": "Daysi is a San Francisco native who is earning their BA in Ethnic Studies from CSU East Bay. They have worked in various roles serving families and children for over a decade. She also has experience working in the San Francisco Unified School District Autism Focused Program/Special Day Class (SDC) and supporting children with disabilities. Working for the school district and nonprofits has given her the passion to advocate for marginalized communities and promote early childhood education interventions. In addition, Daysi loves to dance Afro-Brazilian with a group based in Oakland.",
+    "center": "St. Luke’s Center",
+    "department": "Center Staff",
+    "featured": false,
+    "order": 22,
+    "sourceUrl": "https://willlin3.wixsite.com/kai-ming-head-start/copy-of-rainbow-center-1",
+    "placements": [
+      {
+        "page": "copy-of-rainbow-center-1",
+        "label": "St. Luke’s Center",
+        "section": "Center team",
+        "position": 2,
+        "nodeId": "comp-mu33r07y5__c9b61033-e493-47b8-acb4-ece5a775bdf3",
+        "fields": {
+          "comp-mu33r0809__c9b61033-e493-47b8-acb4-ece5a775bdf3": "name",
+          "comp-mu33r0803__c9b61033-e493-47b8-acb4-ece5a775bdf3": "title",
+          "comp-mu33r081__c9b61033-e493-47b8-acb4-ece5a775bdf3": "email",
+          "comp-mupr87ds__c9b61033-e493-47b8-acb4-ece5a775bdf3": "phone",
+          "comp-mupr87dt__c9b61033-e493-47b8-acb4-ece5a775bdf3": "bio"
+        }
+      }
+    ]
+  },
+  {
+    "id": "center-copy-of-broadway-center-1-1",
+    "name": "Sarah Fong",
+    "title": "Geary Center Site Manager",
+    "photo": "/media/b2a3b639b5d0862495ac.webp",
+    "email": "sarah.fong@kaiming.org",
+    "phone": "(415) 982-4777 Ext. 270",
+    "bio": "“Their minds were not built to sit and be taught. They were built to explore, play, and learn.” - Anonymous",
+    "center": "Geary Center",
+    "department": "Center Staff",
+    "featured": false,
+    "order": 23,
+    "sourceUrl": "https://willlin3.wixsite.com/kai-ming-head-start/copy-of-broadway-center-1",
+    "placements": [
+      {
+        "page": "copy-of-broadway-center-1",
+        "label": "Geary Center",
+        "section": "Center team",
+        "position": 1,
+        "nodeId": "comp-mu1f4cll3__item1",
+        "fields": {
+          "comp-mu1f4clm11__item1": "name",
+          "comp-mu1f4clm5__item1": "title",
+          "comp-mu1f4cln5__item1": "email",
+          "comp-mupr8fnz__item1": "phone",
+          "comp-mupr8fo0__item1": "bio"
+        }
+      }
+    ]
+  },
+  {
+    "id": "center-copy-of-broadway-center-1-2",
+    "name": "Dora Li",
+    "title": "Geary Center Family Service Specialist",
+    "photo": "/media/08d51e5e083e0b8571c2.webp",
+    "email": "dora.li@kaiming.org",
+    "phone": "(415) 982-4777 Ext. 291",
+    "bio": "It is our pleasure to be part of your children’s early childhood education.",
+    "center": "Geary Center",
+    "department": "Center Staff",
+    "featured": false,
+    "order": 24,
+    "sourceUrl": "https://willlin3.wixsite.com/kai-ming-head-start/copy-of-broadway-center-1",
+    "placements": [
+      {
+        "page": "copy-of-broadway-center-1",
+        "label": "Geary Center",
+        "section": "Center team",
+        "position": 2,
+        "nodeId": "comp-mu1f4cll3__item-kel2ntrs",
+        "fields": {
+          "comp-mu1f4clm11__item-kel2ntrs": "name",
+          "comp-mu1f4clm5__item-kel2ntrs": "title",
+          "comp-mu1f4cln5__item-kel2ntrs": "email",
+          "comp-mupr8fnz__item-kel2ntrs": "phone",
+          "comp-mupr8fo0__item-kel2ntrs": "bio"
+        }
+      }
+    ]
+  },
+  {
+    "id": "center-copy-of-rainbow-center-1",
+    "name": "Kelly Li",
+    "title": "Richmond Center Site Manager",
+    "photo": "/media/95467dc889db08e17f74.webp",
+    "email": "kelly.li@kaiming.org",
+    "phone": "(415) 982-4777 Ext. 280",
+    "bio": "“It’s the little conversations that build the relationships and make an impact on each student” - Robert John Meehan",
+    "center": "Richmond Center",
+    "department": "Center Staff",
+    "featured": false,
+    "order": 25,
+    "sourceUrl": "https://willlin3.wixsite.com/kai-ming-head-start/copy-of-rainbow-center",
+    "placements": [
+      {
+        "page": "copy-of-rainbow-center",
+        "label": "Richmond Center",
+        "section": "Center team",
+        "position": 1,
+        "nodeId": "comp-mu32d3ds__38990e38-726a-4ab3-b520-e3e93dad469a",
+        "fields": {
+          "comp-mu32d3du5__38990e38-726a-4ab3-b520-e3e93dad469a": "name",
+          "comp-mu32d3dt10__38990e38-726a-4ab3-b520-e3e93dad469a": "title",
+          "comp-mu32d3du11__38990e38-726a-4ab3-b520-e3e93dad469a": "email",
+          "comp-mupr8nch__38990e38-726a-4ab3-b520-e3e93dad469a": "phone",
+          "comp-mupr8nci__38990e38-726a-4ab3-b520-e3e93dad469a": "bio"
+        }
+      }
+    ]
+  },
+  {
+    "id": "center-copy-of-rainbow-center-2",
+    "name": "Sasha Caamal",
+    "title": "Richmond Center Family Service Specialist",
+    "photo": "/media/98a3526581f3a0c4489a.webp",
+    "email": "sasha.caamal@kaiming.org",
+    "phone": "(415) 982-4777 Ext. 281",
+    "bio": "\"Every child has a different learning style and pace. Each child is unique, not only capable of learning but also capable of succeeding.\" -Robert John Meehan",
+    "center": "Richmond Center",
+    "department": "Center Staff",
+    "featured": false,
+    "order": 26,
+    "sourceUrl": "https://willlin3.wixsite.com/kai-ming-head-start/copy-of-rainbow-center",
+    "placements": [
+      {
+        "page": "copy-of-rainbow-center",
+        "label": "Richmond Center",
+        "section": "Center team",
+        "position": 2,
+        "nodeId": "comp-mu32d3ds__89f2515f-f8c9-4151-bf7f-98eeeb1e86f7",
+        "fields": {
+          "comp-mu32d3du5__89f2515f-f8c9-4151-bf7f-98eeeb1e86f7": "name",
+          "comp-mu32d3dt10__89f2515f-f8c9-4151-bf7f-98eeeb1e86f7": "title",
+          "comp-mu32d3du11__89f2515f-f8c9-4151-bf7f-98eeeb1e86f7": "email",
+          "comp-mupr8nch__89f2515f-f8c9-4151-bf7f-98eeeb1e86f7": "phone",
+          "comp-mupr8nci__89f2515f-f8c9-4151-bf7f-98eeeb1e86f7": "bio"
+        }
+      }
+    ]
+  },
+  {
+    "id": "center-copy-of-rainbow-center-2-1",
+    "name": "Wai Shun Cheng",
+    "title": "Sunset Center Site Manager",
+    "photo": "/media/f75a2d4b505661c6eb61.webp",
+    "email": "wai.cheng@kaiming.org",
+    "phone": "(415) 982-4777 Ext. 291",
+    "bio": "Welcome to Kai Ming Sunset Center! I’m excited to be part of this caring community, working alongside families and educators to support every child’s growth, curiosity, and happiness.",
+    "center": "Sunset Center",
+    "department": "Center Staff",
+    "featured": false,
+    "order": 27,
+    "sourceUrl": "https://willlin3.wixsite.com/kai-ming-head-start/copy-of-rainbow-center-2",
+    "placements": [
+      {
+        "page": "copy-of-rainbow-center-2",
+        "label": "Sunset Center",
+        "section": "Center team",
+        "position": 1,
+        "nodeId": "comp-mu342y5e6__71c844eb-4191-490c-ba27-f39381a54873",
+        "fields": {
+          "comp-mu342y5g10__71c844eb-4191-490c-ba27-f39381a54873": "name",
+          "comp-mu342y5g4__71c844eb-4191-490c-ba27-f39381a54873": "title",
+          "comp-mu342y5g16__71c844eb-4191-490c-ba27-f39381a54873": "email",
+          "comp-mupr8v1i__71c844eb-4191-490c-ba27-f39381a54873": "phone",
+          "comp-mupr8v1l__71c844eb-4191-490c-ba27-f39381a54873": "bio"
+        }
+      }
+    ]
+  },
+  {
+    "id": "center-copy-of-rainbow-center-2-2",
+    "name": "Linda Wu",
+    "title": "Sunset Center Family Service Specialist",
+    "photo": "/media/b6f9fa4f53d4289fecfa.webp",
+    "email": "linda.wu@kaiming.org",
+    "phone": "(415) 982-4777 Ext. 241",
+    "bio": "I am thankful be able to continue to help children and families.",
+    "center": "Sunset Center",
+    "department": "Center Staff",
+    "featured": false,
+    "order": 28,
+    "sourceUrl": "https://willlin3.wixsite.com/kai-ming-head-start/copy-of-rainbow-center-2",
+    "placements": [
+      {
+        "page": "copy-of-rainbow-center-2",
+        "label": "Sunset Center",
+        "section": "Center team",
+        "position": 2,
+        "nodeId": "comp-mu342y5e6__20be210b-10fe-44b3-bbae-b7cf6aa58ae0",
+        "fields": {
+          "comp-mu342y5g10__20be210b-10fe-44b3-bbae-b7cf6aa58ae0": "name",
+          "comp-mu342y5g4__20be210b-10fe-44b3-bbae-b7cf6aa58ae0": "title",
+          "comp-mu342y5g16__20be210b-10fe-44b3-bbae-b7cf6aa58ae0": "email",
+          "comp-mupr8v1i__20be210b-10fe-44b3-bbae-b7cf6aa58ae0": "phone",
+          "comp-mupr8v1l__20be210b-10fe-44b3-bbae-b7cf6aa58ae0": "bio"
+        }
+      }
+    ]
+  },
+  {
+    "id": "center-copy-of-north-beach-center-1",
+    "name": "Rosalie Chen",
+    "title": "PMsquare Children's Center Site Manager",
+    "photo": "/media/99bdf083bf46040eb46e.webp",
+    "email": "rosalie.chen@kaiming.org",
+    "phone": "(415) 982-4777 Ext. 212",
+    "bio": "Rosalie graduated from the Department of Early Childhood and Family Education, NTUE in Taiwan. She has been working as a preschool teacher since February 2020. On a teaching level, Rosalie is familiar with theme teaching and project approach. Rosalie enjoys discussing and planning schedules with the kids. Rosalie loves to travel because she believes there are so many beautiful things that deserve to be explored.",
+    "center": "PMsquare Children’s Center",
+    "department": "Center Staff",
+    "featured": false,
+    "order": 29,
+    "sourceUrl": "https://willlin3.wixsite.com/kai-ming-head-start/copy-of-north-beach-center",
+    "placements": [
+      {
+        "page": "copy-of-north-beach-center",
+        "label": "PMsquare Children’s Center",
+        "section": "Center team",
+        "position": 1,
+        "nodeId": "comp-mu1g6mmt5__28d5babc-b992-4065-a102-5f2ff1eb794c",
+        "fields": {
+          "comp-mu1g6mmw6__28d5babc-b992-4065-a102-5f2ff1eb794c": "name",
+          "comp-mu1g6mmw__28d5babc-b992-4065-a102-5f2ff1eb794c": "title",
+          "comp-mu1g6mmx2__28d5babc-b992-4065-a102-5f2ff1eb794c": "email",
+          "comp-mupqzfdf__28d5babc-b992-4065-a102-5f2ff1eb794c": "phone",
+          "comp-mupqzfdk__28d5babc-b992-4065-a102-5f2ff1eb794c": "bio"
+        }
+      }
+    ]
+  },
+  {
+    "id": "center-copy-of-north-beach-center-2",
+    "name": "Lizvett Guizar Valencia",
+    "title": "PMsquare Children's Center Family Service Specialist",
+    "photo": "/media/52a69fe994186d0ba1bc.webp",
+    "email": "lizvett.guizarvalencia@kaiming.org",
+    "phone": "(415) 982-4777 Ext. 212",
+    "bio": "Welcome to PMSquare Children's Center! As your Family Service Specialist, I’m honored to be part of your child’s learning journey and here to support your family every step of the way— please don’t hesitate to reach out!",
+    "center": "PMsquare Children’s Center",
+    "department": "Center Staff",
+    "featured": false,
+    "order": 30,
+    "sourceUrl": "https://willlin3.wixsite.com/kai-ming-head-start/copy-of-north-beach-center",
+    "placements": [
+      {
+        "page": "copy-of-north-beach-center",
+        "label": "PMsquare Children’s Center",
+        "section": "Center team",
+        "position": 2,
+        "nodeId": "comp-mu1g6mmt5__ec125dda-fd06-4f1f-9d5d-5bdb42a4a3da",
+        "fields": {
+          "comp-mu1g6mmw6__ec125dda-fd06-4f1f-9d5d-5bdb42a4a3da": "name",
+          "comp-mu1g6mmw__ec125dda-fd06-4f1f-9d5d-5bdb42a4a3da": "title",
+          "comp-mu1g6mmx2__ec125dda-fd06-4f1f-9d5d-5bdb42a4a3da": "email",
+          "comp-mupqzfdf__ec125dda-fd06-4f1f-9d5d-5bdb42a4a3da": "phone",
+          "comp-mupqzfdk__ec125dda-fd06-4f1f-9d5d-5bdb42a4a3da": "bio"
+        }
+      }
+    ]
+  },
+  {
+    "id": "center-copy-of-broadway-center-1",
+    "name": "Sally An",
+    "title": "Dr. T.K.L. Center Site Manager",
+    "photo": "/media/06e3e3a39a4222393413.webp",
+    "email": "sally.an@kaiming.org",
+    "phone": "(415) 982-4777 Ext. 240",
+    "bio": "“Educators have a responsibility to examine and challenge their own biases in order to create inclusive and equitable learning environments.” - Lisa Delpit",
+    "center": "Dr. T.K.L Center",
+    "department": "Center Staff",
+    "featured": false,
+    "order": 31,
+    "sourceUrl": "https://willlin3.wixsite.com/kai-ming-head-start/copy-of-broadway-center",
+    "placements": [
+      {
+        "page": "copy-of-broadway-center",
+        "label": "Dr. T.K.L Center",
+        "section": "Center team",
+        "position": 1,
+        "nodeId": "comp-mtxl67612__item1",
+        "fields": {
+          "comp-mtxl676c5__item1": "name",
+          "comp-mtxl676b4__item1": "title",
+          "comp-mtxl676c11__item1": "email",
+          "comp-mupr7rn0__item1": "phone",
+          "comp-mupr7rn1__item1": "bio"
+        }
+      }
+    ]
+  },
+  {
+    "id": "center-copy-of-broadway-center-2",
+    "name": "Humberto Felix",
+    "title": "TKL Children's Center Family Service Specialist",
+    "photo": "/media/76c1840186fe1aaef96c.webp",
+    "email": "humberto.felix@kaiming.org",
+    "phone": "(415) 982-4777 Ext. 229",
+    "bio": "",
+    "center": "Dr. T.K.L Center",
+    "department": "Center Staff",
+    "featured": false,
+    "order": 32,
+    "sourceUrl": "https://willlin3.wixsite.com/kai-ming-head-start/copy-of-broadway-center",
+    "placements": [
+      {
+        "page": "copy-of-broadway-center",
+        "label": "Dr. T.K.L Center",
+        "section": "Center team",
+        "position": 2,
+        "nodeId": "comp-mtxl67612__item-kel2ntrs",
+        "fields": {
+          "comp-mtxl676c5__item-kel2ntrs": "name",
+          "comp-mtxl676b4__item-kel2ntrs": "title",
+          "comp-mtxl676c11__item-kel2ntrs": "email",
+          "comp-mupr7rn0__item-kel2ntrs": "phone",
+          "comp-mupr7rn1__item-kel2ntrs": "bio"
+        }
+      }
+    ]
   }
 ]

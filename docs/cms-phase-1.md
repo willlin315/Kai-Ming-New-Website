@@ -27,3 +27,11 @@ Phase 1 is for approving the editing workflow and field set; it is not a product
 - Rendering uses an explicit HTML element/style allowlist. Pasted markup is inserted as plain text; scripts, event attributes and unsafe image/link schemes are excluded from the rendered article preview.
 
 These changes supersede the initial notes that People are empty and that body editing is plain-text only. Authentication, server-side persistence and publication remain the next integration phase.
+
+## English collection interface and placement registry
+
+The CMS interface defaults to English. People uses a Wix-style collection table: Name, Title, Photo, Email, Phone, Bio / Quote, Group, and Appears on / Position. The full registry contains 33 existing placement records: 15 on Our People and two on each of nine center pages. Center entries were imported from the retained website page content and reuse already downloaded local photographs. No center roster was inferred or moved. Two Humberto Felix records are intentionally retained because Broadway and Dr. T.K.L. have different existing role/biography slots.
+
+Placement metadata is anchored to existing page and component IDs. The center renderer retains original wrappers and geometry while substituting editable fields. People collection filters and per-row preview links expose actual placement. Adding a new record does not automatically add a website slot. Existing center-page count and position remain unchanged; center drafts preview via `?cmsPreview=1` in the same browser.
+
+Older local CMS drafts receive the 18 center records once via roster revision 2. Existing edited records are retained. Backup import restores editable fields but takes known placement bindings from versioned source, preventing accidental page moves. Locations are displayed separately from editable groups.
