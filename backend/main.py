@@ -1,0 +1,260 @@
+"""PostgreSQL CMS with separate draft/published snapshots and revision protection.
+The standalone bearer credential is for development only; company SSO is required
+before a production rollout. Never expose DATABASE_URL or the token to public builds.
+"""
+import copy
+import hashlib
+import hmac
+import json
+import os
+import re
+from contextlib import asynccontextmanager
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Literal
+from uuid import uuid4
+
+from fastapi import Depends, FastAPI, Header, HTTPException, Request, Response
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
+from pydantic import BaseModel, ConfigDict, Field
+from sqlalchemy import JSON, DateTime, Integer, String, UniqueConstraint, create_engine, select
+from sqlalchemy.orm import DeclarativeBase, Mapped, Session, mapped_column
+
+ROOT = Path(__file__).resolve().parents[1]
+Kind = Literal['posts', 'people']
+
+def now():
+    return datetime.now(timezone.utc)
+
+class Base(DeclarativeBase):
+    pass
+
+class Document(Base):
+    __tablename__ = 'cms_documents'
+    kind: Mapped[str] = mapped_column(String(16), primary_key=True)
+    id: Mapped[str] = mapped_column(String(150), primary_key=True)
+    revision: Mapped[int] = mapped_column(Integer, default=1)
+    draft: Mapped[dict] = mapped_column(JSON)
+    published: Mapped[dict | None] = mapped_column(JSON, nullable=True)
+    published_revision: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    published_slug: Mapped[str | None] = mapped_column(String(180), nullable=True)
+    published_locale: Mapped[str | None] = mapped_column(String(20), nullable=True)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=now)
+    __table_args__ = (UniqueConstraint('kind', 'published_locale', 'published_slug', name='cms_public_slug'),)
+
+class Audit(Base):
+    __tablename__ = 'cms_audit'
+    id: Mapped[str] = mapped_column(String(36), primary_key=True, default=lambda: str(uuid4()))
+    kind: Mapped[str] = mapped_column(String(16))
+    document_id: Mapped[str] = mapped_column(String(150))
+    action: Mapped[str] = mapped_column(String(24))
+    revision: Mapped[int] = mapped_column(Integer)
+    snapshot: Mapped[dict] = mapped_column(JSON)
+    actor: Mapped[str] = mapped_column(String(100), default='development-editor')
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=now)
+
+class WriteBody(BaseModel):
+    model_config = ConfigDict(extra='forbid')
+    expected_revision: int = Field(ge=0)
+    content: dict
+
+class RevisionBody(BaseModel):
+    model_config = ConfigDict(extra='forbid')
+    expected_revision: int = Field(ge=1)
+
+POST_FIELDS = {'title','slug','language','image','summary','body','bodyHtml','sourceUrl'}
+PEOPLE_FIELDS = {'name','title','center','department','email','phone','photo','bio','order','featured','placements','sourceUrl','sourcePhoto'}
+
+def initial_people():
+    return json.loads((ROOT / 'content/people.json').read_text())
+
+def validate(kind, payload, document_id, original=None):
+    allowed = POST_FIELDS if kind == 'posts' else PEOPLE_FIELDS
+    result = {k: v for k, v in payload.items() if k in allowed}
+    for key, value in result.items():
+        if key == 'placements':
+            continue
+        if key == 'order':
+            if not isinstance(value, int) or isinstance(value, bool) or value < 0:
+                raise HTTPException(422, 'Order must be a non-negative integer.')
+        elif key == 'featured':
+            if not isinstance(value, bool):
+                raise HTTPException(422, 'Featured must be true or false.')
+        elif not isinstance(value, str) or len(value) > 600_000:
+            raise HTTPException(422, f'Invalid {key}.')
+    name = 'title' if kind == 'posts' else 'name'
+    if not result.get(name, '').strip() or not result.get('title', '').strip():
+        raise HTTPException(422, 'Name and title are required.')
+    if len(result[name]) > 180:
+        raise HTTPException(422, 'Name or title is too long.')
+    if kind == 'posts':
+        if result.get('language') not in ['en','zh-Hant','es']:
+            raise HTTPException(422, 'Unsupported content language.')
+        if result.get('slug') and not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', result['slug']):
+            raise HTTPException(422, 'Use a lowercase URL slug with hyphens.')
+    else:
+        # Slots are server-owned so editing never silently moves an existing person.
+        source = next((p for p in initial_people() if p['id'] == document_id), None)
+        result['placements'] = copy.deepcopy((source or original or {}).get('placements', []))
+    return result
+
+def snapshot(doc):
+    return {**doc.draft, 'id': doc.id, '_revision': doc.revision,
+            '_published_revision': doc.published_revision,
+            '_has_changes': doc.revision != doc.published_revision}
+
+def audit(session, doc, action):
+    session.add(Audit(kind=doc.kind, document_id=doc.id, action=action,
+                      revision=doc.revision, snapshot=copy.deepcopy(doc.draft)))
+
+def seed_database(engine):
+    """Idempotent initial import. Existing drafts and published versions are untouched."""
+    people = initial_people()
+    posts = [{**p, 'id': f'legacy-{i}', 'slug': '', 'language': 'en',
+              'image': p['image'].replace('__BASE__',''), 'sourceUrl': p['href'],
+              'summary': '', 'body': '', 'bodyHtml': ''}
+             for i,p in enumerate(json.loads((ROOT/'content/blog-posts.json').read_text()))]
+    with Session(engine) as session, session.begin():
+        for kind, records in [('people', people), ('posts', posts)]:
+            for record in records:
+                key = record['id']
+                if session.get(Document, (kind, key)):
+                    continue
+                content = validate(kind, record, key)
+                doc = Document(kind=kind, id=key, revision=1, draft=content,
+                               published=copy.deepcopy(content), published_revision=1)
+                session.add(doc)
+                audit(session, doc, 'initial-import')
+
+def create_app(database_url=None, token=None, *, initialize=True):
+    url = database_url or os.environ.get('DATABASE_URL', '')
+    credential = token or os.environ.get('CMS_DEV_TOKEN', '')
+    if not url.startswith('postgresql+psycopg://'):
+        raise RuntimeError('Set DATABASE_URL to a PostgreSQL psycopg URL.')
+    if os.environ.get('CMS_ENV', 'development') != 'development':
+        raise RuntimeError('Standalone token mode is development-only. Configure company SSO before production.')
+    if len(credential) < 32:
+        raise RuntimeError('Set a random CMS_DEV_TOKEN of at least 32 characters.')
+    engine = create_engine(url, pool_pre_ping=True)
+    @asynccontextmanager
+    async def lifespan(app):
+        if initialize:
+            Base.metadata.create_all(engine)
+            seed_database(engine)
+        yield
+        engine.dispose()
+    app = FastAPI(title='Kai Ming development CMS', lifespan=lifespan)
+    app.state.engine = engine
+    origins = [v.strip() for v in os.environ.get('CMS_ALLOWED_ORIGINS','http://localhost:3000').split(',') if v.strip()]
+    app.add_middleware(CORSMiddleware, allow_origins=origins, allow_credentials=False,
+                       allow_methods=['GET','PUT','POST'], allow_headers=['Authorization','Content-Type'])
+    bearer = HTTPBearer(auto_error=False)
+    def editor(auth: HTTPAuthorizationCredentials | None = Depends(bearer)):
+        if not auth or not hmac.compare_digest(auth.credentials.encode(), credential.encode()):
+            raise HTTPException(401, 'A valid development CMS token is required.')
+    @app.middleware('http')
+    async def headers(request: Request, call_next):
+        # Bound writes even if Content-Length is absent or untrusted.
+        if request.method in ('PUT','POST'):
+            raw = await request.body()
+            if len(raw) > 1_500_000:
+                return Response('Request exceeds 1.5 MB.', status_code=413)
+        response = await call_next(request)
+        response.headers['Cache-Control'] = 'no-store'
+        response.headers['X-Content-Type-Options'] = 'nosniff'
+        return response
+    def locked(session, kind, key, expected):
+        doc = session.scalar(select(Document).where(Document.kind==kind, Document.id==key).with_for_update())
+        if not doc:
+            raise HTTPException(404, 'Content not found.')
+        if doc.revision != expected:
+            raise HTTPException(409, 'This record changed. Reload the latest version before saving or publishing.')
+        return doc
+    @app.get('/health')
+    def health():
+        with engine.connect() as conn:
+            conn.exec_driver_sql('SELECT 1')
+        return {'status':'ok','environment':'development'}
+    @app.get('/admin/content', dependencies=[Depends(editor)])
+    def content():
+        with Session(engine) as session:
+            docs = session.scalars(select(Document).order_by(Document.kind,Document.id)).all()
+            return {kind:[snapshot(d) for d in docs if d.kind==kind] for kind in ['posts','people']}
+    @app.put('/admin/{kind}/{key}', dependencies=[Depends(editor)])
+    def save(kind: Kind, key: str, body: WriteBody):
+        if len(key)>150 or not re.fullmatch(r'[a-zA-Z0-9_-]+',key):
+            raise HTTPException(422,'Invalid record ID.')
+        with Session(engine) as session, session.begin():
+            if body.expected_revision==0:
+                if session.get(Document,(kind,key)):
+                    raise HTTPException(409,'This record already exists. Reload before saving.')
+                doc=Document(kind=kind,id=key,revision=1,draft=validate(kind,body.content,key))
+                session.add(doc)
+            else:
+                doc=locked(session,kind,key,body.expected_revision)
+                doc.draft=validate(kind,body.content,key,doc.draft)
+                doc.revision+=1
+                doc.updated_at=now()
+            audit(session,doc,'save-draft')
+            session.flush()
+            result=snapshot(doc)
+        return result
+    @app.post('/admin/{kind}/{key}/publish', dependencies=[Depends(editor)])
+    def publish(kind: Kind, key: str, body: RevisionBody):
+        from sqlalchemy.exc import IntegrityError
+        try:
+            with Session(engine) as session, session.begin():
+                doc=locked(session,kind,key,body.expected_revision)
+                if kind=='posts':
+                    if not doc.draft.get('slug'):
+                        raise HTTPException(422,'A URL slug is required before publishing.')
+                    if not (doc.draft.get('bodyHtml','').strip() or doc.draft.get('body','').strip()):
+                        raise HTTPException(422,'Article content is required before publishing.')
+                    duplicate=session.scalar(select(Document).where(Document.kind=='posts',Document.published_slug==doc.draft['slug'],Document.published_locale==doc.draft['language'],Document.id!=key))
+                    if duplicate:
+                        raise HTTPException(409,'Another published post uses this slug and language.')
+                    doc.published_slug=doc.draft['slug']
+                    doc.published_locale=doc.draft['language']
+                elif not doc.draft.get('placements'):
+                    raise HTTPException(422,'This person has no existing page slot. Configure a placement before publishing.')
+                doc.published=copy.deepcopy(doc.draft)
+                doc.published_revision=doc.revision
+                audit(session,doc,'publish')
+                session.flush()
+                result=snapshot(doc)
+            return result
+        except IntegrityError:
+            raise HTTPException(409,'Another published post uses this slug and language.')
+    @app.post('/admin/{kind}/{key}/unpublish', dependencies=[Depends(editor)])
+    def unpublish(kind: Kind, key: str, body: RevisionBody):
+        if kind=='people':
+            raise HTTPException(422,'Unpublishing existing People slots is disabled to preserve page counts.')
+        with Session(engine) as session, session.begin():
+            doc=locked(session,kind,key,body.expected_revision)
+            doc.published=None
+            doc.published_revision=None
+            doc.published_slug=None
+            doc.published_locale=None
+            audit(session,doc,'unpublish')
+            result=snapshot(doc)
+        return result
+    @app.get('/admin/history/{kind}/{key}', dependencies=[Depends(editor)])
+    def history(kind: Kind,key: str):
+        with Session(engine) as session:
+            rows=session.scalars(select(Audit).where(Audit.kind==kind,Audit.document_id==key).order_by(Audit.created_at.desc()).limit(100)).all()
+            return [{'action':r.action,'revision':r.revision,'created_at':r.created_at,'actor':r.actor} for r in rows]
+    @app.get('/public/{kind}')
+    def public(kind: Kind):
+        with Session(engine) as session:
+            docs=session.scalars(select(Document).where(Document.kind==kind,Document.published.is_not(None)).order_by(Document.id)).all()
+            # JSON null can be represented differently across DB drivers; filter explicitly.
+            return [{**d.published,'id':d.id} for d in docs if isinstance(d.published,dict)]
+    @app.get('/public/posts/{slug}')
+    def article(slug: str, language: str='en'):
+        with Session(engine) as session:
+            doc=session.scalar(select(Document).where(Document.kind=='posts',Document.published_slug==slug,Document.published_locale==language))
+            if not doc or not isinstance(doc.published,dict):
+                raise HTTPException(404,'Published article not found.')
+            return {**doc.published,'id':doc.id}
+    return app

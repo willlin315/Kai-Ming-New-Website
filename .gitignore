@@ -3,3 +3,10 @@ node_modules/
 out/
 .env*
 !.env.example
+
+# Development CMS runtime data and credentials
+.cms-data/
+__pycache__/
+.pytest_cache/
+*.pyc
+.venv/
