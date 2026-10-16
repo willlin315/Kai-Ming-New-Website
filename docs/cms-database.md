@@ -52,7 +52,7 @@ First startup creates the initial schema and imports the current 33 People recor
 
 ## Hosted preview and shared database
 
-The current Vercel preview includes the connection UI and API client but does **not** run this Python server or provision PostgreSQL. A durable backend host and database are still required. Choose a developer-owned account or company Cloud Run/Cloud SQL, deploy the API with HTTPS, configure its origins and secret values, and set the frontend's public API origin. Never set the admin token or DATABASE_URL in a NEXT_PUBLIC variable.
+As of 2026-10-16, the development Python API and PostgreSQL run on Railway. The HTTPS API is `https://kai-ming-new-website-production.up.railway.app`; its health check succeeds. Vercel preview branch `feat/cms-editor` has `NEXT_PUBLIC_CMS_API_URL` configured to this origin. The Railway environment label is `production`, but `CMS_ENV` remains `development`. Authenticated hosted save/publish acceptance is still pending. See [Daniel handoff](daniel-handoff.md) for launch blockers and company migration steps. Never set the admin token or DATABASE_URL in a NEXT_PUBLIC variable.
 
 Entering an API URL in the editor only configures that browser's public content reads. To make all devices read published updates, configure `NEXT_PUBLIC_CMS_API_URL` on the website deployment. Localhost API connections from an HTTPS preview can be blocked by browser local-network/mixed-content rules; use the local development website for local testing or an HTTPS hosted API for the preview.
 
@@ -73,3 +73,11 @@ npm run build
 ```
 
 Tests cover authorization, seed counts, draft/public isolation, publish/unpublish, stale revision rejection, slug uniqueness, immutable People placements and idempotent import. GitHub Actions also runs the suite against native PostgreSQL 17. Existing source content is seeded as published solely to retain the current development site's output.
+
+## Shared media library
+
+Connected editors upload covers, People photos and inline images to `/admin/media/upload` and reuse images through `/admin/media`. Configure `CMS_MEDIA_DIR` to a writable persistent volume and `CMS_PUBLIC_URL` to the API's HTTPS origin. Missing configuration returns 503 instead of writing to ephemeral container storage. Local-only editing continues to use data URLs. Existing embedded images remain supported; they are not silently migrated.
+
+The server validates raster images with Pillow, caps pixel dimensions, re-encodes JPEG without source metadata and stores immutable hash-addressed files. Original animation/transparency are flattened by the editor. Metadata is stored separately in `cms_media`; image bytes are stored on disk. New images are publicly readable immediately; unpublished article text stays private. A maximum of 1,000 stored images applies in this development version. Image deletion is intentionally unavailable so published pages and older revisions cannot acquire broken links.
+
+Back up both the database and media volume together. Before company Cloud Run deployment, replace filesystem storage with Cloud Storage, preserving the media API response contract (`id`, `name`, `alt`, `width`, `height`, `size`, `url`). Cloud Run container filesystems are not a persistent media backend. Google Cloud Storage is not yet implemented. Copy files and update image URLs in drafts, published snapshots and history during a reviewed migration; keep old URLs available until all references are verified.

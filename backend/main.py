@@ -2,6 +2,10 @@
 The standalone bearer credential is for development only; company SSO is required
 before a production rollout. Never expose DATABASE_URL or the token to public builds.
 """
+import base64
+import binascii
+import io
+import warnings
 import copy
 import hashlib
 import hmac
@@ -16,6 +20,8 @@ from uuid import uuid4
 
 from fastapi import Depends, FastAPI, Header, HTTPException, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
+from PIL import Image, ImageOps, UnidentifiedImageError
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from pydantic import BaseModel, ConfigDict, Field
 from sqlalchemy import JSON, DateTime, Integer, String, UniqueConstraint, create_engine, select
@@ -53,6 +59,22 @@ class Audit(Base):
     snapshot: Mapped[dict] = mapped_column(JSON)
     actor: Mapped[str] = mapped_column(String(100), default='development-editor')
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=now)
+
+class Media(Base):
+    __tablename__ = 'cms_media'
+    id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    name: Mapped[str] = mapped_column(String(180))
+    alt: Mapped[str] = mapped_column(String(500), default='')
+    width: Mapped[int] = mapped_column(Integer)
+    height: Mapped[int] = mapped_column(Integer)
+    size: Mapped[int] = mapped_column(Integer)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=now)
+
+class MediaBody(BaseModel):
+    model_config = ConfigDict(extra='forbid')
+    name: str = Field(min_length=1, max_length=180)
+    alt: str = Field(default='', max_length=500)
+    data: str = Field(max_length=1_400_000)
 
 class WriteBody(BaseModel):
     model_config = ConfigDict(extra='forbid')
@@ -176,6 +198,72 @@ def create_app(database_url=None, token=None, *, initialize=True):
         with engine.connect() as conn:
             conn.exec_driver_sql('SELECT 1')
         return {'status':'ok','environment':'development'}
+    # Explicit persistent storage is required: never silently write to container disk.
+    media_dir = os.environ.get('CMS_MEDIA_DIR', '')
+    media_origin = os.environ.get('CMS_PUBLIC_URL', '').rstrip('/')
+    def storage():
+        if not media_dir or not media_origin.startswith(('https://', 'http://127.0.0.1', 'http://localhost')):
+            raise HTTPException(503, 'Persistent media storage is not configured.')
+        folder = Path(media_dir)
+        folder.mkdir(parents=True, exist_ok=True)
+        return folder
+    def media_snapshot(item):
+        return {'id':item.id, 'name':item.name, 'alt':item.alt,
+                'width':item.width, 'height':item.height, 'size':item.size,
+                'url':f'{media_origin}/media/{item.id}.jpg'}
+    @app.get('/admin/media', dependencies=[Depends(editor)])
+    def media_list():
+        storage()
+        with Session(engine) as session:
+            return [media_snapshot(m) for m in session.scalars(select(Media).order_by(Media.created_at.desc()).limit(1000))]
+    @app.post('/admin/media/upload', dependencies=[Depends(editor)])
+    def media_upload(body: MediaBody):
+        folder = storage()
+        try:
+            if not re.fullmatch(r'data:image/(jpeg|png|webp|gif);base64,[A-Za-z0-9+/=]+',body.data):
+                raise ValueError()
+            raw=base64.b64decode(body.data.split(',',1)[1],validate=True)
+            with warnings.catch_warnings():
+                warnings.simplefilter('error',Image.DecompressionBombWarning)
+                with Image.open(io.BytesIO(raw)) as source:
+                    if source.format not in ('JPEG','PNG','WEBP','GIF') or source.width*source.height>20_000_000:
+                        raise ValueError()
+                    source.load()
+                    image=ImageOps.exif_transpose(source).convert('RGB')
+                    image.thumbnail((1600,1600))
+                    output=io.BytesIO()
+                    image.save(output,format='JPEG',quality=85)
+            blob=output.getvalue()
+        except (ValueError, binascii.Error, UnidentifiedImageError, OSError, Image.DecompressionBombError, Image.DecompressionBombWarning):
+            raise HTTPException(422,'Choose a valid raster image smaller than 20 megapixels.')
+        key=hashlib.sha256(blob).hexdigest()
+        path=folder / (key+'.jpg')
+        # Hash-addressed immutable files remain valid across editorial revisions.
+        with Session(engine) as session, session.begin():
+            existing=session.get(Media,key)
+            if existing:
+                return media_snapshot(existing)
+            if len(list(folder.glob('*.jpg'))) >= 1000:
+                raise HTTPException(409,'Media storage limit reached. Contact your administrator.')
+            if not path.exists():
+                temp=folder / (uuid4().hex+'.tmp')
+                try:
+                    temp.write_bytes(blob)
+                    os.replace(temp,path)
+                finally:
+                    temp.unlink(missing_ok=True)
+            item=Media(id=key,name=body.name,alt=body.alt,width=image.width,height=image.height,size=len(blob))
+            session.add(item)
+            session.flush()
+            return media_snapshot(item)
+    @app.get('/media/{filename}')
+    def media_file(filename: str):
+        if not re.fullmatch(r'[a-f0-9]{64}\.jpg', filename):
+            raise HTTPException(404,'Image not found.')
+        path=storage() / filename
+        if not path.is_file():
+            raise HTTPException(404,'Image not found.')
+        return FileResponse(path,media_type='image/jpeg',headers={'Content-Disposition':'inline'})
     @app.get('/admin/content', dependencies=[Depends(editor)])
     def content():
         with Session(engine) as session:

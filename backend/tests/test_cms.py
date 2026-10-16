@@ -83,3 +83,31 @@ def test_seed_is_idempotent(api,auth):
     before=client.get('/admin/content',headers=auth).json()
     seed_database(app.state.engine)
     assert before==client.get('/admin/content',headers=auth).json()
+
+def test_media_storage_validation_and_persistence(monkeypatch,tmp_path,auth,api):
+    api[1].state.engine.dispose()
+    import base64
+    import io
+    from PIL import Image
+    monkeypatch.setenv('CMS_MEDIA_DIR',str(tmp_path))
+    monkeypatch.setenv('CMS_PUBLIC_URL','https://cms.example.test')
+    out=io.BytesIO()
+    Image.new('RGB',(20,15),'blue').save(out,format='PNG')
+    body={'name':'sample.png','alt':'Blue test image','data':'data:image/png;base64,'+base64.b64encode(out.getvalue()).decode()}
+    with TestClient(create_app(URL,TOKEN)) as client:
+        assert client.post('/admin/media/upload',json=body).status_code==401
+        assert client.post('/admin/media/upload',headers=auth,json={**body,'data':'data:image/png;base64,PHN2Zz4='}).status_code==422
+        uploaded=client.post('/admin/media/upload',headers=auth,json=body)
+        assert uploaded.status_code==200,uploaded.text
+        item=uploaded.json()
+        assert item['width']==20 and item['height']==15
+        assert item['alt']=='Blue test image'
+        assert item['url'].startswith('https://cms.example.test/media/')
+        path='/media/'+item['id']+'.jpg'
+        response=client.get(path)
+        assert response.status_code==200 and response.headers['content-type']=='image/jpeg'
+        assert client.get('/media/invalid.jpg').status_code==404
+        assert client.post('/admin/media/upload',headers=auth,json=body).json()['id']==item['id']
+        assert any(m['id']==item['id'] for m in client.get('/admin/media',headers=auth).json())
+    with TestClient(create_app(URL,TOKEN)) as restarted:
+        assert restarted.get(path).content==response.content
