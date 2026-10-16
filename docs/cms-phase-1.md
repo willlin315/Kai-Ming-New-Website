@@ -16,3 +16,14 @@ Three existing Blog records are seeded with title, image and Wix source URL only
 - Replace browser persistence with authenticated CMS endpoints. Only published content should reach public article pages and People / center pages. Plan one-time draft import and staff-content migration.
 
 Phase 1 is for approving the editing workflow and field set; it is not a production CMS.
+
+## Rich editing and People migration (2026-10-16)
+
+- Blog supports a rich-text body with headings, font sizes, bold/italic/underline, lists, alignment, links, undo/redo and inline images. Cover, inline and profile images can be selected from local files; raster uploads are resized to 1400px maximum and converted to JPEG for browser draft storage. This is not a server media upload. Animated GIFs become still images. Draft storage has the browser's quota and backup files are limited to 5MB on import.
+- `content/people.json` is the public People source; the same records seed the editor. Fifteen people and their public photographs were retrieved from the rendered Wix Our People page on 2026-10-16. Original source photo URLs are retained for provenance. Locally hosted JPEGs are resized from downloaded originals to 800px maximum.
+- The rendered page contains Jerry Yang, six team directors and eight board members. All six director Read more dialogs use the identical quote. The source lists both Dora Pulido Tobiassen and Melinda Deng as Director of Finance. Both details were preserved without correction; content owner review is needed. No individual board biographies were exposed by the page; those fields remain empty.
+- `/en/our-people/` now renders the versioned People records, with a featured leader, Our Team, Board Members and Center Staff groups. No center assignment was inferred from the Our People page. Staff can be assigned to a center in the editor, but individual center landing-page rosters are not wired yet.
+- `/en/our-people/?cmsPreview=1` reads saved CMS People drafts in the same browser, using the existing storage key. Normal page visitors see versioned content, not another user's local drafts. Editing does not publish or synchronize across devices. Saving a person persists the imported roster; users upgrading from the old editor retain their own drafts and receive imported people once.
+- Rendering uses an explicit HTML element/style allowlist. Pasted markup is inserted as plain text; scripts, event attributes and unsafe image/link schemes are excluded from the rendered article preview.
+
+These changes supersede the initial notes that People are empty and that body editing is plain-text only. Authentication, server-side persistence and publication remain the next integration phase.

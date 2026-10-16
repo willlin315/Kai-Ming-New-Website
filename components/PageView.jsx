@@ -1,3 +1,4 @@
+import PeopleDirectory from './PeopleDirectory';
 import parse, { attributesToProps, domToReact } from 'html-react-parser';
 import render from 'dom-serializer';
 import SiteHeader from './SiteHeader';
@@ -16,6 +17,7 @@ export default function PageView({ page }) {
   const options = {
     replace(node) {
       if (node.type !== 'tag') return;
+      if (page.key === 'our-people' && node.name === 'main') return <main id={node.attribs.id} tabIndex={-1}><PeopleDirectory /></main>;
       markResponsiveNode(node);
       if (node.attribs.id === 'comp-muoke23s') {
         return <EligibilityCalculator attributes={attributesToProps(node.attribs)} />;
