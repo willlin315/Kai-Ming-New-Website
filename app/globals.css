@@ -185,3 +185,12 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
 .km-published-article .km-recent-card-stats .km-recent-read{margin-left:auto;font-size:12px;font-weight:600}
 .km-published-article .km-recent-empty{font-size:15px;color:#667}
 @media(max-width:620px){.km-published-article .km-recent-posts .km-story-related-grid{grid-template-columns:1fr;gap:16px}.km-published-article .km-recent-card-content{padding:17px 18px}.km-published-article .km-recent-heading{margin-bottom:18px}}
+
+
+/* Recent Posts final placement: override broad exported Wix typography. */
+.km-published-article .km-story-related.km-recent-posts{margin:48px 0 0;padding:0}
+.km-published-article .km-story-related.km-recent-posts .km-recent-heading{display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:16px;margin:0 0 22px}
+.km-published-article .km-story-related.km-recent-posts .km-recent-heading h2{font:400 24px/1.3 Arial,sans-serif;margin:0;letter-spacing:0;color:#0f4d6b}
+.km-published-article .km-story-related.km-recent-posts .km-recent-heading a{font:400 16px/1.3 Arial,sans-serif;color:#0f4d6b;text-decoration:none}
+.km-published-article .km-story-related.km-recent-posts .km-recent-card{color:#0f4d6b}
+.km-published-article .km-story-related.km-recent-posts .km-recent-card h3{font-weight:700;font-size:20px}
