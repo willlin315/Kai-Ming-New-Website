@@ -8,11 +8,11 @@ export default function MobileNavigation({ groups = [],locale='en' }) {
   const button = useRef(null);
   useEffect(() => {
     if (!window.matchMedia) return;
-    const media = window.matchMedia('(min-width: 1001px)');
+    const media = window.matchMedia(`(min-width: ${locale === 'en' ? 1001 : 1401}px)`);
     const close = () => setOpen(false);
     media.addEventListener('change', close);
     return () => media.removeEventListener('change', close);
-  }, []);
+  }, [locale]);
   const onKeyDown = (event) => {
     if (event.key === 'Escape') { setOpen(false); button.current?.focus(); }
   };
@@ -28,7 +28,7 @@ export default function MobileNavigation({ groups = [],locale='en' }) {
         {group.href && <a href={group.href}>{group.label}</a>}
         {group.links.map((link) => <a key={link.href} href={link.href} onClick={() => setOpen(false)}>{link.label}</a>)}
       </details> : <a key={group.label} href={group.href}>{group.label}</a>)}
-      <a href={`${basePath}/${localePaths[locale]}/copy-of-family-support/`}>Find A Center</a>
+      <a href={`${basePath}/${localePaths[locale]}/copy-of-family-support/`}>{translate('Find A Center',locale)}</a>
     </nav>
   </div>;
 }

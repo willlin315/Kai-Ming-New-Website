@@ -59,3 +59,10 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
   .km-responsive:is([lang="zh-Hant"],[lang="es"]) .km-mobile-bar button{flex-shrink:0}
 }
 .km-responsive:is([lang="zh-Hant"],[lang="es"]) :is(#comp-murgfuuf,#comp-murgfuui6,#comp-murgfuul7){padding-bottom:8px;box-sizing:content-box}
+
+@media(max-width:1000px){
+  .km-responsive:is([lang="zh-Hant"],[lang="es"]) .km-localized-hero-layout[data-testid="mesh-container-content"]{
+    min-height:clamp(240px,45vw,440px)!important;justify-content:flex-end!important;padding:24px!important;
+  }
+  .km-responsive:is([lang="zh-Hant"],[lang="es"]) .km-localized-hero-title{margin:0!important}
+}
