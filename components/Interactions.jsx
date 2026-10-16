@@ -38,12 +38,59 @@ export default function Interactions() {
         root.querySelector('[role="tablist"] [role="tab"]');
       if (initial) activateLegacyTab(initial);
     });
+    // Recover interactive behavior for Wix dropdowns whose original scripts were not exported.
+    // Only reuse choices already present in the exported DOM; never manufacture application data.
+    const dropdownSelector = '[role="combobox"], wix-dropdown, .wixui-dropdown, [data-hook*="dropdown"], [data-hook*="Dropdown"]';
+    const findDropdown = (element) => element.closest(dropdownSelector);
+    let openDropdown = null;
+    const closeDropdown = () => {
+      if (!openDropdown) return;
+      const { trigger, list } = openDropdown;
+      trigger.setAttribute('aria-expanded', 'false');
+      list.hidden = true;
+      list.style.setProperty('display', 'none', 'important');
+      openDropdown = null;
+    };
+    const toggleDropdown = (trigger) => {
+      const wrapper = trigger.closest('.wixui-dropdown, wix-dropdown, [data-hook*="dropdown"], [data-hook*="Dropdown"]') || trigger.parentElement;
+      const list = wrapper?.querySelector('[role="listbox"], [data-hook*="option-list"], [data-hook*="dropdown-options"], ul[role="presentation"]');
+      if (!list) return false;
+      if (openDropdown?.trigger === trigger) { closeDropdown(); return true; }
+      closeDropdown();
+      list.hidden = false;
+      list.style.setProperty('display', 'block', 'important');
+      trigger.setAttribute('aria-expanded', 'true');
+      openDropdown = { trigger, list };
+      return true;
+    };
+    const chooseDropdownOption = (option) => {
+      if (!openDropdown || !openDropdown.list.contains(option)) return false;
+      const { trigger, list } = openDropdown;
+      const value = option.getAttribute('data-value') || option.textContent?.trim() || '';
+      const label = option.textContent?.trim() || value;
+      if (!label) return false;
+      const valueNode = trigger.querySelector('[data-hook*="selected"], [data-hook*="placeholder"], .dropdown-placeholder') || trigger;
+      if (valueNode === trigger && trigger.matches('input')) trigger.value = label;
+      else valueNode.textContent = label;
+      trigger.dataset.value = value;
+      const hiddenInput = trigger.closest('form')?.querySelector('input[type="hidden"][name="' + (trigger.getAttribute('name') || '') + '"]');
+      if (hiddenInput && trigger.getAttribute('name')) hiddenInput.value = value;
+      list.querySelectorAll('[aria-selected]').forEach((node) => node.setAttribute('aria-selected', String(node === option)));
+      trigger.dispatchEvent(new Event('change', { bubbles: true }));
+      closeDropdown();
+      return true;
+    };
     const click = (event) => {
       if (event.target instanceof Element) {
         const tab = event.target.closest('.wixui-tabs:not(.km-tabs) [role="tab"]');
         if (tab && activateLegacyTab(tab)) return;
       }
       if (!(event.target instanceof Element)) return;
+      const option = event.target.closest('[role="option"], [data-hook*="dropdown-item"], [data-hook*="option-item"]');
+      if (option && chooseDropdownOption(option)) { event.preventDefault(); return; }
+      const combo = event.target.closest('[role="combobox"], .wixui-dropdown [role="button"], wix-dropdown [role="button"]');
+      if (combo && toggleDropdown(combo)) { event.preventDefault(); return; }
+      if (openDropdown && !openDropdown.list.contains(event.target)) closeDropdown();
       const trigger = event.target.closest('wix-dropdown-menu [role="button"]');
       if (trigger) {
         const item = trigger.closest('li');
@@ -55,6 +102,17 @@ export default function Interactions() {
       }
     };
     const keydown = (event) => {
+      if (event.key === 'Escape') closeDropdown();
+      if (event.target instanceof Element) {
+        const combo = event.target.closest('[role="combobox"], .wixui-dropdown [role="button"], wix-dropdown [role="button"]');
+        if (combo && ['Enter', ' ', 'ArrowDown'].includes(event.key)) {
+          if (toggleDropdown(combo)) { event.preventDefault(); return; }
+        }
+        if (openDropdown && ['Enter', ' '].includes(event.key)) {
+          const option = event.target.closest('[role="option"], [data-hook*="dropdown-item"]');
+          if (option && chooseDropdownOption(option)) { event.preventDefault(); return; }
+        }
+      }
       if (event.target instanceof Element) {
         const tab = event.target.closest('.wixui-tabs:not(.km-tabs) [role="tab"]');
         if (tab) {
