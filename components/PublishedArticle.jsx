@@ -6,13 +6,14 @@ import RichContent from './RichContent';
 import {publicApiUrl,requestCms} from '../lib/cms-api';
 import {safeImage} from '../lib/cms-media';
 import {basePath} from '../lib/client-routes';
+import legacyPosts from '../content/blog-posts.json';
 
 const labels={
  en:{back:'All stories',share:'Share this story',copy:'Copy link',copied:'Link copied',related:'Recent Posts',seeAll:'See All',read:'Read story',views:'views',previous:'Previous story',next:'Next story'},
  'zh-Hant':{back:'所有文章',share:'分享文章',copy:'複製連結',copied:'已複製連結',related:'最新文章',seeAll:'查看全部',read:'閱讀文章',views:'次觀看',previous:'上一篇',next:'下一篇'},
  es:{back:'Todas las historias',share:'Compartir historia',copy:'Copiar enlace',copied:'Enlace copiado',related:'Publicaciones recientes',seeAll:'Ver todas',read:'Leer historia',views:'vistas',previous:'Anterior',next:'Siguiente'}
 };
-function storyUrl(item,locale){return `${basePath}/${localePaths[locale]}/story/?slug=${encodeURIComponent(item.slug)}&sourceLanguage=${encodeURIComponent(item.language||'en')}`;}
+function storyUrl(item,locale){return item.slug?`${basePath}/${localePaths[locale]}/story/?slug=${encodeURIComponent(item.slug)}&sourceLanguage=${encodeURIComponent(item.language||'en')}`:(item.href||item.sourceUrl||`${basePath}/${localePaths[locale]}/blog/`);}
 function Icon({name}) {
  const shared={fill:'none',stroke:'currentColor',strokeWidth:1.8,strokeLinecap:'round',strokeLinejoin:'round'};
  return <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" {...shared}>{name==='share'?<><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.7 10.7 6.6-4.3M8.7 13.3l6.6 4.3"/></>:name==='copy'?<><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></>:<><circle cx="12" cy="12" r="3"/><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/></>}</svg>;
@@ -39,9 +40,10 @@ export default function PublishedArticle({locale='en'}){
   copy();
  };
  const copy=()=>{if(typeof window==='undefined')return;const url=window.location.href;if(navigator.clipboard?.writeText){navigator.clipboard.writeText(url).then(()=>setCopied(true)).catch(()=>{});}};
- const ordered=allPosts.filter(p=>p.slug);
+ const normalizeTitle=value=>(value||'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
+ const ordered=[...allPosts,...legacyPosts.filter(old=>!allPosts.some(item=>normalizeTitle(item.title)===normalizeTitle(old.title)))].filter(p=>p.slug||p.href||p.sourceUrl);
  const currentIndex=ordered.findIndex(p=>p.slug===post?.slug);
- const recommendations=ordered.filter(p=>p.slug!==post?.slug).slice(0,2);
+ const recommendations=ordered.filter(p=>p.slug? p.slug!==post?.slug:normalizeTitle(p.title)!==normalizeTitle(post?.title)).slice(0,2);
  const previous=currentIndex>0?ordered[currentIndex-1]:null;
  const next=currentIndex>=0&&currentIndex<ordered.length-1?ordered[currentIndex+1]:null;
  const date=post?.publishedAt||post?.published_at||post?.date||post?.createdAt;
@@ -79,7 +81,7 @@ export default function PublishedArticle({locale='en'}){
     <div className="km-recent-heading"><h2>{t.related}</h2><a href={`${basePath}/${localePaths[locale]}/blog/`}>{t.seeAll}</a></div>
     {recommendations.length>0?<div className="km-story-related-grid">{recommendations.map(item=>{
      const translated=localizedRecord(item,locale);
-     const image=safeImage(item.image);
+     const image=safeImage(item.image?.replaceAll('__BASE__',basePath));
      const count=item.viewCount??item.view_count??item.views;
      const comments=item.commentCount??item.comment_count;
      return <a className="km-recent-card" href={storyUrl(item,locale)} key={item.id||item.slug}>
