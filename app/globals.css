@@ -17,6 +17,45 @@ html,body { margin:0; }
 /* The shared three-language navigation replaces the exported Wix placeholder. */
 #comp-mun5q9h9{display:none!important}
 
-html[lang=es] #SITE_HEADER wix-dropdown-menu nav>ul>li:nth-child(n){width:auto!important;flex:0 0 auto!important;padding:0 14px!important;box-sizing:content-box}
-html[lang=es] #SITE_HEADER wix-dropdown-menu nav>ul>li>div{width:auto!important}
-html[lang=es] #SITE_HEADER wix-dropdown-menu nav>ul>li p{white-space:nowrap!important}
+html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li:nth-child(n){width:auto!important;flex:0 0 auto!important;padding:0 14px!important;box-sizing:content-box}
+html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li>div{width:auto!important}
+html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{white-space:nowrap!important}
+
+/* Localized labels need more room than the exported English header. */
+@media (min-width:1001px) and (max-width:1400px) {
+  .km-responsive:is([lang="zh-Hant"],[lang="es"]) #SITE_HEADER { position:relative!important; width:100%!important; min-width:0!important; height:auto!important; min-height:0!important; top:auto!important; margin:0!important; }
+  .km-responsive:is([lang="zh-Hant"],[lang="es"]) .km-desktop-header { display:none!important; }
+  .km-responsive:is([lang="zh-Hant"],[lang="es"]) .km-mobile-header { display:block; background:white; color:#0f4d6b; font:16px/1.5 Arial,sans-serif; border-bottom:1px solid #e3e8ec; }
+  .km-responsive:is([lang="zh-Hant"],[lang="es"]) .km-mobile-bar { display:flex; align-items:center; gap:16px; max-width:960px; margin:auto; padding:12px 20px; }
+  .km-responsive:is([lang="zh-Hant"],[lang="es"]) .km-mobile-bar img { display:block; object-fit:contain; width:60px; height:60px; }
+  .km-responsive:is([lang="zh-Hant"],[lang="es"]) .km-mobile-apply { margin-left:auto; padding:10px 16px; background:#0f4d6b; color:white; text-decoration:none; border-radius:4px; }
+  .km-responsive:is([lang="zh-Hant"],[lang="es"]) .km-mobile-bar button { min-width:44px; min-height:44px; border:1px solid #cad5da; border-radius:4px; color:#0f4d6b; background:white; font-size:26px; cursor:pointer; }
+  .km-responsive:is([lang="zh-Hant"],[lang="es"]) .km-mobile-header nav { padding:0 20px 20px; max-width:960px; margin:auto; }
+  .km-responsive:is([lang="zh-Hant"],[lang="es"]) .km-mobile-header nav[hidden] { display:none!important; }
+  .km-responsive:is([lang="zh-Hant"],[lang="es"]) .km-mobile-header summary { padding:12px 0; cursor:pointer; font-weight:bold; border-bottom:1px solid #e3e8ec; }
+  .km-responsive:is([lang="zh-Hant"],[lang="es"]) .km-mobile-header nav a { display:block; padding:12px 16px; min-height:44px; color:#0f4d6b; text-decoration:none; }
+  .km-responsive:is([lang="zh-Hant"],[lang="es"]) .km-mobile-header a:focus-visible, .km-responsive:is([lang="zh-Hant"],[lang="es"]) .km-mobile-header button:focus-visible, .km-responsive:is([lang="zh-Hant"],[lang="es"]) .km-mobile-header summary:focus-visible { outline:2px solid #0f4d6b; outline-offset:3px; }
+}
+
+@media (min-width:1001px) {
+  .km-responsive:is([lang="zh-Hant"],[lang="es"]) .km-localized-hero-title {
+    margin-left:clamp(24px,6vw,100px)!important; margin-right:0!important;
+    left:auto!important; width:calc(100% - clamp(48px,12vw,200px))!important;
+    max-width:100%!important; min-width:0!important; height:auto!important; justify-self:start!important;
+  }
+  .km-responsive:is([lang="zh-Hant"],[lang="es"]) .km-localized-hero-title h1,
+  .km-responsive:is([lang="zh-Hant"],[lang="es"]) .km-localized-hero-title h1 span {
+    font-size:clamp(44px,6vw,100px)!important; line-height:1.25!important; overflow-wrap:break-word;
+  }
+}
+.km-responsive:is([lang="zh-Hant"],[lang="es"]) :is(#comp-murgfuuf,#comp-murgfuui6,#comp-murgfuul7){height:auto!important;min-height:1.4em!important;overflow:visible!important}
+.km-responsive[lang="zh-Hant"] .wixui-rich-text :is(h1,h2,h3,h4,h5,h6){word-break:normal;line-break:strict;text-wrap:balance}
+.km-responsive[lang="es"] .wixui-rich-text :is(h1,h2,h3,h4,h5,h6){word-break:normal;overflow-wrap:normal;text-wrap:balance;hyphens:auto}
+.km-responsive:is([lang="zh-Hant"],[lang="es"]) .wixui-rich-text p{text-wrap:pretty}
+
+@media(max-width:1400px){
+  .km-responsive:is([lang="zh-Hant"],[lang="es"]) .km-mobile-bar{gap:10px;box-sizing:border-box}
+  .km-responsive:is([lang="zh-Hant"],[lang="es"]) .km-mobile-apply{font-size:14px;line-height:1.4;padding:10px 12px;text-align:center;white-space:normal;min-height:44px;box-sizing:border-box}
+  .km-responsive:is([lang="zh-Hant"],[lang="es"]) .km-mobile-bar button{flex-shrink:0}
+}
+.km-responsive:is([lang="zh-Hant"],[lang="es"]) :is(#comp-murgfuuf,#comp-murgfuui6,#comp-murgfuul7){padding-bottom:8px;box-sizing:content-box}
