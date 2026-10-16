@@ -25,7 +25,7 @@ The Wix site is a design reference only. The existing company backend will own C
 
 ## Remaining work before production
 
-- Rebuild and verify responsive mobile layouts. The source export deliberately retains a desktop minimum width.
+- Review responsive layouts visually on real phones and tablets; the new reflow layer replaces the inherited desktop minimum width below 1001px.
 - Add complete Chinese and Spanish content, equivalent routes and language switching. Do not label English copies as translated pages.
 - Replace the inherited copy-of route names with the final approved URL structure, and map the existing production site's URLs to permanent redirects.
 - Implement individual blog article pages and review links that still lead to the design-reference website or existing external systems.
@@ -47,3 +47,16 @@ Set NEXT_PUBLIC_BASE_PATH=/Kai-Ming-New-Website for GitHub Pages. Leave it empty
 - All 24 English page URLs were opened in Chromium with eager image decoding; no broken images or browser JavaScript errors were found.
 - Desktop screenshots were inspected for the homepage, Broadway Center and the repaired news list.
 - This does not establish full mobile or pixel-by-pixel parity with Wix.
+
+## Responsive layout update (2026-10-14)
+
+- PageView loads shared responsive rules after each retained Wix stylesheet. Desktop geometry above 1000px remains in place. Narrow layouts reset fixed mesh geometry, stack column strips and form fields, and resize media without scaling down the entire page.
+- Up to 1000px, a native mobile navigation exposes all existing English navigation groups with expandable submenus, Apply Now and Find A Center. Escape closes the menu and restores focus; crossing the desktop breakpoint closes it.
+- Personnel repeaters use two columns on tablets and one below 601px. Tab panels retain their inputs; form controls use readable 16px text. Galleries and maps fit the available width.
+- Source empty backplate boxes are excluded from narrow-screen flow; background photo columns retain space.
+- Validation: production build and asset checks; DOM interaction checks on all 24 English pages; regression checks for both tabbed pages and all 16 enrollment dropdowns. These tests do not measure browser layout.
+- Browser visual QA was unavailable in this session. Confirm text wrapping, photo crops, footer spacing and actual horizontal overflow at 375px, 390px, 768px, 1000px and desktop width before production launch.
+
+## Enrollment eligibility calculator (2026-10-14)
+
+The original exported HTML contained an empty HtmlComponent at comp-muoke23s. Recovered its published iframe code and copied it to public/widgets/eligibility/index.html. EligibilityCalculator renders the local widget, adjusts its height, and connects its Apply Online and Submit Inquiry messages to the existing tabs. The source translations, FY2026–27 income table and decision logic are preserved; no Wix service is required at runtime. The original Google Fonts stylesheet is retained. Input remains in the widget and is not submitted or stored. Provenance and source hash are in content/eligibility-migration.json. Income tables are a copied source snapshot and require the company's normal review when guidelines change.

@@ -7,3 +7,6 @@ html,body { margin:0; }
 .km-tabs .km-tab-button { appearance:none; font:inherit; text-align:inherit; border:0; background:transparent; cursor:pointer; }
 .km-tabs .km-tab-button:focus-visible { outline:2px solid #0f4d6b; outline-offset:-2px; }
 .km-tabs [role="tabpanel"][hidden] { display:none!important; }
+.km-form-dropdown { display:block; box-sizing:border-box; width:100%; min-height:44px; padding:10px 32px 10px 0; border:0; border-bottom:1px solid #b4b4b4; border-radius:0; background-color:transparent; color:#202020; font:16px/1.5 Arial,sans-serif; cursor:pointer; }
+.km-form-dropdown:focus-visible { outline:2px solid #0f4d6b; outline-offset:2px; }
+.km-form-dropdown:disabled { cursor:default; opacity:.6; }
