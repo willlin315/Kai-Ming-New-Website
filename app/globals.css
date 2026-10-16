@@ -16,3 +16,7 @@ html,body { margin:0; }
 
 /* The shared three-language navigation replaces the exported Wix placeholder. */
 #comp-mun5q9h9{display:none!important}
+
+html[lang=es] #SITE_HEADER wix-dropdown-menu nav>ul>li:nth-child(n){width:auto!important;flex:0 0 auto!important;padding:0 14px!important;box-sizing:content-box}
+html[lang=es] #SITE_HEADER wix-dropdown-menu nav>ul>li>div{width:auto!important}
+html[lang=es] #SITE_HEADER wix-dropdown-menu nav>ul>li p{white-space:nowrap!important}
