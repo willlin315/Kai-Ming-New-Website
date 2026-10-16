@@ -18,12 +18,13 @@ function Icon({name}) {
  return <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" {...shared}>{name==='share'?<><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.7 10.7 6.6-4.3M8.7 13.3l6.6 4.3"/></>:name==='copy'?<><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></>:<><circle cx="12" cy="12" r="3"/><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/></>}</svg>;
 }
 export default function PublishedArticle({locale='en'}){
- const [post,setPost]=useState(null),[allPosts,setAllPosts]=useState([]),[message,setMessage]=useState('Loading story…'),[copied,setCopied]=useState(false);
+ const [post,setPost]=useState(null),[allPosts,setAllPosts]=useState([]),[message,setMessage]=useState('Loading story…'),[copied,setCopied]=useState(false),[shareUrl,setShareUrl]=useState('');
  const t=labels[locale]||labels.en;
  useEffect(()=>{
   const url=publicApiUrl(),params=new URLSearchParams(window.location.search),slug=params.get('slug');
   if(!url||!slug){setMessage('This story is not available.');return;}
   let active=true;
+  setShareUrl(window.location.href);
   const language=params.get('sourceLanguage')||'en';
   requestCms(url,`/public/posts/${encodeURIComponent(slug)}?language=${encodeURIComponent(language)}`).then(item=>{
    if(active){const localized=localizedRecord(item,locale);setPost(localized);document.title=localized.title+' | Kai Ming Head Start';}
@@ -66,7 +67,7 @@ export default function PublishedArticle({locale='en'}){
     <div className="km-story-share-actions">
      <button type="button" onClick={share}><Icon name="share"/>{t.share}</button>
      <button type="button" onClick={copy}><Icon name="copy"/>{copied?t.copied:t.copy}</button>
-     <a aria-label="Share on Facebook" href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(typeof window!=='undefined'?window.location.href:'')}`} target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+     <a aria-label="Share on Facebook" href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`} target="_blank" rel="noopener noreferrer">Facebook ↗</a>
      <a aria-label="Share on LinkedIn" href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(typeof window!=='undefined'?window.location.href:'')}`} target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
     </div>
    </footer>
