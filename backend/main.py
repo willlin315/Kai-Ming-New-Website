@@ -28,7 +28,7 @@ from sqlalchemy import JSON, DateTime, Integer, String, UniqueConstraint, create
 from sqlalchemy.orm import DeclarativeBase, Mapped, Session, mapped_column
 
 ROOT = Path(__file__).resolve().parents[1]
-Kind = Literal['posts', 'people']
+Kind = Literal['posts', 'people', 'pages']
 
 def now():
     return datetime.now(timezone.utc)
@@ -92,6 +92,24 @@ def initial_people():
     return json.loads((ROOT / 'content/people.json').read_text())
 
 def validate(kind, payload, document_id, original=None):
+    if kind == 'pages':
+        if document_id != 'home':
+            raise HTTPException(422, 'Only the Home page is editable in this version.')
+        fields = json.loads((ROOT / 'content/home-fields.json').read_text())
+        values = payload.get('values')
+        if not isinstance(values, dict) or set(values) != {f['id'] for f in fields}:
+            raise HTTPException(422, 'Home fields must match the current template.')
+        for field in fields:
+            value = values[field['id']]
+            keys = {'en','zh-Hant','es'} if field['type']=='text' else {'src','alt','position'}
+            if not isinstance(value,dict) or set(value)!=keys or any(not isinstance(v,str) or len(v)>20_000 for v in value.values()):
+                raise HTTPException(422,'Invalid Home field value.')
+            if field['type']=='image':
+                if value['src'] and not (value['src'].startswith('/media/') or value['src'].startswith('https://')):
+                    raise HTTPException(422,'Use an uploaded image or HTTPS image URL.')
+                if not re.fullmatch(r'(?:100|[0-9]{1,2})% (?:100|[0-9]{1,2})%', value['position']):
+                    raise HTTPException(422,'Invalid photo crop position.')
+        return {'title':'Home','values':copy.deepcopy(values)}
     allowed = POST_FIELDS if kind == 'posts' else PEOPLE_FIELDS
     result = {k: v for k, v in payload.items() if k in allowed}
     for key, value in result.items():
@@ -143,7 +161,7 @@ def seed_database(engine):
               'summary': '', 'body': '', 'bodyHtml': ''}
              for i,p in enumerate(json.loads((ROOT/'content/blog-posts.json').read_text()))]
     with Session(engine) as session, session.begin():
-        for kind, records in [('people', people), ('posts', posts)]:
+        for kind, records in [('people', people), ('posts', posts), ('pages', [json.loads((ROOT/'content/home-content.json').read_text())])]:
             for record in records:
                 key = record['id']
                 if session.get(Document, (kind, key)):
@@ -158,6 +176,8 @@ def backfill_translations(engine):
     """Add exact-source translations once; preserve edits and pending drafts."""
     dictionary=json.loads((ROOT / 'content/i18n/site.json').read_text())
     def enrich(content,kind):
+        if kind=='pages':
+            return content
         if content is None:
             return None
         result=copy.deepcopy(content)
@@ -303,7 +323,7 @@ def create_app(database_url=None, token=None, *, initialize=True):
     def content():
         with Session(engine) as session:
             docs = session.scalars(select(Document).order_by(Document.kind,Document.id)).all()
-            return {kind:[snapshot(d) for d in docs if d.kind==kind] for kind in ['posts','people']}
+            return {kind:[snapshot(d) for d in docs if d.kind==kind] for kind in ['posts','people','pages']}
     @app.put('/admin/{kind}/{key}', dependencies=[Depends(editor)])
     def save(kind: Kind, key: str, body: WriteBody):
         if len(key)>150 or not re.fullmatch(r'[a-zA-Z0-9_-]+',key):
@@ -339,7 +359,7 @@ def create_app(database_url=None, token=None, *, initialize=True):
                         raise HTTPException(409,'Another published post uses this slug and language.')
                     doc.published_slug=doc.draft['slug']
                     doc.published_locale=doc.draft['language']
-                elif not doc.draft.get('placements'):
+                elif kind=='people' and not doc.draft.get('placements'):
                     raise HTTPException(422,'This person has no existing page slot. Configure a placement before publishing.')
                 doc.published=copy.deepcopy(doc.draft)
                 doc.published_revision=doc.revision
@@ -351,8 +371,8 @@ def create_app(database_url=None, token=None, *, initialize=True):
             raise HTTPException(409,'Another published post uses this slug and language.')
     @app.post('/admin/{kind}/{key}/unpublish', dependencies=[Depends(editor)])
     def unpublish(kind: Kind, key: str, body: RevisionBody):
-        if kind=='people':
-            raise HTTPException(422,'Unpublishing existing People slots is disabled to preserve page counts.')
+        if kind in ['people','pages']:
+            raise HTTPException(422,'Unpublishing fixed website content is disabled.')
         with Session(engine) as session, session.begin():
             doc=locked(session,kind,key,body.expected_revision)
             doc.published=None

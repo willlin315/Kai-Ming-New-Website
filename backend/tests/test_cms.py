@@ -132,3 +132,23 @@ def test_translations_preserve_slots_and_publish_isolation(api,auth):
     assert client.get('/public/posts/'+key).json()['translations']['es']['title']=='Título'
     post['translations']={'xx':{'title':'invalid'}}
     assert client.put('/admin/posts/'+key,headers=auth,json={'expected_revision':2,'content':post}).status_code==422
+
+def test_home_draft_publish_and_template_protection(api,auth):
+    import copy
+    client,_=api
+    page=client.get('/admin/content',headers=auth).json()['pages'][0]
+    original=client.get('/public/pages').json()[0]
+    content=copy.deepcopy(page)
+    field=next(k for k,v in content['values'].items() if 'en' in v)
+    content['values'][field]['zh-Hant']='首頁測試草稿'
+    saved=client.put('/admin/pages/home',headers=auth,json={'expected_revision':page['_revision'],'content':content})
+    assert saved.status_code==200,saved.text
+    assert client.get('/public/pages').json()[0]==original
+    rev=saved.json()['_revision']
+    assert client.post('/admin/pages/home/publish',headers=auth,json={'expected_revision':rev}).status_code==200
+    assert client.get('/public/pages').json()[0]['values'][field]['zh-Hant']=='首頁測試草稿'
+    assert client.put('/admin/pages/home',headers=auth,json={'expected_revision':page['_revision'],'content':content}).status_code==409
+    content['values']['unexpected']={'en':'bad'}
+    assert client.put('/admin/pages/home',headers=auth,json={'expected_revision':rev,'content':content}).status_code==422
+    assert client.post('/admin/pages/home/unpublish',headers=auth,json={'expected_revision':rev}).status_code==422
+    assert client.put('/admin/pages/other',headers=auth,json={'expected_revision':0,'content':page}).status_code==422

@@ -1,3 +1,4 @@
+import {HomeContentProvider,HomeText,HomeImage} from './HomeContent';
 import LanguageSwitcher from './LanguageSwitcher';
 import PersonPlacement from './PersonPlacement';
 import peopleRecords from '../content/people.json';
@@ -20,6 +21,8 @@ export default function PageView({ page }) {
   const options = {
     replace(node) {
       if (node.type !== 'tag') return;
+      if(page.key==='home'&&node.name==='km-home-text')return <HomeText field={node.attribs['data-home-field']}/>;
+      if(page.key==='home'&&node.name==='img'&&node.attribs['data-home-field'])return <HomeImage field={node.attribs['data-home-field']} attributes={attributesToProps(node.attribs)}/>;
       if (page.key === 'our-people' && node.name === 'main') return <main id={node.attribs.id} tabIndex={-1}><PeopleDirectory locale={page.locale} /></main>;
       const person = peopleRecords.find(p => p.placements?.some(slot => slot.nodeId && slot.page === page.key && slot.nodeId === node.attribs.id));
       if (person) return <PersonPlacement locale={page.locale} person={person} placement={person.placements.find(slot => slot.nodeId === node.attribs.id)} attributes={attributesToProps(node.attribs)} html={render(node.children)} />;
@@ -68,7 +71,7 @@ export default function PageView({ page }) {
     <LanguageSwitcher locale={page.locale} pageKey={page.key}/>
     <style dangerouslySetInnerHTML={{ __html: page.css }} />
     <style dangerouslySetInnerHTML={{ __html: responsiveCss }} />
-    {parse(page.html, options)}
+    {page.key==='home'?<HomeContentProvider locale={page.locale}>{parse(page.html, options)}</HomeContentProvider>:parse(page.html, options)}
     <Interactions />
   </div>;
 }
