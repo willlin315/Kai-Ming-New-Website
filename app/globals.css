@@ -168,3 +168,20 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
 .km-story-related-grid strong{font-size:15px}
 .km-story-related-grid span{margin-top:auto;font-size:13px;font-weight:600}
 @media(max-width:700px){.km-story-related-grid{grid-template-columns:1fr}.km-story-related-grid a{display:grid;grid-template-columns:104px 1fr;gap:4px 14px}.km-story-related-grid img{grid-row:span 2;aspect-ratio:4/3}.km-story-pager{gap:14px}.km-story-share-actions{width:100%}}
+
+
+/* Wix-inspired Recent Posts: consistent footer for every CMS story. */
+.km-published-article .km-recent-posts{margin:44px 0 0;padding-top:6px}
+.km-published-article .km-recent-heading{display:flex;align-items:center;justify-content:space-between;gap:20px;margin:0 0 26px}
+.km-published-article .km-recent-heading h2{font-size:clamp(21px,2.2vw,25px);font-weight:500;color:#0f4d6b;margin:0}
+.km-published-article .km-recent-heading>a{font-size:15px;color:#0f4d6b;text-decoration:none;white-space:nowrap}
+.km-published-article .km-recent-posts .km-story-related-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;max-width:790px}
+.km-published-article .km-recent-card{display:block;min-width:0;border:1px solid #edf1f3;background:#fff;color:#0f4d6b;text-decoration:none}
+.km-published-article .km-recent-card>img,.km-published-article .km-recent-placeholder{display:block;width:100%;aspect-ratio:1.78;object-fit:cover;border-radius:0;margin:0;background:#ecf2f1}
+.km-published-article .km-recent-card-content{padding:24px 25px 18px}
+.km-published-article .km-recent-card h3{margin:0 0 16px;font-size:clamp(18px,2vw,22px);line-height:1.45;font-weight:700;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.km-published-article .km-recent-card-stats{display:flex;gap:18px;align-items:center;min-height:28px;padding-top:12px;border-top:1px solid #d5e0e5;font-size:13px;font-weight:400;color:#0f4d6b}
+.km-published-article .km-recent-card-stats>span{display:flex;gap:6px;align-items:center}
+.km-published-article .km-recent-card-stats .km-recent-read{margin-left:auto;font-size:12px;font-weight:600}
+.km-published-article .km-recent-empty{font-size:15px;color:#667}
+@media(max-width:620px){.km-published-article .km-recent-posts .km-story-related-grid{grid-template-columns:1fr;gap:16px}.km-published-article .km-recent-card-content{padding:17px 18px}.km-published-article .km-recent-heading{margin-bottom:18px}}
