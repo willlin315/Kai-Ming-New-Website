@@ -13,6 +13,7 @@
   "dependencies": {
     "dom-serializer": "2.0.0",
     "html-react-parser": "5.2.13",
+    "htmlparser2": "10.0.0",
     "next": "16.4.0",
     "react": "19.3.0",
     "react-dom": "19.3.0"

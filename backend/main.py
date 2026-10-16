@@ -85,8 +85,8 @@ class RevisionBody(BaseModel):
     model_config = ConfigDict(extra='forbid')
     expected_revision: int = Field(ge=1)
 
-POST_FIELDS = {'title','slug','language','image','summary','body','bodyHtml','sourceUrl'}
-PEOPLE_FIELDS = {'name','title','center','department','email','phone','photo','bio','order','featured','placements','sourceUrl','sourcePhoto'}
+POST_FIELDS = {'translations','title','slug','language','image','summary','body','bodyHtml','sourceUrl'}
+PEOPLE_FIELDS = {'translations','name','title','center','department','email','phone','photo','bio','order','featured','placements','sourceUrl','sourcePhoto'}
 
 def initial_people():
     return json.loads((ROOT / 'content/people.json').read_text())
@@ -95,6 +95,11 @@ def validate(kind, payload, document_id, original=None):
     allowed = POST_FIELDS if kind == 'posts' else PEOPLE_FIELDS
     result = {k: v for k, v in payload.items() if k in allowed}
     for key, value in result.items():
+        if key == 'translations':
+            fields={'title','summary','bodyHtml','body'} if kind=='posts' else {'name','title','bio'}
+            if not isinstance(value,dict) or any(locale not in ['en','zh-Hant','es'] or not isinstance(values,dict) or any(k not in fields or not isinstance(v,str) or len(v)>600_000 for k,v in values.items()) for locale,values in value.items()):
+                raise HTTPException(422,'Invalid translated content.')
+            continue
         if key == 'placements':
             continue
         if key == 'order':
@@ -149,6 +154,35 @@ def seed_database(engine):
                 session.add(doc)
                 audit(session, doc, 'initial-import')
 
+def backfill_translations(engine):
+    """Add exact-source translations once; preserve edits and pending drafts."""
+    dictionary=json.loads((ROOT / 'content/i18n/site.json').read_text())
+    def enrich(content,kind):
+        if content is None:
+            return None
+        result=copy.deepcopy(content)
+        translated=result.setdefault('translations',{})
+        for locale in ['zh-Hant','es']:
+            values=translated.setdefault(locale,{})
+            for field in (['title','summary','bodyHtml','body'] if kind=='posts' else ['name','title','bio']):
+                source=result.get(field,'')
+                text=dictionary.get(source,{}).get(locale)
+                if text and field not in values:
+                    values[field]=text
+        return result
+    with Session(engine) as session, session.begin():
+        for doc in session.scalars(select(Document).with_for_update()):
+            same=doc.draft==doc.published
+            draft=enrich(doc.draft,doc.kind)
+            published=enrich(doc.published,doc.kind)
+            if draft!=doc.draft or published!=doc.published:
+                doc.draft=draft
+                doc.published=published
+                doc.revision+=1
+                if same and published is not None:
+                    doc.published_revision=doc.revision
+                audit(session,doc,'add-translations')
+
 def create_app(database_url=None, token=None, *, initialize=True):
     url = database_url or os.environ.get('DATABASE_URL', '')
     credential = token or os.environ.get('CMS_DEV_TOKEN', '')
@@ -164,6 +198,7 @@ def create_app(database_url=None, token=None, *, initialize=True):
         if initialize:
             Base.metadata.create_all(engine)
             seed_database(engine)
+            backfill_translations(engine)
         yield
         engine.dispose()
     app = FastAPI(title='Kai Ming development CMS', lifespan=lifespan)

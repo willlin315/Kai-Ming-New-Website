@@ -1,0 +1,9 @@
+'use client';
+import {useEffect} from 'react';
+import {basePath} from '../lib/client-routes';
+import {localePaths} from '../lib/i18n';
+export default function LanguageSwitcher({locale='en',pageKey='home',story=false}){
+ useEffect(()=>{document.documentElement.lang=locale},[locale]);
+ function switchTo(event,path){if(!story)return;event.preventDefault();const params=new URLSearchParams(window.location.search);params.delete('language');window.location.assign(`${basePath}/${path}/story/?${params}`)}
+ return <nav className="km-language-switcher" aria-label="Website language">{[['en','English'],['zh-Hant','繁體中文'],['es','Español']].map(([code,label])=><a key={code} href={`${basePath}/${localePaths[code]}/${story?'story/':pageKey==='home'?'':pageKey+'/'}`} lang={code} hrefLang={code} aria-current={locale===code?'page':undefined} onClick={e=>switchTo(e,localePaths[code])}>{label}</a>)}</nav>
+}

@@ -72,3 +72,7 @@ Never copy credentials into Git, frontend bundles, screenshots or this handoff. 
 8. Keep a known-good release and pre-cutover backup. Roll back the application only when schema compatibility is confirmed; database rollback requires a reviewed restore plan.
 
 Do not delete Railway/Vercel development resources until company staging has passed acceptance and content backups are verified.
+
+## Multilingual update
+
+See `docs/multilingual-content.md` for the three-language implementation. Website routes now include English, Traditional Chinese and Spanish; fixed copy is versioned in `content/i18n/site.json`. CMS records store translations within the existing draft/published snapshots in PostgreSQL, preserving People placement IDs. All languages publish together per record. The media library now stores new image files on a Railway persistent volume; a Cloud Storage provider is still required before company Cloud Run hosting. Will reported successful hosted article draft/publish and independent image upload/display tests on 2026-10-16.

@@ -1,0 +1,2290 @@
+{
+  "top of page": {
+    "zh-Hant": "頁面頂端",
+    "es": "Inicio de la página"
+  },
+  "About": {
+    "zh-Hant": "關於我們",
+    "es": "Quiénes somos"
+  },
+  "Our Story": {
+    "zh-Hant": "我們的故事",
+    "es": "Nuestra historia"
+  },
+  "Our Mission": {
+    "zh-Hant": "我們的使命",
+    "es": "Nuestra misión"
+  },
+  "Our People": {
+    "zh-Hant": "我們的團隊",
+    "es": "Nuestro equipo"
+  },
+  "News & Story": {
+    "zh-Hant": "新聞與故事",
+    "es": "Noticias e historias"
+  },
+  "Programs": {
+    "zh-Hant": "課程服務",
+    "es": "Programas"
+  },
+  "Preschool": {
+    "zh-Hant": "學前教育",
+    "es": "Preescolar"
+  },
+  "Infant & Toddler": {
+    "zh-Hant": "嬰幼兒照護",
+    "es": "Bebés y niños pequeños"
+  },
+  "Prenatal & Home-Based": {
+    "zh-Hant": "產前與到宅服務",
+    "es": "Servicios prenatales y en el hogar"
+  },
+  "Learning Approach": {
+    "zh-Hant": "學習方式",
+    "es": "Enfoque educativo"
+  },
+  "Family Support": {
+    "zh-Hant": "家庭支援",
+    "es": "Apoyo familiar"
+  },
+  "Our Center": {
+    "zh-Hant": "我們的中心",
+    "es": "Nuestros centros"
+  },
+  "Geary Center": {
+    "zh-Hant": "Geary 中心",
+    "es": "Centro Geary"
+  },
+  "Broadway Center": {
+    "zh-Hant": "Broadway 中心",
+    "es": "Centro Broadway"
+  },
+  "North Beach Center": {
+    "zh-Hant": "North Beach 中心",
+    "es": "Centro North Beach"
+  },
+  "PMsquare Children’s Center": {
+    "zh-Hant": "PMsquare 兒童中心",
+    "es": "Centro infantil PMsquare"
+  },
+  "Dr. T.K.L Center": {
+    "zh-Hant": "Dr. T.K.L 中心",
+    "es": "Centro Dr. T.K.L"
+  },
+  "Sunset Center": {
+    "zh-Hant": "Sunset 中心",
+    "es": "Centro Sunset"
+  },
+  "Richmond Center": {
+    "zh-Hant": "Richmond 中心",
+    "es": "Centro Richmond"
+  },
+  "Rainbow Center": {
+    "zh-Hant": "Rainbow 中心",
+    "es": "Centro Rainbow"
+  },
+  "Enrollment": {
+    "zh-Hant": "入學申請",
+    "es": "Inscripciones"
+  },
+  "How to Enroll": {
+    "zh-Hant": "如何申請",
+    "es": "Cómo inscribirse"
+  },
+  "Get Involved": {
+    "zh-Hant": "參與支持",
+    "es": "Participe"
+  },
+  "Careers": {
+    "zh-Hant": "加入我們",
+    "es": "Empleos"
+  },
+  "Volunteer": {
+    "zh-Hant": "志工服務",
+    "es": "Voluntariado"
+  },
+  "Donate": {
+    "zh-Hant": "捐款支持",
+    "es": "Donar"
+  },
+  "More": {
+    "zh-Hant": "更多",
+    "es": "Más"
+  },
+  "Use tab to navigate through the menu items.": {
+    "zh-Hant": "使用 Tab 鍵瀏覽選單項目。",
+    "es": "Use la tecla Tab para recorrer el menú."
+  },
+  "Apply Now": {
+    "zh-Hant": "立即申請",
+    "es": "Solicitar ahora"
+  },
+  "Find A Center": {
+    "zh-Hant": "尋找中心",
+    "es": "Buscar un centro"
+  },
+  "English": {
+    "zh-Hant": "英文",
+    "es": "Inglés"
+  },
+  "News & Stories": {
+    "zh-Hant": "新聞與故事",
+    "es": "Noticias e historias"
+  },
+  "Kai Ming": {
+    "zh-Hant": "啟明",
+    "es": "Kai Ming"
+  },
+  "News": {
+    "zh-Hant": "最新消息",
+    "es": "Noticias"
+  },
+  "Enroll": {
+    "zh-Hant": "申請入學",
+    "es": "Inscribirse"
+  },
+  "Find a Center": {
+    "zh-Hant": "尋找中心",
+    "es": "Buscar un centro"
+  },
+  "Partner With Us": {
+    "zh-Hant": "與我們合作",
+    "es": "Colabore con nosotros"
+  },
+  "Resources": {
+    "zh-Hant": "資源",
+    "es": "Recursos"
+  },
+  "Still have questions?": {
+    "zh-Hant": "還有疑問嗎？",
+    "es": "¿Aún tiene preguntas?"
+  },
+  "¿Aún tienes preguntas?": {
+    "zh-Hant": "還有疑問嗎？",
+    "es": "¿Aún tiene preguntas?"
+  },
+  "若有任何疑問歡迎聯絡我們": {
+    "zh-Hant": "若有任何疑問，歡迎聯絡我們",
+    "es": "Si tiene preguntas, contáctenos"
+  },
+  "© 2026 by Kai Ming Head Start.": {
+    "zh-Hant": "© 2026 啟明 Head Start。",
+    "es": "© 2026 Kai Ming Head Start."
+  },
+  "bottom of page": {
+    "zh-Hant": "頁面底部",
+    "es": "Final de la página"
+  },
+  "(View Map)": {
+    "zh-Hant": "（查看地圖）",
+    "es": "(Ver mapa)"
+  },
+  "Monday - Friday": {
+    "zh-Hant": "星期一至星期五",
+    "es": "Lunes a viernes"
+  },
+  "8:00 am - 4:30 pm": {
+    "zh-Hant": "上午 8:00 至下午 4:30",
+    "es": "8:00 a. m. a 4:30 p. m."
+  },
+  "CA Child Care License #": {
+    "zh-Hant": "加州托育執照編號",
+    "es": "Licencia de cuidado infantil de California n.º"
+  },
+  "Our Geary Center, located in the peaceful Richmond neighborhood, has one Pre-K and two toddler classrooms that serve 36 children from 08:00 a.m. to 04:30 p.m. This center is newly renovated to meet the needs of our growing toddler program. Geary Center is the proud neighbor of the Richmond Senior Center and the Family Service Agency, where many community events are available to the whole family.": {
+    "zh-Hant": "Geary 中心位於寧靜的 Richmond 社區，設有一間學前班及兩間幼兒教室，於上午 8:00 至下午 4:30 為 36 名兒童服務。中心近期完成整修，以配合持續成長的幼兒課程。我們鄰近 Richmond 長者中心與家庭服務機構，全家都能參與各種社區活動。",
+    "es": "El centro Geary, en el tranquilo vecindario de Richmond, cuenta con un aula de prekínder y dos para niños pequeños que atienden a 36 niños de 8:00 a. m. a 4:30 p. m. Fue renovado para nuestro creciente programa infantil. Junto al centro para personas mayores de Richmond y la Agencia de Servicios Familiares, ofrece acceso a actividades comunitarias para toda la familia."
+  },
+  "Toddler Care": {
+    "zh-Hant": "幼兒照護",
+    "es": "Cuidado de niños pequeños"
+  },
+  "18-36 months": {
+    "zh-Hant": "18–36 個月",
+    "es": "18–36 meses"
+  },
+  "3-5 years": {
+    "zh-Hant": "3–5 歲",
+    "es": "3–5 años"
+  },
+  "Staff Language": {
+    "zh-Hant": "工作人員語言",
+    "es": "Idiomas del personal"
+  },
+  "English, Cantonese, Mandarin, Spanish": {
+    "zh-Hant": "英語、粵語、國語、西班牙語",
+    "es": "Inglés, cantonés, mandarín y español"
+  },
+  "Teacher: Child Ratio": {
+    "zh-Hant": "師生比例",
+    "es": "Proporción de maestros y niños"
+  },
+  "Preschool 1:8": {
+    "zh-Hant": "學前班 1:8",
+    "es": "Preescolar 1:8"
+  },
+  "Toddler 1:4": {
+    "zh-Hant": "幼兒班 1:4",
+    "es": "Niños pequeños 1:4"
+  },
+  "Infant 1:3": {
+    "zh-Hant": "嬰兒班 1:3",
+    "es": "Bebés 1:3"
+  },
+  "Facility Features": {
+    "zh-Hant": "設施特色",
+    "es": "Instalaciones"
+  },
+  "Outdoor Playground": {
+    "zh-Hant": "戶外遊戲場",
+    "es": "Área de juegos al aire libre"
+  },
+  "Parent Resources Room": {
+    "zh-Hant": "家長資源室",
+    "es": "Sala de recursos para familias"
+  },
+  "What Parents Say": {
+    "zh-Hant": "家長分享",
+    "es": "Lo que dicen las familias"
+  },
+  "“My son's English has improved so much, and he still loves speaking our home language too.”": {
+    "zh-Hant": "「兒子的英語進步很多，也仍然喜歡說家裡的語言。」",
+    "es": "«El inglés de mi hijo ha mejorado mucho y sigue disfrutando hablar nuestro idioma familiar»."
+  },
+  "Parent Name": {
+    "zh-Hant": "家長姓名",
+    "es": "Nombre de la persona"
+  },
+  "“The teachers plan fun activities every day. My daughter always has a new art project to show me.”": {
+    "zh-Hant": "「老師每天安排有趣的活動，女兒總有新的美術作品要給我看。」",
+    "es": "«Los maestros preparan actividades divertidas cada día. Mi hija siempre tiene una nueva obra de arte para mostrarme»."
+  },
+  "“The family advocates connected us with health and housing resources when we needed them most.”": {
+    "zh-Hant": "「在我們最需要的時候，家庭支援人員協助我們找到醫療與住房資源。」",
+    "es": "«El personal de apoyo familiar nos conectó con recursos de salud y vivienda cuando más los necesitábamos»."
+  },
+  "A Place Where Your Child": {
+    "zh-Hant": "讓孩子",
+    "es": "Un lugar donde su hijo"
+  },
+  "Can Grow and Shine": {
+    "zh-Hant": "成長與發光的地方",
+    "es": "puede crecer y brillar"
+  },
+  "Every child is unique, and our teachers take the time to learn about your child’s interests, strengths, and what makes them smile. Through play, stories, and friendships, your child will grow in confidence each day, and you’ll be part of every step along the way.": {
+    "zh-Hant": "每個孩子都獨一無二。老師會用心了解孩子的興趣、優勢，以及讓他們開心的事。透過遊戲、故事與友誼，孩子每天都能建立自信，而您也會參與成長的每一步。",
+    "es": "Cada niño es único. Nuestros maestros conocen sus intereses, fortalezas y lo que le hace sonreír. A través del juego, los cuentos y las amistades, su hijo ganará confianza cada día, y usted participará en cada paso."
+  },
+  "Book a Tour": {
+    "zh-Hant": "預約參觀",
+    "es": "Programar una visita"
+  },
+  "The North Beach Center is our dual language demonstration site. The teachers work with families to strengthen children’s home language as well as English skills. In its two classrooms, we serve 44 children from 08:00 a.m. to 04:30 p.m. The cozy children’s library here is for both classroom activities as well as for families to borrow books and read with the children in their homes.": {
+    "zh-Hant": "North Beach 中心是我們的雙語示範中心。老師與家庭合作，培養孩子的家庭語言與英語能力。兩間教室於上午 8:00 至下午 4:30 為 44 名兒童服務。溫馨的兒童圖書館供課堂使用，也讓家庭借書回家共讀。",
+    "es": "North Beach es nuestro centro de demostración bilingüe. Los maestros trabajan con las familias para fortalecer el idioma del hogar y el inglés. Sus dos aulas atienden a 44 niños de 8:00 a. m. a 4:30 p. m. La acogedora biblioteca infantil se utiliza en clase y permite a las familias llevar libros a casa para leer juntos."
+  },
+  "Infant Care": {
+    "zh-Hant": "嬰兒照護",
+    "es": "Cuidado de bebés"
+  },
+  "3-18 months": {
+    "zh-Hant": "3–18 個月",
+    "es": "3–18 meses"
+  },
+  "“We love that the center is right in our neighborhood. The teachers know every family by name.”": {
+    "zh-Hant": "「中心就在我們社區裡，老師知道每個家庭的名字，我們很喜歡。」",
+    "es": "«Nos encanta que el centro esté en nuestro vecindario. Los maestros conocen a cada familia por su nombre»."
+  },
+  "— Parent Name": {
+    "zh-Hant": "— 家長姓名",
+    "es": "— Nombre de la persona"
+  },
+  "“My son learned to share, take turns, and express his feelings. He is ready for kindergarten!”": {
+    "zh-Hant": "「兒子學會分享、輪流和表達感受，已經準備好上幼兒園了！」",
+    "es": "«Mi hijo aprendió a compartir, esperar su turno y expresar sus sentimientos. ¡Está listo para el kínder!»"
+  },
+  "“The healthy meals and outdoor play time mean my daughter comes home happy and full of energy.”": {
+    "zh-Hant": "「健康餐點與戶外遊戲讓女兒回家時開心又充滿活力。」",
+    "es": "«Las comidas saludables y el juego al aire libre hacen que mi hija vuelva a casa feliz y llena de energía»."
+  },
+  "Dr. T.K.L. Center": {
+    "zh-Hant": "Dr. T.K.L. 中心",
+    "es": "Centro Dr. T.K.L."
+  },
+  "Founded in 1975, the Dr. T. Kong Lee (T.K.L.) Center is our first location ever. The center was named after Dr. Lee, the founder of our generous donor, Lincoln University Foundation. He was an immigrant, an educator, and an inspiration to all of us at Kai Ming. This cozy center serves 20 children from 08:00 a.m. to 04:30 p.m. Its relatively small size allows our teachers to interact and observe the children closely.": {
+    "zh-Hant": "Dr. T. Kong Lee（T.K.L.）中心成立於 1975 年，是我們的第一個服務據點。中心以慷慨支持我們的林肯大學基金會創辦人李博士命名。他是一位移民、教育家，也是啟明所有人的榜樣。這個溫馨的中心於上午 8:00 至下午 4:30 為 20 名兒童服務，較小的規模讓老師能密切互動與觀察孩子。",
+    "es": "Fundado en 1975, el centro Dr. T. Kong Lee (T.K.L.) fue nuestra primera sede. Lleva el nombre del Dr. Lee, fundador de la Fundación de la Universidad Lincoln, uno de nuestros generosos donantes. Fue inmigrante, educador e inspiración para Kai Ming. Este acogedor centro atiende a 20 niños de 8:00 a. m. a 4:30 p. m.; su tamaño permite una interacción y observación cercanas."
+  },
+  "“My daughter comes home every day excited to tell us what she learned. She is always asking questions now!”": {
+    "zh-Hant": "「女兒每天回家都興奮地分享學到的事，現在總是不停發問！」",
+    "es": "«Mi hija llega cada día emocionada por contarnos lo que aprendió. ¡Ahora siempre hace preguntas!»"
+  },
+  "“The teachers are patient and truly understand each child. My son made so much progress in just a few months.”": {
+    "zh-Hant": "「老師有耐心，也真正了解每個孩子。兒子短短幾個月就進步很多。」",
+    "es": "«Los maestros tienen paciencia y comprenden a cada niño. Mi hijo avanzó mucho en pocos meses»."
+  },
+  "“As a new immigrant family, we received so much help here, from school readiness to community resources.”": {
+    "zh-Hant": "「身為新移民家庭，我們從入學準備到社區資源都獲得很多協助。」",
+    "es": "«Como familia recién inmigrada, recibimos mucha ayuda, desde la preparación escolar hasta los recursos comunitarios»."
+  },
+  "Volunteer With": {
+    "zh-Hant": "加入志工行列，支持",
+    "es": "Haga voluntariado con"
+  },
+  "Make a meaningful difference in the lives of children and families across San Francisco. Whether you’re sharing your time, skills, or experience, your support helps strengthen our programs and community.": {
+    "zh-Hant": "為舊金山的兒童與家庭帶來有意義的改變。不論您分享時間、技能或經驗，都能幫助我們強化服務與社區。",
+    "es": "Marque una diferencia en la vida de los niños y las familias de San Francisco. Al compartir su tiempo, habilidades o experiencia, fortalece nuestros programas y nuestra comunidad."
+  },
+  "Complete the application below to get started. Our team will review your information and contact you about volunteer opportunities that match your interests and availability.": {
+    "zh-Hant": "請填寫下方申請表。我們會審閱資料，並聯絡您，介紹符合興趣與可參與時間的志工機會。",
+    "es": "Complete la solicitud a continuación. Nuestro equipo revisará sus datos y le contactará sobre oportunidades acordes con sus intereses y disponibilidad."
+  },
+  "All information submitted through this form will be kept strictly confidential.": {
+    "zh-Hant": "透過此表單提交的所有資料將嚴格保密。",
+    "es": "Toda la información enviada mediante este formulario se mantendrá estrictamente confidencial."
+  },
+  "Apply to Volunteer": {
+    "zh-Hant": "申請擔任志工",
+    "es": "Solicitar voluntariado"
+  },
+  "Our Centers": {
+    "zh-Hant": "我們的中心",
+    "es": "Nuestros centros"
+  },
+  "Nine Centers Across": {
+    "zh-Hant": "九個中心遍布",
+    "es": "Nueve centros en"
+  },
+  "San Francisco": {
+    "zh-Hant": "舊金山",
+    "es": "San Francisco"
+  },
+  "Kai Ming’s educational philosophy is built on a few simple beliefs:": {
+    "zh-Hant": "啟明的教育理念建立在幾個簡單信念之上：",
+    "es": "La filosofía educativa de Kai Ming se basa en principios sencillos:"
+  },
+  "•  Culturally and linguistically responsive programs that partner with parents prepare children for school and lifelong learning.": {
+    "zh-Hant": "• 回應文化與語言差異、並與家長合作的課程，能為入學與終身學習做好準備。",
+    "es": "• Los programas que respetan la cultura y el idioma y colaboran con los padres preparan a los niños para la escuela y el aprendizaje permanente."
+  },
+  "•  Learning that builds on each child’s interests and strengths, in an environment that supports all abilities.": {
+    "zh-Hant": "• 以孩子的興趣與優勢為基礎，在支持各種能力的環境中學習。",
+    "es": "• El aprendizaje parte de los intereses y fortalezas de cada niño en un entorno que apoya todas las capacidades."
+  },
+  "•  Qualified, well-supported teachers who work closely with children and families.": {
+    "zh-Hant": "• 具專業資格並獲充分支持的老師，與兒童及家庭密切合作。",
+    "es": "• Maestros cualificados y bien respaldados trabajan de cerca con los niños y las familias."
+  },
+  "•  A blend of hands-on, individual and group learning with modern educational tools.": {
+    "zh-Hant": "• 結合實作、個別與團體學習，以及現代教育工具。",
+    "es": "• Combinamos experiencias prácticas y aprendizaje individual y grupal con herramientas educativas modernas."
+  },
+  "Every center follows a research-based curriculum that meets the diverse needs of our community.": {
+    "zh-Hant": "每個中心皆採用以研究為基礎的課程，回應社區的多元需求。",
+    "es": "Todos los centros siguen un currículo basado en investigaciones que responde a las diversas necesidades de nuestra comunidad."
+  },
+  "Broadway": {
+    "zh-Hant": "Broadway",
+    "es": "Broadway"
+  },
+  "Learn More": {
+    "zh-Hant": "了解更多",
+    "es": "Más información"
+  },
+  "Dr. T.K.L.": {
+    "zh-Hant": "Dr. T.K.L.",
+    "es": "Dr. T.K.L."
+  },
+  "Geary": {
+    "zh-Hant": "Geary",
+    "es": "Geary"
+  },
+  "North Beach": {
+    "zh-Hant": "North Beach",
+    "es": "North Beach"
+  },
+  "PMsquare Children�’s Center": {
+    "zh-Hant": "PMsquare 兒童中心",
+    "es": "Centro infantil PMsquare"
+  },
+  "8:00 am - 5:00 pm": {
+    "zh-Hant": "上午 8:00 至下午 5:00",
+    "es": "8:00 a. m. a 5:00 p. m."
+  },
+  "Rainbow": {
+    "zh-Hant": "Rainbow",
+    "es": "Rainbow"
+  },
+  "Richmond": {
+    "zh-Hant": "Richmond",
+    "es": "Richmond"
+  },
+  "Sunset": {
+    "zh-Hant": "Sunset",
+    "es": "Sunset"
+  },
+  "Contact": {
+    "zh-Hant": "聯絡我們",
+    "es": "Contacto"
+  },
+  "Layout preview: this form is not connected. No data will be submitted. 表單尚未串接後端，不會送出資料。": {
+    "zh-Hant": "版面預覽：此表單尚未串接，不會送出資料。",
+    "es": "Vista previa: este formulario no está conectado. No se enviarán datos."
+  },
+  "First Name": {
+    "zh-Hant": "名字",
+    "es": "Nombre"
+  },
+  "Last Name": {
+    "zh-Hant": "姓氏",
+    "es": "Apellido"
+  },
+  "Email": {
+    "zh-Hant": "電子郵件",
+    "es": "Correo electrónico"
+  },
+  "Phone": {
+    "zh-Hant": "電話",
+    "es": "Teléfono"
+  },
+  "Message": {
+    "zh-Hant": "訊息",
+    "es": "Mensaje"
+  },
+  "Thanks for submitting!": {
+    "zh-Hant": "感謝您的提交！",
+    "es": "¡Gracias por enviar sus datos!"
+  },
+  "Send": {
+    "zh-Hant": "送出",
+    "es": "Enviar"
+  },
+  "Just steps from the Embarcadero waterfront, the 4 classrooms of Kai Ming Head Start Broadway Center provide quality early education for 45 children. Infant and toddler care for ages 3 to 36 months, and preschool for children 3 to 5 years is available. The center is open from 08:00 a.m. to 04:30 p.m. The Broadway Center is our pioneer location in infant and toddler care. Its success laid solid groundwork for Kai Ming’s continued progress in serving families since infancy.": {
+    "zh-Hant": "Broadway 中心距離 Embarcadero 海濱僅數步之遙，四間教室為 45 名兒童提供優質幼兒教育。服務包含 3–36 個月嬰幼兒照護，以及 3–5 歲學前教育，時間為上午 8:00 至下午 4:30。這是啟明最早提供嬰幼兒照護的中心，其成功為我們從嬰兒期支持家庭奠定基礎。",
+    "es": "A pocos pasos del Embarcadero, las cuatro aulas del centro Broadway ofrecen educación temprana de calidad a 45 niños. Atiende a bebés y niños de 3 a 36 meses y ofrece preescolar de 3 a 5 años, de 8:00 a. m. a 4:30 p. m. Fue nuestro centro pionero en cuidado infantil y sentó las bases para apoyar a las familias desde la primera infancia."
+  },
+  "“My daughter joined the infant room at just four months old. The teachers care for her like family, so I can go to work with peace of mind.”": {
+    "zh-Hant": "「女兒四個月大就加入嬰兒班。老師像家人一樣照顧她，讓我能安心工作。」",
+    "es": "«Mi hija llegó al aula de bebés con cuatro meses. La cuidan como familia y puedo trabajar con tranquilidad»."
+  },
+  "“The staff speak Cantonese with us and English with the children, so our whole family feels welcome. My son has become so much more confident.”": {
+    "zh-Hant": "「工作人員和我們說粵語、和孩子說英語，讓全家感到受歡迎，兒子也更有自信。」",
+    "es": "«El personal habla cantonés con nosotros e inglés con los niños. Toda la familia se siente bienvenida y mi hijo tiene más confianza»."
+  },
+  "“Every day the teachers share little stories about my child's day. I feel like I'm part of the classroom too.”": {
+    "zh-Hant": "「老師每天分享孩子的小故事，讓我也覺得自己是教室的一分子。」",
+    "es": "«Cada día los maestros comparten pequeñas historias sobre mi hijo. También me siento parte del aula»."
+  },
+  "The PMsquare Children's Center is Kai Ming Head Start’s newest location, conveniently situated in the up-and-coming Mission Bay District. Located between UCSF and Kaiser, this family-oriented environment proudly supports the growth and development of children ages 3 months to 5 years. We currently serve forty-five children across one infant, two toddler, and one preschool classrooms.": {
+    "zh-Hant": "PMsquare 兒童中心是啟明最新的據點，位於蓬勃發展的 Mission Bay，鄰近 UCSF 與 Kaiser。這個以家庭為中心的環境支持 3 個月至 5 歲兒童成長。目前共有一間嬰兒、兩間幼兒及一間學前教室，服務 45 名兒童。",
+    "es": "PMsquare es la sede más reciente de Kai Ming, ubicada en el creciente distrito de Mission Bay, entre UCSF y Kaiser. Su entorno familiar apoya el desarrollo de niños de 3 meses a 5 años. Atiende a 45 niños en un aula de bebés, dos de niños pequeños y una de preescolar."
+  },
+  "“The classrooms at PMsquare are beautiful and full of things to explore. My son is always curious to learn more.”": {
+    "zh-Hant": "「PMsquare 的教室漂亮又有許多可探索的事物，兒子總想學更多。」",
+    "es": "«Las aulas de PMsquare son hermosas y están llenas de cosas por explorar. Mi hijo siempre quiere aprender más»."
+  },
+  "“The teachers helped my daughter build good routines. Even bedtime at home is easier now!”": {
+    "zh-Hant": "「老師幫女兒建立良好作息，現在連在家睡覺都更容易了！」",
+    "es": "«Los maestros ayudaron a mi hija a crear buenas rutinas. ¡Hasta la hora de dormir en casa es más fácil!»"
+  },
+  "“We feel so lucky to have found this program. Thank you for supporting our family.”": {
+    "zh-Hant": "「我們很幸運找到這個課程，謝謝你們支持我們的家庭。」",
+    "es": "«Nos sentimos muy afortunados de haber encontrado este programa. Gracias por apoyar a nuestra familia»."
+  },
+  "Build a Brighter Future With Us": {
+    "zh-Hant": "與我們共創更光明的未來",
+    "es": "Construya un futuro mejor con nosotros"
+  },
+  "Since 1975, Kai Ming has been committed to one simple belief: every child deserves the opportunity to learn, grow, and succeed, regardless of their family’s income, language, or background.": {
+    "zh-Hant": "自 1975 年起，啟明始終相信：不論家庭收入、語言或背景，每個孩子都值得擁有學習、成長與成功的機會。",
+    "es": "Desde 1975, Kai Ming cree que todos los niños merecen aprender, crecer y prosperar, sin importar los ingresos, el idioma o el origen de su familia."
+  },
+  "As a trusted Head Start provider serving children and families across San Francisco, we bring together educators, family advocates, and community-focused professionals who share a passion for making a meaningful difference.": {
+    "zh-Hant": "作為服務舊金山兒童與家庭、值得信賴的 Head Start 機構，我們集結教育工作者、家庭支援人員與關心社區的專業人士，共同帶來有意義的改變。",
+    "es": "Como proveedor de Head Start de confianza en San Francisco, reunimos a educadores, defensores de las familias y profesionales comprometidos con generar un cambio significativo."
+  },
+  "“Kai Ming” represents opening possibilities and helping every child’s potential shine. Join our team and help us create nurturing learning environments, strengthen families, and build brighter futures for our community.": {
+    "zh-Hant": "「啟明」象徵開啟可能、讓每個孩子的潛能發光。加入我們，一起打造溫暖的學習環境、支持家庭，為社區建立更好的未來。",
+    "es": "Kai Ming representa abrir posibilidades y hacer brillar el potencial de cada niño. Únase para crear entornos de aprendizaje acogedores, fortalecer a las familias y construir un futuro mejor."
+  },
+  "View Opening": {
+    "zh-Hant": "查看職缺",
+    "es": "Ver vacantes"
+  },
+  "WHY JOIN KAI MING": {
+    "zh-Hant": "為什麼加入啟明",
+    "es": "POR QUÉ TRABAJAR EN KAI MING"
+  },
+  "Employee Benefits": {
+    "zh-Hant": "員工福利",
+    "es": "Beneficios para empleados"
+  },
+  "24 days": {
+    "zh-Hant": "24 天",
+    "es": "24 días"
+  },
+  "Up to 24 paid days off a year, plus 11 holidays": {
+    "zh-Hant": "每年最多 24 天有薪休假，另加 11 天假日",
+    "es": "Hasta 24 días libres pagados al año, más 11 días festivos"
+  },
+  "Covered health insurance: medical, dental, vision & chiro": {
+    "zh-Hant": "醫療、牙科、視力與脊骨神經醫學保險",
+    "es": "Cobertura médica, dental, de visión y quiropráctica"
+  },
+  "Automatic employer contribution to your 403(b) retirement plan": {
+    "zh-Hant": "雇主自動提撥 403(b) 退休計畫",
+    "es": "Aportación automática del empleador al plan 403(b)"
+  },
+  "TIME OFF & HEALTH": {
+    "zh-Hant": "休假與健康",
+    "es": "DESCANSO Y SALUD"
+  },
+  "Paid Time Off & Holiday": {
+    "zh-Hant": "有薪休假與假日",
+    "es": "Tiempo libre y festivos pagados"
+  },
+  "Up to 24 PTO days (plus additional Milestone PTO) and 11 holidays per year": {
+    "zh-Hant": "每年最多 24 天 PTO（另有里程碑休假）及 11 天假日",
+    "es": "Hasta 24 días de PTO, más PTO por antigüedad y 11 festivos al año"
+  },
+  "100% Covered Health Insurance": {
+    "zh-Hant": "全額負擔健康保險",
+    "es": "Seguro médico cubierto al 100 %"
+  },
+  "Medical, dental, vision & chiro for staff, with full dependent medical coverage": {
+    "zh-Hant": "員工醫療、牙科、視力及脊骨神經醫學保險，並全額負擔眷屬醫療保險",
+    "es": "Cobertura médica, dental, de visión y quiropráctica para el personal, con cobertura médica completa para dependientes"
+  },
+  "Life Insurance": {
+    "zh-Hant": "人壽保險",
+    "es": "Seguro de vida"
+  },
+  "Employer-covered life insurance, AD&D and long-term disability": {
+    "zh-Hant": "雇主負擔人壽、意外身故與肢體損失及長期失能保險",
+    "es": "Seguro de vida, muerte accidental y desmembramiento e incapacidad a largo plazo cubiertos por el empleador"
+  },
+  "FINANCIAL SECURITY": {
+    "zh-Hant": "財務保障",
+    "es": "SEGURIDAD FINANCIERA"
+  },
+  "Retirement Plan": {
+    "zh-Hant": "退休計畫",
+    "es": "Plan de jubilación"
+  },
+  "Automatic 15% employer contribution to a 403(b) retirement plan": {
+    "zh-Hant": "雇主自動提撥 15% 至 403(b) 退休計畫",
+    "es": "Aportación automática del empleador del 15 % al plan de jubilación 403(b)"
+  },
+  "FSA Plan": {
+    "zh-Hant": "彈性支出帳戶（FSA）",
+    "es": "Cuenta de gastos flexibles (FSA)"
+  },
+  "Pre-tax benefit for health and dependent care": {
+    "zh-Hant": "醫療與受扶養人照護的稅前福利",
+    "es": "Beneficio antes de impuestos para salud y cuidado de dependientes"
+  },
+  "Medical Reimbursement": {
+    "zh-Hant": "醫療費用補助",
+    "es": "Reembolso médico"
+  },
+  "Additional employer contribution to a Medical Reimbursement Account for eligible employees": {
+    "zh-Hant": "雇主為符合資格員工的醫療費用補助帳戶額外提撥",
+    "es": "Aportación adicional del empleador a una cuenta de reembolso médico para empleados elegibles"
+  },
+  "WELLBEING & COMMUTE": {
+    "zh-Hant": "身心健康與通勤",
+    "es": "BIENESTAR Y TRANSPORTE"
+  },
+  "Transportation Benefit": {
+    "zh-Hant": "交通福利",
+    "es": "Beneficios de transporte"
+  },
+  "Pre-tax transit/parking benefit, plus unlimited rides on all bus, rail and ferry services in the Bay Area": {
+    "zh-Hant": "稅前交通／停車福利，另有灣區巴士、鐵路及渡輪無限搭乘",
+    "es": "Beneficio de transporte y estacionamiento antes de impuestos, más viajes ilimitados en autobuses, trenes y ferris del Área de la Bahía"
+  },
+  "Staff Wellness": {
+    "zh-Hant": "員工身心健康",
+    "es": "Bienestar del personal"
+  },
+  "A large variety of staff wellness programs that promote staff wellbeing": {
+    "zh-Hant": "多元員工健康活動，促進身心福祉",
+    "es": "Diversos programas para promover el bienestar del personal"
+  },
+  "Employee Assistance Program": {
+    "zh-Hant": "員工協助方案",
+    "es": "Programa de asistencia al empleado"
+  },
+  "24/7 access to confidential services by licensed professionals": {
+    "zh-Hant": "全天候由持照專業人員提供保密服務",
+    "es": "Acceso confidencial a profesionales autorizados las 24 horas, todos los días"
+  },
+  "Professional Development Support": {
+    "zh-Hant": "專業發展支持",
+    "es": "Apoyo al desarrollo profesional"
+  },
+  "Tuition Reimbursement & Paid Release Time": {
+    "zh-Hant": "學費補助與有薪進修時間",
+    "es": "Reembolso de matrícula y tiempo pagado para estudiar"
+  },
+  "Training Stipends & Internal Tutoring": {
+    "zh-Hant": "培訓津貼與內部輔導",
+    "es": "Estipendios de capacitación y tutoría interna"
+  },
+  "Permit / Credential / Certificate Reimbursement": {
+    "zh-Hant": "執照、資格與證書費用補助",
+    "es": "Reembolso de permisos, credenciales y certificados"
+  },
+  "Our newly renovated Kai Ming Head Start Rainbow Center is situated at the heart of Chinatown. Its open-air playground is located in the Ping Yuen Housing Projects courtyard so children can play safely away from the streets. It offers infant and toddler programs, and preschool from 08:00 a.m. to 04:30 p.m. Three classrooms serve 41 children.": {
+    "zh-Hant": "Rainbow 中心近期完成整修，位於唐人街中心。戶外遊戲場設於平園住宅庭院，讓孩子遠離街道安全遊玩。中心提供嬰兒、幼兒與學前課程，三間教室於上午 8:00 至下午 4:30 服務 41 名兒童。",
+    "es": "El renovado centro Rainbow está en el corazón de Chinatown. Su patio de juegos se encuentra en el complejo de viviendas Ping Yuen, lejos de la calle. Ofrece programas para bebés, niños pequeños y preescolares de 8:00 a. m. a 4:30 p. m., con tres aulas para 41 niños."
+  },
+  "“My son used to be very shy, but after one year at Rainbow he loves to sing and play with his friends. Thank you to all the teachers!”": {
+    "zh-Hant": "「兒子原本很害羞，在 Rainbow 一年後，現在喜歡和朋友唱歌、玩耍。謝謝所有老師！」",
+    "es": "«Mi hijo era muy tímido. Después de un año en Rainbow le encanta cantar y jugar con sus amigos. ¡Gracias a los maestros!»"
+  },
+  "“The classrooms are bright and clean, and the teachers always greet us with a smile. Drop-off is the best part of my morning.”": {
+    "zh-Hant": "「教室明亮整潔，老師總是微笑迎接我們，送孩子上學是我早晨最美好的時刻。」",
+    "es": "«Las aulas son luminosas y limpias, y los maestros nos reciben con una sonrisa. Dejar a mi hija es lo mejor de mi mañana»."
+  },
+  "“The family workshops helped me learn new ways to support my child's learning at home.”": {
+    "zh-Hant": "「家長工作坊讓我學到在家支持孩子學習的新方法。」",
+    "es": "«Los talleres para familias me enseñaron nuevas formas de apoyar el aprendizaje de mi hijo en casa»."
+  },
+  "“The teachers made our first weeks so easy. My daughter stopped crying at drop-off after just a few days.”": {
+    "zh-Hant": "「老師讓最初幾週變得很順利，女兒幾天後上學就不再哭了。」",
+    "es": "«Los maestros facilitaron las primeras semanas. Mi hija dejó de llorar al llegar después de unos días»."
+  },
+  "“I appreciate how the staff keep me updated on my child's development and goals.”": {
+    "zh-Hant": "「我很感謝工作人員持續告訴我孩子的發展與目標。」",
+    "es": "«Agradezco que el personal me mantenga al tanto del desarrollo y las metas de mi hijo»."
+  },
+  "Our Kai Ming Head Start Sunset Center preschool in the charming Parkside Neighborhood is located just steps from Sunset Boulevard and the Taraval trams. In its two classrooms, our teachers serve 36 children from 08:00 a.m. to 04:30 p.m. We have multilingual teachers and promote deeper family engagement. We value positive relationships among families, children and staff. This cozy center is housed in the previous home of the Knights of Columbus.": {
+    "zh-Hant": "Sunset 中心位於迷人的 Parkside 社區，距離 Sunset Boulevard 與 Taraval 電車僅數步之遙。兩間教室於上午 8:00 至下午 4:30 服務 36 名兒童。我們有多語老師，重視家庭參與，以及家庭、兒童與員工之間的正向關係。中心設於前 Knights of Columbus 會所，環境溫馨。",
+    "es": "El centro Sunset está en el acogedor vecindario de Parkside, cerca de Sunset Boulevard y los tranvías de Taraval. Sus dos aulas atienden a 36 niños de 8:00 a. m. a 4:30 p. m. Contamos con maestros multilingües, fomentamos la participación familiar y valoramos las relaciones positivas. Ocupa la antigua sede de Knights of Columbus."
+  },
+  "“The Sunset Center team is warm and caring. My son feels safe and loved every day.”": {
+    "zh-Hant": "「Sunset 團隊溫暖又用心，兒子每天都感到安全、被關愛。」",
+    "es": "«El equipo de Sunset es cálido y atento. Mi hijo se siente seguro y querido cada día»."
+  },
+  "“I love the parent meetings and events. We have made friends with other families here.”": {
+    "zh-Hant": "「我喜歡家長會議與活動，我們在這裡認識了其他家庭。」",
+    "es": "«Me encantan las reuniones y actividades para familias. Aquí hemos hecho amistades»."
+  },
+  "“My daughter's speech has improved so much since she started. The teachers noticed early and helped right away.”": {
+    "zh-Hant": "「女兒入學後語言進步很多，老師及早發現並立即提供協助。」",
+    "es": "«El habla de mi hija mejoró mucho desde que empezó. Los maestros lo detectaron pronto y ayudaron enseguida»."
+  },
+  "Our Kai Ming Head Start Richmond Center preschool is right across from Lincoln Park and just a short walk from the Legion of Honor Museum. We serve 30 children from 08:00 a.m. to 04:30 p.m. The two classrooms are housed in the warm wooden structure of the Pine United Methodist Church. With our lovely Japanese neighbor ABC Preschool, children’s laughter always fills the sunlit halls of this location.": {
+    "zh-Hant": "Richmond 中心位於林肯公園對面，步行即可到達榮譽軍團美術館。兩間教室設於 Pine 聯合衛理公會溫暖的木造建築內，於上午 8:00 至下午 4:30 為 30 名兒童服務。與日本鄰居 ABC Preschool 一同，讓充滿陽光的走廊總有孩子的笑聲。",
+    "es": "El centro Richmond está frente a Lincoln Park y cerca del museo Legion of Honor. Atiende a 30 niños de 8:00 a. m. a 4:30 p. m. en dos aulas dentro del cálido edificio de madera de la iglesia Pine United Methodist. Junto a la vecina escuela japonesa ABC Preschool, llena los pasillos soleados de risas infantiles."
+  },
+  "“Our family has sent two children to Richmond Center. Both of them grew so much here.”": {
+    "zh-Hant": "「我們家兩個孩子都就讀 Richmond 中心，他們在這裡成長很多。」",
+    "es": "«Dos de nuestros hijos asistieron al centro Richmond. Ambos crecieron muchísimo aquí»."
+  },
+  "“The teachers really listen to parents. I always feel my questions are welcome.”": {
+    "zh-Hant": "「老師真的傾聽家長，我總覺得自己的問題受到歡迎。」",
+    "es": "«Los maestros escuchan de verdad a las familias. Siempre siento que mis preguntas son bienvenidas»."
+  },
+  "“My daughter learned her letters, numbers, and how to make friends. She can't wait to go to school each morning.”": {
+    "zh-Hant": "「女兒學會字母、數字與交朋友，每天早上都迫不及待去學校。」",
+    "es": "«Mi hija aprendió letras, números y a hacer amigos. No puede esperar para ir a la escuela cada mañana»."
+  },
+  "Make a difference": {
+    "zh-Hant": "帶來改變",
+    "es": "Marque la diferencia"
+  },
+  "Change starts with people like you. Your donation helps make a real impact, one action at a time. Together, we can do more.": {
+    "zh-Hant": "改變從像您這樣的人開始。每一筆捐款都能帶來實際影響，讓我們攜手做到更多。",
+    "es": "El cambio comienza con personas como usted. Su donación genera un impacto real, una acción a la vez. Juntos podemos hacer más."
+  },
+  "Frequency": {
+    "zh-Hant": "捐款頻率",
+    "es": "Frecuencia"
+  },
+  "One time": {
+    "zh-Hant": "單次",
+    "es": "Una vez"
+  },
+  "Monthly": {
+    "zh-Hant": "每月",
+    "es": "Mensual"
+  },
+  "Yearly": {
+    "zh-Hant": "每年",
+    "es": "Anual"
+  },
+  "Amount": {
+    "zh-Hant": "金額",
+    "es": "Monto"
+  },
+  "Donate $50": {
+    "zh-Hant": "捐款 $50",
+    "es": "Donar $50"
+  },
+  "Facebook": {
+    "zh-Hant": "Facebook",
+    "es": "Facebook"
+  },
+  "X (Twitter)": {
+    "zh-Hant": "X（Twitter）",
+    "es": "X (Twitter)"
+  },
+  "WhatsApp": {
+    "zh-Hant": "WhatsApp",
+    "es": "WhatsApp"
+  },
+  "Copy link": {
+    "zh-Hant": "複製連結",
+    "es": "Copiar enlace"
+  },
+  "Your Support in Action": {
+    "zh-Hant": "讓支持化為行動",
+    "es": "Su apoyo en acción"
+  },
+  "Every donation helps us create a stronger start for children and families in our community. Your support helps provide high-quality early learning experiences, essential classroom resources, and additional support for families beyond the classroom. Together, we can give children the tools, care, and opportunities they need to learn, grow, and thrive.": {
+    "zh-Hant": "每筆捐款都能為社區兒童與家庭帶來更好的起點，提供優質早期學習、重要教室資源，以及課堂以外的家庭支援。攜手給孩子學習、成長與茁壯所需的工具、照護與機會。",
+    "es": "Cada donación ofrece un mejor comienzo a niños y familias mediante educación temprana de calidad, recursos esenciales para el aula y apoyo familiar más allá de la escuela. Juntos brindamos las herramientas, el cuidado y las oportunidades para aprender, crecer y prosperar."
+  },
+  "Early Learning &": {
+    "zh-Hant": "早期學習與",
+    "es": "Aprendizaje temprano y"
+  },
+  "Classroom Resources": {
+    "zh-Hant": "教室資源",
+    "es": "recursos para el aula"
+  },
+  "Family Support &": {
+    "zh-Hant": "家庭支援與",
+    "es": "Apoyo familiar y"
+  },
+  "Essential Needs": {
+    "zh-Hant": "基本需求",
+    "es": "necesidades esenciales"
+  },
+  "Enrichment &": {
+    "zh-Hant": "多元學習與",
+    "es": "Enriquecimiento y"
+  },
+  "Special Experiences": {
+    "zh-Hant": "特別體驗",
+    "es": "experiencias especiales"
+  },
+  "Supporting the Whole Family": {
+    "zh-Hant": "支持整個家庭",
+    "es": "Apoyamos a toda la familia"
+  },
+  "Children thrive when families have the support they need.": {
+    "zh-Hant": "當家庭獲得所需支持，孩子就能茁壯成長。",
+    "es": "Los niños prosperan cuando sus familias reciben el apoyo que necesitan."
+  },
+  "At Kai Ming, education is only one part of what we do. Our Family Support team works alongside families to understand their goals, connect them with resources, and help navigate challenges that may affect their child’s well-being and learning.": {
+    "zh-Hant": "在啟明，教育只是服務的一部分。家庭支援團隊與家庭並肩合作，了解目標、連結資源，協助面對影響孩子健康與學習的挑戰。",
+    "es": "En Kai Ming, la educación es solo una parte de nuestra labor. Nuestro equipo acompaña a las familias, comprende sus metas, las conecta con recursos y ayuda a afrontar desafíos que afectan el bienestar y el aprendizaje de sus hijos."
+  },
+  "Each center provides dedicated family support, connecting families with resources related to housing, health, education, parenting, mental wellness, and other community needs.": {
+    "zh-Hant": "各中心皆有專責家庭支援，協助連結住房、健康、教育、教養、心理健康與其他社區資源。",
+    "es": "Cada centro ofrece apoyo familiar dedicado y acceso a recursos de vivienda, salud, educación, crianza, bienestar emocional y otras necesidades comunitarias."
+  },
+  "Support for Your Family": {
+    "zh-Hant": "為您的家庭提供支持",
+    "es": "Apoyo para su familia"
+  },
+  "Family Goals & Resources": {
+    "zh-Hant": "家庭目標與資源",
+    "es": "Metas y recursos familiares"
+  },
+  "We work with families to identify their strengths, priorities, and goals and connect them with helpful community resources.": {
+    "zh-Hant": "我們與家庭共同了解優勢、優先事項及目標，並連結有幫助的社區資源。",
+    "es": "Trabajamos con las familias para identificar fortalezas, prioridades y metas, y conectarlas con recursos comunitarios útiles."
+  },
+  "Health & Wellness": {
+    "zh-Hant": "健康與身心福祉",
+    "es": "Salud y bienestar"
+  },
+  "Families receive support with health screenings, referrals, mental wellness resources, and information that helps children stay healthy and ready to learn.": {
+    "zh-Hant": "協助家庭取得健康篩檢、轉介與心理健康資源，讓孩子保持健康、做好學習準備。",
+    "es": "Apoyamos a las familias con exámenes de salud, referencias, recursos de bienestar emocional e información para que los niños estén sanos y listos para aprender."
+  },
+  "Nutrition": {
+    "zh-Hant": "營養",
+    "es": "Nutrición"
+  },
+  "Children receive nutritious meals and snacks, including multicultural menus and accommodations for food allergies where needed.": {
+    "zh-Hant": "孩子享用營養餐點與點心，包括多元文化菜單，並在需要時配合食物過敏需求。",
+    "es": "Los niños reciben comidas y meriendas nutritivas con menús multiculturales y adaptaciones por alergias cuando son necesarias."
+  },
+  "Parenting & Learning": {
+    "zh-Hant": "教養與學習",
+    "es": "Crianza y aprendizaje"
+  },
+  "Parents receive information, workshops, and opportunities to better understand child development and support learning at home.": {
+    "zh-Hant": "透過資訊、工作坊與活動，協助家長了解兒童發展，並在家支持學習。",
+    "es": "Ofrecemos información, talleres y oportunidades para comprender el desarrollo infantil y apoyar el aprendizaje en casa."
+  },
+  "Community Connections": {
+    "zh-Hant": "社區連結",
+    "es": "Conexiones comunitarias"
+  },
+  "Kai Ming works with community organizations to help families access additional services and resources when needed.": {
+    "zh-Hant": "啟明與社區組織合作，協助家庭在需要時取得更多服務及資源。",
+    "es": "Kai Ming colabora con organizaciones comunitarias para facilitar servicios y recursos adicionales cuando se necesitan."
+  },
+  "Families Are Our Partners": {
+    "zh-Hant": "家庭是我們的夥伴",
+    "es": "Las familias son nuestras aliadas"
+  },
+  "Parents are a child’s first and most important teachers.": {
+    "zh-Hant": "家長是孩子第一位、也是最重要的老師。",
+    "es": "Los padres son los primeros y más importantes maestros de sus hijos."
+  },
+  "We invite families to participate in their child’s learning, share their culture and experiences, join parent activities, and have a voice in the Kai Ming community.": {
+    "zh-Hant": "我們邀請家庭參與孩子的學習、分享文化與經驗、加入家長活動，並在啟明社區中發聲。",
+    "es": "Invitamos a las familias a participar en el aprendizaje, compartir su cultura y experiencias, asistir a actividades y tener voz en la comunidad de Kai Ming."
+  },
+  "Explore the Early Care and Education Your Child Deserves": {
+    "zh-Hant": "探索孩子值得擁有的早期照護與教育",
+    "es": "Descubra el cuidado y la educación temprana que su hijo merece"
+  },
+  "Several award-winning early childhood education programs form the core of what we offer.": {
+    "zh-Hant": "多項獲獎幼兒教育課程，是我們服務的核心。",
+    "es": "Varios programas premiados de educación infantil forman el núcleo de nuestros servicios."
+  },
+  "0 - 36 months": {
+    "zh-Hant": "0–36 個月",
+    "es": "0–36 meses"
+  },
+  "Weekly home visits and bi-weekly center-based socialization, combined with comprehensive health and wellness services, help parents and children build a strong start together.": {
+    "zh-Hant": "每週到宅訪視與每兩週一次的中心團體活動，結合完整健康服務，協助親子共同建立良好起點。",
+    "es": "Las visitas semanales al hogar y actividades de socialización en el centro cada dos semanas, junto con servicios integrales de salud y bienestar, ayudan a padres e hijos a comenzar con bases sólidas."
+  },
+  "Infant & Toddler Care": {
+    "zh-Hant": "嬰幼兒照護",
+    "es": "Cuidado de bebés y niños pequeños"
+  },
+  "3 - 36 months": {
+    "zh-Hant": "3–36 個月",
+    "es": "3–36 meses"
+  },
+  "Nurturing, relationship-based care supports children’s social-emotional, language, cognitive, and physical development, building strong foundations for learning during the most critical early years.": {
+    "zh-Hant": "以關係為基礎的溫暖照護，支持社交情緒、語言、認知與身體發展，在關鍵早期建立學習基礎。",
+    "es": "El cuidado afectuoso basado en relaciones apoya el desarrollo socioemocional, lingüístico, cognitivo y físico durante los primeros años más importantes."
+  },
+  "3 - 5 years": {
+    "zh-Hant": "3–5 歲",
+    "es": "3–5 años"
+  },
+  "Culturally responsive, family-centered, and child-interest-led curriculum that supports dual language learners, prepares children for kindergarten and provides a springboard for lifelong learning.": {
+    "zh-Hant": "回應文化、以家庭為中心並依循兒童興趣的課程，支持雙語學習，為幼兒園與終身學習奠定基礎。",
+    "es": "Un currículo culturalmente pertinente, centrado en la familia y guiado por los intereses infantiles apoya a los niños bilingües y los prepara para el kínder y el aprendizaje permanente."
+  },
+  "Discover Our Centers Near You": {
+    "zh-Hant": "探索您附近的中心",
+    "es": "Descubra nuestros centros cerca de usted"
+  },
+  "Nine centers across San Francisco, each offering care and education close to home.": {
+    "zh-Hant": "九個中心遍布舊金山，在住家附近提供照護與教育。",
+    "es": "Nueve centros en San Francisco ofrecen cuidado y educación cerca de casa."
+  },
+  "1. Broadway Center": {
+    "zh-Hant": "1. Broadway 中心",
+    "es": "1. Centro Broadway"
+  },
+  "Infant, Toddler, Preschool": {
+    "zh-Hant": "嬰兒、幼兒、學前班",
+    "es": "Bebés, niños pequeños y preescolar"
+  },
+  "820 Battery St, 94133, San Francisco": {
+    "zh-Hant": "820 Battery St, 94133, San Francisco",
+    "es": "820 Battery St, 94133, San Francisco"
+  },
+  "2. Rainbow Center": {
+    "zh-Hant": "2. Rainbow 中心",
+    "es": "2. Centro Rainbow"
+  },
+  "799 Pacific Ave, 94133, San Francisco": {
+    "zh-Hant": "799 Pacific Ave, 94133, San Francisco",
+    "es": "799 Pacific Ave, 94133, San Francisco"
+  },
+  "3. Dr. T.K.L. Center": {
+    "zh-Hant": "3. Dr. T.K.L. 中心",
+    "es": "3. Centro Dr. T.K.L."
+  },
+  "Home Based, Preschool": {
+    "zh-Hant": "到宅服務、學前班",
+    "es": "Programa en el hogar y preescolar"
+  },
+  "950 Powell St, 94108, San Francisco": {
+    "zh-Hant": "950 Powell St, 94108, San Francisco",
+    "es": "950 Powell St, 94108, San Francisco"
+  },
+  "4. North Beach Center": {
+    "zh-Hant": "4. North Beach 中心",
+    "es": "4. Centro North Beach"
+  },
+  "1170 Columbus Ave, 94133, San Francisco": {
+    "zh-Hant": "1170 Columbus Ave, 94133, San Francisco",
+    "es": "1170 Columbus Ave, 94133, San Francisco"
+  },
+  "Toddler, Preschool": {
+    "zh-Hant": "幼兒、學前班",
+    "es": "Niños pequeños y preescolar"
+  },
+  "1755 Clay St, 94109, San Francisco": {
+    "zh-Hant": "1755 Clay St, 94109, San Francisco",
+    "es": "1755 Clay St, 94109, San Francisco"
+  },
+  "6. Geary Center": {
+    "zh-Hant": "6. Geary 中心",
+    "es": "6. Centro Geary"
+  },
+  "7. Richmond Center": {
+    "zh-Hant": "7. Richmond 中心",
+    "es": "7. Centro Richmond"
+  },
+  "426 33rd Ave, 94121, San Francisco": {
+    "zh-Hant": "426 33rd Ave, 94121, San Francisco",
+    "es": "426 33rd Ave, 94121, San Francisco"
+  },
+  "8. Sunset Center": {
+    "zh-Hant": "8. Sunset 中心",
+    "es": "8. Centro Sunset"
+  },
+  "2800 Taraval St, 94116, San Francisco": {
+    "zh-Hant": "2800 Taraval St, 94116, San Francisco",
+    "es": "2800 Taraval St, 94116, San Francisco"
+  },
+  "9. PMsquare Center": {
+    "zh-Hant": "9. PMsquare 中心",
+    "es": "9. Centro PMsquare"
+  },
+  "671 China Basin St, 94158, San Francisco": {
+    "zh-Hant": "671 China Basin St, 94158, San Francisco",
+    "es": "671 China Basin St, 94158, San Francisco"
+  },
+  "View Our Centers": {
+    "zh-Hant": "查看所有中心",
+    "es": "Ver nuestros centros"
+  },
+  "Potential Has No Limits": {
+    "zh-Hant": "潛能無限",
+    "es": "El potencial no tiene límites"
+  },
+  "The Early Care and Education Your Child Needs": {
+    "zh-Hant": "孩子需要的早期照護與教育",
+    "es": "El cuidado y la educación temprana que su hijo necesita"
+  },
+  "Kai Ming Head Start, a trusted non-profit established in 1975. Our mission is to strengthen the community through nurturing children, supporting families, and promoting professional growth of staff. Our value is that we care for each child as our own, and treat each other with respect, kindness, and truthfulness.": {
+    "zh-Hant": "啟明 Head Start 是成立於 1975 年、值得信賴的非營利機構。我們透過培育兒童、支持家庭與促進員工專業成長來強化社區。我們視每個孩子如己出，並以尊重、善意與誠信相待。",
+    "es": "Kai Ming Head Start es una organización sin fines de lucro de confianza, fundada en 1975. Fortalecemos la comunidad al cuidar a los niños, apoyar a las familias y promover el crecimiento profesional del personal. Tratamos a cada niño como propio y nos relacionamos con respeto, amabilidad y honestidad."
+  },
+  "Comprehensive Services": {
+    "zh-Hant": "全方位服務",
+    "es": "Servicios integrales"
+  },
+  "Designated family support: housing, health, education, and mental wellness.": {
+    "zh-Hant": "專責家庭支援：住房、健康、教育與心理健康。",
+    "es": "Apoyo familiar dedicado: vivienda, salud, educación y bienestar emocional."
+  },
+  "Health and nutrition include screenings, referrals, and CACFP multicultural meals.": {
+    "zh-Hant": "健康與營養服務包含篩檢、轉介及 CACFP 多元文化餐點。",
+    "es": "Salud y nutrición incluyen exámenes, referencias y comidas multiculturales del CACFP."
+  },
+  "Parent engagement includes community events, policy council participation, and educational workshops guided by family interest and needs.": {
+    "zh-Hant": "家長參與包含社區活動、政策委員會，以及依家庭興趣與需求安排的教育工作坊。",
+    "es": "La participación familiar incluye eventos comunitarios, el consejo de políticas y talleres educativos según los intereses y necesidades de las familias."
+  },
+  "Child-Centered Curriculum": {
+    "zh-Hant": "以兒童為中心的課程",
+    "es": "Currículo centrado en el niño"
+  },
+  "Dual language learning enhances literacy and cultural awareness.": {
+    "zh-Hant": "雙語學習提升讀寫能力與文化理解。",
+    "es": "El aprendizaje bilingüe fortalece la alfabetización y la conciencia cultural."
+  },
+  "Creative Curriculum provides hands-on, interest-based learning.": {
+    "zh-Hant": "Creative Curriculum 提供實作與興趣導向的學習。",
+    "es": "Creative Curriculum ofrece aprendizaje práctico basado en intereses."
+  },
+  "Project Approach nurtures curiosity, problem-solving, and critical thinking.": {
+    "zh-Hant": "專題教學培養好奇心、解決問題與批判思考。",
+    "es": "El enfoque por proyectos fomenta la curiosidad, la resolución de problemas y el pensamiento crítico."
+  },
+  "Character education promotes respect, kindness, and emotional growth.": {
+    "zh-Hant": "品格教育促進尊重、善意與情緒成長。",
+    "es": "La educación del carácter promueve el respeto, la amabilidad y el crecimiento emocional."
+  },
+  "Quality Teachers": {
+    "zh-Hant": "優質師資",
+    "es": "Maestros de calidad"
+  },
+  "Experienced, certified educators holding A.A., B.A., or M.A. degrees in early childhood education, with valid California teaching permits.": {
+    "zh-Hant": "富經驗、具專業資格的教師，持有幼兒教育副學士、學士或碩士學位，以及有效加州教學許可。",
+    "es": "Educadores experimentados y certificados con títulos de asociado, licenciatura o maestría en educación infantil y permisos docentes vigentes de California."
+  },
+  "Passionate about forming strong, meaningful connections with children.": {
+    "zh-Hant": "熱衷與孩子建立深厚且有意義的關係。",
+    "es": "Comprometidos con crear vínculos sólidos y significativos con los niños."
+  },
+  "Staff diversity reflects the languages and cultures of our families.": {
+    "zh-Hant": "多元員工反映服務家庭的語言與文化。",
+    "es": "La diversidad del personal refleja los idiomas y culturas de nuestras familias."
+  },
+  "Supported by": {
+    "zh-Hant": "支持機構",
+    "es": "Con el apoyo de"
+  },
+  "Office of Head Start · California Department of Social Services · California Department of Education · San Francisco Department of Early Childhood · CACFP": {
+    "zh-Hant": "Head Start 辦公室 · 加州社會服務部 · 加州教育部 · 舊金山幼兒發展部 · CACFP",
+    "es": "Oficina de Head Start · Departamento de Servicios Sociales de California · Departamento de Educación de California · Departamento de la Primera Infancia de San Francisco · CACFP"
+  },
+  "Build Your Career in Early Education": {
+    "zh-Hant": "在幼兒教育領域發展職涯",
+    "es": "Desarrolle su carrera en educación infantil"
+  },
+  "Join a team of passionate educators who care for each child as their own.": {
+    "zh-Hant": "加入充滿熱忱的教育團隊，像照顧自己的孩子一樣關愛每個孩子。",
+    "es": "Únase a educadores apasionados que cuidan a cada niño como propio."
+  },
+  "View Careers": {
+    "zh-Hant": "查看工作機會",
+    "es": "Ver empleos"
+  },
+  "Enrollment at Kai Ming Head Start": {
+    "zh-Hant": "啟明 Head Start 入學申請",
+    "es": "Inscripciones en Kai Ming Head Start"
+  },
+  "Our programs are dedicated to supporting underserved families in our community, including those facing economic challenges, children with special needs, children in foster care, and those experiencing homelessness.": {
+    "zh-Hant": "我們致力支持社區中服務不足的家庭，包括面臨經濟困難、有特殊需求兒童、寄養兒童，以及無家可歸的家庭。",
+    "es": "Apoyamos a familias con acceso limitado a servicios, incluidas las que enfrentan dificultades económicas, tienen niños con necesidades especiales o en cuidado de crianza, o carecen de vivienda."
+  },
+  "As a non-profit Head Start grantee, we aim to provide quality early education and support services to families who qualify under state and federal guidelines. All families with children aged 3 months to 5 years are encouraged to apply. We’ll carefully review each application to determine eligibility for our State and Federally funded programs.": {
+    "zh-Hant": "作為非營利 Head Start 受補助機構，我們為符合州及聯邦規定的家庭提供優質幼兒教育與支援。歡迎家有 3 個月至 5 歲兒童的家庭申請。我們會仔細審閱申請，判定州與聯邦資助課程的資格。",
+    "es": "Como beneficiario sin fines de lucro de Head Start, ofrecemos educación temprana y apoyo a familias que cumplen las normas estatales y federales. Invitamos a solicitar a familias con niños de 3 meses a 5 años. Revisamos cada solicitud para determinar la elegibilidad de nuestros programas financiados por el estado y el gobierno federal."
+  },
+  "If you need any additional information, please contact our Enrollment Specialist at": {
+    "zh-Hant": "如需更多資訊，請聯絡入學專員：",
+    "es": "Para más información, contacte a nuestro especialista en inscripciones:"
+  },
+  "or": {
+    "zh-Hant": "或",
+    "es": "o"
+  },
+  "Submit Inquiry": {
+    "zh-Hant": "提交諮詢",
+    "es": "Enviar consulta"
+  },
+  "Apply Online": {
+    "zh-Hant": "線上申請",
+    "es": "Solicitar en línea"
+  },
+  "Our Enrollment Process": {
+    "zh-Hant": "入學流程",
+    "es": "Proceso de inscripción"
+  },
+  "Step 1: Inquire and Apply": {
+    "zh-Hant": "步驟一：諮詢與申請",
+    "es": "Paso 1: Consultar y solicitar"
+  },
+  "Get started in one of two ways: submit an inquiry or apply online.": {
+    "zh-Hant": "您可以提交諮詢，或直接線上申請。",
+    "es": "Comience enviando una consulta o solicitando en línea."
+  },
+  "Alt:": {
+    "zh-Hant": "其他方式：",
+    "es": "Alternativa:"
+  },
+  "Download the physical form": {
+    "zh-Hant": "下載紙本表格",
+    "es": "Descargue el formulario impreso"
+  },
+  "to fill out, and submit it via": {
+    "zh-Hant": "填妥後，請透過以下方式提交：",
+    "es": "para completarlo y enviarlo por"
+  },
+  "Step 2: Review and Waitlist": {
+    "zh-Hant": "步驟二：審核與候補",
+    "es": "Paso 2: Revisión y lista de espera"
+  },
+  "After your pre-application submission, we will contact you within 2 business days.": {
+    "zh-Hant": "提交初步申請後，我們會於兩個工作天內與您聯絡。",
+    "es": "Tras enviar la solicitud preliminar, le contactaremos en un plazo de dos días hábiles."
+  },
+  "We will review your application, assign priority based on your family’s specific needs and reported income, and place your child on the waitlist for the center(s) you’ve selected.": {
+    "zh-Hant": "我們會審閱申請，依家庭需求與申報收入安排優先順序，並將孩子列入所選中心的候補名單。",
+    "es": "Revisaremos la solicitud, asignaremos prioridad según sus necesidades e ingresos declarados y añadiremos al niño a la lista de espera de los centros seleccionados."
+  },
+  "Step 3: Intake and Enrollment": {
+    "zh-Hant": "步驟三：資料確認與入學",
+    "es": "Paso 3: Entrevista e inscripción"
+  },
+  "Once your family is found eligible for a space and a vacancy is available, one of our Family Advocates will reach out to verify your information.": {
+    "zh-Hant": "當家庭符合資格且有名額時，家庭支援人員會聯絡您核實資料。",
+    "es": "Cuando su familia sea elegible y haya una vacante, un representante familiar se comunicará para verificar los datos."
+  },
+  "Afterward, you’ll be invited to a formal intake appointment to complete enrollment and set a start date for your child!": {
+    "zh-Hant": "之後將邀請您參加入學面談，完成手續並確定孩子的入學日期！",
+    "es": "Después le invitaremos a una cita formal para completar la inscripción y fijar la fecha de inicio."
+  },
+  "Eligibility for Our Program": {
+    "zh-Hant": "課程申請資格",
+    "es": "Elegibilidad para el programa"
+  },
+  "Kai Ming Head Start has different funding sources to support families with various needs. There are two ways to qualify: by your family’s situation or by household income. Use the quick check below to see where your family fits.": {
+    "zh-Hant": "啟明透過不同資金來源支持有各種需求的家庭。可依家庭情況或家庭收入符合資格，請使用下方快速檢查了解適用方式。",
+    "es": "Kai Ming cuenta con distintas fuentes de financiación para apoyar a familias con diversas necesidades. Puede calificar por su situación familiar o sus ingresos. Use la evaluación rápida para orientarse."
+  },
+  "Inquire or Apply": {
+    "zh-Hant": "諮詢或申請",
+    "es": "Consultar o solicitar"
+  },
+  "Inquire or Apply Online": {
+    "zh-Hant": "線上諮詢或申請",
+    "es": "Consultar o solicitar en línea"
+  },
+  "Send us a quick inquiry, or complete the full pre-application online. You can also give us a call our staff will contact you to schedule an appointment.": {
+    "zh-Hant": "提交簡短諮詢，或完成線上初步申請。也可致電我們，工作人員將聯絡您安排預約。",
+    "es": "Envíe una consulta breve o complete la solicitud preliminar en línea. También puede llamarnos; nuestro personal le contactará para programar una cita."
+  },
+  "Contact Information": {
+    "zh-Hant": "聯絡資料",
+    "es": "Información de contacto"
+  },
+  "Cell Phone Number": {
+    "zh-Hant": "手機號碼",
+    "es": "Número de celular"
+  },
+  "Zip Code (optional)": {
+    "zh-Hant": "郵遞區號（選填）",
+    "es": "Código postal (opcional)"
+  },
+  "Language (optional)": {
+    "zh-Hant": "語言（選填）",
+    "es": "Idioma (opcional)"
+  },
+  "Select": {
+    "zh-Hant": "請選擇",
+    "es": "Seleccione"
+  },
+  "Centers you are interested in": {
+    "zh-Hant": "您有興趣的中心",
+    "es": "Centros de su interés"
+  },
+  "Home-Based / Prenatal Program": {
+    "zh-Hant": "到宅／產前課程",
+    "es": "Programa en el hogar / prenatal"
+  },
+  "Anything you'd like us to know about your family?": {
+    "zh-Hant": "關於您的家庭，還有什麼希望我們知道？",
+    "es": "¿Qué más le gustaría que supiéramos de su familia?"
+  },
+  "About Your Family": {
+    "zh-Hant": "您的家庭",
+    "es": "Sobre su familia"
+  },
+  "Do you have another child attending Kai Ming?": {
+    "zh-Hant": "您是否有其他孩子就讀啟明？",
+    "es": "¿Tiene otro hijo en Kai Ming?"
+  },
+  "Yes": {
+    "zh-Hant": "是",
+    "es": "Sí"
+  },
+  "No": {
+    "zh-Hant": "否",
+    "es": "No"
+  },
+  "Are you related to any Kai Ming employees?": {
+    "zh-Hant": "您是否與啟明員工有親屬關係？",
+    "es": "¿Tiene parentesco con algún empleado de Kai Ming?"
+  },
+  "Preferred Center": {
+    "zh-Hant": "偏好中心",
+    "es": "Centro de preferencia"
+  },
+  "Select 1, 2, or 3 sites in order of preference (at least one). If your child is admitted, the sites you select and the availability of funding at those sites will determine the location that is chosen.": {
+    "zh-Hant": "請依偏好排序選擇一至三個據點（至少一個）。錄取後，將依您選擇的據點與可用資金決定入學地點。",
+    "es": "Seleccione de uno a tres centros por orden de preferencia, al menos uno. Si el niño es admitido, la selección y los fondos disponibles determinarán la ubicación."
+  },
+  "Infant/Toddler (3 months – 18 months)": {
+    "zh-Hant": "嬰幼兒（3–18 個月）",
+    "es": "Bebés y niños pequeños (3–18 meses)"
+  },
+  "1st choice": {
+    "zh-Hant": "第一志願",
+    "es": "Primera opción"
+  },
+  "2nd choice": {
+    "zh-Hant": "第二志願",
+    "es": "Segunda opción"
+  },
+  "3rd choice": {
+    "zh-Hant": "第三志願",
+    "es": "Tercera opción"
+  },
+  "Toddler (18 months – 3 years)": {
+    "zh-Hant": "幼兒（18 個月至 3 歲）",
+    "es": "Niños pequeños (18 meses–3 años)"
+  },
+  "Preschool (3 years – 5 years)": {
+    "zh-Hant": "學前班（3–5 歲）",
+    "es": "Preescolar (3–5 años)"
+  },
+  "Child Information": {
+    "zh-Hant": "兒童資料",
+    "es": "Información del niño"
+  },
+  "Middle Name (optional)": {
+    "zh-Hant": "中間名（選填）",
+    "es": "Segundo nombre (opcional)"
+  },
+  "Date of Birth": {
+    "zh-Hant": "出生日期",
+    "es": "Fecha de nacimiento"
+  },
+  "Gender": {
+    "zh-Hant": "性別",
+    "es": "Género"
+  },
+  "Primary Home Language": {
+    "zh-Hant": "家庭主要語言",
+    "es": "Idioma principal del hogar"
+  },
+  "Secondary Home Language": {
+    "zh-Hant": "家庭第二語言",
+    "es": "Segundo idioma del hogar"
+  },
+  "Child's Special Needs": {
+    "zh-Hant": "兒童特殊需求",
+    "es": "Necesidades especiales del niño"
+  },
+  "Certified IFSP": {
+    "zh-Hant": "已認證 IFSP",
+    "es": "IFSP certificado"
+  },
+  "Certified IEP": {
+    "zh-Hant": "已認證 IEP",
+    "es": "IEP certificado"
+  },
+  "Agency / Physician Referral": {
+    "zh-Hant": "機構／醫師轉介",
+    "es": "Referencia de agencia o médico"
+  },
+  "Diagnosed Special Needs": {
+    "zh-Hant": "已診斷特殊需求",
+    "es": "Necesidades especiales diagnosticadas"
+  },
+  "Developmental Concern": {
+    "zh-Hant": "發展疑慮",
+    "es": "Preocupación del desarrollo"
+  },
+  "Behavioral Concern": {
+    "zh-Hant": "行為疑慮",
+    "es": "Preocupación de conducta"
+  },
+  "Other": {
+    "zh-Hant": "其他",
+    "es": "Otro"
+  },
+  "Not Applicable": {
+    "zh-Hant": "不適用",
+    "es": "No corresponde"
+  },
+  "Guardian 1": {
+    "zh-Hant": "監護人一",
+    "es": "Tutor 1"
+  },
+  "Employment Status": {
+    "zh-Hant": "就業狀況",
+    "es": "Situación laboral"
+  },
+  "Employed": {
+    "zh-Hant": "就業中",
+    "es": "Con empleo"
+  },
+  "Incapacitated / Disabled": {
+    "zh-Hant": "失能／身心障礙",
+    "es": "Incapacitado / con discapacidad"
+  },
+  "Unemployed / Retired": {
+    "zh-Hant": "失業／退休",
+    "es": "Sin empleo / jubilado"
+  },
+  "Attending School": {
+    "zh-Hant": "就學中",
+    "es": "Estudiante"
+  },
+  "Job Search": {
+    "zh-Hant": "求職中",
+    "es": "Buscando empleo"
+  },
+  "Job Training": {
+    "zh-Hant": "職業訓練",
+    "es": "Capacitación laboral"
+  },
+  "Relationship to Child": {
+    "zh-Hant": "與兒童的關係",
+    "es": "Relación con el niño"
+  },
+  "If \"Other\", please specify": {
+    "zh-Hant": "若選擇「其他」，請說明",
+    "es": "Si seleccionó «Otro», especifique"
+  },
+  "Guardian 2 (optional)": {
+    "zh-Hant": "監護人二（選填）",
+    "es": "Tutor 2 (opcional)"
+  },
+  "Family Information": {
+    "zh-Hant": "家庭資料",
+    "es": "Información familiar"
+  },
+  "Family Size (parents + children under 18)": {
+    "zh-Hant": "家庭人數（父母及未滿 18 歲子女）",
+    "es": "Tamaño familiar (padres e hijos menores de 18 años)"
+  },
+  "Annual Family Gross Income": {
+    "zh-Hant": "家庭年收入總額",
+    "es": "Ingresos brutos anuales de la familia"
+  },
+  "Address": {
+    "zh-Hant": "地址",
+    "es": "Dirección"
+  },
+  "City": {
+    "zh-Hant": "城市",
+    "es": "Ciudad"
+  },
+  "State": {
+    "zh-Hant": "州",
+    "es": "Estado"
+  },
+  "Zip Code": {
+    "zh-Hant": "郵遞區號",
+    "es": "Código postal"
+  },
+  "Single Room Occupancy (SRO)": {
+    "zh-Hant": "單人房住宅（SRO）",
+    "es": "Vivienda de habitación individual (SRO)"
+  },
+  "Eligibility": {
+    "zh-Hant": "資格",
+    "es": "Elegibilidad"
+  },
+  "Homeless": {
+    "zh-Hant": "無家可歸",
+    "es": "Sin vivienda"
+  },
+  "Foster Child": {
+    "zh-Hant": "寄養兒童",
+    "es": "Niño en cuidado de crianza"
+  },
+  "CalWORKs (TANF)": {
+    "zh-Hant": "CalWORKs（TANF）",
+    "es": "CalWORKs (TANF)"
+  },
+  "SSI": {
+    "zh-Hant": "SSI",
+    "es": "SSI"
+  },
+  "CalFresh (Food Stamps/SNAP)": {
+    "zh-Hant": "CalFresh（糧食券／SNAP）",
+    "es": "CalFresh (cupones de alimentos/SNAP)"
+  },
+  "Child Protective Services (CPS)": {
+    "zh-Hant": "兒童保護服務（CPS）",
+    "es": "Servicios de Protección Infantil (CPS)"
+  },
+  "Voucher (ELFA)": {
+    "zh-Hant": "補助券（ELFA）",
+    "es": "Vale (ELFA)"
+  },
+  "Parental Status": {
+    "zh-Hant": "父母狀況",
+    "es": "Situación parental"
+  },
+  "Two Parents": {
+    "zh-Hant": "雙親家庭",
+    "es": "Dos padres"
+  },
+  "Single Parent (Mother)": {
+    "zh-Hant": "單親（母親）",
+    "es": "Madre soltera"
+  },
+  "Single Parent (Father)": {
+    "zh-Hant": "單親（父親）",
+    "es": "Padre soltero"
+  },
+  "Grandparents": {
+    "zh-Hant": "祖父母",
+    "es": "Abuelos"
+  },
+  "Other Relatives": {
+    "zh-Hant": "其他親屬",
+    "es": "Otros familiares"
+  },
+  "Foster Family": {
+    "zh-Hant": "寄養家庭",
+    "es": "Familia de crianza"
+  },
+  "How did you find Kai Ming?": {
+    "zh-Hant": "您如何得知啟明？",
+    "es": "¿Cómo conoció Kai Ming?"
+  },
+  "TV": {
+    "zh-Hant": "電視",
+    "es": "Televisión"
+  },
+  "Radio": {
+    "zh-Hant": "廣播",
+    "es": "Radio"
+  },
+  "Internet": {
+    "zh-Hant": "網路",
+    "es": "Internet"
+  },
+  "Friends": {
+    "zh-Hant": "朋友",
+    "es": "Amigos"
+  },
+  "Event": {
+    "zh-Hant": "活動",
+    "es": "Evento"
+  },
+  "Poster": {
+    "zh-Hant": "海報",
+    "es": "Cartel"
+  },
+  "Organizations": {
+    "zh-Hant": "組織",
+    "es": "Organizaciones"
+  },
+  "School District": {
+    "zh-Hant": "學區",
+    "es": "Distrito escolar"
+  },
+  "Social Media": {
+    "zh-Hant": "社群媒體",
+    "es": "Redes sociales"
+  },
+  "Were you referred by a Kai Ming parent?": {
+    "zh-Hant": "您是否由啟明家長介紹？",
+    "es": "¿Le recomendó una familia de Kai Ming?"
+  },
+  "Submit": {
+    "zh-Hant": "提交",
+    "es": "Enviar"
+  },
+  "A Nurturing Start for": {
+    "zh-Hant": "溫暖的起點，陪伴",
+    "es": "Un comienzo lleno de cariño para"
+  },
+  "Your Child’s First Years": {
+    "zh-Hant": "孩子生命最初幾年",
+    "es": "los primeros años de su hijo"
+  },
+  "Ages 3–36 Months": {
+    "zh-Hant": "3–36 個月",
+    "es": "De 3 a 36 meses"
+  },
+  "The first three years are filled with extraordinary growth.": {
+    "zh-Hant": "生命最初三年，是充滿驚人成長的時期。",
+    "es": "Los primeros tres años están llenos de un crecimiento extraordinario."
+  },
+  "At Kai Ming, our Early Head Start classrooms provide infants and toddlers with warm, responsive care in environments where they can feel safe, build trusting relationships, explore, and learn.": {
+    "zh-Hant": "啟明 Early Head Start 教室為嬰幼兒提供溫暖、敏銳回應需求的照護，讓孩子安心建立信任、探索與學習。",
+    "es": "En las aulas de Early Head Start de Kai Ming, bebés y niños pequeños reciben cuidado cálido y receptivo para sentirse seguros, crear vínculos de confianza, explorar y aprender."
+  },
+  "Our teachers follow each child’s individual routines, interests, and developmental needs while partnering closely with families.": {
+    "zh-Hant": "老師配合孩子個別作息、興趣與發展需求，並與家庭緊密合作。",
+    "es": "Nuestros maestros respetan las rutinas, intereses y necesidades de desarrollo de cada niño y colaboran de cerca con las familias."
+  },
+  "Learning Begins From the Very Beginning": {
+    "zh-Hant": "學習從生命之初展開",
+    "es": "El aprendizaje comienza desde el principio"
+  },
+  "Relationships & Emotional Security": {
+    "zh-Hant": "關係與情緒安全感",
+    "es": "Vínculos y seguridad emocional"
+  },
+  "Consistent, caring relationships help children feel safe, develop trust, express emotions, and begin building relationships with others.": {
+    "zh-Hant": "穩定、關愛的關係讓孩子感到安全、發展信任、表達情緒，並開始與他人建立關係。",
+    "es": "Las relaciones constantes y afectuosas ayudan a sentirse seguros, confiar, expresar emociones y crear vínculos con los demás."
+  },
+  "Exploration & Thinking": {
+    "zh-Hant": "探索與思考",
+    "es": "Exploración y pensamiento"
+  },
+  "Children learn by touching, moving, observing, repeating, experimenting, and discovering cause and effect.": {
+    "zh-Hant": "孩子透過觸摸、移動、觀察、重複、實驗與發現因果關係來學習。",
+    "es": "Los niños aprenden tocando, moviéndose, observando, repitiendo, experimentando y descubriendo causas y efectos."
+  },
+  "Early Language": {
+    "zh-Hant": "早期語言",
+    "es": "Lenguaje temprano"
+  },
+  "Teachers talk, sing, read, respond to sounds and gestures, and encourage children to communicate in ways appropriate to their developmental stage.": {
+    "zh-Hant": "老師透過說話、唱歌、共讀及回應聲音與手勢，鼓勵孩子以符合發展階段的方式溝通。",
+    "es": "Los maestros hablan, cantan, leen y responden a sonidos y gestos para fomentar una comunicación apropiada para cada etapa del desarrollo."
+  },
+  "Movement & Independence": {
+    "zh-Hant": "動作與獨立性",
+    "es": "Movimiento e independencia"
+  },
+  "From reaching and crawling to walking, feeding themselves, drawing, and managing simple routines, children gradually build physical skills and independence.": {
+    "zh-Hant": "從伸手、爬行到走路、自己吃飯、畫畫與簡單作息，孩子逐漸建立身體技能及獨立性。",
+    "es": "Al alcanzar objetos, gatear, caminar, comer solos, dibujar y seguir rutinas sencillas, desarrollan habilidades físicas e independencia."
+  },
+  "Care That Follows Your Child": {
+    "zh-Hant": "跟隨孩子成長的照護",
+    "es": "Cuidado que acompaña a su hijo"
+  },
+  "Every child develops differently. Our teachers observe each child closely and adapt activities, routines, and interactions to support their individual stage of development.": {
+    "zh-Hant": "每個孩子的發展都不同。老師仔細觀察，調整活動、作息與互動，支持孩子各自的發展階段。",
+    "es": "Cada niño se desarrolla de forma diferente. Observamos atentamente y adaptamos actividades, rutinas e interacciones a su etapa individual."
+  },
+  "Small teacher-child ratios also allow educators to build meaningful relationships and provide individualized attention. Kai Ming currently lists ratios of": {
+    "zh-Hant": "較低師生比例讓教師建立有意義的關係並提供個別關注。啟明目前列出的比例為：",
+    "es": "Las proporciones reducidas permiten vínculos significativos y atención individual. Kai Ming indica actualmente una proporción de"
+  },
+  "for infants and": {
+    "zh-Hant": "適用嬰兒班；",
+    "es": "para bebés y"
+  },
+  "for toddlers.": {
+    "zh-Hant": "適用幼兒班。",
+    "es": "para niños pequeños."
+  },
+  "Learning Through": {
+    "zh-Hant": "透過以下方式學習：",
+    "es": "Aprender mediante"
+  },
+  "Play, Relationships, and Discovery": {
+    "zh-Hant": "遊戲、關係與探索",
+    "es": "el juego, los vínculos y los descubrimientos"
+  },
+  "At Kai Ming, children learn by exploring, asking questions, building relationships, and making discoveries through everyday experiences. Our teachers create nurturing, engaging environments where every child can grow at their own pace, build confidence, and develop the skills they need for school and for life.": {
+    "zh-Hant": "在啟明，孩子透過探索、提問、建立關係及日常發現來學習。老師打造溫暖、有吸引力的環境，讓孩子依自己的步調成長、建立自信，培養入學與生活所需能力。",
+    "es": "En Kai Ming, los niños aprenden explorando, preguntando, creando relaciones y descubriendo en la vida diaria. Nuestros maestros crean entornos acogedores y estimulantes para crecer a su ritmo, ganar confianza y desarrollar habilidades para la escuela y la vida."
+  },
+  "Our approach combines research-based curriculum, hands-on learning, strong teacher-child relationships, and each child’s individual interests, culture, language, and strengths.": {
+    "zh-Hant": "我們結合以研究為基礎的課程、實作學習、穩固師生關係，以及每個孩子的興趣、文化、語言與優勢。",
+    "es": "Combinamos un currículo basado en investigaciones, experiencias prácticas, relaciones sólidas y los intereses, cultura, idioma y fortalezas de cada niño."
+  },
+  "What Your Child Will Learn": {
+    "zh-Hant": "孩子將學到什麼",
+    "es": "Lo que aprenderá su hijo"
+  },
+  "Language & Communication": {
+    "zh-Hant": "語言與溝通",
+    "es": "Lenguaje y comunicación"
+  },
+  "Children build vocabulary, communication, and early literacy skills through conversations, stories, music, and play.": {
+    "zh-Hant": "透過對話、故事、音樂與遊戲，孩子累積詞彙、溝通及早期讀寫能力。",
+    "es": "Las conversaciones, los cuentos, la música y el juego desarrollan vocabulario, comunicación y alfabetización temprana."
+  },
+  "Social & Emotional Growth": {
+    "zh-Hant": "社交與情緒成長",
+    "es": "Crecimiento social y emocional"
+  },
+  "Children learn to express their feelings, build friendships, cooperate with others, and grow in confidence and independence.": {
+    "zh-Hant": "孩子學會表達感受、建立友誼、與人合作，並提升自信及獨立性。",
+    "es": "Los niños aprenden a expresar sentimientos, hacer amigos, colaborar y ganar confianza e independencia."
+  },
+  "Thinking & Problem-Solving": {
+    "zh-Hant": "思考與解決問題",
+    "es": "Pensamiento y resolución de problemas"
+  },
+  "Hands-on activities encourage children to ask questions, explore ideas, make connections, and develop early math, science, and problem-solving skills.": {
+    "zh-Hant": "實作活動鼓勵提問、探索與連結想法，培養早期數學、科學及解決問題能力。",
+    "es": "Las actividades prácticas fomentan preguntas, exploración y conexiones, así como habilidades iniciales de matemáticas, ciencias y resolución de problemas."
+  },
+  "Physical Development": {
+    "zh-Hant": "身體發展",
+    "es": "Desarrollo físico"
+  },
+  "Active play and hands-on experiences help children develop coordination, movement, and the fine-motor skills needed for everyday learning.": {
+    "zh-Hant": "動態遊戲與實作經驗幫助孩子發展協調、動作，以及日常學習所需的精細動作能力。",
+    "es": "El juego activo y las experiencias prácticas fortalecen la coordinación, el movimiento y la motricidad fina necesaria para aprender."
+  },
+  "Understanding Your Child’s Progress": {
+    "zh-Hant": "了解孩子的成長進度",
+    "es": "Comprender el progreso de su hijo"
+  },
+  "Our teachers observe children as they play, learn, and interact with others to understand their strengths and development.": {
+    "zh-Hant": "老師在孩子遊戲、學習與互動時進行觀察，了解其優勢及發展。",
+    "es": "Observamos a los niños mientras juegan, aprenden e interactúan para comprender sus fortalezas y desarrollo."
+  },
+  "We use the Head Start Early Learning Outcomes Framework (ELOF) and Desired Results Developmental Profile (DRDP) to guide learning and track progress. This helps teachers meet each child where they are and share their growth with families.": {
+    "zh-Hant": "我們使用 Head Start 早期學習成果架構（ELOF）與期望成果發展評量（DRDP），引導學習與追蹤進度，依孩子目前能力提供支持，並與家庭分享成長。",
+    "es": "Usamos el Marco de Head Start sobre los Resultados del Aprendizaje Temprano (ELOF) y el Perfil de Desarrollo de Resultados Deseados (DRDP) para orientar el aprendizaje y seguir el progreso. Así respondemos a cada etapa y compartimos los avances con las familias."
+  },
+  "Our mission is to strengthen our community by nurturing every child’s development, partnering with families, and supporting the professional growth of early childhood educators.": {
+    "zh-Hant": "我們透過培育每個孩子、與家庭合作，以及支持幼兒教育工作者的專業成長，來強化社區。",
+    "es": "Fortalecemos la comunidad al fomentar el desarrollo de cada niño, colaborar con las familias y apoyar el crecimiento profesional de los educadores infantiles."
+  },
+  "We create safe, welcoming, and culturally responsive learning environments where children can build confidence, strengthen their communication skills, and develop the foundation they need for kindergarten and lifelong learning.": {
+    "zh-Hant": "我們打造安全、友善且回應文化的學習環境，讓孩子建立自信、強化溝通，為幼兒園及終身學習奠定基礎。",
+    "es": "Creamos entornos seguros, acogedores y culturalmente pertinentes donde los niños ganan confianza, fortalecen su comunicación y construyen bases para el kínder y el aprendizaje permanente."
+  },
+  "We envision a community where every child and family has the opportunity,": {
+    "zh-Hant": "我們期盼每個孩子與家庭都有機會，",
+    "es": "Imaginamos una comunidad donde cada niño y familia tengan oportunidades,"
+  },
+  "support, and resources to thrive.": {
+    "zh-Hant": "獲得茁壯成長所需的支持與資源。",
+    "es": "apoyo y recursos para prosperar."
+  },
+  "Nurturing": {
+    "zh-Hant": "用心培育",
+    "es": "Cuidar a"
+  },
+  "Every Child": {
+    "zh-Hant": "每個孩子",
+    "es": "cada niño"
+  },
+  "We support children’s social, emotional, language, cognitive, and physical development through responsive relationships, play, exploration, and hands-on learning.": {
+    "zh-Hant": "透過敏銳回應的關係、遊戲、探索與實作，支持社交、情緒、語言、認知及身體發展。",
+    "es": "Apoyamos el desarrollo social, emocional, lingüístico, cognitivo y físico mediante relaciones receptivas, juego, exploración y experiencias prácticas."
+  },
+  "Honoring Language": {
+    "zh-Hant": "尊重語言",
+    "es": "Respetar el idioma"
+  },
+  "and Culture": {
+    "zh-Hant": "與文化",
+    "es": "y la cultura"
+  },
+  "We respect each child’s home language, culture, and identity while helping children build the communication skills they need to succeed.": {
+    "zh-Hant": "我們尊重家庭語言、文化與身分，同時培養孩子邁向成功所需的溝通能力。",
+    "es": "Respetamos el idioma del hogar, la cultura y la identidad de cada niño, a la vez que fortalecemos su comunicación para prosperar."
+  },
+  "Partnering": {
+    "zh-Hant": "攜手",
+    "es": "Colaborar"
+  },
+  "with Families": {
+    "zh-Hant": "每個家庭",
+    "es": "con las familias"
+  },
+  "Our teachers and Family Support staff work closely with parents, answer questions, share resources, and help families navigate enrollment and their child’s development.": {
+    "zh-Hant": "教師與家庭支援人員和家長密切合作、回答問題、分享資源，協助入學申請與兒童發展。",
+    "es": "Maestros y personal de apoyo colaboran con los padres, responden preguntas, comparten recursos y orientan la inscripción y el desarrollo infantil."
+  },
+  "Supporting": {
+    "zh-Hant": "支持",
+    "es": "Apoyar a"
+  },
+  "Early Childhood": {
+    "zh-Hant": "幼兒教育",
+    "es": "los educadores"
+  },
+  "Educators": {
+    "zh-Hant": "工作者",
+    "es": "infantiles"
+  },
+  "We invest in training, professional development, and opportunities that help educators grow and provide consistent, high-quality care.": {
+    "zh-Hant": "我們投入培訓、專業發展及成長機會，協助教師提供穩定的優質照護。",
+    "es": "Invertimos en capacitación, desarrollo profesional y oportunidades para que los educadores crezcan y ofrezcan cuidado constante y de calidad."
+  },
+  "What Our Mission Means for Your Child": {
+    "zh-Hant": "我們的使命如何支持您的孩子",
+    "es": "Lo que nuestra misión significa para su hijo"
+  },
+  "At Kai Ming, children are supported to:": {
+    "zh-Hant": "在啟明，我們支持孩子：",
+    "es": "En Kai Ming, apoyamos a los niños para:"
+  },
+  "Feel safe, welcomed, and valued": {
+    "zh-Hant": "感到安全、被接納與重視",
+    "es": "Sentirse seguros, bienvenidos y valorados"
+  },
+  "Build confidence and independence": {
+    "zh-Hant": "建立自信與獨立性",
+    "es": "Ganar confianza e independencia"
+  },
+  "Strengthen their home language and English skills": {
+    "zh-Hant": "強化家庭語言與英語能力",
+    "es": "Fortalecer su idioma familiar y el inglés"
+  },
+  "Develop friendships and emotional skills": {
+    "zh-Hant": "建立友誼與情緒能力",
+    "es": "Desarrollar amistades y habilidades emocionales"
+  },
+  "Prepare for kindergarten and lifelong learning": {
+    "zh-Hant": "為幼兒園及終身學習做準備",
+    "es": "Prepararse para el kínder y el aprendizaje permanente"
+  },
+  "Families know their children best. We listen to parents, communicate in the languages families understand, and connect them with staff who can answer questions and provide support.": {
+    "zh-Hant": "家庭最了解自己的孩子。我們傾聽家長，以家庭理解的語言溝通，並連結能回答問題與提供支持的工作人員。",
+    "es": "Las familias conocen mejor a sus hijos. Escuchamos, nos comunicamos en idiomas que comprenden y las conectamos con personal que puede responder y apoyar."
+  },
+  "From enrollment through each stage of a child’s development, families are not expected to navigate the process alone.": {
+    "zh-Hant": "從申請到每個發展階段，家庭不必獨自面對。",
+    "es": "Desde la inscripción hasta cada etapa del desarrollo, las familias no tienen que recorrer el camino solas."
+  },
+  "Our Programs": {
+    "zh-Hant": "我們的課程",
+    "es": "Nuestros programas"
+  },
+  "Meet the Team": {
+    "zh-Hant": "認識團隊",
+    "es": "Conozca al equipo"
+  },
+  "Our Team": {
+    "zh-Hant": "我們的團隊",
+    "es": "Nuestro equipo"
+  },
+  "Board Members": {
+    "zh-Hant": "董事會成員",
+    "es": "Junta directiva"
+  },
+  "Read more": {
+    "zh-Hant": "閱讀更多",
+    "es": "Leer más"
+  },
+  "Our Story Began": {
+    "zh-Hant": "我們的故事",
+    "es": "Nuestra historia comenzó"
+  },
+  "in the Community": {
+    "zh-Hant": "從社區開始",
+    "es": "en la comunidad"
+  },
+  "Kai Ming was founded in San Francisco in 1975 with a simple belief: every child deserves the opportunity to learn, grow, and succeed, regardless of their family’s income, language, or background.": {
+    "zh-Hant": "啟明於 1975 年在舊金山成立，秉持簡單信念：不論家庭收入、語言或背景，每個孩子都值得擁有學習、成長與成功的機會。",
+    "es": "Kai Ming se fundó en San Francisco en 1975 con una convicción sencilla: todos los niños merecen aprender, crecer y prosperar, sin importar los ingresos, el idioma o el origen familiar."
+  },
+  "What began as a community-based early childhood program has grown into a trusted network serving children and families across San Francisco. In 2014, Kai Ming became a recognized Head Start grantee, expanding our ability to provide comprehensive early learning and family support services.": {
+    "zh-Hant": "從社區幼兒課程起步，如今已發展為遍布舊金山、值得信賴的服務網絡。2014 年，啟明成為 Head Start 受補助機構，擴大提供完整幼兒學習與家庭支援服務的能力。",
+    "es": "De un programa comunitario de educación infantil crecimos hasta ser una red de confianza en San Francisco. En 2014 nos convertimos en beneficiarios de Head Start, ampliando nuestra capacidad para ofrecer aprendizaje temprano integral y apoyo familiar."
+  },
+  "“Kai Ming” reflects the idea of opening possibilities and helping each child’s potential shine. That belief continues to guide how we teach, support families, and serve our community.": {
+    "zh-Hant": "「啟明」意指開啟可能，讓每個孩子的潛能發光。這份信念持續引導我們的教學、家庭支援與社區服務。",
+    "es": "Kai Ming refleja abrir posibilidades y hacer brillar el potencial de cada niño. Esa convicción guía nuestra enseñanza, el apoyo familiar y el servicio comunitario."
+  },
+  "Growing with Our Community": {
+    "zh-Hant": "與社區一同成長",
+    "es": "Crecemos con nuestra comunidad"
+  },
+  "As the needs of San Francisco families have changed, Kai Ming has continued to grow. Our work now extends from prenatal and home-based support to infant care, preschool education, bilingual learning, family services, and early childhood educator development.": {
+    "zh-Hant": "隨舊金山家庭需求改變，啟明持續成長。服務已延伸至產前與到宅支持、嬰兒照護、學前與雙語教育、家庭服務，以及幼兒教育工作者培育。",
+    "es": "Al cambiar las necesidades de las familias de San Francisco, Kai Ming sigue creciendo. Nuestro trabajo abarca apoyo prenatal y en el hogar, cuidado infantil, preescolar, educación bilingüe, servicios familiares y desarrollo de educadores."
+  },
+  "Through every stage of our growth, our purpose has remained the same: to help children and families thrive.": {
+    "zh-Hant": "在每個成長階段，我們始終以協助兒童與家庭茁壯為目標。",
+    "es": "En cada etapa, nuestro propósito sigue siendo ayudar a los niños y las familias a prosperar."
+  },
+  "50 Years of Learning, Care and Community": {
+    "zh-Hant": "五十年的學習、照護與社區情誼",
+    "es": "50 años de aprendizaje, cuidado y comunidad"
+  },
+  "years": {
+    "zh-Hant": "年",
+    "es": "años"
+  },
+  "Serving in San Francisco": {
+    "zh-Hant": "服務舊金山",
+    "es": "Al servicio de San Francisco"
+  },
+  "Children": {
+    "zh-Hant": "名兒童",
+    "es": "Niños"
+  },
+  "Served since 1975": {
+    "zh-Hant": "自 1975 年起服務",
+    "es": "Atendidos desde 1975"
+  },
+  "Familys": {
+    "zh-Hant": "個家庭",
+    "es": "Familias"
+  },
+  "Have been helped": {
+    "zh-Hant": "獲得協助",
+    "es": "Han recibido apoyo"
+  },
+  "Our Story Continues": {
+    "zh-Hant": "故事持續發展",
+    "es": "Nuestra historia continúa"
+  },
+  "Our story continues with every child, family, educator, and community partner we serve.": {
+    "zh-Hant": "我們的故事，隨每個孩子、家庭、教育工作者與社區夥伴持續向前。",
+    "es": "Nuestra historia continúa con cada niño, familia, educador y aliado comunitario al que servimos."
+  },
+  "A Strong Start": {
+    "zh-Hant": "良好起點",
+    "es": "Un buen comienzo"
+  },
+  "Begins at Home": {
+    "zh-Hant": "從家開始",
+    "es": "empieza en casa"
+  },
+  "Prenatal–Age 3": {
+    "zh-Hant": "產前至 3 歲",
+    "es": "Etapa prenatal–3 años"
+  },
+  "Learning and healthy development begin before a child enters a classroom.": {
+    "zh-Hant": "在孩子踏進教室之前，學習與健康發展就已開始。",
+    "es": "El aprendizaje y el desarrollo saludable comienzan antes de entrar al aula."
+  },
+  "Kai Ming’s Prenatal & Home-Based Services support expecting parents and families with infants and toddlers through personalized home visits, parenting support, child development guidance, group experiences, and health and wellness resources.": {
+    "zh-Hant": "啟明產前與到宅服務透過個別家訪、教養支持、兒童發展指導、團體體驗及健康資源，支持準父母與嬰幼兒家庭。",
+    "es": "Los servicios prenatales y en el hogar de Kai Ming apoyan a futuros padres y familias con bebés y niños pequeños mediante visitas personalizadas, apoyo a la crianza, orientación del desarrollo, experiencias grupales y recursos de salud y bienestar."
+  },
+  "Our goal is to help parents feel informed, confident, and supported as their child’s first and most important teacher.": {
+    "zh-Hant": "我們希望家長作為孩子第一位、最重要的老師，能獲得資訊、自信與支持。",
+    "es": "Ayudamos a los padres a sentirse informados, seguros y acompañados como primeros y más importantes maestros de sus hijos."
+  },
+  "Support That Grows With Your Family": {
+    "zh-Hant": "隨家庭一起成長的支持",
+    "es": "Apoyo que crece con su familia"
+  },
+  "During Pregnancy": {
+    "zh-Hant": "懷孕期間",
+    "es": "Durante el embarazo"
+  },
+  "Learn about prenatal development, childbirth, nutrition, emotional wellness, breastfeeding, and ways to prepare for your baby.": {
+    "zh-Hant": "了解產前發展、生產、營養、情緒健康、母乳哺育，以及迎接寶寶的準備。",
+    "es": "Aprenda sobre desarrollo prenatal, parto, nutrición, bienestar emocional, lactancia y preparación para su bebé."
+  },
+  "After Your Baby Arrives": {
+    "zh-Hant": "寶寶出生後",
+    "es": "Después del nacimiento"
+  },
+  "Receive guidance and support as you adjust to life with your newborn and learn about feeding, care, bonding, and early development.": {
+    "zh-Hant": "在適應新生兒生活時，獲得餵養、照護、親子連結與早期發展的指導及支持。",
+    "es": "Reciba orientación para adaptarse a la vida con su recién nacido y aprender sobre alimentación, cuidado, vínculos y desarrollo temprano."
+  },
+  "As Your Child Grows": {
+    "zh-Hant": "隨孩子成長",
+    "es": "A medida que crece su hijo"
+  },
+  "Home visitors help families understand developmental milestones and introduce everyday activities that encourage language, movement, thinking, relationships, and curiosity.": {
+    "zh-Hant": "家訪人員協助了解發展里程碑，介紹促進語言、動作、思考、人際關係與好奇心的日常活動。",
+    "es": "Los visitantes del hogar explican los hitos del desarrollo y proponen actividades cotidianas que fomentan lenguaje, movimiento, pensamiento, relaciones y curiosidad."
+  },
+  "Learn & Connect Together": {
+    "zh-Hant": "一起學習與連結",
+    "es": "Aprender y conectar juntos"
+  },
+  "Workshops and socialization groups give parents opportunities to connect with other families while children experience age-appropriate activities and play.": {
+    "zh-Hant": "工作坊與團體活動讓家長認識其他家庭，孩子則參與適齡活動及遊戲。",
+    "es": "Los talleres y grupos de socialización permiten conocer a otras familias mientras los niños disfrutan actividades y juegos apropiados para su edad."
+  },
+  "Your Home Is a Place for Learning": {
+    "zh-Hant": "家就是學習的地方",
+    "es": "Su hogar es un lugar para aprender"
+  },
+  "Early learning does not require special equipment or complicated lessons.": {
+    "zh-Hant": "早期學習不需要特殊設備或複雜課程。",
+    "es": "El aprendizaje temprano no requiere equipos especiales ni lecciones complicadas."
+  },
+  "Talking during meals, singing together, looking at books, playing on the floor, going for a walk, or helping with everyday routines can all become opportunities for children to learn.": {
+    "zh-Hant": "用餐聊天、一起唱歌、看書、在地板上玩耍、散步或參與日常作息，都能成為孩子的學習機會。",
+    "es": "Conversar durante las comidas, cantar, mirar libros, jugar en el suelo, pasear y participar en las rutinas son oportunidades para aprender."
+  },
+  "Our Home Visitors help families recognize and build on these everyday moments.": {
+    "zh-Hant": "家訪人員協助家庭發現並運用這些日常時刻。",
+    "es": "Nuestros visitantes ayudan a las familias a reconocer y aprovechar esos momentos cotidianos."
+  },
+  "Growing Curious, Confident, and Ready for Kindergarten": {
+    "zh-Hant": "培養好奇、自信，準備迎接幼兒園",
+    "es": "Curiosos, seguros y listos para el kínder"
+  },
+  "Ages 3–5 years": {
+    "zh-Hant": "3–5 歲",
+    "es": "De 3 a 5 años"
+  },
+  "Preschool is a time of tremendous growth. At Kai Ming, children ages 3 to 5 learn through play, exploration, relationships, and hands-on experiences in a safe and culturally responsive environment.": {
+    "zh-Hant": "學前階段成長迅速。啟明為 3–5 歲兒童提供安全、回應文化的環境，透過遊戲、探索、人際關係與實作學習。",
+    "es": "La etapa preescolar trae grandes avances. En Kai Ming, los niños de 3 a 5 años aprenden jugando, explorando, relacionándose y experimentando en un entorno seguro y culturalmente pertinente."
+  },
+  "Our teachers follow children’s interests while intentionally building the language, social-emotional, cognitive, and physical skills that support kindergarten readiness and lifelong learning.": {
+    "zh-Hant": "老師依循兒童興趣，有計畫地培養語言、社交情緒、認知及身體能力，為幼兒園與終身學習做好準備。",
+    "es": "Seguimos los intereses de los niños y desarrollamos intencionalmente habilidades lingüísticas, socioemocionales, cognitivas y físicas para el kínder y el aprendizaje permanente."
+  },
+  "What Your Child Will Experience": {
+    "zh-Hant": "孩子將體驗什麼",
+    "es": "Lo que experimentará su hijo"
+  },
+  "Explore & Think": {
+    "zh-Hant": "探索與思考",
+    "es": "Explorar y pensar"
+  },
+  "Children explore, ask questions, experiment, and build early math, science, and problem-solving skills through hands-on learning.": {
+    "zh-Hant": "孩子透過實作探索、提問與實驗，建立早期數學、科學與解決問題能力。",
+    "es": "Los niños exploran, preguntan y experimentan para desarrollar habilidades iniciales de matemáticas, ciencias y resolución de problemas."
+  },
+  "Build Friendships & Confidence": {
+    "zh-Hant": "建立友誼與自信",
+    "es": "Crear amistades y confianza"
+  },
+  "Children learn to share, cooperate, express emotions, solve conflicts, and grow in confidence and independence.": {
+    "zh-Hant": "孩子學習分享、合作、表達情緒及解決衝突，並建立自信與獨立性。",
+    "es": "Aprenden a compartir, colaborar, expresar emociones, resolver conflictos y ganar confianza e independencia."
+  },
+  "Communicate & Express": {
+    "zh-Hant": "溝通與表達",
+    "es": "Comunicar y expresarse"
+  },
+  "Stories, conversations, music, and art help children strengthen language, early literacy, and self-expression.": {
+    "zh-Hant": "故事、對話、音樂與藝術，強化語言、早期讀寫與自我表達。",
+    "es": "Los cuentos, las conversaciones, la música y el arte fortalecen el lenguaje, la alfabetización temprana y la expresión personal."
+  },
+  "Move & Create": {
+    "zh-Hant": "活動與創作",
+    "es": "Moverse y crear"
+  },
+  "Active play, art, writing, and building strengthen creativity, coordination, and fine- and gross-motor skills.": {
+    "zh-Hant": "動態遊戲、藝術、書寫及建構活動，強化創意、協調，以及精細與大肌肉動作。",
+    "es": "El juego activo, el arte, la escritura y la construcción fortalecen la creatividad, la coordinación y la motricidad fina y gruesa."
+  },
+  "“我女兒每天回到家，都迫不及待地和我分享她在學校學到的新事物，不論是一首新歌、一件親手完成的作品，或是一個有趣的故事。”": {
+    "zh-Hant": "「我女兒每天回到家，都迫不及待地和我分享她在學校學到的新事物，不論是一首新歌、一件親手完成的作品，或是一個有趣的故事。」",
+    "es": "«Cada día mi hija llega ansiosa por compartir lo que aprendió: una canción, algo que creó o una historia divertida»."
+  },
+  "Wei Wang": {
+    "zh-Hant": "Wei Wang",
+    "es": "Wei Wang"
+  },
+  "“The teachers are patient, nurturing, and attentive, always encouraging curiosity and growth through creative and age-appropriate activities.”": {
+    "zh-Hant": "「老師有耐心、溫柔又細心，總透過有創意且適齡的活動，鼓勵好奇與成長。」",
+    "es": "«Los maestros son pacientes, cariñosos y atentos. Fomentan la curiosidad y el crecimiento con actividades creativas y apropiadas para la edad»."
+  },
+  "Eren Reyes": {
+    "zh-Hant": "Eren Reyes",
+    "es": "Eren Reyes"
+  },
+  "“Las maestras son increíbles con los niños. Les enseñan muchas cosas nuevas y los cuidan con mucho cariño, como si fueran parte de su propia familia.”": {
+    "zh-Hant": "「老師對孩子非常好，教他們許多新事物，像照顧自己的家人一樣細心呵護。」",
+    "es": "«Las maestras son increíbles con los niños. Les enseñan muchas cosas nuevas y los cuidan con mucho cariño, como si fueran parte de su propia familia»."
+  },
+  "— Maria Cuellar": {
+    "zh-Hant": "— Maria Cuellar",
+    "es": "— Maria Cuellar"
+  },
+  "Preparing for Kindergarten and Beyond": {
+    "zh-Hant": "為幼兒園及未來做準備",
+    "es": "Prepararse para el kínder y más allá"
+  },
+  "For us, kindergarten readiness is more than knowing letters and numbers.": {
+    "zh-Hant": "對我們來說，幼兒園準備不只是認識字母與數字。",
+    "es": "Para nosotros, prepararse para el kínder es más que conocer letras y números."
+  },
+  "We help children become:": {
+    "zh-Hant": "我們幫助孩子成為：",
+    "es": "Ayudamos a los niños a ser:"
+  },
+  "Curious learners who want to explore and ask questions": {
+    "zh-Hant": "樂於探索、提問的好奇學習者",
+    "es": "Aprendices curiosos que exploran y preguntan"
+  },
+  "Confident communicators who can express their ideas and needs": {
+    "zh-Hant": "能表達想法與需求的自信溝通者",
+    "es": "Comunicadores seguros que expresan ideas y necesidades"
+  },
+  "Caring classmates who can build relationships and work with others": {
+    "zh-Hant": "能建立關係、與人合作的友善同學",
+    "es": "Compañeros solidarios que crean vínculos y colaboran"
+  },
+  "Independent thinkers who can make choices and solve problems": {
+    "zh-Hant": "能做選擇、解決問題的獨立思考者",
+    "es": "Pensadores independientes que eligen y resuelven problemas"
+  },
+  "Growing learners who are ready to take their next step": {
+    "zh-Hant": "準備好邁向下一步、持續成長的學習者",
+    "es": "Aprendices en crecimiento, listos para su próximo paso"
+  },
+  "Executive Director": {
+    "zh-Hant": "執行長",
+    "es": "Director ejecutivo"
+  },
+  "Director of Finance": {
+    "zh-Hant": "財務總監",
+    "es": "Director de Finanzas"
+  },
+  "Director of Continuous Quality Improvement": {
+    "zh-Hant": "持續品質改善總監",
+    "es": "Director de Mejora Continua de la Calidad"
+  },
+  "Director of Children & Family Services": {
+    "zh-Hant": "兒童與家庭服務總監",
+    "es": "Director de Servicios Infantiles y Familiares"
+  },
+  "Director of Operations/Executive Assistant": {
+    "zh-Hant": "營運總監／執行助理",
+    "es": "Director de Operaciones / Asistente ejecutivo"
+  },
+  "STEP Program Director / Director of Human Resources": {
+    "zh-Hant": "STEP 計畫總監／人力資源總監",
+    "es": "Director del Programa STEP / Director de Recursos Humanos"
+  },
+  "Board Chairperson": {
+    "zh-Hant": "董事長",
+    "es": "Presidente de la Junta"
+  },
+  "Board Member": {
+    "zh-Hant": "董事",
+    "es": "Miembro de la Junta"
+  },
+  "Vice-Chairperson": {
+    "zh-Hant": "副董事長",
+    "es": "Vicepresidente de la Junta"
+  },
+  "Board Secretary": {
+    "zh-Hant": "董事會秘書",
+    "es": "Secretario de la Junta"
+  },
+  "Board Treasurer": {
+    "zh-Hant": "董事會財務主管",
+    "es": "Tesorero de la Junta"
+  },
+  "Dr. Jerry Yang serves as the Executive Director of Kai Ming Head Start, leading the organization’s efforts to provide high-quality early childhood education, health, nutrition, and family support services to low-income families in San Francisco. His professional background includes experience as a preschool teacher, assistant professor, and education administrator. He is committed to fostering warm, respectful, culturally responsive, and data-informed learning environments, while also advocating for the professional development and equitable representation of Asian early childhood educators.": {
+    "zh-Hant": "Jerry Yang 博士擔任啟明 Head Start 執行長，帶領機構為舊金山低收入家庭提供優質幼兒教育、健康、營養及家庭支援。他曾任學前教師、助理教授及教育行政人員。他致力打造溫暖、尊重、回應文化並以資料支持決策的學習環境，也倡議亞洲裔幼兒教育工作者的專業發展與公平代表性。",
+    "es": "El Dr. Jerry Yang es director ejecutivo de Kai Ming Head Start y lidera servicios de educación infantil, salud, nutrición y apoyo para familias de bajos ingresos en San Francisco. Ha sido maestro preescolar, profesor asistente y administrador educativo. Promueve entornos cálidos, respetuosos, culturalmente pertinentes e informados por datos, así como el desarrollo profesional y la representación equitativa de los educadores asiáticos de la primera infancia."
+  },
+  "“Working at Kai Ming means growing alongside the children and families we serve every day. I am proud to be part of a team that helps every child build a strong foundation for learning and life.”": {
+    "zh-Hant": "「在啟明工作，就是每天與我們服務的兒童和家庭一起成長。我很榮幸能加入這個團隊，幫助每個孩子為學習與人生建立穩固基礎。」",
+    "es": "«Trabajar en Kai Ming significa crecer cada día junto a los niños y las familias que atendemos. Me enorgullece formar parte de un equipo que ayuda a cada niño a construir bases sólidas para el aprendizaje y la vida»."
+  },
+  "Welcome to Kai Ming Head Start Broadway Center. May all of us work together to build a harmonious and nurturing learning environment for our young children.": {
+    "zh-Hant": "歡迎來到啟明 Head Start Broadway 中心。讓我們一起為幼兒打造和諧、溫暖且支持成長的學習環境。",
+    "es": "Bienvenidos al centro Broadway de Kai Ming Head Start. Trabajemos juntos para crear un entorno de aprendizaje armonioso y acogedor para nuestros pequeños."
+  },
+  "“Let us remember: One book, one pen, one child and one teacher can change the world.” - Malala Yousafzai": {
+    "zh-Hant": "「請記住：一本書、一支筆、一個孩子與一位老師，就能改變世界。」— Malala Yousafzai",
+    "es": "«Recordemos: un libro, un lápiz, un niño y un maestro pueden cambiar el mundo». — Malala Yousafzai"
+  },
+  "I'm here for you. Our center is always full of joy, and very diverse environment.": {
+    "zh-Hant": "我在這裡支持您。我們的中心充滿歡樂，擁有多元的環境。",
+    "es": "Estoy aquí para apoyarle. Nuestro centro siempre está lleno de alegría y ofrece un entorno muy diverso."
+  },
+  "Venus has been working for Kai Ming Head Start as a Family Advocate for many years. She is happy to have the opportunity to work closely with children and families.": {
+    "zh-Hant": "Venus 多年來在啟明 Head Start 擔任家庭支援人員，很開心能有機會與兒童及家庭密切合作。",
+    "es": "Venus lleva muchos años como defensora de las familias en Kai Ming Head Start. Le alegra tener la oportunidad de trabajar de cerca con los niños y las familias."
+  },
+  "Being Center Manager gives me the joy of helping children thrive and families feel supported. Together, we create a warm and caring environment where every child feels safe, valued and empowered to grow.": {
+    "zh-Hant": "擔任中心主任讓我能協助孩子茁壯，讓家庭感到被支持。我們一起打造溫暖、關愛的環境，讓每個孩子都感到安全、被重視，並有信心成長。",
+    "es": "Como responsable del centro, disfruto ayudar a los niños a prosperar y a las familias a sentirse apoyadas. Juntos creamos un entorno cálido donde cada niño se siente seguro, valorado y capaz de crecer."
+  },
+  "I support children’s development by creating activities to intrigue their interest and work with families to achieve predetermined goals.": {
+    "zh-Hant": "我透過設計引發興趣的活動支持兒童發展，並與家庭合作達成共同設定的目標。",
+    "es": "Apoyo el desarrollo infantil con actividades que despiertan su interés y colaboro con las familias para alcanzar las metas establecidas."
+  },
+  "Sherry graduated from National Taipei University of Education with a Bachelor’s degree in Early Childhood and Family Education. She has been working with children for 3 years in Taiwan. She believes that the most important thing as a teacher is to remain supportive and accessible to all kids and be ready to provide guidance whenever this is needed.": {
+    "zh-Hant": "Sherry 畢業於國立臺北教育大學幼兒與家庭教育學系，取得學士學位。她曾在台灣從事兒童相關工作三年。她相信，教師最重要的是支持每個孩子、讓孩子願意親近，並在需要時隨時提供引導。",
+    "es": "Sherry se graduó en Educación Infantil y Familiar en la Universidad Nacional de Educación de Taipéi. Trabajó con niños durante tres años en Taiwán. Cree que lo más importante como maestra es apoyar a todos los niños, ser accesible y estar preparada para orientarlos cuando lo necesiten."
+  },
+  "Daysi is a San Francisco native who is earning their BA in Ethnic Studies from CSU East Bay. They have worked in various roles serving families and children for over a decade. She also has experience working in the San Francisco Unified School District Autism Focused Program/Special Day Class (SDC) and supporting children with disabilities. Working for the school district and nonprofits has given her the passion to advocate for marginalized communities and promote early childhood education interventions. In addition, Daysi loves to dance Afro-Brazilian with a group based in Oakland.": {
+    "zh-Hant": "Daysi 出生於舊金山，正在加州州立大學東灣分校攻讀族裔研究學士。她在不同職務服務家庭與兒童超過十年，也曾在舊金山聯合學區自閉症專門課程／特殊日間班（SDC）服務，支持身心障礙兒童。學區與非營利機構的經驗，讓她熱衷為邊緣社群倡議並推動幼兒教育介入。此外，她喜歡與奧克蘭的舞團一起跳非洲巴西舞。",
+    "es": "Daysi nació en San Francisco y está cursando una licenciatura en Estudios Étnicos en CSU East Bay. Lleva más de diez años sirviendo a familias y niños en distintos puestos. Tiene experiencia en el programa de autismo y clases especiales (SDC) del Distrito Escolar Unificado de San Francisco y apoyando a niños con discapacidades. Su trabajo en escuelas y organizaciones sin fines de lucro inspira su defensa de comunidades marginadas y las intervenciones educativas tempranas. También disfruta bailar danza afrobrasileña con un grupo de Oakland."
+  },
+  "“Their minds were not built to sit and be taught. They were built to explore, play, and learn.” - Anonymous": {
+    "zh-Hant": "「孩子的心智不是為了坐著被教導而存在，而是為了探索、遊戲與學習。」— 佚名",
+    "es": "«Sus mentes no fueron creadas para sentarse y recibir lecciones, sino para explorar, jugar y aprender». — Anónimo"
+  },
+  "It is our pleasure to be part of your children’s early childhood education.": {
+    "zh-Hant": "我們很榮幸能參與孩子的幼兒教育歷程。",
+    "es": "Es un placer formar parte de la educación temprana de sus hijos."
+  },
+  "“It’s the little conversations that build the relationships and make an impact on each student” - Robert John Meehan": {
+    "zh-Hant": "「正是日常的小小對話建立關係，為每位學生帶來影響。」— Robert John Meehan",
+    "es": "«Son las pequeñas conversaciones las que construyen relaciones y dejan huella en cada estudiante». — Robert John Meehan"
+  },
+  "\"Every child has a different learning style and pace. Each child is unique, not only capable of learning but also capable of succeeding.\" -Robert John Meehan": {
+    "zh-Hant": "「每個孩子都有不同的學習方式與步調。每個孩子都獨一無二，不僅能學習，也能成功。」— Robert John Meehan",
+    "es": "«Cada niño tiene un estilo y ritmo de aprendizaje distintos. Cada uno es único, capaz no solo de aprender, sino también de triunfar». — Robert John Meehan"
+  },
+  "Welcome to Kai Ming Sunset Center! I’m excited to be part of this caring community, working alongside families and educators to support every child’s growth, curiosity, and happiness.": {
+    "zh-Hant": "歡迎來到啟明 Sunset 中心！我很高興加入這個充滿關愛的社區，與家庭及教育工作者一起支持每個孩子的成長、好奇心與快樂。",
+    "es": "¡Bienvenidos al centro Sunset de Kai Ming! Me entusiasma formar parte de esta comunidad y colaborar con familias y educadores para apoyar el crecimiento, la curiosidad y la felicidad de cada niño."
+  },
+  "I am thankful be able to continue to help children and families.": {
+    "zh-Hant": "我很感恩能持續協助兒童與家庭。",
+    "es": "Agradezco poder seguir ayudando a los niños y las familias."
+  },
+  "Rosalie graduated from the Department of Early Childhood and Family Education, NTUE in Taiwan. She has been working as a preschool teacher since February 2020. On a teaching level, Rosalie is familiar with theme teaching and project approach. Rosalie enjoys discussing and planning schedules with the kids. Rosalie loves to travel because she believes there are so many beautiful things that deserve to be explored.": {
+    "zh-Hant": "Rosalie 畢業於台灣國立臺北教育大學幼兒與家庭教育學系，自 2020 年 2 月起擔任學前教師。她熟悉主題教學與專題教學，喜歡和孩子討論、共同規劃作息。她熱愛旅行，相信世界有許多美好事物值得探索。",
+    "es": "Rosalie se graduó en Educación Infantil y Familiar en NTUE, Taiwán. Es maestra preescolar desde febrero de 2020 y conoce la enseñanza temática y por proyectos. Disfruta conversar y planificar las rutinas con los niños. Le encanta viajar porque cree que hay muchas cosas hermosas por descubrir."
+  },
+  "Welcome to PMSquare Children's Center! As your Family Service Specialist, I’m honored to be part of your child’s learning journey and here to support your family every step of the way— please don’t hesitate to reach out!": {
+    "zh-Hant": "歡迎來到 PMsquare 兒童中心！作為家庭服務專員，我很榮幸參與孩子的學習旅程，並在每個階段支持您的家庭，歡迎隨時聯絡我！",
+    "es": "¡Bienvenidos al centro infantil PMsquare! Como especialista de servicios familiares, es un honor acompañar el aprendizaje de su hijo y apoyar a su familia en cada paso. ¡No dude en contactarme!"
+  },
+  "“Educators have a responsibility to examine and challenge their own biases in order to create inclusive and equitable learning environments.” - Lisa Delpit": {
+    "zh-Hant": "「教育工作者有責任檢視並挑戰自身偏見，才能打造包容且公平的學習環境。」— Lisa Delpit",
+    "es": "«Los educadores tienen la responsabilidad de examinar y cuestionar sus prejuicios para crear entornos de aprendizaje inclusivos y equitativos». — Lisa Delpit"
+  },
+  "Quality Early Childhood Education Matters: Kai Ming on KRON4": {
+    "zh-Hant": "優質幼兒教育的重要性：KRON4 專訪啟明",
+    "es": "La importancia de la educación infantil de calidad: Kai Ming en KRON4"
+  },
+  "Empowering the Future: Kai Ming Leadership Explores AI at UC Berkeley": {
+    "zh-Hant": "賦能未來：啟明領導團隊於加州大學柏克萊分校探索 AI",
+    "es": "Impulsar el futuro: líderes de Kai Ming exploran la IA en UC Berkeley"
+  },
+  "Support Kai Ming Head Start: Donate to Early Education": {
+    "zh-Hant": "支持啟明 Head Start：捐助幼兒教育",
+    "es": "Apoye a Kai Ming Head Start: done a la educación temprana"
+  },
+  "Broadway Center Site Manager": {
+    "zh-Hant": "Broadway 中心 主任",
+    "es": "Responsable — Broadway Center"
+  },
+  "Broadway Center  Family Service Specialist": {
+    "zh-Hant": "Broadway 中心 家庭服務專員",
+    "es": "Especialista de Servicios Familiares — Broadway Center"
+  },
+  "North Beach Center Site Manager": {
+    "zh-Hant": "North Beach 中心 主任",
+    "es": "Responsable — North Beach Center"
+  },
+  "North Beach Center Family Service Specialist": {
+    "zh-Hant": "North Beach 中心 家庭服務專員",
+    "es": "Especialista de Servicios Familiares — North Beach Center"
+  },
+  "Rainbow Center Site Manager": {
+    "zh-Hant": "Rainbow 中心 主任",
+    "es": "Responsable — Rainbow Center"
+  },
+  "Rainbow Center Family Service Specialist": {
+    "zh-Hant": "Rainbow 中心 家庭服務專員",
+    "es": "Especialista de Servicios Familiares — Rainbow Center"
+  },
+  "St. Luke’s Center Site Manager": {
+    "zh-Hant": "St. Luke’s Center 主任",
+    "es": "Responsable — St. Luke’s Center"
+  },
+  "St. Luke’s Center Family Service Specialist": {
+    "zh-Hant": "St. Luke’s Center 家庭服務專員",
+    "es": "Especialista de Servicios Familiares — St. Luke’s Center"
+  },
+  "Geary Center Site Manager": {
+    "zh-Hant": "Geary 中心 主任",
+    "es": "Responsable — Geary Center"
+  },
+  "Geary Center Family Service Specialist": {
+    "zh-Hant": "Geary 中心 家庭服務專員",
+    "es": "Especialista de Servicios Familiares — Geary Center"
+  },
+  "Richmond Center Site Manager": {
+    "zh-Hant": "Richmond 中心 主任",
+    "es": "Responsable — Richmond Center"
+  },
+  "Richmond Center Family Service Specialist": {
+    "zh-Hant": "Richmond 中心 家庭服務專員",
+    "es": "Especialista de Servicios Familiares — Richmond Center"
+  },
+  "Sunset Center Site Manager": {
+    "zh-Hant": "Sunset 中心 主任",
+    "es": "Responsable — Sunset Center"
+  },
+  "Sunset Center Family Service Specialist": {
+    "zh-Hant": "Sunset 中心 家庭服務專員",
+    "es": "Especialista de Servicios Familiares — Sunset Center"
+  },
+  "PMsquare Children's Center Site Manager": {
+    "zh-Hant": "PMsquare Children's Center 主任",
+    "es": "Responsable — PMsquare Children's Center"
+  },
+  "PMsquare Children's Center Family Service Specialist": {
+    "zh-Hant": "PMsquare Children's Center 家庭服務專員",
+    "es": "Especialista de Servicios Familiares — PMsquare Children's Center"
+  },
+  "Dr. T.K.L. Center Site Manager": {
+    "zh-Hant": "Dr. T.K.L. 中心 主任",
+    "es": "Responsable — Dr. T.K.L. Center"
+  },
+  "TKL Children's Center Family Service Specialist": {
+    "zh-Hant": "TKL Children's Center 家庭服務專員",
+    "es": "Especialista de Servicios Familiares — TKL Children's Center"
+  },
+  "Center Staff": {
+    "zh-Hant": "中心人員",
+    "es": "Personal de los centros"
+  },
+  "Center": {
+    "zh-Hant": "中心",
+    "es": "Centro"
+  },
+  "All centers": {
+    "zh-Hant": "所有中心",
+    "es": "Todos los centros"
+  },
+  "No people have been added to this group yet.": {
+    "zh-Hant": "此群組尚未新增人員。",
+    "es": "Todavía no hay personas en este grupo."
+  },
+  "People groups": {
+    "zh-Hant": "人員分類",
+    "es": "Grupos de personas"
+  },
+  "No photo": {
+    "zh-Hant": "尚無照片",
+    "es": "Sin foto"
+  },
+  "Spanish": {
+    "zh-Hant": "西班牙語",
+    "es": "Español"
+  },
+  "Chinese": {
+    "zh-Hant": "中文",
+    "es": "Chino"
+  },
+  "Mandarin": {
+    "zh-Hant": "國語",
+    "es": "Mandarín"
+  },
+  "Cantonese": {
+    "zh-Hant": "粵語",
+    "es": "Cantonés"
+  },
+  "Female": {
+    "zh-Hant": "女",
+    "es": "Femenino"
+  },
+  "Male": {
+    "zh-Hant": "男",
+    "es": "Masculino"
+  },
+  "Mother": {
+    "zh-Hant": "母親",
+    "es": "Madre"
+  },
+  "Father": {
+    "zh-Hant": "父親",
+    "es": "Padre"
+  },
+  "Guardian": {
+    "zh-Hant": "監護人",
+    "es": "Tutor"
+  },
+  "St. Luke’s Center": {
+    "zh-Hant": "St. Luke’s 中心",
+    "es": "Centro St. Luke’s"
+  },
+  "St. Luke's Center": {
+    "zh-Hant": "St. Luke’s 中心",
+    "es": "Centro St. Luke’s"
+  },
+  "Center team": {
+    "zh-Hant": "中心團隊",
+    "es": "Equipo del centro"
+  },
+  "Home": {
+    "zh-Hant": "首頁",
+    "es": "Inicio"
+  },
+  "Open menu": {
+    "zh-Hant": "開啟選單",
+    "es": "Abrir menú"
+  },
+  "Close menu": {
+    "zh-Hant": "關閉選單",
+    "es": "Cerrar menú"
+  },
+  "Mobile site navigation": {
+    "zh-Hant": "行動版導覽",
+    "es": "Navegación móvil"
+  }
+}

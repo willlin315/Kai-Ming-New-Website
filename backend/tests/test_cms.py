@@ -111,3 +111,24 @@ def test_media_storage_validation_and_persistence(monkeypatch,tmp_path,auth,api)
         assert any(m['id']==item['id'] for m in client.get('/admin/media',headers=auth).json())
     with TestClient(create_app(URL,TOKEN)) as restarted:
         assert restarted.get(path).content==response.content
+
+def test_translations_preserve_slots_and_publish_isolation(api,auth):
+    client,_=api
+    people=client.get('/admin/content',headers=auth).json()['people']
+    person=next(p for p in people if p['id']=='jerry-yang')
+    assert person['translations']['zh-Hant']['title']=='執行長'
+    assert person['translations']['es']['bio']
+    key='translated-'+uuid.uuid4().hex
+    post={'title':'English title','slug':key,'language':'en','bodyHtml':'<p>English body</p>',
+          'translations':{'zh-Hant':{'title':'中文標題','bodyHtml':'<p>中文內容</p>'},'es':{'title':'Título','bodyHtml':'<p>Contenido</p>'}}}
+    saved=client.put('/admin/posts/'+key,headers=auth,json={'expected_revision':0,'content':post})
+    assert saved.status_code==200,saved.text
+    assert client.get('/public/posts/'+key).status_code==404
+    assert client.post('/admin/posts/'+key+'/publish',headers=auth,json={'expected_revision':1}).status_code==200
+    public=client.get('/public/posts/'+key).json()
+    assert public['translations']['zh-Hant']['title']=='中文標題'
+    post['translations']['es']['title']='Borrador'
+    assert client.put('/admin/posts/'+key,headers=auth,json={'expected_revision':1,'content':post}).status_code==200
+    assert client.get('/public/posts/'+key).json()['translations']['es']['title']=='Título'
+    post['translations']={'xx':{'title':'invalid'}}
+    assert client.put('/admin/posts/'+key,headers=auth,json={'expected_revision':2,'content':post}).status_code==422
