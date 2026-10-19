@@ -253,7 +253,7 @@
   },
   "Parent Name": {
     "zh-Hant": "家長姓名",
-    "es": "Nombre de la persona"
+    "es": "Nombre del padre o la madre"
   },
   "“The teachers plan fun activities every day. My daughter always has a new art project to show me.”": {
     "zh-Hant": "「老師每天安排有趣的活動，女兒總有新的美術作品要給我看。」",
@@ -297,10 +297,10 @@
   },
   "— Parent Name": {
     "zh-Hant": "— 家長姓名",
-    "es": "— Nombre de la persona"
+    "es": "— Nombre del padre o la madre"
   },
   "“My son learned to share, take turns, and express his feelings. He is ready for kindergarten!”": {
-    "zh-Hant": "「兒子學會分享、輪流和表達感受，已經準備好上幼兒園了！」",
+    "zh-Hant": "「兒子學會分享、輪流和表達感受，已經準備好上幼稚園了！」",
     "es": "«Mi hijo aprendió a compartir, esperar su turno y expresar sus sentimientos. ¡Está listo para el kínder!»"
   },
   "“The healthy meals and outdoor play time mean my daughter comes home happy and full of energy.”": {
@@ -876,7 +876,7 @@
     "es": "3–5 años"
   },
   "Culturally responsive, family-centered, and child-interest-led curriculum that supports dual language learners, prepares children for kindergarten and provides a springboard for lifelong learning.": {
-    "zh-Hant": "回應文化、以家庭為中心並依循兒童興趣的課程，支持雙語學習，為幼兒園與終身學習奠定基礎。",
+    "zh-Hant": "回應文化、以家庭為中心並依循兒童興趣的課程，支持雙語學習，為幼稚園與終身學習奠定基礎。",
     "es": "Un currículo culturalmente pertinente, centrado en la familia y guiado por los intereses infantiles apoya a los niños bilingües y los prepara para el kínder y el aprendizaje permanente."
   },
   "Discover Our Centers Near You": {
@@ -1121,7 +1121,7 @@
   },
   "Once your family is found eligible for a space and a vacancy is available, one of our Family Advocates will reach out to verify your information.": {
     "zh-Hant": "當家庭符合資格且有名額時，家庭支援人員會聯絡您核實資料。",
-    "es": "Cuando su familia sea elegible y haya una vacante, un representante familiar se comunicará para verificar los datos."
+    "es": "Cuando su familia sea elegible y haya una vacante, un defensor familiar se comunicará para verificar los datos."
   },
   "Afterward, you’ll be invited to a formal intake appointment to complete enrollment and set a start date for your child!": {
     "zh-Hant": "之後將邀請您參加入學面談，完成手續並確定孩子的入學日期！",
@@ -1624,7 +1624,7 @@
     "es": "Fortalecemos la comunidad al fomentar el desarrollo de cada niño, colaborar con las familias y apoyar el crecimiento profesional de los educadores infantiles."
   },
   "We create safe, welcoming, and culturally responsive learning environments where children can build confidence, strengthen their communication skills, and develop the foundation they need for kindergarten and lifelong learning.": {
-    "zh-Hant": "我們打造安全、友善且回應文化的學習環境，讓孩子建立自信、強化溝通，為幼兒園及終身學習奠定基礎。",
+    "zh-Hant": "我們打造安全、友善且回應文化的學習環境，讓孩子建立自信、強化溝通，為幼稚園及終身學習奠定基礎。",
     "es": "Creamos entornos seguros, acogedores y culturalmente pertinentes donde los niños ganan confianza, fortalecen su comunicación y construyen bases para el kínder y el aprendizaje permanente."
   },
   "We envision a community where every child and family has the opportunity,": {
@@ -1712,7 +1712,7 @@
     "es": "Desarrollar amistades y habilidades emocionales"
   },
   "Prepare for kindergarten and lifelong learning": {
-    "zh-Hant": "為幼兒園及終身學習做準備",
+    "zh-Hant": "為幼稚園及終身學習做準備",
     "es": "Prepararse para el kínder y el aprendizaje permanente"
   },
   "Families know their children best. We listen to parents, communicate in the languages families understand, and connect them with staff who can answer questions and provide support.": {
@@ -1795,7 +1795,7 @@
     "zh-Hant": "自 1975 年起服務",
     "es": "Atendidos desde 1975"
   },
-  "Familys": {
+  "Families": {
     "zh-Hant": "個家庭",
     "es": "Familias"
   },
@@ -1888,7 +1888,7 @@
     "es": "Nuestros visitantes ayudan a las familias a reconocer y aprovechar esos momentos cotidianos."
   },
   "Growing Curious, Confident, and Ready for Kindergarten": {
-    "zh-Hant": "培養好奇、自信，準備迎接幼兒園",
+    "zh-Hant": "培養好奇、自信，準備迎接幼稚園",
     "es": "Curiosos, seguros y listos para el kínder"
   },
   "Ages 3–5 years": {
@@ -1900,7 +1900,7 @@
     "es": "La etapa preescolar trae grandes avances. En Kai Ming, los niños de 3 a 5 años aprenden jugando, explorando, relacionándose y experimentando en un entorno seguro y culturalmente pertinente."
   },
   "Our teachers follow children’s interests while intentionally building the language, social-emotional, cognitive, and physical skills that support kindergarten readiness and lifelong learning.": {
-    "zh-Hant": "老師依循兒童興趣，有計畫地培養語言、社交情緒、認知及身體能力，為幼兒園與終身學習做好準備。",
+    "zh-Hant": "老師依循兒童興趣，有計畫地培養語言、社交情緒、認知及身體能力，為幼稚園與終身學習做好準備。",
     "es": "Seguimos los intereses de los niños y desarrollamos intencionalmente habilidades lingüísticas, socioemocionales, cognitivas y físicas para el kínder y el aprendizaje permanente."
   },
   "What Your Child Will Experience": {
@@ -1964,11 +1964,11 @@
     "es": "— Maria Cuellar"
   },
   "Preparing for Kindergarten and Beyond": {
-    "zh-Hant": "為幼兒園及未來做準備",
+    "zh-Hant": "為幼稚園及未來做準備",
     "es": "Prepararse para el kínder y más allá"
   },
   "For us, kindergarten readiness is more than knowing letters and numbers.": {
-    "zh-Hant": "對我們來說，幼兒園準備不只是認識字母與數字。",
+    "zh-Hant": "對我們來說，幼稚園準備不只是認識字母與數字。",
     "es": "Para nosotros, prepararse para el kínder es más que conocer letras y números."
   },
   "We help children become:": {
@@ -2128,76 +2128,76 @@
     "es": "Apoye a Kai Ming Head Start: done a la educación temprana"
   },
   "Broadway Center Site Manager": {
-    "zh-Hant": "Broadway 中心 主任",
-    "es": "Responsable — Broadway Center"
+    "zh-Hant": "Broadway 中心主任",
+    "es": "Responsable del centro Broadway"
   },
   "Broadway Center  Family Service Specialist": {
-    "zh-Hant": "Broadway 中心 家庭服務專員",
-    "es": "Especialista de Servicios Familiares — Broadway Center"
+    "zh-Hant": "Broadway 中心家庭服務專員",
+    "es": "Especialista de servicios familiares del centro Broadway"
   },
   "North Beach Center Site Manager": {
-    "zh-Hant": "North Beach 中心 主任",
-    "es": "Responsable — North Beach Center"
+    "zh-Hant": "North Beach 中心主任",
+    "es": "Responsable del centro North Beach"
   },
   "North Beach Center Family Service Specialist": {
-    "zh-Hant": "North Beach 中心 家庭服務專員",
-    "es": "Especialista de Servicios Familiares — North Beach Center"
+    "zh-Hant": "North Beach 中心家庭服務專員",
+    "es": "Especialista de servicios familiares del centro North Beach"
   },
   "Rainbow Center Site Manager": {
-    "zh-Hant": "Rainbow 中心 主任",
-    "es": "Responsable — Rainbow Center"
+    "zh-Hant": "Rainbow 中心主任",
+    "es": "Responsable del centro Rainbow"
   },
   "Rainbow Center Family Service Specialist": {
-    "zh-Hant": "Rainbow 中心 家庭服務專員",
-    "es": "Especialista de Servicios Familiares — Rainbow Center"
+    "zh-Hant": "Rainbow 中心家庭服務專員",
+    "es": "Especialista de servicios familiares del centro Rainbow"
   },
   "St. Luke’s Center Site Manager": {
-    "zh-Hant": "St. Luke’s Center 主任",
-    "es": "Responsable — St. Luke’s Center"
+    "zh-Hant": "St. Luke’s 中心主任",
+    "es": "Responsable del centro St. Luke’s"
   },
   "St. Luke’s Center Family Service Specialist": {
-    "zh-Hant": "St. Luke’s Center 家庭服務專員",
-    "es": "Especialista de Servicios Familiares — St. Luke’s Center"
+    "zh-Hant": "St. Luke’s 中心家庭服務專員",
+    "es": "Especialista de servicios familiares del centro St. Luke’s"
   },
   "Geary Center Site Manager": {
-    "zh-Hant": "Geary 中心 主任",
-    "es": "Responsable — Geary Center"
+    "zh-Hant": "Geary 中心主任",
+    "es": "Responsable del centro Geary"
   },
   "Geary Center Family Service Specialist": {
-    "zh-Hant": "Geary 中心 家庭服務專員",
-    "es": "Especialista de Servicios Familiares — Geary Center"
+    "zh-Hant": "Geary 中心家庭服務專員",
+    "es": "Especialista de servicios familiares del centro Geary"
   },
   "Richmond Center Site Manager": {
-    "zh-Hant": "Richmond 中心 主任",
-    "es": "Responsable — Richmond Center"
+    "zh-Hant": "Richmond 中心主任",
+    "es": "Responsable del centro Richmond"
   },
   "Richmond Center Family Service Specialist": {
-    "zh-Hant": "Richmond 中心 家庭服務專員",
-    "es": "Especialista de Servicios Familiares — Richmond Center"
+    "zh-Hant": "Richmond 中心家庭服務專員",
+    "es": "Especialista de servicios familiares del centro Richmond"
   },
   "Sunset Center Site Manager": {
-    "zh-Hant": "Sunset 中心 主任",
-    "es": "Responsable — Sunset Center"
+    "zh-Hant": "Sunset 中心主任",
+    "es": "Responsable del centro Sunset"
   },
   "Sunset Center Family Service Specialist": {
-    "zh-Hant": "Sunset 中心 家庭服務專員",
-    "es": "Especialista de Servicios Familiares — Sunset Center"
+    "zh-Hant": "Sunset 中心家庭服務專員",
+    "es": "Especialista de servicios familiares del centro Sunset"
   },
   "PMsquare Children's Center Site Manager": {
-    "zh-Hant": "PMsquare Children's Center 主任",
-    "es": "Responsable — PMsquare Children's Center"
+    "zh-Hant": "PMsquare 兒童中心主任",
+    "es": "Responsable del centro infantil PMsquare"
   },
   "PMsquare Children's Center Family Service Specialist": {
-    "zh-Hant": "PMsquare Children's Center 家庭服務專員",
-    "es": "Especialista de Servicios Familiares — PMsquare Children's Center"
+    "zh-Hant": "PMsquare 兒童中心家庭服務專員",
+    "es": "Especialista de servicios familiares del centro infantil PMsquare"
   },
   "Dr. T.K.L. Center Site Manager": {
-    "zh-Hant": "Dr. T.K.L. 中心 主任",
-    "es": "Responsable — Dr. T.K.L. Center"
+    "zh-Hant": "Dr. T.K.L. 中心主任",
+    "es": "Responsable del centro Dr. T.K.L."
   },
   "TKL Children's Center Family Service Specialist": {
-    "zh-Hant": "TKL Children's Center 家庭服務專員",
-    "es": "Especialista de Servicios Familiares — TKL Children's Center"
+    "zh-Hant": "Dr. T.K.L. 中心家庭服務專員",
+    "es": "Especialista de servicios familiares del centro Dr. T.K.L."
   },
   "Center Staff": {
     "zh-Hant": "中心人員",
@@ -2338,5 +2338,101 @@
   "Sunset Center — 2800 Taraval St. (38th Ave.)": {
     "zh-Hant": "Sunset 中心 — 2800 Taraval St. (38th Ave.)",
     "es": "Centro Sunset — 2800 Taraval St. (38th Ave.)"
+  },
+  "African Languages": {
+    "zh-Hant": "非洲語言",
+    "es": "Idiomas africanos"
+  },
+  "American Sign Language": {
+    "zh-Hant": "美國手語",
+    "es": "Lengua de señas americana"
+  },
+  "Caribbean Languages": {
+    "zh-Hant": "加勒比海語言",
+    "es": "Idiomas del Caribe"
+  },
+  "East Asian Languages (Non-Chinese)": {
+    "zh-Hant": "東亞語言（非中文）",
+    "es": "Idiomas de Asia oriental (no chinos)"
+  },
+  "European & Slavic Languages": {
+    "zh-Hant": "歐洲及斯拉夫語言",
+    "es": "Idiomas europeos y eslavos"
+  },
+  "Middle Eastern & South Asian Languages": {
+    "zh-Hant": "中東及南亞語言",
+    "es": "Idiomas de Oriente Medio y Asia meridional"
+  },
+  "Native Central American, South American, and Mexican Languages": {
+    "zh-Hant": "中美洲、南美洲及墨西哥原住民語言",
+    "es": "Lenguas indígenas de Centroamérica, Sudamérica y México"
+  },
+  "Native North American/Alaska Native Languages": {
+    "zh-Hant": "北美原住民／阿拉斯加原住民語言",
+    "es": "Lenguas indígenas de Norteamérica y Alaska"
+  },
+  "Pacific Island Languages": {
+    "zh-Hant": "太平洋島嶼語言",
+    "es": "Idiomas de las islas del Pacífico"
+  },
+  "Unspecified": {
+    "zh-Hant": "未指定",
+    "es": "Sin especificar"
+  },
+  "Grandparent": {
+    "zh-Hant": "祖父母",
+    "es": "Abuelo/a"
+  },
+  "Home-Based Program": {
+    "zh-Hant": "到宅服務課程",
+    "es": "Programa en el hogar"
+  },
+  "Broadway — 820 Battery St.": {
+    "zh-Hant": "Broadway 中心 — 820 Battery St.",
+    "es": "Centro Broadway — 820 Battery St."
+  },
+  "Dr. T.K.L. — 950 Powell St.": {
+    "zh-Hant": "Dr. T.K.L. 中心 — 950 Powell St.",
+    "es": "Centro Dr. T.K.L. — 950 Powell St."
+  },
+  "Dr. T.K.L. — 950 Powell St. (older than 24 months)": {
+    "zh-Hant": "Dr. T.K.L. 中心 — 950 Powell St.（24 個月以上）",
+    "es": "Centro Dr. T.K.L. — 950 Powell St. (mayores de 24 meses)"
+  },
+  "Geary — 6221 Geary Blvd.": {
+    "zh-Hant": "Geary 中心 — 6221 Geary Blvd.",
+    "es": "Centro Geary — 6221 Geary Blvd."
+  },
+  "North Beach — 1170 Columbus Ave.": {
+    "zh-Hant": "North Beach 中心 — 1170 Columbus Ave.",
+    "es": "Centro North Beach — 1170 Columbus Ave."
+  },
+  "PMsquare Children's Center (Mission Bay) — 671 China Basin St.": {
+    "zh-Hant": "PMsquare 兒童中心（Mission Bay）— 671 China Basin St.",
+    "es": "Centro infantil PMsquare (Mission Bay) — 671 China Basin St."
+  },
+  "Rainbow — 799 Pacific Ave.": {
+    "zh-Hant": "Rainbow 中心 — 799 Pacific Ave.",
+    "es": "Centro Rainbow — 799 Pacific Ave."
+  },
+  "Richmond — 426 33rd Ave.": {
+    "zh-Hant": "Richmond 中心 — 426 33rd Ave.",
+    "es": "Centro Richmond — 426 33rd Ave."
+  },
+  "St. Luke's — 1755 Clay St.": {
+    "zh-Hant": "St. Luke’s 中心 — 1755 Clay St.",
+    "es": "Centro St. Luke’s — 1755 Clay St."
+  },
+  "St. Luke's — 1755 Clay St. (older than 24 months)": {
+    "zh-Hant": "St. Luke’s 中心 — 1755 Clay St.（24 個月以上）",
+    "es": "Centro St. Luke’s — 1755 Clay St. (mayores de 24 meses)"
+  },
+  "Sunset — 2800 Taraval St.": {
+    "zh-Hant": "Sunset 中心 — 2800 Taraval St.",
+    "es": "Centro Sunset — 2800 Taraval St."
+  },
+  "Sunset — 2800 Taraval St. (older than 24 months)": {
+    "zh-Hant": "Sunset 中心 — 2800 Taraval St.（24 個月以上）",
+    "es": "Centro Sunset — 2800 Taraval St. (mayores de 24 meses)"
   }
 }
