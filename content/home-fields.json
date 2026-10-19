@@ -1,0 +1,732 @@
+[
+  {
+    "id": "image-0",
+    "type": "image",
+    "group": "Home section 1",
+    "label": "Section photo",
+    "value": "/media/4ee2d0f7d5ab171fcc71.webp",
+    "alt": "",
+    "owner": "comp-mud43f15_img"
+  },
+  {
+    "id": "text-0",
+    "type": "text",
+    "group": "Explore the Early Care and Education Your Child Deserves",
+    "label": "Explore the Early Care and Education Your Child Deserves",
+    "value": "Explore the Early Care and Education Your Child Deserves",
+    "owner": "comp-mud45vef"
+  },
+  {
+    "id": "text-1",
+    "type": "text",
+    "group": "Explore the Early Care and Education Your Child Deserves",
+    "label": "Several award-winning early childhood education programs form the core of what we offer.",
+    "value": "Several award-winning early childhood education programs form the core of what we offer.",
+    "owner": "comp-mud45vei"
+  },
+  {
+    "id": "image-1",
+    "type": "image",
+    "group": "Explore the Early Care and Education Your Child Deserves",
+    "label": "Prenatal & Home-Based",
+    "value": "/media/3036b56b4e16e2bd2eda.jpg",
+    "alt": "Prenatal & Home-Based",
+    "owner": "img_comp-mud45vek"
+  },
+  {
+    "id": "text-2",
+    "type": "text",
+    "group": "Explore the Early Care and Education Your Child Deserves",
+    "label": "Prenatal & Home-Based",
+    "value": "Prenatal & Home-Based",
+    "owner": "comp-mud45vgd"
+  },
+  {
+    "id": "text-3",
+    "type": "text",
+    "group": "Explore the Early Care and Education Your Child Deserves",
+    "label": "0 - 36 months",
+    "value": "0 - 36 months",
+    "owner": "comp-mud45vgd"
+  },
+  {
+    "id": "text-4",
+    "type": "text",
+    "group": "Explore the Early Care and Education Your Child Deserves",
+    "label": "Weekly home visits and bi-weekly center-based socialization, combined with comprehensive health and ",
+    "value": "Weekly home visits and bi-weekly center-based socialization, combined with comprehensive health and wellness services, help parents and children build a strong start together.",
+    "owner": "comp-mud45vgx"
+  },
+  {
+    "id": "text-5",
+    "type": "text",
+    "group": "Explore the Early Care and Education Your Child Deserves",
+    "label": "​",
+    "value": "​",
+    "owner": "comp-mud45vgx"
+  },
+  {
+    "id": "text-6",
+    "type": "text",
+    "group": "Explore the Early Care and Education Your Child Deserves",
+    "label": "​",
+    "value": "​",
+    "owner": "comp-mud45vgx"
+  },
+  {
+    "id": "text-7",
+    "type": "text",
+    "group": "Explore the Early Care and Education Your Child Deserves",
+    "label": "​",
+    "value": "​",
+    "owner": "comp-mud45vgx"
+  },
+  {
+    "id": "text-8",
+    "type": "text",
+    "group": "Explore the Early Care and Education Your Child Deserves",
+    "label": "Learn More",
+    "value": "Learn More",
+    "owner": "comp-mud45vgx"
+  },
+  {
+    "id": "image-2",
+    "type": "image",
+    "group": "Explore the Early Care and Education Your Child Deserves",
+    "label": "Infant & Toddler Care",
+    "value": "/media/b9bbe28cc0af2de48d3a.jpg",
+    "alt": "Infant & Toddler Care",
+    "owner": "img_comp-mud45vh4"
+  },
+  {
+    "id": "text-9",
+    "type": "text",
+    "group": "Explore the Early Care and Education Your Child Deserves",
+    "label": "Infant & Toddler Care",
+    "value": "Infant & Toddler Care",
+    "owner": "comp-mud45vhe"
+  },
+  {
+    "id": "text-10",
+    "type": "text",
+    "group": "Explore the Early Care and Education Your Child Deserves",
+    "label": "3 - 36 months",
+    "value": "3 - 36 months",
+    "owner": "comp-mud45vhe"
+  },
+  {
+    "id": "text-11",
+    "type": "text",
+    "group": "Explore the Early Care and Education Your Child Deserves",
+    "label": "Nurturing, relationship-based care supports children’s social-emotional, language, cognitive, and ph",
+    "value": "Nurturing, relationship-based care supports children’s social-emotional, language, cognitive, and physical development, building strong foundations for learning during the most critical early years.",
+    "owner": "comp-mud45vhm"
+  },
+  {
+    "id": "text-12",
+    "type": "text",
+    "group": "Explore the Early Care and Education Your Child Deserves",
+    "label": "​",
+    "value": "​",
+    "owner": "comp-mud45vhm"
+  },
+  {
+    "id": "text-13",
+    "type": "text",
+    "group": "Explore the Early Care and Education Your Child Deserves",
+    "label": "Learn More",
+    "value": "Learn More",
+    "owner": "comp-mud45vhm"
+  },
+  {
+    "id": "image-3",
+    "type": "image",
+    "group": "Explore the Early Care and Education Your Child Deserves",
+    "label": "Preschool",
+    "value": "/media/a78726d62e9f7c7620c1.jpg",
+    "alt": "Preschool",
+    "owner": "img_comp-mud45vhw"
+  },
+  {
+    "id": "text-14",
+    "type": "text",
+    "group": "Explore the Early Care and Education Your Child Deserves",
+    "label": "Preschool",
+    "value": "Preschool",
+    "owner": "comp-mud45viq"
+  },
+  {
+    "id": "text-15",
+    "type": "text",
+    "group": "Explore the Early Care and Education Your Child Deserves",
+    "label": "3 - 5 years",
+    "value": "3 - 5 years",
+    "owner": "comp-mud45viq"
+  },
+  {
+    "id": "text-16",
+    "type": "text",
+    "group": "Explore the Early Care and Education Your Child Deserves",
+    "label": "Culturally responsive, family-centered, and child-interest-led curriculum that supports dual languag",
+    "value": "Culturally responsive, family-centered, and child-interest-led curriculum that supports dual language learners, prepares children for kindergarten and provides a springboard for lifelong learning.",
+    "owner": "comp-mud45vj3"
+  },
+  {
+    "id": "text-17",
+    "type": "text",
+    "group": "Explore the Early Care and Education Your Child Deserves",
+    "label": "​",
+    "value": "​",
+    "owner": "comp-mud45vj3"
+  },
+  {
+    "id": "text-18",
+    "type": "text",
+    "group": "Explore the Early Care and Education Your Child Deserves",
+    "label": "Learn More",
+    "value": "Learn More",
+    "owner": "comp-mud45vj3"
+  },
+  {
+    "id": "text-19",
+    "type": "text",
+    "group": "Discover Our Centers Near You",
+    "label": "Discover Our Centers Near You",
+    "value": "Discover Our Centers Near You",
+    "owner": "comp-mufv1oe4"
+  },
+  {
+    "id": "text-20",
+    "type": "text",
+    "group": "Discover Our Centers Near You",
+    "label": "Nine centers across San Francisco, each offering care and education close to home.",
+    "value": "Nine centers across San Francisco, each offering care and education close to home.",
+    "owner": "comp-mufv1oep"
+  },
+  {
+    "id": "text-21",
+    "type": "text",
+    "group": "Discover Our Centers Near You",
+    "label": "1. Broadway Center",
+    "value": "1. Broadway Center",
+    "owner": "comp-mufv1oet1"
+  },
+  {
+    "id": "text-22",
+    "type": "text",
+    "group": "Discover Our Centers Near You",
+    "label": "Infant, Toddler, Preschool",
+    "value": "Infant, Toddler, Preschool",
+    "owner": "comp-mufv1oew"
+  },
+  {
+    "id": "text-23",
+    "type": "text",
+    "group": "Discover Our Centers Near You",
+    "label": "820 Battery St, 94133, San Francisco",
+    "value": "820 Battery St, 94133, San Francisco",
+    "owner": "comp-mufv1oew"
+  },
+  {
+    "id": "text-24",
+    "type": "text",
+    "group": "Discover Our Centers Near You",
+    "label": "2. Rainbow Center",
+    "value": "2. Rainbow Center",
+    "owner": "comp-mufv1of3"
+  },
+  {
+    "id": "text-25",
+    "type": "text",
+    "group": "Discover Our Centers Near You",
+    "label": "Infant, Toddler, Preschool",
+    "value": "Infant, Toddler, Preschool",
+    "owner": "comp-mufv1of6"
+  },
+  {
+    "id": "text-26",
+    "type": "text",
+    "group": "Discover Our Centers Near You",
+    "label": "799 Pacific Ave, 94133, San Francisco",
+    "value": "799 Pacific Ave, 94133, San Francisco",
+    "owner": "comp-mufv1of6"
+  },
+  {
+    "id": "text-27",
+    "type": "text",
+    "group": "Discover Our Centers Near You",
+    "label": "3. Dr. T.K.L. Center",
+    "value": "3. Dr. T.K.L. Center",
+    "owner": "comp-mufv1ofa"
+  },
+  {
+    "id": "text-28",
+    "type": "text",
+    "group": "Discover Our Centers Near You",
+    "label": "Home Based, Preschool",
+    "value": "Home Based, Preschool",
+    "owner": "comp-mufv1ofc1"
+  },
+  {
+    "id": "text-29",
+    "type": "text",
+    "group": "Discover Our Centers Near You",
+    "label": "950 Powell St, 94108, San Francisco",
+    "value": "950 Powell St, 94108, San Francisco",
+    "owner": "comp-mufv1ofc1"
+  },
+  {
+    "id": "text-30",
+    "type": "text",
+    "group": "Discover Our Centers Near You",
+    "label": "4. North Beach Center",
+    "value": "4. North Beach Center",
+    "owner": "comp-mufv1omf"
+  },
+  {
+    "id": "text-31",
+    "type": "text",
+    "group": "Discover Our Centers Near You",
+    "label": "Infant, Toddler, Preschool",
+    "value": "Infant, Toddler, Preschool",
+    "owner": "comp-mufv1omg"
+  },
+  {
+    "id": "text-32",
+    "type": "text",
+    "group": "Discover Our Centers Near You",
+    "label": "1170 Columbus Ave, 94133, San Francisco",
+    "value": "1170 Columbus Ave, 94133, San Francisco",
+    "owner": "comp-mufv1omg"
+  },
+  {
+    "id": "text-33",
+    "type": "text",
+    "group": "Discover Our Centers Near You",
+    "label": "5. St. Luke’s Center",
+    "value": "5. St. Luke’s Center",
+    "owner": "comp-mufv1omg1"
+  },
+  {
+    "id": "text-34",
+    "type": "text",
+    "group": "Discover Our Centers Near You",
+    "label": "Toddler, Preschool",
+    "value": "Toddler, Preschool",
+    "owner": "comp-mufv1omg2"
+  },
+  {
+    "id": "text-35",
+    "type": "text",
+    "group": "Discover Our Centers Near You",
+    "label": "1755 Clay St, 94109, San Francisco",
+    "value": "1755 Clay St, 94109, San Francisco",
+    "owner": "comp-mufv1omg2"
+  },
+  {
+    "id": "text-36",
+    "type": "text",
+    "group": "Discover Our Centers Near You",
+    "label": "6. Geary Center",
+    "value": "6. Geary Center",
+    "owner": "comp-mufv1omg3"
+  },
+  {
+    "id": "text-37",
+    "type": "text",
+    "group": "Discover Our Centers Near You",
+    "label": "Toddler, Preschool",
+    "value": "Toddler, Preschool",
+    "owner": "comp-mufv1omg4"
+  },
+  {
+    "id": "text-38",
+    "type": "text",
+    "group": "Discover Our Centers Near You",
+    "label": "6221 Geary Blvd, 94121, San Francisco",
+    "value": "6221 Geary Blvd, 94121, San Francisco",
+    "owner": "comp-mufv1omg4"
+  },
+  {
+    "id": "text-39",
+    "type": "text",
+    "group": "Discover Our Centers Near You",
+    "label": "7. Richmond Center",
+    "value": "7. Richmond Center",
+    "owner": "comp-mufv1omh"
+  },
+  {
+    "id": "text-40",
+    "type": "text",
+    "group": "Discover Our Centers Near You",
+    "label": "Preschool",
+    "value": "Preschool",
+    "owner": "comp-mufv1omh1"
+  },
+  {
+    "id": "text-41",
+    "type": "text",
+    "group": "Discover Our Centers Near You",
+    "label": "426 33rd Ave, 94121, San Francisco",
+    "value": "426 33rd Ave, 94121, San Francisco",
+    "owner": "comp-mufv1omh1"
+  },
+  {
+    "id": "text-42",
+    "type": "text",
+    "group": "Discover Our Centers Near You",
+    "label": "8. Sunset Center",
+    "value": "8. Sunset Center",
+    "owner": "comp-mufv1omh2"
+  },
+  {
+    "id": "text-43",
+    "type": "text",
+    "group": "Discover Our Centers Near You",
+    "label": "Toddler, Preschool",
+    "value": "Toddler, Preschool",
+    "owner": "comp-mufv1omh3"
+  },
+  {
+    "id": "text-44",
+    "type": "text",
+    "group": "Discover Our Centers Near You",
+    "label": "2800 Taraval St, 94116, San Francisco",
+    "value": "2800 Taraval St, 94116, San Francisco",
+    "owner": "comp-mufv1omh3"
+  },
+  {
+    "id": "text-45",
+    "type": "text",
+    "group": "Discover Our Centers Near You",
+    "label": "9. PMsquare Center",
+    "value": "9. PMsquare Center",
+    "owner": "comp-mufv1omh4"
+  },
+  {
+    "id": "text-46",
+    "type": "text",
+    "group": "Discover Our Centers Near You",
+    "label": "Infant, Toddler, Preschool",
+    "value": "Infant, Toddler, Preschool",
+    "owner": "comp-mufv1omh5"
+  },
+  {
+    "id": "text-47",
+    "type": "text",
+    "group": "Discover Our Centers Near You",
+    "label": "671 China Basin St, 94158, San Francisco",
+    "value": "671 China Basin St, 94158, San Francisco",
+    "owner": "comp-mufv1omh5"
+  },
+  {
+    "id": "text-48",
+    "type": "text",
+    "group": "Discover Our Centers Near You",
+    "label": "View Our Centers",
+    "value": "View Our Centers",
+    "owner": "comp-mufv1oqq"
+  },
+  {
+    "id": "text-49",
+    "type": "text",
+    "group": "Potential Has No Limits",
+    "label": "Potential Has No Limits",
+    "value": "Potential Has No Limits",
+    "owner": "comp-mufv1p631"
+  },
+  {
+    "id": "text-50",
+    "type": "text",
+    "group": "Potential Has No Limits",
+    "label": "The Early Care and Education Your Child Needs",
+    "value": "The Early Care and Education Your Child Needs",
+    "owner": "comp-mufv1p65"
+  },
+  {
+    "id": "text-51",
+    "type": "text",
+    "group": "Potential Has No Limits",
+    "label": "Kai Ming Head Start, a trusted non-profit established in 1975. Our mission is to strengthen the comm",
+    "value": "Kai Ming Head Start, a trusted non-profit established in 1975. Our mission is to strengthen the community through nurturing children, supporting families, and promoting professional growth of staff. Our value is that we care for each child as our own, and treat each other with respect, kindness, and truthfulness.",
+    "owner": "comp-mufv1p65"
+  },
+  {
+    "id": "text-52",
+    "type": "text",
+    "group": "Potential Has No Limits",
+    "label": "Comprehensive Services",
+    "value": "Comprehensive Services",
+    "owner": "comp-mufv1p6j5"
+  },
+  {
+    "id": "text-53",
+    "type": "text",
+    "group": "Potential Has No Limits",
+    "label": "✔",
+    "value": "✔",
+    "owner": "comp-mufv1p6m"
+  },
+  {
+    "id": "text-54",
+    "type": "text",
+    "group": "Potential Has No Limits",
+    "label": "Designated family support: housing, health, education, and mental wellness.",
+    "value": " Designated family support: housing, health, education, and mental wellness.",
+    "owner": "comp-mufv1p6m"
+  },
+  {
+    "id": "text-55",
+    "type": "text",
+    "group": "Potential Has No Limits",
+    "label": "✔",
+    "value": "✔",
+    "owner": "comp-mufv1p6m"
+  },
+  {
+    "id": "text-56",
+    "type": "text",
+    "group": "Potential Has No Limits",
+    "label": "Health and nutrition include screenings, referrals, and CACFP multicultural meals.",
+    "value": " Health and nutrition include screenings, referrals, and CACFP multicultural meals.",
+    "owner": "comp-mufv1p6m"
+  },
+  {
+    "id": "text-57",
+    "type": "text",
+    "group": "Potential Has No Limits",
+    "label": "✔",
+    "value": "✔",
+    "owner": "comp-mufv1p6m"
+  },
+  {
+    "id": "text-58",
+    "type": "text",
+    "group": "Potential Has No Limits",
+    "label": "Parent engagement includes community events, policy council participation, and educational workshops",
+    "value": " Parent engagement includes community events, policy council participation, and educational workshops guided by family interest and needs.",
+    "owner": "comp-mufv1p6m"
+  },
+  {
+    "id": "text-59",
+    "type": "text",
+    "group": "Potential Has No Limits",
+    "label": "Child-Centered Curriculum",
+    "value": "Child-Centered Curriculum",
+    "owner": "comp-mufv1p6d"
+  },
+  {
+    "id": "text-60",
+    "type": "text",
+    "group": "Potential Has No Limits",
+    "label": "✔",
+    "value": "✔",
+    "owner": "comp-mufv1p6f1"
+  },
+  {
+    "id": "text-61",
+    "type": "text",
+    "group": "Potential Has No Limits",
+    "label": "Dual language learning enhances literacy and cultural awareness.",
+    "value": " Dual language learning enhances literacy and cultural awareness.",
+    "owner": "comp-mufv1p6f1"
+  },
+  {
+    "id": "text-62",
+    "type": "text",
+    "group": "Potential Has No Limits",
+    "label": "✔",
+    "value": "✔",
+    "owner": "comp-mufv1p6f1"
+  },
+  {
+    "id": "text-63",
+    "type": "text",
+    "group": "Potential Has No Limits",
+    "label": "Creative Curriculum provides hands-on, interest-based learning.",
+    "value": " Creative Curriculum provides hands-on, interest-based learning.",
+    "owner": "comp-mufv1p6f1"
+  },
+  {
+    "id": "text-64",
+    "type": "text",
+    "group": "Potential Has No Limits",
+    "label": "✔",
+    "value": "✔",
+    "owner": "comp-mufv1p6f1"
+  },
+  {
+    "id": "text-65",
+    "type": "text",
+    "group": "Potential Has No Limits",
+    "label": "Project Approach nurtures curiosity, problem-solving, and critical thinking.",
+    "value": " Project Approach nurtures curiosity, problem-solving, and critical thinking.",
+    "owner": "comp-mufv1p6f1"
+  },
+  {
+    "id": "text-66",
+    "type": "text",
+    "group": "Potential Has No Limits",
+    "label": "✔",
+    "value": "✔",
+    "owner": "comp-mufv1p6f1"
+  },
+  {
+    "id": "text-67",
+    "type": "text",
+    "group": "Potential Has No Limits",
+    "label": "Character education promotes respect, kindness, and emotional growth.",
+    "value": " Character education promotes respect, kindness, and emotional growth.",
+    "owner": "comp-mufv1p6f1"
+  },
+  {
+    "id": "text-68",
+    "type": "text",
+    "group": "Potential Has No Limits",
+    "label": "Quality Teachers",
+    "value": "Quality Teachers",
+    "owner": "comp-mufv1p671"
+  },
+  {
+    "id": "text-69",
+    "type": "text",
+    "group": "Potential Has No Limits",
+    "label": "✔",
+    "value": "✔",
+    "owner": "comp-mufv1p691"
+  },
+  {
+    "id": "text-70",
+    "type": "text",
+    "group": "Potential Has No Limits",
+    "label": "Experienced, certified educators holding A.A., B.A., or M.A. degrees in early childhood education, w",
+    "value": " Experienced, certified educators holding A.A., B.A., or M.A. degrees in early childhood education, with valid California teaching permits.",
+    "owner": "comp-mufv1p691"
+  },
+  {
+    "id": "text-71",
+    "type": "text",
+    "group": "Potential Has No Limits",
+    "label": "✔",
+    "value": "✔",
+    "owner": "comp-mufv1p691"
+  },
+  {
+    "id": "text-72",
+    "type": "text",
+    "group": "Potential Has No Limits",
+    "label": "Passionate about forming strong, meaningful connections with children.",
+    "value": " Passionate about forming strong, meaningful connections with children.",
+    "owner": "comp-mufv1p691"
+  },
+  {
+    "id": "text-73",
+    "type": "text",
+    "group": "Potential Has No Limits",
+    "label": "✔",
+    "value": "✔",
+    "owner": "comp-mufv1p691"
+  },
+  {
+    "id": "text-74",
+    "type": "text",
+    "group": "Potential Has No Limits",
+    "label": "Staff diversity reflects the languages and cultures of our families.",
+    "value": " Staff diversity reflects the languages and cultures of our families.",
+    "owner": "comp-mufv1p691"
+  },
+  {
+    "id": "text-75",
+    "type": "text",
+    "group": "Supported by",
+    "label": "Supported by",
+    "value": "Supported by",
+    "owner": "comp-mufv1pf5"
+  },
+  {
+    "id": "text-76",
+    "type": "text",
+    "group": "Supported by",
+    "label": "Office of Head Start · California Department of Social Services · California Department of Education",
+    "value": "Office of Head Start · California Department of Social Services · California Department of Education · San Francisco Department of Early Childhood · CACFP",
+    "owner": "comp-mufv1pf5"
+  },
+  {
+    "id": "image-4",
+    "type": "image",
+    "group": "Supported by",
+    "label": "sep_cdss.png",
+    "value": "/media/8345fea8c61c0cf1a278.png",
+    "alt": "sep_cdss.png",
+    "owner": "img_comp-muhgx7xb"
+  },
+  {
+    "id": "image-5",
+    "type": "image",
+    "group": "Supported by",
+    "label": "sep_sfec.png",
+    "value": "/media/2fb700221a182dbda49e.png",
+    "alt": "sep_sfec.png",
+    "owner": "img_comp-muhgx7xa1"
+  },
+  {
+    "id": "image-6",
+    "type": "image",
+    "group": "Supported by",
+    "label": "sep_caledu.png",
+    "value": "/media/415fb6a780ed6e793e97.png",
+    "alt": "sep_caledu.png",
+    "owner": "img_comp-muhgx7xa"
+  },
+  {
+    "id": "image-7",
+    "type": "image",
+    "group": "Supported by",
+    "label": "Sep-HeadStart.png",
+    "value": "/media/4858c93671b2e1e4246d.png",
+    "alt": "Sep-HeadStart.png",
+    "owner": "img_comp-muhgx7x7"
+  },
+  {
+    "id": "image-8",
+    "type": "image",
+    "group": "Supported by",
+    "label": "Sep-CACFP.png",
+    "value": "/media/5aaa5d048623833e7fb2.png",
+    "alt": "Sep-CACFP.png",
+    "owner": "img_comp-muhgx7xc"
+  },
+  {
+    "id": "image-9",
+    "type": "image",
+    "group": "Build Your Career in Early Education",
+    "label": "DJ7A2142.jpg",
+    "value": "/media/358c195c94bbb61ebcd8.webp",
+    "alt": "DJ7A2142.jpg",
+    "owner": "img_comp-mufv1pnj"
+  },
+  {
+    "id": "text-77",
+    "type": "text",
+    "group": "Build Your Career in Early Education",
+    "label": "Build Your Career in Early Education",
+    "value": "Build Your Career in Early Education",
+    "owner": "comp-mufv1poh3"
+  },
+  {
+    "id": "text-78",
+    "type": "text",
+    "group": "Build Your Career in Early Education",
+    "label": "Join a team of passionate educators who care for each child as their own.",
+    "value": "Join a team of passionate educators who care for each child as their own.",
+    "owner": "comp-mufv1poh8"
+  },
+  {
+    "id": "text-79",
+    "type": "text",
+    "group": "Build Your Career in Early Education",
+    "label": "View Careers",
+    "value": "View Careers",
+    "owner": "comp-mufv1poh13"
+  }
+]

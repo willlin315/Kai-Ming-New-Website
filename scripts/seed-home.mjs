@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+import {parseDocument} from 'htmlparser2';
+import {annotateHome} from '../lib/home-fields.js';
+const html=JSON.parse(fs.readFileSync('content/pages/home.json')).html;
+const dictionary=JSON.parse(fs.readFileSync('content/i18n/site.json'));
+const translate=(s,l)=>l==='en'?s:dictionary[s.trim()]?.[l]||s;
+const fields=annotateHome(parseDocument(html));
+const values=Object.fromEntries(fields.map(f=>[f.id,f.type==='text'?Object.fromEntries(['en','zh-Hant','es'].map(l=>[l,translate(f.value,l)])):{src:f.value,alt:f.alt,position:'50% 50%'}]));
+fs.writeFileSync('content/home-fields.json',JSON.stringify(fields,null,2)+'\n');
+fs.writeFileSync('content/home-content.json',JSON.stringify({id:'home',title:'Home',values},null,2)+'\n');
+console.log(`${fields.length} editable Home fields`);
