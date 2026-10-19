@@ -1,0 +1,456 @@
+{
+  "id": "home",
+  "title": "Home",
+  "values": {
+    "image-0": {
+      "src": "/media/4ee2d0f7d5ab171fcc71.webp",
+      "alt": "",
+      "position": "50% 50%"
+    },
+    "text-0": {
+      "en": "Explore the Early Care and Education Your Child Deserves",
+      "zh-Hant": "探索孩子值得擁有的早期照護與教育",
+      "es": "Descubra el cuidado y la educación temprana que su hijo merece"
+    },
+    "text-1": {
+      "en": "Several award-winning early childhood education programs form the core of what we offer.",
+      "zh-Hant": "多項獲獎幼兒教育課程，是我們服務的核心。",
+      "es": "Varios programas premiados de educación infantil forman el núcleo de nuestros servicios."
+    },
+    "image-1": {
+      "src": "/media/3036b56b4e16e2bd2eda.jpg",
+      "alt": "Prenatal & Home-Based",
+      "position": "50% 50%"
+    },
+    "text-2": {
+      "en": "Prenatal & Home-Based",
+      "zh-Hant": "產前與到宅服務",
+      "es": "Servicios prenatales y en el hogar"
+    },
+    "text-3": {
+      "en": "0 - 36 months",
+      "zh-Hant": "0–36 個月",
+      "es": "0–36 meses"
+    },
+    "text-4": {
+      "en": "Weekly home visits and bi-weekly center-based socialization, combined with comprehensive health and wellness services, help parents and children build a strong start together.",
+      "zh-Hant": "每週到宅訪視與每兩週一次的中心團體活動，結合完整健康服務，協助親子共同建立良好起點。",
+      "es": "Las visitas semanales al hogar y actividades de socialización en el centro cada dos semanas, junto con servicios integrales de salud y bienestar, ayudan a padres e hijos a comenzar con bases sólidas."
+    },
+    "text-5": {
+      "en": "​",
+      "zh-Hant": "​",
+      "es": "​"
+    },
+    "text-6": {
+      "en": "​",
+      "zh-Hant": "​",
+      "es": "​"
+    },
+    "text-7": {
+      "en": "​",
+      "zh-Hant": "​",
+      "es": "​"
+    },
+    "text-8": {
+      "en": "Learn More",
+      "zh-Hant": "了解更多",
+      "es": "Más información"
+    },
+    "image-2": {
+      "src": "/media/b9bbe28cc0af2de48d3a.jpg",
+      "alt": "Infant & Toddler Care",
+      "position": "50% 50%"
+    },
+    "text-9": {
+      "en": "Infant & Toddler Care",
+      "zh-Hant": "嬰幼兒照護",
+      "es": "Cuidado de bebés y niños pequeños"
+    },
+    "text-10": {
+      "en": "3 - 36 months",
+      "zh-Hant": "3–36 個月",
+      "es": "3–36 meses"
+    },
+    "text-11": {
+      "en": "Nurturing, relationship-based care supports children’s social-emotional, language, cognitive, and physical development, building strong foundations for learning during the most critical early years.",
+      "zh-Hant": "以關係為基礎的溫暖照護，支持社交情緒、語言、認知與身體發展，在關鍵早期建立學習基礎。",
+      "es": "El cuidado afectuoso basado en relaciones apoya el desarrollo socioemocional, lingüístico, cognitivo y físico durante los primeros años más importantes."
+    },
+    "text-12": {
+      "en": "​",
+      "zh-Hant": "​",
+      "es": "​"
+    },
+    "text-13": {
+      "en": "Learn More",
+      "zh-Hant": "了解更多",
+      "es": "Más información"
+    },
+    "image-3": {
+      "src": "/media/a78726d62e9f7c7620c1.jpg",
+      "alt": "Preschool",
+      "position": "50% 50%"
+    },
+    "text-14": {
+      "en": "Preschool",
+      "zh-Hant": "學前教育",
+      "es": "Preescolar"
+    },
+    "text-15": {
+      "en": "3 - 5 years",
+      "zh-Hant": "3–5 歲",
+      "es": "3–5 años"
+    },
+    "text-16": {
+      "en": "Culturally responsive, family-centered, and child-interest-led curriculum that supports dual language learners, prepares children for kindergarten and provides a springboard for lifelong learning.",
+      "zh-Hant": "回應文化、以家庭為中心並依循兒童興趣的課程，支持雙語學習，為幼兒園與終身學習奠定基礎。",
+      "es": "Un currículo culturalmente pertinente, centrado en la familia y guiado por los intereses infantiles apoya a los niños bilingües y los prepara para el kínder y el aprendizaje permanente."
+    },
+    "text-17": {
+      "en": "​",
+      "zh-Hant": "​",
+      "es": "​"
+    },
+    "text-18": {
+      "en": "Learn More",
+      "zh-Hant": "了解更多",
+      "es": "Más información"
+    },
+    "text-19": {
+      "en": "Discover Our Centers Near You",
+      "zh-Hant": "探索您附近的中心",
+      "es": "Descubra nuestros centros cerca de usted"
+    },
+    "text-20": {
+      "en": "Nine centers across San Francisco, each offering care and education close to home.",
+      "zh-Hant": "九個中心遍布舊金山，在住家附近提供照護與教育。",
+      "es": "Nueve centros en San Francisco ofrecen cuidado y educación cerca de casa."
+    },
+    "text-21": {
+      "en": "1. Broadway Center",
+      "zh-Hant": "1. Broadway 中心",
+      "es": "1. Centro Broadway"
+    },
+    "text-22": {
+      "en": "Infant, Toddler, Preschool",
+      "zh-Hant": "嬰兒、幼兒、學前班",
+      "es": "Bebés, niños pequeños y preescolar"
+    },
+    "text-23": {
+      "en": "820 Battery St, 94133, San Francisco",
+      "zh-Hant": "820 Battery St, 94133, San Francisco",
+      "es": "820 Battery St, 94133, San Francisco"
+    },
+    "text-24": {
+      "en": "2. Rainbow Center",
+      "zh-Hant": "2. Rainbow 中心",
+      "es": "2. Centro Rainbow"
+    },
+    "text-25": {
+      "en": "Infant, Toddler, Preschool",
+      "zh-Hant": "嬰兒、幼兒、學前班",
+      "es": "Bebés, niños pequeños y preescolar"
+    },
+    "text-26": {
+      "en": "799 Pacific Ave, 94133, San Francisco",
+      "zh-Hant": "799 Pacific Ave, 94133, San Francisco",
+      "es": "799 Pacific Ave, 94133, San Francisco"
+    },
+    "text-27": {
+      "en": "3. Dr. T.K.L. Center",
+      "zh-Hant": "3. Dr. T.K.L. 中心",
+      "es": "3. Centro Dr. T.K.L."
+    },
+    "text-28": {
+      "en": "Home Based, Preschool",
+      "zh-Hant": "到宅服務、學前班",
+      "es": "Programa en el hogar y preescolar"
+    },
+    "text-29": {
+      "en": "950 Powell St, 94108, San Francisco",
+      "zh-Hant": "950 Powell St, 94108, San Francisco",
+      "es": "950 Powell St, 94108, San Francisco"
+    },
+    "text-30": {
+      "en": "4. North Beach Center",
+      "zh-Hant": "4. North Beach 中心",
+      "es": "4. Centro North Beach"
+    },
+    "text-31": {
+      "en": "Infant, Toddler, Preschool",
+      "zh-Hant": "嬰兒、幼兒、學前班",
+      "es": "Bebés, niños pequeños y preescolar"
+    },
+    "text-32": {
+      "en": "1170 Columbus Ave, 94133, San Francisco",
+      "zh-Hant": "1170 Columbus Ave, 94133, San Francisco",
+      "es": "1170 Columbus Ave, 94133, San Francisco"
+    },
+    "text-33": {
+      "en": "5. St. Luke’s Center",
+      "zh-Hant": "5. St. Luke’s 中心",
+      "es": "5. Centro St. Luke’s"
+    },
+    "text-34": {
+      "en": "Toddler, Preschool",
+      "zh-Hant": "幼兒、學前班",
+      "es": "Niños pequeños y preescolar"
+    },
+    "text-35": {
+      "en": "1755 Clay St, 94109, San Francisco",
+      "zh-Hant": "1755 Clay St, 94109, San Francisco",
+      "es": "1755 Clay St, 94109, San Francisco"
+    },
+    "text-36": {
+      "en": "6. Geary Center",
+      "zh-Hant": "6. Geary 中心",
+      "es": "6. Centro Geary"
+    },
+    "text-37": {
+      "en": "Toddler, Preschool",
+      "zh-Hant": "幼兒、學前班",
+      "es": "Niños pequeños y preescolar"
+    },
+    "text-38": {
+      "en": "6221 Geary Blvd, 94121, San Francisco",
+      "zh-Hant": "6221 Geary Blvd, 94121, San Francisco",
+      "es": "6221 Geary Blvd, 94121, San Francisco"
+    },
+    "text-39": {
+      "en": "7. Richmond Center",
+      "zh-Hant": "7. Richmond 中心",
+      "es": "7. Centro Richmond"
+    },
+    "text-40": {
+      "en": "Preschool",
+      "zh-Hant": "學前教育",
+      "es": "Preescolar"
+    },
+    "text-41": {
+      "en": "426 33rd Ave, 94121, San Francisco",
+      "zh-Hant": "426 33rd Ave, 94121, San Francisco",
+      "es": "426 33rd Ave, 94121, San Francisco"
+    },
+    "text-42": {
+      "en": "8. Sunset Center",
+      "zh-Hant": "8. Sunset 中心",
+      "es": "8. Centro Sunset"
+    },
+    "text-43": {
+      "en": "Toddler, Preschool",
+      "zh-Hant": "幼兒、學前班",
+      "es": "Niños pequeños y preescolar"
+    },
+    "text-44": {
+      "en": "2800 Taraval St, 94116, San Francisco",
+      "zh-Hant": "2800 Taraval St, 94116, San Francisco",
+      "es": "2800 Taraval St, 94116, San Francisco"
+    },
+    "text-45": {
+      "en": "9. PMsquare Center",
+      "zh-Hant": "9. PMsquare 中心",
+      "es": "9. Centro PMsquare"
+    },
+    "text-46": {
+      "en": "Infant, Toddler, Preschool",
+      "zh-Hant": "嬰兒、幼兒、學前班",
+      "es": "Bebés, niños pequeños y preescolar"
+    },
+    "text-47": {
+      "en": "671 China Basin St, 94158, San Francisco",
+      "zh-Hant": "671 China Basin St, 94158, San Francisco",
+      "es": "671 China Basin St, 94158, San Francisco"
+    },
+    "text-48": {
+      "en": "View Our Centers",
+      "zh-Hant": "查看所有中心",
+      "es": "Ver nuestros centros"
+    },
+    "text-49": {
+      "en": "Potential Has No Limits",
+      "zh-Hant": "潛能無限",
+      "es": "El potencial no tiene límites"
+    },
+    "text-50": {
+      "en": "The Early Care and Education Your Child Needs",
+      "zh-Hant": "孩子需要的早期照護與教育",
+      "es": "El cuidado y la educación temprana que su hijo necesita"
+    },
+    "text-51": {
+      "en": "Kai Ming Head Start, a trusted non-profit established in 1975. Our mission is to strengthen the community through nurturing children, supporting families, and promoting professional growth of staff. Our value is that we care for each child as our own, and treat each other with respect, kindness, and truthfulness.",
+      "zh-Hant": "啟明 Head Start 是成立於 1975 年、值得信賴的非營利機構。我們透過培育兒童、支持家庭與促進員工專業成長來強化社區。我們視每個孩子如己出，並以尊重、善意與誠信相待。",
+      "es": "Kai Ming Head Start es una organización sin fines de lucro de confianza, fundada en 1975. Fortalecemos la comunidad al cuidar a los niños, apoyar a las familias y promover el crecimiento profesional del personal. Tratamos a cada niño como propio y nos relacionamos con respeto, amabilidad y honestidad."
+    },
+    "text-52": {
+      "en": "Comprehensive Services",
+      "zh-Hant": "全方位服務",
+      "es": "Servicios integrales"
+    },
+    "text-53": {
+      "en": "✔",
+      "zh-Hant": "✔",
+      "es": "✔"
+    },
+    "text-54": {
+      "en": " Designated family support: housing, health, education, and mental wellness.",
+      "zh-Hant": "專責家庭支援：住房、健康、教育與心理健康。",
+      "es": "Apoyo familiar dedicado: vivienda, salud, educación y bienestar emocional."
+    },
+    "text-55": {
+      "en": "✔",
+      "zh-Hant": "✔",
+      "es": "✔"
+    },
+    "text-56": {
+      "en": " Health and nutrition include screenings, referrals, and CACFP multicultural meals.",
+      "zh-Hant": "健康與營養服務包含篩檢、轉介及 CACFP 多元文化餐點。",
+      "es": "Salud y nutrición incluyen exámenes, referencias y comidas multiculturales del CACFP."
+    },
+    "text-57": {
+      "en": "✔",
+      "zh-Hant": "✔",
+      "es": "✔"
+    },
+    "text-58": {
+      "en": " Parent engagement includes community events, policy council participation, and educational workshops guided by family interest and needs.",
+      "zh-Hant": "家長參與包含社區活動、政策委員會，以及依家庭興趣與需求安排的教育工作坊。",
+      "es": "La participación familiar incluye eventos comunitarios, el consejo de políticas y talleres educativos según los intereses y necesidades de las familias."
+    },
+    "text-59": {
+      "en": "Child-Centered Curriculum",
+      "zh-Hant": "以兒童為中心的課程",
+      "es": "Currículo centrado en el niño"
+    },
+    "text-60": {
+      "en": "✔",
+      "zh-Hant": "✔",
+      "es": "✔"
+    },
+    "text-61": {
+      "en": " Dual language learning enhances literacy and cultural awareness.",
+      "zh-Hant": "雙語學習提升讀寫能力與文化理解。",
+      "es": "El aprendizaje bilingüe fortalece la alfabetización y la conciencia cultural."
+    },
+    "text-62": {
+      "en": "✔",
+      "zh-Hant": "✔",
+      "es": "✔"
+    },
+    "text-63": {
+      "en": " Creative Curriculum provides hands-on, interest-based learning.",
+      "zh-Hant": "Creative Curriculum 提供實作與興趣導向的學習。",
+      "es": "Creative Curriculum ofrece aprendizaje práctico basado en intereses."
+    },
+    "text-64": {
+      "en": "✔",
+      "zh-Hant": "✔",
+      "es": "✔"
+    },
+    "text-65": {
+      "en": " Project Approach nurtures curiosity, problem-solving, and critical thinking.",
+      "zh-Hant": "專題教學培養好奇心、解決問題與批判思考。",
+      "es": "El enfoque por proyectos fomenta la curiosidad, la resolución de problemas y el pensamiento crítico."
+    },
+    "text-66": {
+      "en": "✔",
+      "zh-Hant": "✔",
+      "es": "✔"
+    },
+    "text-67": {
+      "en": " Character education promotes respect, kindness, and emotional growth.",
+      "zh-Hant": "品格教育促進尊重、善意與情緒成長。",
+      "es": "La educación del carácter promueve el respeto, la amabilidad y el crecimiento emocional."
+    },
+    "text-68": {
+      "en": "Quality Teachers",
+      "zh-Hant": "優質師資",
+      "es": "Maestros de calidad"
+    },
+    "text-69": {
+      "en": "✔",
+      "zh-Hant": "✔",
+      "es": "✔"
+    },
+    "text-70": {
+      "en": " Experienced, certified educators holding A.A., B.A., or M.A. degrees in early childhood education, with valid California teaching permits.",
+      "zh-Hant": "富經驗、具專業資格的教師，持有幼兒教育副學士、學士或碩士學位，以及有效加州教學許可。",
+      "es": "Educadores experimentados y certificados con títulos de asociado, licenciatura o maestría en educación infantil y permisos docentes vigentes de California."
+    },
+    "text-71": {
+      "en": "✔",
+      "zh-Hant": "✔",
+      "es": "✔"
+    },
+    "text-72": {
+      "en": " Passionate about forming strong, meaningful connections with children.",
+      "zh-Hant": "熱衷與孩子建立深厚且有意義的關係。",
+      "es": "Comprometidos con crear vínculos sólidos y significativos con los niños."
+    },
+    "text-73": {
+      "en": "✔",
+      "zh-Hant": "✔",
+      "es": "✔"
+    },
+    "text-74": {
+      "en": " Staff diversity reflects the languages and cultures of our families.",
+      "zh-Hant": "多元員工反映服務家庭的語言與文化。",
+      "es": "La diversidad del personal refleja los idiomas y culturas de nuestras familias."
+    },
+    "text-75": {
+      "en": "Supported by",
+      "zh-Hant": "支持機構",
+      "es": "Con el apoyo de"
+    },
+    "text-76": {
+      "en": "Office of Head Start · California Department of Social Services · California Department of Education · San Francisco Department of Early Childhood · CACFP",
+      "zh-Hant": "Head Start 辦公室 · 加州社會服務部 · 加州教育部 · 舊金山幼兒發展部 · CACFP",
+      "es": "Oficina de Head Start · Departamento de Servicios Sociales de California · Departamento de Educación de California · Departamento de la Primera Infancia de San Francisco · CACFP"
+    },
+    "image-4": {
+      "src": "/media/8345fea8c61c0cf1a278.png",
+      "alt": "sep_cdss.png",
+      "position": "50% 50%"
+    },
+    "image-5": {
+      "src": "/media/2fb700221a182dbda49e.png",
+      "alt": "sep_sfec.png",
+      "position": "50% 50%"
+    },
+    "image-6": {
+      "src": "/media/415fb6a780ed6e793e97.png",
+      "alt": "sep_caledu.png",
+      "position": "50% 50%"
+    },
+    "image-7": {
+      "src": "/media/4858c93671b2e1e4246d.png",
+      "alt": "Sep-HeadStart.png",
+      "position": "50% 50%"
+    },
+    "image-8": {
+      "src": "/media/5aaa5d048623833e7fb2.png",
+      "alt": "Sep-CACFP.png",
+      "position": "50% 50%"
+    },
+    "image-9": {
+      "src": "/media/358c195c94bbb61ebcd8.webp",
+      "alt": "DJ7A2142.jpg",
+      "position": "50% 50%"
+    },
+    "text-77": {
+      "en": "Build Your Career in Early Education",
+      "zh-Hant": "在幼兒教育領域發展職涯",
+      "es": "Desarrolle su carrera en educación infantil"
+    },
+    "text-78": {
+      "en": "Join a team of passionate educators who care for each child as their own.",
+      "zh-Hant": "加入充滿熱忱的教育團隊，像照顧自己的孩子一樣關愛每個孩子。",
+      "es": "Únase a educadores apasionados que cuidan a cada niño como propio."
+    },
+    "text-79": {
+      "en": "View Careers",
+      "zh-Hant": "查看工作機會",
+      "es": "Ver empleos"
+    }
+  }
+}

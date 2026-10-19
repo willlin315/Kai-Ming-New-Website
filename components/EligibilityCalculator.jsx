@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { basePath } from '../lib/client-routes';
 
-export default function EligibilityCalculator({ attributes }) {
+export default function EligibilityCalculator({ attributes,locale='en' }) {
   const frame = useRef(null);
   const [height, setHeight] = useState(1320);
   useEffect(() => {
@@ -25,7 +25,7 @@ export default function EligibilityCalculator({ attributes }) {
     return () => window.removeEventListener('message', receive);
   }, []);
   return <div {...attributes} style={{ ...attributes.style, height: 'auto' }}>
-    <iframe ref={frame} src={`${basePath}/widgets/eligibility/?lang=en`}
+    <iframe ref={frame} src={`${basePath}/widgets/eligibility/?lang=${locale==='zh-Hant'?'zh-hk':locale}`}
       title="Eligibility checker for free or low-cost tuition" sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox"
       style={{ display: 'block', width: '100%', height, border: 0 }} />
   </div>;

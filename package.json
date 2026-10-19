@@ -6,13 +6,20 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "check": "node scripts/check-content.mjs"
+    "check": "node scripts/check-content.mjs",
+    "cms:db": "node scripts/cms-dev-db.mjs",
+    "cms:test": "python scripts/test-cms-backend.py"
   },
   "dependencies": {
+    "dom-serializer": "2.0.0",
+    "html-react-parser": "5.2.13",
+    "htmlparser2": "10.0.0",
     "next": "16.4.0",
     "react": "19.3.0",
-    "react-dom": "19.3.0",
-    "html-react-parser": "5.2.13",
-    "dom-serializer": "2.0.0"
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.10",
+    "@electric-sql/pglite-socket": "^0.2.13"
   }
 }

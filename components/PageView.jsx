@@ -1,3 +1,8 @@
+import {HomeContentProvider,HomeText,HomeImage} from './HomeContent';
+import LanguageSwitcher from './LanguageSwitcher';
+import PersonPlacement from './PersonPlacement';
+import peopleRecords from '../content/people.json';
+import PeopleDirectory from './PeopleDirectory';
 import parse, { attributesToProps, domToReact } from 'html-react-parser';
 import render from 'dom-serializer';
 import SiteHeader from './SiteHeader';
@@ -16,14 +21,19 @@ export default function PageView({ page }) {
   const options = {
     replace(node) {
       if (node.type !== 'tag') return;
+      if(page.key==='home'&&node.name==='km-home-text')return <HomeText field={node.attribs['data-home-field']}/>;
+      if(page.key==='home'&&node.name==='img'&&node.attribs['data-home-field'])return <HomeImage field={node.attribs['data-home-field']} attributes={attributesToProps(node.attribs)}/>;
+      if (page.key === 'our-people' && node.name === 'main') return <main id={node.attribs.id} tabIndex={-1}><PeopleDirectory locale={page.locale} /></main>;
+      const person = peopleRecords.find(p => p.placements?.some(slot => slot.nodeId && slot.page === page.key && slot.nodeId === node.attribs.id));
+      if (person) return <PersonPlacement locale={page.locale} person={person} placement={person.placements.find(slot => slot.nodeId === node.attribs.id)} attributes={attributesToProps(node.attribs)} html={render(node.children)} />;
       markResponsiveNode(node);
       if (node.attribs.id === 'comp-muoke23s') {
-        return <EligibilityCalculator attributes={attributesToProps(node.attribs)} />;
+        return <EligibilityCalculator locale={page.locale} attributes={attributesToProps(node.attribs)} />;
       }
       if (node.name === 'button' && node.attribs?.['data-hook'] === 'dropdown-base') {
         const match = (node.attribs['aria-labelledby'] || '').match(/form-field-label-([a-f0-9-]{36})-/i);
         const field = match && enrollmentFields[match[1]];
-        if (field) return <FormDropdown field={{ ...field, id: match[1] }} attributes={attributesToProps(node.attribs)} />;
+        if (field) return <FormDropdown locale={page.locale} field={{ ...field, id: match[1] }} attributes={attributesToProps(node.attribs)} />;
       }
       if ((node.attribs?.class || '').split(/\s+/).includes('wixui-tabs')) {
         const descendants = [];
@@ -49,18 +59,19 @@ export default function PageView({ page }) {
       }
       if (node.name === 'km-site-header' || node.name === 'km-site-footer') {
         const Component = node.name === 'km-site-header' ? SiteHeader : SiteFooter;
-        return <Component attributes={attributesToProps(node.attribs)} html={render(node.children)} groups={navigationFromNodes(node.children)} />;
+        return <Component locale={page.locale} attributes={attributesToProps(node.attribs)} html={render(node.children)} groups={navigationFromNodes(node.children)} />;
       }
-      if (node.name === 'km-news-list') return <BlogList />;
+      if (node.name === 'km-news-list') return <BlogList locale={page.locale} />;
       if (node.attribs?.['data-gallery']) {
         return <Gallery id={node.attribs.id} className={node.attribs.class} items={JSON.parse(node.attribs['data-gallery'])} />;
       }
     },
   };
-  return <div className="km-responsive">
+  return <div className="km-responsive" lang={page.locale}>
+    <LanguageSwitcher locale={page.locale} pageKey={page.key}/>
     <style dangerouslySetInnerHTML={{ __html: page.css }} />
     <style dangerouslySetInnerHTML={{ __html: responsiveCss }} />
-    {parse(page.html, options)}
+    {page.key==='home'?<HomeContentProvider locale={page.locale}>{parse(page.html, options)}</HomeContentProvider>:parse(page.html, options)}
     <Interactions />
   </div>;
 }
