@@ -68,7 +68,7 @@ export default function PageView({ page }) {
     },
   };
   return <div className="km-responsive" lang={page.locale}>
-    <LanguageSwitcher locale={page.locale} pageKey={page.key}/>
+    <LanguageSwitcher locale={page.locale} pageKey={page.slug||page.key}/>
     <style dangerouslySetInnerHTML={{ __html: page.css }} />
     <style dangerouslySetInnerHTML={{ __html: responsiveCss }} />
     {page.key==='home'?<HomeContentProvider locale={page.locale}>{parse(page.html, options)}</HomeContentProvider>:parse(page.html, options)}
