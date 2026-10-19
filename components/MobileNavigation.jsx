@@ -1,11 +1,12 @@
 'use client';
 import {translate,localePaths} from '../lib/i18n';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useId, useRef, useState } from 'react';
 import { basePath } from '../lib/client-routes';
 
 export default function MobileNavigation({ groups = [],locale='en' }) {
   const [open, setOpen] = useState(false);
   const button = useRef(null);
+  const navigationId = useId();
   useEffect(() => {
     if (!window.matchMedia) return;
     const media = window.matchMedia(`(min-width: ${locale === 'en' ? 1001 : 1401}px)`);
@@ -20,9 +21,9 @@ export default function MobileNavigation({ groups = [],locale='en' }) {
     <div className="km-mobile-bar">
       <a href={`${basePath}/${localePaths[locale]}/`} aria-label="Kai Ming Head Start home"><img src={`${basePath}/media/kai-ming-logo.png`} alt="Kai Ming Head Start" width="60" height="60" /></a>
       <a className="km-mobile-apply" href={`${basePath}/${localePaths[locale]}/how-to-enroll/`}>{translate('Apply Now',locale)}</a>
-      <button ref={button} type="button" aria-expanded={open} aria-controls="km-mobile-navigation" aria-label={translate(open ? 'Close menu' : 'Open menu',locale)} onClick={() => setOpen(!open)}>{open ? '✕' : '☰'}</button>
+      <button ref={button} type="button" aria-expanded={open} aria-controls={navigationId} aria-label={translate(open ? 'Close menu' : 'Open menu',locale)} onClick={() => setOpen(!open)}>{open ? '✕' : '☰'}</button>
     </div>
-    <nav id="km-mobile-navigation" aria-label={translate('Mobile site navigation',locale)} hidden={!open}>
+    <nav id={navigationId} aria-label={translate('Mobile site navigation',locale)} hidden={!open}>
       {groups.map((group) => group.links.length ? <details key={group.label}>
         <summary>{group.label}</summary>
         {group.href && <a href={group.href}>{group.label}</a>}
