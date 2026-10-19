@@ -3,7 +3,7 @@ import PageView from '../../../components/PageView';
 import { getPage, getMetadata, pageRoutes } from '../../../lib/content';
 export const dynamicParams = false;
 export function generateStaticParams() {
-  return pageRoutes.map(({ key }) => ({ slug: key === 'home' ? [] : [key] }));
+  return pageRoutes.map(({ key, slug }) => ({ slug: key === 'home' ? [] : [slug || key] }));
 }
 export async function generateMetadata({ params }) {
   const { slug = [] } = await params;

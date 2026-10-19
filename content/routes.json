@@ -9,6 +9,7 @@
   },
   {
     "key": "our-mission-1",
+    "slug": "our-mission",
     "title": "Our Mission | Kai Ming Head Start"
   },
   {
@@ -41,42 +42,52 @@
   },
   {
     "key": "copy-of-family-support",
+    "slug": "our-centers",
     "title": "Our Center | Kai Ming Head Start"
   },
   {
     "key": "copy-of-broadway-center-1",
+    "slug": "geary-center",
     "title": "Geary Center | Kai Ming Head Start"
   },
   {
     "key": "copy-of-learning-approach-1",
+    "slug": "broadway-center",
     "title": "Broadway Center | Kai Ming Head Start"
   },
   {
     "key": "copy-of-broadway-center-2",
+    "slug": "north-beach-center",
     "title": "North Beach Center | Kai Ming Head Start"
   },
   {
     "key": "copy-of-north-beach-center",
-    "title": "PMsquare Children\u2019s Center | Kai Ming Head Start"
+    "slug": "pmsquare-childrens-center",
+    "title": "PMsquare Children’s Center | Kai Ming Head Start"
   },
   {
     "key": "copy-of-broadway-center",
+    "slug": "dr-tkl-center",
     "title": "Dr. T.K.L Center | Kai Ming Head Start"
   },
   {
     "key": "copy-of-rainbow-center-2",
+    "slug": "sunset-center",
     "title": "Sunset Center | Kai Ming Head Start"
   },
   {
     "key": "copy-of-rainbow-center-1",
-    "title": "St. Luke\u2019s Center | Kai Ming Head Start"
+    "slug": "st-lukes-center",
+    "title": "St. Luke’s Center | Kai Ming Head Start"
   },
   {
     "key": "copy-of-rainbow-center",
+    "slug": "richmond-center",
     "title": "Richmond Center | Kai Ming Head Start"
   },
   {
     "key": "copy-of-pmsquare-children-s-center",
+    "slug": "rainbow-center",
     "title": "Rainbow Center | Kai Ming Head Start"
   },
   {
@@ -85,10 +96,12 @@
   },
   {
     "key": "copy-of-our-story-2",
+    "slug": "careers",
     "title": "Careers | Kai Ming Head Start"
   },
   {
     "key": "copy-of-careers",
+    "slug": "volunteer",
     "title": "Volunteer | Kai Ming Head Start"
   },
   {

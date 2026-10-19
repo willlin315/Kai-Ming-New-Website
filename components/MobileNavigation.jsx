@@ -29,7 +29,7 @@ export default function MobileNavigation({ groups = [],locale='en' }) {
         {group.href && <a href={group.href}>{group.label}</a>}
         {group.links.map((link) => <a key={link.href} href={link.href} onClick={() => setOpen(false)}>{link.label}</a>)}
       </details> : <a key={group.label} href={group.href}>{group.label}</a>)}
-      <a href={`${basePath}/${localePaths[locale]}/copy-of-family-support/`}>{translate('Find A Center',locale)}</a>
+      <a href={`${basePath}/${localePaths[locale]}/our-centers/`}>{translate('Find A Center',locale)}</a>
     </nav>
   </div>;
 }

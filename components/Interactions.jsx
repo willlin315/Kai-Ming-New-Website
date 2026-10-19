@@ -1,11 +1,11 @@
 'use client';
 import { useEffect } from 'react';
-import { basePath, legacyRoutes } from '../lib/client-routes';
+import { basePath, legacyRoutes, slugFor } from '../lib/client-routes';
 
 export default function Interactions() {
   useEffect(() => {
     const legacy = decodeURIComponent(window.location.hash.replace(/^#\/?/, ''));
-    if (legacyRoutes.includes(legacy)) window.location.replace(`${basePath}/en/${legacy === 'home' ? '' : `${legacy}/`}`);
+    if (legacyRoutes.includes(legacy)) window.location.replace(`${basePath}/en/${legacy === 'home' ? '' : `${slugFor(legacy)}/`}`);
     // Wix exports may leave the tab buttons as static HTML instead of React Tabs.
     // Make those fallback tabs interactive without replacing their original content.
     const activateLegacyTab = (tab) => {
