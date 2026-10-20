@@ -159,7 +159,7 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
 .km-story-pager{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;padding:26px 0}
 .km-story-pager a{display:flex;flex-direction:column;gap:7px;text-decoration:none;font-weight:600;line-height:1.4}
 .km-story-pager a:last-child{text-align:right}
-.km-story-pager small{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#68807a}
+.km-story-pager small{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#596e69}
 .km-story-related{margin-top:46px}
 .km-story-related h2{font-size:clamp(24px,2.5vw,32px);margin-bottom:22px}
 .km-story-related-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
@@ -238,3 +238,6 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
  .km-published-article .km-story-share-actions{gap:25px}
  .km-published-article .km-story-footer{padding:12px 0}
 }
+
+/* Visible keyboard focus for links and controls that have no custom style. */
+.km-responsive :is(a,button,summary,[tabindex]):focus-visible{outline:2px solid #0f4d6b;outline-offset:2px}

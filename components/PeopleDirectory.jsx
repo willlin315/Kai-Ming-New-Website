@@ -6,8 +6,8 @@ import {readPeopleDrafts} from '../lib/cms-store';
 import peopleSeed from '../content/people.json';
 import {safeImage} from '../lib/cms-media';
 import './people.css';
-export default function PeopleDirectory({locale='en'}){
- const [people,setPeople]=useState(peopleSeed),[group,setGroup]=useState('Our Team'),[preview,setPreview]=useState(false),[center,setCenter]=useState('');
+export default function PeopleDirectory({locale='en',initialPeople=null}){
+ const [people,setPeople]=useState(initialPeople||peopleSeed),[group,setGroup]=useState('Our Team'),[preview,setPreview]=useState(false),[center,setCenter]=useState('');
  useEffect(()=>{if(new URLSearchParams(window.location.search).get('cmsPreview')!=='1'){const url=publicApiUrl();if(url)requestCms(url,'/public/people').then(items=>{if(Array.isArray(items))setPeople(items)}).catch(()=>{});return;}setPreview(true);const load=()=>{const saved=readPeopleDrafts();if(saved)setPeople(saved)};load();window.addEventListener('storage',load);return()=>window.removeEventListener('storage',load)},[]);
  const ordered=people.filter(p=>p.placements?.some(slot=>slot.page==='our-people')).sort((a,b)=>(a.order||0)-(b.order||0)),leaders=ordered.filter(p=>p.featured),items=ordered.filter(p=>!p.featured&&(p.department||'Our Team')===group&&(!center||p.center===center));
  const t=text=>translate(text,locale);
