@@ -152,3 +152,17 @@ def test_home_draft_publish_and_template_protection(api,auth):
     assert client.put('/admin/pages/home',headers=auth,json={'expected_revision':rev,'content':content}).status_code==422
     assert client.post('/admin/pages/home/unpublish',headers=auth,json={'expected_revision':rev}).status_code==422
     assert client.put('/admin/pages/other',headers=auth,json={'expected_revision':0,'content':page}).status_code==422
+
+def test_publish_and_unpublish_trigger_deploy_hooks(monkeypatch,api,auth):
+    import backend.main as cms
+    calls=[]
+    monkeypatch.setenv('CMS_DEPLOY_HOOK_URLS','https://hooks.example.test/one, http://insecure.test ,https://hooks.example.test/two')
+    monkeypatch.setattr(cms,'urlopen',lambda request,timeout: calls.append((request.full_url,request.get_method())) or __import__('io').BytesIO(b'ok'))
+    client,_=api
+    key='hook-'+uuid.uuid4().hex[:8]
+    post={'title':'Hook test','slug':key,'language':'en','bodyHtml':'<p>Body</p>'}
+    assert client.put('/admin/posts/'+key,headers=auth,json={'expected_revision':0,'content':post}).status_code==200
+    assert client.post('/admin/posts/'+key+'/publish',headers=auth,json={'expected_revision':1}).status_code==200
+    assert calls==[('https://hooks.example.test/one','POST'),('https://hooks.example.test/two','POST')]
+    assert client.post('/admin/posts/'+key+'/unpublish',headers=auth,json={'expected_revision':1}).status_code==200
+    assert len(calls)==4

@@ -1,4 +1,5 @@
 import PageView from '../components/PageView';
-import { getPage, getMetadata } from '../lib/content';
+import { getMetadata } from '../lib/content';
+import { loadPage } from '../lib/page-data';
 export function generateMetadata() { return getMetadata('home'); }
-export default function Home() { return <PageView page={getPage('home')} />; }
+export default async function Home() { return <PageView page={await loadPage('home')} />; }

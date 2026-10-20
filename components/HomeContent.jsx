@@ -5,8 +5,8 @@ import {publicApiUrl,requestCms} from '../lib/cms-api';
 import {CMS_KEY} from '../lib/cms-store';
 import {safeImage} from '../lib/cms-media';
 const HomeContext=createContext({record:homeSeed,locale:'en'});
-export function HomeContentProvider({locale,children}){
- const [record,setRecord]=useState(homeSeed);
+export function HomeContentProvider({locale,initialRecord=null,children}){
+ const [record,setRecord]=useState(initialRecord||homeSeed);
  useEffect(()=>{
   if(new URLSearchParams(window.location.search).get('cmsPreview')==='1'){
    const load=()=>{try{const remote=JSON.parse(localStorage.getItem('km-cms-db-preview')||'null');const local=JSON.parse(localStorage.getItem(CMS_KEY)||'null');const source=remote?.url===localStorage.getItem('km-cms-api-url')?remote.data:local;const page=source?.pages?.find(p=>p.id==='home');if(page?.values)setRecord(page)}catch{}};

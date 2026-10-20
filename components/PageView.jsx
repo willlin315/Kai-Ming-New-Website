@@ -18,13 +18,15 @@ import responsiveCss from '../content/responsive-css.json';
 import EligibilityCalculator from './EligibilityCalculator';
 
 export default function PageView({ page }) {
+  // page.people / page.posts / page.homeRecord are published CMS data fetched at build time.
+  const people = page.people || peopleRecords;
   const options = {
     replace(node) {
       if (node.type !== 'tag') return;
       if(page.key==='home'&&node.name==='km-home-text')return <HomeText field={node.attribs['data-home-field']}/>;
       if(page.key==='home'&&node.name==='img'&&node.attribs['data-home-field'])return <HomeImage field={node.attribs['data-home-field']} attributes={attributesToProps(node.attribs)}/>;
-      if (page.key === 'our-people' && node.name === 'main') return <main id={node.attribs.id} tabIndex={-1}><PeopleDirectory locale={page.locale} /></main>;
-      const person = peopleRecords.find(p => p.placements?.some(slot => slot.nodeId && slot.page === page.key && slot.nodeId === node.attribs.id));
+      if (page.key === 'our-people' && node.name === 'main') return <main id={node.attribs.id} tabIndex={-1}><PeopleDirectory locale={page.locale} initialPeople={page.people} /></main>;
+      const person = people.find(p => p.placements?.some(slot => slot.nodeId && slot.page === page.key && slot.nodeId === node.attribs.id));
       if (person) return <PersonPlacement locale={page.locale} person={person} placement={person.placements.find(slot => slot.nodeId === node.attribs.id)} attributes={attributesToProps(node.attribs)} html={render(node.children)} />;
       markResponsiveNode(node);
       if (node.attribs.id === 'comp-muoke23s') {
@@ -61,7 +63,7 @@ export default function PageView({ page }) {
         const Component = node.name === 'km-site-header' ? SiteHeader : SiteFooter;
         return <Component locale={page.locale} attributes={attributesToProps(node.attribs)} html={render(node.children)} groups={navigationFromNodes(node.children)} />;
       }
-      if (node.name === 'km-news-list') return <BlogList locale={page.locale} />;
+      if (node.name === 'km-news-list') return <BlogList locale={page.locale} initialPosts={page.posts} />;
       if (node.attribs?.['data-gallery']) {
         return <Gallery id={node.attribs.id} className={node.attribs.class} items={JSON.parse(node.attribs['data-gallery'])} />;
       }
@@ -71,7 +73,7 @@ export default function PageView({ page }) {
     <LanguageSwitcher locale={page.locale} pageKey={page.slug||page.key}/>
     <style dangerouslySetInnerHTML={{ __html: page.css }} />
     <style dangerouslySetInnerHTML={{ __html: responsiveCss }} />
-    {page.key==='home'?<HomeContentProvider locale={page.locale}>{parse(page.html, options)}</HomeContentProvider>:parse(page.html, options)}
+    {page.key==='home'?<HomeContentProvider locale={page.locale} initialRecord={page.homeRecord}>{parse(page.html, options)}</HomeContentProvider>:parse(page.html, options)}
     <Interactions />
   </div>;
 }

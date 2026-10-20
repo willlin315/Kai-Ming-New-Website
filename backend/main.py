@@ -17,8 +17,9 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Literal
 from uuid import uuid4
+from urllib.request import Request as HookRequest, urlopen
 
-from fastapi import Depends, FastAPI, Header, HTTPException, Request, Response
+from fastapi import BackgroundTasks, Depends, FastAPI, Header, HTTPException, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from PIL import Image, ImageOps, UnidentifiedImageError
@@ -203,6 +204,19 @@ def backfill_translations(engine):
                     doc.published_revision=doc.revision
                 audit(session,doc,'add-translations')
 
+def deploy_hook_urls():
+    """Build hooks (for example Vercel Deploy Hooks) called after publish/unpublish."""
+    return [v.strip() for v in os.environ.get('CMS_DEPLOY_HOOK_URLS', '').split(',') if v.strip().startswith('https://')]
+
+def trigger_deploy_hooks():
+    """Ask the static site to rebuild so it includes the newly published content."""
+    for url in deploy_hook_urls():
+        try:
+            with urlopen(HookRequest(url, data=b'', method='POST'), timeout=10) as response:
+                response.read()
+        except Exception as error:  # A failed rebuild request must not undo the publish.
+            warnings.warn(f'Deploy hook failed: {error.__class__.__name__}')
+
 def create_app(database_url=None, token=None, *, initialize=True):
     url = database_url or os.environ.get('DATABASE_URL', '')
     credential = token or os.environ.get('CMS_DEV_TOKEN', '')
@@ -344,7 +358,7 @@ def create_app(database_url=None, token=None, *, initialize=True):
             result=snapshot(doc)
         return result
     @app.post('/admin/{kind}/{key}/publish', dependencies=[Depends(editor)])
-    def publish(kind: Kind, key: str, body: RevisionBody):
+    def publish(kind: Kind, key: str, body: RevisionBody, tasks: BackgroundTasks):
         from sqlalchemy.exc import IntegrityError
         try:
             with Session(engine) as session, session.begin():
@@ -366,11 +380,12 @@ def create_app(database_url=None, token=None, *, initialize=True):
                 audit(session,doc,'publish')
                 session.flush()
                 result=snapshot(doc)
+            tasks.add_task(trigger_deploy_hooks)
             return result
         except IntegrityError:
             raise HTTPException(409,'Another published post uses this slug and language.')
     @app.post('/admin/{kind}/{key}/unpublish', dependencies=[Depends(editor)])
-    def unpublish(kind: Kind, key: str, body: RevisionBody):
+    def unpublish(kind: Kind, key: str, body: RevisionBody, tasks: BackgroundTasks):
         if kind in ['people','pages']:
             raise HTTPException(422,'Unpublishing fixed website content is disabled.')
         with Session(engine) as session, session.begin():
@@ -381,6 +396,7 @@ def create_app(database_url=None, token=None, *, initialize=True):
             doc.published_locale=None
             audit(session,doc,'unpublish')
             result=snapshot(doc)
+        tasks.add_task(trigger_deploy_hooks)
         return result
     @app.get('/admin/history/{kind}/{key}', dependencies=[Depends(editor)])
     def history(kind: Kind,key: str):
