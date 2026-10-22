@@ -1,4 +1,5 @@
 import {HomeContentProvider,HomeText,HomeImage} from './HomeContent';
+import {htmlLang} from '../lib/i18n';
 import LanguageSwitcher from './LanguageSwitcher';
 import PersonPlacement from './PersonPlacement';
 import peopleRecords from '../content/people.json';
@@ -15,6 +16,7 @@ import FormDropdown from './FormDropdown';
 import enrollmentFields from '../content/enrollment-fields.json';
 import { navigationFromNodes, markResponsiveNode } from '../lib/responsive';
 import responsiveCss from '../content/responsive-css.json';
+import mobileTypography from '../content/mobile-typography.json';
 import EligibilityCalculator from './EligibilityCalculator';
 
 export default function PageView({ page }) {
@@ -69,10 +71,11 @@ export default function PageView({ page }) {
       }
     },
   };
-  return <div className="km-responsive" lang={page.locale}>
+  return <div className="km-responsive" lang={htmlLang(page.locale)}>
     <LanguageSwitcher locale={page.locale} pageKey={page.slug||page.key}/>
     <style dangerouslySetInnerHTML={{ __html: page.css }} />
     <style dangerouslySetInnerHTML={{ __html: responsiveCss }} />
+    {mobileTypography[page.key]&&<style dangerouslySetInnerHTML={{ __html: mobileTypography[page.key] }} />}
     {page.key==='home'?<HomeContentProvider locale={page.locale} initialRecord={page.homeRecord}>{parse(page.html, options)}</HomeContentProvider>:parse(page.html, options)}
     <Interactions />
   </div>;
