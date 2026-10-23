@@ -2434,5 +2434,9 @@
   "Sunset — 2800 Taraval St. (older than 24 months)": {
     "zh-Hant": "Sunset 中心 — 2800 Taraval St.（24 個月以上）",
     "es": "Centro Sunset — 2800 Taraval St. (mayores de 24 meses)"
+  },
+  "Close": {
+    "zh-Hant": "關閉",
+    "es": "Cerrar"
   }
 }
