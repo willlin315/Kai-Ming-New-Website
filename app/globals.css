@@ -247,9 +247,15 @@ html:is([lang=es],[lang=zh-HK]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{white
 /* Visible keyboard focus for links and controls that have no custom style. */
 .km-responsive :is(a,button,summary,[tabindex]):focus-visible{outline:2px solid #0f4d6b;outline-offset:2px}
 
-/* Wix mobile form layout: 24px inner padding, one field per row, one checkbox column. */
+/* Wix mobile form layout: inner padding, one field per row, one checkbox column.
+   Sizes are Wix's 320px mobile values scaled with the screen (capped at a 430px phone),
+   matching how Wix zooms its mobile page. */
 @media (max-width:750px) {
-  .km-responsive div[data-hook="Form-wrapper"][class] { padding:24px!important; }
-  .km-responsive form [style*="grid-template-columns"] > [data-hook^="form-field-"] + :not([data-hook]) { margin-top:24px!important; }
+  .km-responsive div[data-hook="Form-wrapper"][class] { padding:clamp(24px,7.5vw,32.25px)!important; }
+  .km-responsive form [style*="grid-template-columns"] > [data-hook^="form-field-"] + :not([data-hook]) { margin-top:clamp(24px,7.5vw,32.25px)!important; }
+  html .km-responsive form :is(input:not([type="checkbox"]):not([type="radio"]),textarea,select) { font-size:clamp(16px,5vw,21.5px)!important; line-height:clamp(24px,7.5vw,32.25px)!important; }
+  .km-responsive form input:not([type="checkbox"]):not([type="radio"]) { padding-top:clamp(8px,2.5vw,10.75px)!important; padding-bottom:clamp(8px,2.5vw,10.75px)!important; height:auto!important; }
+  .km-responsive form .km-form-dropdown { height:clamp(42px,13.125vw,56.44px)!important; min-height:0!important; padding-left:clamp(12px,3.75vw,16.13px)!important; }
+  .km-responsive form textarea { min-height:clamp(74px,23.125vw,99.44px)!important; padding-left:clamp(12px,3.75vw,16.13px)!important; padding-right:clamp(12px,3.75vw,16.13px)!important; }
   .km-responsive form .AOdmvk:not(.Kwoozo) { grid-template-columns:minmax(0,1fr)!important; }
 }

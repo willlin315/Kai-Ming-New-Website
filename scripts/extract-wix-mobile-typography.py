@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
 """Copy Wix mobile typography into phone-only CSS rules.
 
-Wix serves phones a separate mobile layout with per-element font sizes.
-This script opens every page on the Wix site and on a local build with an
-iPhone profile, matches text elements by component id, tag and text, and
-writes the differing font properties to content/mobile-typography.json.
+Wix serves phones a separate mobile layout with per-element font sizes. That
+layout is 320px wide and the browser zooms it to the screen width, so a 16px
+Wix font shows as 19.5px on a 390px phone.
 
-Run it against a local build, rebuild, then run it again: the second pass
-merges into the existing rules and catches values that only change once the
-first rules apply (for example inherited line heights).
+This script opens every page on the Wix site with an iPhone profile and on a
+local build at the same 320px width, matches text elements by component id,
+tag and text, and writes rules to content/mobile-typography.json. Sizes are
+written as clamp(px, vw, px) so text scales with the screen like Wix does
+while the site keeps a normal device-width viewport. The upper bound stops
+growth at a 430px-wide phone, so landscape phones and small tablets stay readable.
 
 Usage: python3 scripts/extract-wix-mobile-typography.py [local_base_url]
 """
@@ -32,7 +34,7 @@ EXTRACT = """(props) => {
   const out = [];
   const els = document.querySelectorAll('[id^=comp-] :is(h1,h2,h3,h4,h5,h6,p,li,span,a,button,div,label)');
   for (const e of els) {
-    const text = [...e.childNodes].filter(n => n.nodeType === 3).map(n => n.textContent).join('').replace(/\\s+/g, ' ').trim();
+    const text = [...e.childNodes].filter(n => n.nodeType === 3).map(n => n.textContent).join('').replace(/\\u200b/g, '').replace(/\\s+/g, ' ').trim();
     if (!text) continue;
     const r = e.getBoundingClientRect();
     if (!r.width || !r.height) continue;
@@ -69,40 +71,39 @@ def keyed(items, by_text=True):
 
 
 OUTPUT = ROOT / 'content/mobile-typography.json'
-RULE = re.compile(r'^\.km-responsive\[lang="([^"]+)"\] (.+?)\{(.*)\}$')
-CSS_PROPS = {v: k for k, v in CSS_NAMES.items()}
+DESIGN_WIDTH = 320  # Wix mobile layout width
+MAX_WIDTH = 430     # stop scaling at the widest common phone
+SCALED = ('fontSize', 'lineHeight', 'letterSpacing')
+PX = re.compile(r'^(-?\d+(?:\.\d+)?)px$')
 
 
-def existing_rules():
-    """Read rules from a previous run so later passes only add corrections."""
-    result = {}
-    if not OUTPUT.exists():
-        return result
-    for key, css in json.loads(OUTPUT.read_text()).items():
-        for line in css.splitlines():
-            m = RULE.match(line)
-            if not m:
-                continue
-            locale = 'zh' if m.group(1) == 'zh-HK' else m.group(1)
-            decl = dict(d.replace('!important', '').split(':', 1) for d in m.group(3).split(';'))
-            result.setdefault(key, {}).setdefault(locale, {})[m.group(2)] = {CSS_PROPS[k]: v for k, v in decl.items()}
-    return result
+def fluid(value):
+    """Turn a Wix mobile px value into a size that scales with the screen width."""
+    m = PX.match(value)
+    if not m or float(m.group(1)) == 0:
+        return value
+    n = float(m.group(1))
+    lo, hi = sorted((n, n * MAX_WIDTH / DESIGN_WIDTH))
+    vw = n * 100 / DESIGN_WIDTH
+    return f'clamp({lo:g}px,{vw:.4g}vw,{hi:.4g}px)'
 
 
 def main():
     routes = json.loads((ROOT / 'content/routes.json').read_text())
-    result, stats = existing_rules(), []
+    result, stats = {}, []
     with sync_playwright() as pw:
         browser = pw.chromium.launch()
-        context = browser.new_context(**pw.devices['iPhone 13'])
-        page = context.new_page()
+        phone = pw.devices['iPhone 13']
+        wix_page = browser.new_context(**phone).new_page()
+        # Our site at Wix's 320px design width, so values compare one to one.
+        our_page = browser.new_context(**{**phone, 'viewport': {'width': DESIGN_WIDTH, 'height': 693}}).new_page()
         for route in routes:
             key = route['key']
             wix_slug = '' if key == 'home' else '/' + key
             ours_slug = '' if key == 'home' else '/' + route.get('slug', key)
             for locale, prefix in LOCALES.items():
-                wix_items = collect(page, f'{WIX}{prefix}{wix_slug}')
-                our_items = collect(page, f'{LOCAL}/{locale}{ours_slug}/')
+                wix_items = collect(wix_page, f'{WIX}{prefix}{wix_slug}')
+                our_items = collect(our_page, f'{LOCAL}/{locale}{ours_slug}/')
                 wix, ours = keyed(wix_items), keyed(our_items)
                 pairs = [(wix[k], ours[k]) for k in wix.keys() & ours.keys()]
                 # Translations can word things differently from Wix, so fall back to
@@ -116,13 +117,14 @@ def main():
                     if sum(i['comp'] == comp for i in wix_items) == sum(i['comp'] == comp for i in our_items):
                         pairs.append((wix_pos[k], our_pos[k]))
                         matched.add(our_pos[k]['path'])
-                # Wix mobile sometimes wraps part of a sentence in a link, so also
-                # accept elements whose text starts the same way.
+                # Wix sometimes wraps text in an extra span or turns part of a sentence
+                # into a link, so also accept the same text in another tag, or text that
+                # starts the same way.
                 for o_item in our_items:
-                    if o_item['path'] in matched or len(o_item['text']) < 20:
+                    if o_item['path'] in matched:
                         continue
                     for w_item in wix_items:
-                        if (w_item['comp'], w_item['tag']) == (o_item['comp'], o_item['tag']) and w_item['text'][:20] == o_item['text'][:20]:
+                        if w_item['comp'] == o_item['comp'] and (w_item['text'] == o_item['text'] or (len(o_item['text']) >= 20 and w_item['text'][:20] == o_item['text'][:20])):
                             pairs.append((w_item, o_item))
                             matched.add(o_item['path'])
                             break
@@ -130,24 +132,41 @@ def main():
                 changed = 0
                 for w_item, o_item in pairs:
                     w, o = w_item['style'], o_item['style']
-                    decl = {p: w[p] for p in PROPS if w[p] != o[p]}
+                    decl = {p: w[p] for p in PROPS if w[p] != o[p] and p not in SCALED}
+                    # Sizes are always set so they scale with the screen, even when equal at 320px.
+                    decl.update({p: w[p] for p in SCALED if PX.match(w[p]) and w[p] != '0px'})
+                    if w['lineHeight'] == 'normal' and o['lineHeight'] != 'normal':
+                        decl['lineHeight'] = 'normal'
                     if decl:
-                        # Line height often follows font size, so set both together.
-                        if 'fontSize' in decl:
-                            decl['lineHeight'] = w['lineHeight']
                         rules.setdefault(o_item['path'], {}).update(decl)
                         changed += 1
+                # Wix zooms its whole mobile page, so text we could not match still has to
+                # scale with the screen: keep its own 320px size and make it fluid.
+                for o_item in our_items:
+                    english = result[key].get('en', {}) if locale != 'en' else {}
+                    if o_item['path'] in matched or o_item['path'] in rules or o_item['path'] in english:
+                        continue
+                    decl = {p: o_item['style'][p] for p in SCALED if PX.match(o_item['style'][p]) and o_item['style'][p] != '0px'}
+                    if decl:
+                        rules[o_item['path']] = decl
                 stats.append((key, locale, len(wix), len(ours), len(pairs), changed))
                 print(*stats[-1], flush=True)
         browser.close()
     css = {}
+    declare = lambda decl: ';'.join(f'{CSS_NAMES[p]}:{fluid(v) if p in SCALED else v}!important' for p, v in decl.items())
     for key, by_locale in result.items():
-        lines = []
+        # English rules apply to every language, because translated text is often split
+        # into different paragraphs and cannot be matched. Language rules only add what differs.
+        base = by_locale.get('en', {})
+        lines = [f'.km-responsive {selector}{{{declare(decl)}}}' for selector, decl in sorted(base.items())]
         for locale, rules in by_locale.items():
+            if locale == 'en':
+                continue
             lang = 'zh-HK' if locale == 'zh' else locale
             for selector, decl in sorted(rules.items()):
-                body = ';'.join(f'{CSS_NAMES[p]}:{v}!important' for p, v in decl.items())
-                lines.append(f'.km-responsive[lang="{lang}"] {selector}{{{body}}}')
+                extra = {p: v for p, v in decl.items() if base.get(selector, {}).get(p) != v}
+                if extra:
+                    lines.append(f'.km-responsive[lang="{lang}"] {selector}{{{declare(extra)}}}')
         if lines:
             css[key] = '/* Generated by scripts/extract-wix-mobile-typography.py from the Wix mobile site. */\n@media (max-width:750px){\n' + '\n'.join(lines) + '\n}'
     OUTPUT.write_text(json.dumps(css, ensure_ascii=False, indent=1) + '\n')
