@@ -1,6 +1,6 @@
 'use client';
 import LanguageSwitcher from './LanguageSwitcher';
-import {localizedRecord,localePaths} from '../lib/i18n';
+import {localizedRecord,localePaths,htmlLang} from '../lib/i18n';
 import {useEffect,useState} from 'react';
 import RichContent from './RichContent';
 import {publicApiUrl,requestCms} from '../lib/cms-api';
@@ -55,7 +55,7 @@ export default function PublishedArticle({locale='en',initialPost=null,initialPo
  const next=currentIndex>=0&&currentIndex<ordered.length-1?ordered[currentIndex+1]:null;
  const date=post?.publishedAt||post?.published_at||post?.date||post?.createdAt;
  const formattedDate=date&&!Number.isNaN(new Date(date).getTime())?new Intl.DateTimeFormat(locale==='zh-Hant'?'zh-TW':locale,{year:'numeric',month:'long',day:'numeric'}).format(new Date(date)):null;
- return <main lang={locale} className="km-published-article">
+ return <main lang={htmlLang(locale)} className="km-published-article">
   <LanguageSwitcher locale={locale} story={!initialPost} storySlug={initialPost?.slug}/>
   <a className="km-story-back" href={`${basePath}/${localePaths[locale]}/blog/`}>← {t.back}</a>
   {post?<article className="km-story-layout">
