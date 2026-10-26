@@ -6,11 +6,6 @@
   "outputDirectory": null,
   "redirects": [
     {
-      "source": "/",
-      "destination": "/en/",
-      "permanent": false
-    },
-    {
       "source": "/CenterDetail.aspx",
       "has": [
         {
@@ -19,7 +14,7 @@
           "value": "1"
         }
       ],
-      "destination": "/en/dr-tkl-center/",
+      "destination": "/dr-tkl-center/",
       "permanent": true
     },
     {
@@ -31,7 +26,7 @@
           "value": "1"
         }
       ],
-      "destination": "/en/dr-tkl-center/",
+      "destination": "/dr-tkl-center/",
       "permanent": true
     },
     {
@@ -43,7 +38,7 @@
           "value": "2"
         }
       ],
-      "destination": "/en/broadway-center/",
+      "destination": "/broadway-center/",
       "permanent": true
     },
     {
@@ -55,7 +50,7 @@
           "value": "2"
         }
       ],
-      "destination": "/en/broadway-center/",
+      "destination": "/broadway-center/",
       "permanent": true
     },
     {
@@ -67,7 +62,7 @@
           "value": "3"
         }
       ],
-      "destination": "/en/geary-center/",
+      "destination": "/geary-center/",
       "permanent": true
     },
     {
@@ -79,7 +74,7 @@
           "value": "3"
         }
       ],
-      "destination": "/en/geary-center/",
+      "destination": "/geary-center/",
       "permanent": true
     },
     {
@@ -91,7 +86,7 @@
           "value": "4"
         }
       ],
-      "destination": "/en/north-beach-center/",
+      "destination": "/north-beach-center/",
       "permanent": true
     },
     {
@@ -103,7 +98,7 @@
           "value": "4"
         }
       ],
-      "destination": "/en/north-beach-center/",
+      "destination": "/north-beach-center/",
       "permanent": true
     },
     {
@@ -115,7 +110,7 @@
           "value": "5"
         }
       ],
-      "destination": "/en/richmond-center/",
+      "destination": "/richmond-center/",
       "permanent": true
     },
     {
@@ -127,7 +122,7 @@
           "value": "5"
         }
       ],
-      "destination": "/en/richmond-center/",
+      "destination": "/richmond-center/",
       "permanent": true
     },
     {
@@ -139,7 +134,7 @@
           "value": "6"
         }
       ],
-      "destination": "/en/sunset-center/",
+      "destination": "/sunset-center/",
       "permanent": true
     },
     {
@@ -151,7 +146,7 @@
           "value": "6"
         }
       ],
-      "destination": "/en/sunset-center/",
+      "destination": "/sunset-center/",
       "permanent": true
     },
     {
@@ -163,7 +158,7 @@
           "value": "7"
         }
       ],
-      "destination": "/en/st-lukes-center/",
+      "destination": "/st-lukes-center/",
       "permanent": true
     },
     {
@@ -175,7 +170,7 @@
           "value": "7"
         }
       ],
-      "destination": "/en/st-lukes-center/",
+      "destination": "/st-lukes-center/",
       "permanent": true
     },
     {
@@ -187,7 +182,7 @@
           "value": "8"
         }
       ],
-      "destination": "/en/rainbow-center/",
+      "destination": "/rainbow-center/",
       "permanent": true
     },
     {
@@ -199,7 +194,7 @@
           "value": "8"
         }
       ],
-      "destination": "/en/rainbow-center/",
+      "destination": "/rainbow-center/",
       "permanent": true
     },
     {
@@ -211,7 +206,7 @@
           "value": "9"
         }
       ],
-      "destination": "/en/pmsquare-childrens-center/",
+      "destination": "/pmsquare-childrens-center/",
       "permanent": true
     },
     {
@@ -223,17 +218,17 @@
           "value": "9"
         }
       ],
-      "destination": "/en/pmsquare-childrens-center/",
+      "destination": "/pmsquare-childrens-center/",
       "permanent": true
     },
     {
       "source": "/CenterDetail.aspx",
-      "destination": "/en/our-centers/",
+      "destination": "/our-centers/",
       "permanent": true
     },
     {
       "source": "/centerdetail.aspx",
-      "destination": "/en/our-centers/",
+      "destination": "/our-centers/",
       "permanent": true
     },
     {
@@ -293,7 +288,7 @@
           "value": "English"
         }
       ],
-      "destination": "/en/how-to-enroll/",
+      "destination": "/how-to-enroll/",
       "permanent": true
     },
     {
@@ -305,197 +300,197 @@
           "value": "English"
         }
       ],
-      "destination": "/en/how-to-enroll/",
+      "destination": "/how-to-enroll/",
       "permanent": true
     },
     {
       "source": "/Enrollment.aspx",
-      "destination": "/en/how-to-enroll/",
+      "destination": "/how-to-enroll/",
       "permanent": true
     },
     {
       "source": "/enrollment.aspx",
-      "destination": "/en/how-to-enroll/",
+      "destination": "/how-to-enroll/",
       "permanent": true
     },
     {
       "source": "/Default.aspx",
-      "destination": "/en/",
+      "destination": "/",
       "permanent": true
     },
     {
       "source": "/default.aspx",
-      "destination": "/en/",
+      "destination": "/",
       "permanent": true
     },
     {
       "source": "/About.aspx",
-      "destination": "/en/our-story/",
+      "destination": "/our-story/",
       "permanent": true
     },
     {
       "source": "/about.aspx",
-      "destination": "/en/our-story/",
+      "destination": "/our-story/",
       "permanent": true
     },
     {
       "source": "/People.aspx",
-      "destination": "/en/our-people/",
+      "destination": "/our-people/",
       "permanent": true
     },
     {
       "source": "/people.aspx",
-      "destination": "/en/our-people/",
+      "destination": "/our-people/",
       "permanent": true
     },
     {
       "source": "/Centers.aspx",
-      "destination": "/en/our-centers/",
+      "destination": "/our-centers/",
       "permanent": true
     },
     {
       "source": "/centers.aspx",
-      "destination": "/en/our-centers/",
+      "destination": "/our-centers/",
       "permanent": true
     },
     {
       "source": "/Preschool.aspx",
-      "destination": "/en/preschool/",
+      "destination": "/preschool/",
       "permanent": true
     },
     {
       "source": "/preschool.aspx",
-      "destination": "/en/preschool/",
+      "destination": "/preschool/",
       "permanent": true
     },
     {
       "source": "/IT.aspx",
-      "destination": "/en/infantandtoddler/",
+      "destination": "/infantandtoddler/",
       "permanent": true
     },
     {
       "source": "/it.aspx",
-      "destination": "/en/infantandtoddler/",
+      "destination": "/infantandtoddler/",
       "permanent": true
     },
     {
       "source": "/HomeBased.aspx",
-      "destination": "/en/prenatalandhomebased/",
+      "destination": "/prenatalandhomebased/",
       "permanent": true
     },
     {
       "source": "/homebased.aspx",
-      "destination": "/en/prenatalandhomebased/",
+      "destination": "/prenatalandhomebased/",
       "permanent": true
     },
     {
       "source": "/Curriculum.aspx",
-      "destination": "/en/learningapproach/",
+      "destination": "/learningapproach/",
       "permanent": true
     },
     {
       "source": "/curriculum.aspx",
-      "destination": "/en/learningapproach/",
+      "destination": "/learningapproach/",
       "permanent": true
     },
     {
       "source": "/Careers.aspx",
-      "destination": "/en/careers/",
+      "destination": "/careers/",
       "permanent": true
     },
     {
       "source": "/careers.aspx",
-      "destination": "/en/careers/",
+      "destination": "/careers/",
       "permanent": true
     },
     {
       "source": "/Volunteer.aspx",
-      "destination": "/en/volunteer/",
+      "destination": "/volunteer/",
       "permanent": true
     },
     {
       "source": "/volunteer.aspx",
-      "destination": "/en/volunteer/",
+      "destination": "/volunteer/",
       "permanent": true
     },
     {
       "source": "/DonateMain.aspx",
-      "destination": "/en/donate/",
+      "destination": "/donate/",
       "permanent": true
     },
     {
       "source": "/donatemain.aspx",
-      "destination": "/en/donate/",
+      "destination": "/donate/",
       "permanent": true
     },
     {
       "source": "/Contact.aspx",
-      "destination": "/en/",
+      "destination": "/",
       "permanent": true
     },
     {
       "source": "/contact.aspx",
-      "destination": "/en/",
+      "destination": "/",
       "permanent": true
     },
     {
       "source": "/Projects.aspx",
-      "destination": "/en/",
+      "destination": "/",
       "permanent": true
     },
     {
       "source": "/projects.aspx",
-      "destination": "/en/",
+      "destination": "/",
       "permanent": true
     },
     {
       "source": "/AlumniHub.aspx",
-      "destination": "/en/",
+      "destination": "/",
       "permanent": true
     },
     {
       "source": "/alumnihub.aspx",
-      "destination": "/en/",
+      "destination": "/",
       "permanent": true
     },
     {
       "source": "/Privacy.aspx",
-      "destination": "/en/",
+      "destination": "/",
       "permanent": true
     },
     {
       "source": "/privacy.aspx",
-      "destination": "/en/",
+      "destination": "/",
       "permanent": true
     },
     {
       "source": "/Terms.aspx",
-      "destination": "/en/",
+      "destination": "/",
       "permanent": true
     },
     {
       "source": "/terms.aspx",
-      "destination": "/en/",
+      "destination": "/",
       "permanent": true
     },
     {
       "source": "/our-mission-1",
-      "destination": "/en/our-mission/",
+      "destination": "/our-mission/",
       "permanent": true
     },
     {
       "source": "/our-mission-1/",
-      "destination": "/en/our-mission/",
+      "destination": "/our-mission/",
       "permanent": true
     },
     {
       "source": "/en/our-mission-1",
-      "destination": "/en/our-mission/",
+      "destination": "/our-mission/",
       "permanent": true
     },
     {
       "source": "/en/our-mission-1/",
-      "destination": "/en/our-mission/",
+      "destination": "/our-mission/",
       "permanent": true
     },
     {
@@ -520,22 +515,22 @@
     },
     {
       "source": "/copy-of-family-support",
-      "destination": "/en/our-centers/",
+      "destination": "/our-centers/",
       "permanent": true
     },
     {
       "source": "/copy-of-family-support/",
-      "destination": "/en/our-centers/",
+      "destination": "/our-centers/",
       "permanent": true
     },
     {
       "source": "/en/copy-of-family-support",
-      "destination": "/en/our-centers/",
+      "destination": "/our-centers/",
       "permanent": true
     },
     {
       "source": "/en/copy-of-family-support/",
-      "destination": "/en/our-centers/",
+      "destination": "/our-centers/",
       "permanent": true
     },
     {
@@ -560,22 +555,22 @@
     },
     {
       "source": "/copy-of-broadway-center-1",
-      "destination": "/en/geary-center/",
+      "destination": "/geary-center/",
       "permanent": true
     },
     {
       "source": "/copy-of-broadway-center-1/",
-      "destination": "/en/geary-center/",
+      "destination": "/geary-center/",
       "permanent": true
     },
     {
       "source": "/en/copy-of-broadway-center-1",
-      "destination": "/en/geary-center/",
+      "destination": "/geary-center/",
       "permanent": true
     },
     {
       "source": "/en/copy-of-broadway-center-1/",
-      "destination": "/en/geary-center/",
+      "destination": "/geary-center/",
       "permanent": true
     },
     {
@@ -600,22 +595,22 @@
     },
     {
       "source": "/copy-of-learning-approach-1",
-      "destination": "/en/broadway-center/",
+      "destination": "/broadway-center/",
       "permanent": true
     },
     {
       "source": "/copy-of-learning-approach-1/",
-      "destination": "/en/broadway-center/",
+      "destination": "/broadway-center/",
       "permanent": true
     },
     {
       "source": "/en/copy-of-learning-approach-1",
-      "destination": "/en/broadway-center/",
+      "destination": "/broadway-center/",
       "permanent": true
     },
     {
       "source": "/en/copy-of-learning-approach-1/",
-      "destination": "/en/broadway-center/",
+      "destination": "/broadway-center/",
       "permanent": true
     },
     {
@@ -640,22 +635,22 @@
     },
     {
       "source": "/copy-of-broadway-center-2",
-      "destination": "/en/north-beach-center/",
+      "destination": "/north-beach-center/",
       "permanent": true
     },
     {
       "source": "/copy-of-broadway-center-2/",
-      "destination": "/en/north-beach-center/",
+      "destination": "/north-beach-center/",
       "permanent": true
     },
     {
       "source": "/en/copy-of-broadway-center-2",
-      "destination": "/en/north-beach-center/",
+      "destination": "/north-beach-center/",
       "permanent": true
     },
     {
       "source": "/en/copy-of-broadway-center-2/",
-      "destination": "/en/north-beach-center/",
+      "destination": "/north-beach-center/",
       "permanent": true
     },
     {
@@ -680,22 +675,22 @@
     },
     {
       "source": "/copy-of-north-beach-center",
-      "destination": "/en/pmsquare-childrens-center/",
+      "destination": "/pmsquare-childrens-center/",
       "permanent": true
     },
     {
       "source": "/copy-of-north-beach-center/",
-      "destination": "/en/pmsquare-childrens-center/",
+      "destination": "/pmsquare-childrens-center/",
       "permanent": true
     },
     {
       "source": "/en/copy-of-north-beach-center",
-      "destination": "/en/pmsquare-childrens-center/",
+      "destination": "/pmsquare-childrens-center/",
       "permanent": true
     },
     {
       "source": "/en/copy-of-north-beach-center/",
-      "destination": "/en/pmsquare-childrens-center/",
+      "destination": "/pmsquare-childrens-center/",
       "permanent": true
     },
     {
@@ -720,22 +715,22 @@
     },
     {
       "source": "/copy-of-broadway-center",
-      "destination": "/en/dr-tkl-center/",
+      "destination": "/dr-tkl-center/",
       "permanent": true
     },
     {
       "source": "/copy-of-broadway-center/",
-      "destination": "/en/dr-tkl-center/",
+      "destination": "/dr-tkl-center/",
       "permanent": true
     },
     {
       "source": "/en/copy-of-broadway-center",
-      "destination": "/en/dr-tkl-center/",
+      "destination": "/dr-tkl-center/",
       "permanent": true
     },
     {
       "source": "/en/copy-of-broadway-center/",
-      "destination": "/en/dr-tkl-center/",
+      "destination": "/dr-tkl-center/",
       "permanent": true
     },
     {
@@ -760,22 +755,22 @@
     },
     {
       "source": "/copy-of-rainbow-center-2",
-      "destination": "/en/sunset-center/",
+      "destination": "/sunset-center/",
       "permanent": true
     },
     {
       "source": "/copy-of-rainbow-center-2/",
-      "destination": "/en/sunset-center/",
+      "destination": "/sunset-center/",
       "permanent": true
     },
     {
       "source": "/en/copy-of-rainbow-center-2",
-      "destination": "/en/sunset-center/",
+      "destination": "/sunset-center/",
       "permanent": true
     },
     {
       "source": "/en/copy-of-rainbow-center-2/",
-      "destination": "/en/sunset-center/",
+      "destination": "/sunset-center/",
       "permanent": true
     },
     {
@@ -800,22 +795,22 @@
     },
     {
       "source": "/copy-of-rainbow-center-1",
-      "destination": "/en/st-lukes-center/",
+      "destination": "/st-lukes-center/",
       "permanent": true
     },
     {
       "source": "/copy-of-rainbow-center-1/",
-      "destination": "/en/st-lukes-center/",
+      "destination": "/st-lukes-center/",
       "permanent": true
     },
     {
       "source": "/en/copy-of-rainbow-center-1",
-      "destination": "/en/st-lukes-center/",
+      "destination": "/st-lukes-center/",
       "permanent": true
     },
     {
       "source": "/en/copy-of-rainbow-center-1/",
-      "destination": "/en/st-lukes-center/",
+      "destination": "/st-lukes-center/",
       "permanent": true
     },
     {
@@ -840,22 +835,22 @@
     },
     {
       "source": "/copy-of-rainbow-center",
-      "destination": "/en/richmond-center/",
+      "destination": "/richmond-center/",
       "permanent": true
     },
     {
       "source": "/copy-of-rainbow-center/",
-      "destination": "/en/richmond-center/",
+      "destination": "/richmond-center/",
       "permanent": true
     },
     {
       "source": "/en/copy-of-rainbow-center",
-      "destination": "/en/richmond-center/",
+      "destination": "/richmond-center/",
       "permanent": true
     },
     {
       "source": "/en/copy-of-rainbow-center/",
-      "destination": "/en/richmond-center/",
+      "destination": "/richmond-center/",
       "permanent": true
     },
     {
@@ -880,22 +875,22 @@
     },
     {
       "source": "/copy-of-pmsquare-children-s-center",
-      "destination": "/en/rainbow-center/",
+      "destination": "/rainbow-center/",
       "permanent": true
     },
     {
       "source": "/copy-of-pmsquare-children-s-center/",
-      "destination": "/en/rainbow-center/",
+      "destination": "/rainbow-center/",
       "permanent": true
     },
     {
       "source": "/en/copy-of-pmsquare-children-s-center",
-      "destination": "/en/rainbow-center/",
+      "destination": "/rainbow-center/",
       "permanent": true
     },
     {
       "source": "/en/copy-of-pmsquare-children-s-center/",
-      "destination": "/en/rainbow-center/",
+      "destination": "/rainbow-center/",
       "permanent": true
     },
     {
@@ -920,22 +915,22 @@
     },
     {
       "source": "/copy-of-our-story-2",
-      "destination": "/en/careers/",
+      "destination": "/careers/",
       "permanent": true
     },
     {
       "source": "/copy-of-our-story-2/",
-      "destination": "/en/careers/",
+      "destination": "/careers/",
       "permanent": true
     },
     {
       "source": "/en/copy-of-our-story-2",
-      "destination": "/en/careers/",
+      "destination": "/careers/",
       "permanent": true
     },
     {
       "source": "/en/copy-of-our-story-2/",
-      "destination": "/en/careers/",
+      "destination": "/careers/",
       "permanent": true
     },
     {
@@ -960,22 +955,22 @@
     },
     {
       "source": "/copy-of-careers",
-      "destination": "/en/volunteer/",
+      "destination": "/volunteer/",
       "permanent": true
     },
     {
       "source": "/copy-of-careers/",
-      "destination": "/en/volunteer/",
+      "destination": "/volunteer/",
       "permanent": true
     },
     {
       "source": "/en/copy-of-careers",
-      "destination": "/en/volunteer/",
+      "destination": "/volunteer/",
       "permanent": true
     },
     {
       "source": "/en/copy-of-careers/",
-      "destination": "/en/volunteer/",
+      "destination": "/volunteer/",
       "permanent": true
     },
     {
@@ -999,103 +994,13 @@
       "permanent": true
     },
     {
-      "source": "/our-story",
-      "destination": "/en/our-story/",
+      "source": "/en",
+      "destination": "/",
       "permanent": true
     },
     {
-      "source": "/our-people",
-      "destination": "/en/our-people/",
-      "permanent": true
-    },
-    {
-      "source": "/blog",
-      "destination": "/en/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/preschool",
-      "destination": "/en/preschool/",
-      "permanent": true
-    },
-    {
-      "source": "/infantandtoddler",
-      "destination": "/en/infantandtoddler/",
-      "permanent": true
-    },
-    {
-      "source": "/prenatalandhomebased",
-      "destination": "/en/prenatalandhomebased/",
-      "permanent": true
-    },
-    {
-      "source": "/learningapproach",
-      "destination": "/en/learningapproach/",
-      "permanent": true
-    },
-    {
-      "source": "/familysupport",
-      "destination": "/en/familysupport/",
-      "permanent": true
-    },
-    {
-      "source": "/how-to-enroll",
-      "destination": "/en/how-to-enroll/",
-      "permanent": true
-    },
-    {
-      "source": "/donate",
-      "destination": "/en/donate/",
-      "permanent": true
-    },
-    {
-      "source": "/our-story/",
-      "destination": "/en/our-story/",
-      "permanent": true
-    },
-    {
-      "source": "/our-people/",
-      "destination": "/en/our-people/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/",
-      "destination": "/en/blog/",
-      "permanent": true
-    },
-    {
-      "source": "/preschool/",
-      "destination": "/en/preschool/",
-      "permanent": true
-    },
-    {
-      "source": "/infantandtoddler/",
-      "destination": "/en/infantandtoddler/",
-      "permanent": true
-    },
-    {
-      "source": "/prenatalandhomebased/",
-      "destination": "/en/prenatalandhomebased/",
-      "permanent": true
-    },
-    {
-      "source": "/learningapproach/",
-      "destination": "/en/learningapproach/",
-      "permanent": true
-    },
-    {
-      "source": "/familysupport/",
-      "destination": "/en/familysupport/",
-      "permanent": true
-    },
-    {
-      "source": "/how-to-enroll/",
-      "destination": "/en/how-to-enroll/",
-      "permanent": true
-    },
-    {
-      "source": "/donate/",
-      "destination": "/en/donate/",
+      "source": "/en/:path*",
+      "destination": "/:path*",
       "permanent": true
     }
   ]
