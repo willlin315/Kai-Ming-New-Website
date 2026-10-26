@@ -37,7 +37,7 @@ The Wix site is a design reference only. The existing company backend will own C
 
 ## Deployment
 
-The existing root index.html is retained to keep the current GitHub Pages preview available during review. The Next.js source lives alongside it; Next builds its own output in out/. The validation workflow builds and uploads this output as an artifact, without changing production hosting.
+The old root index.html draft has been removed. Next builds its own output in out/. The validation workflow builds and uploads this output as an artifact, without changing production hosting.
 
 Set NEXT_PUBLIC_BASE_PATH=/Kai-Ming-New-Website for GitHub Pages. Leave it empty when deploying at the root of the final domain. A hosting/deployment decision is still required to replace the current preview with the Next.js build.
 

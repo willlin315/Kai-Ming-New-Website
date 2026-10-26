@@ -4,6 +4,7 @@ import {useEffect,useState} from 'react';
 import {basePath} from '../lib/client-routes';
 import {publicApiUrl,requestCms} from '../lib/cms-api';
 import {safeImage} from '../lib/cms-media';
+import {SLUG_PATTERN,slugify} from '../lib/slug';
 
 // initialPosts are rendered into the static HTML at build time; the browser
 // then refreshes the list from the public API when it is reachable.
@@ -17,7 +18,7 @@ export default function BlogList({locale='en',initialPosts=null}){
   requestCms(url,'/public/posts').then(items=>{
    if(!active)return;
    if(!Array.isArray(items)){if(!initialPosts)setState('unavailable');return;}
-   setPosts(items.filter(item=>/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(item?.slug||'')));
+   setPosts(items.map(item=>item&&!item.slug?{...item,slug:slugify(item.title,item.id)}:item).filter(item=>SLUG_PATTERN.test(item?.slug||'')));
    setState('ready');
   }).catch(()=>{if(active&&!initialPosts)setState('unavailable');});
   return()=>{active=false};
