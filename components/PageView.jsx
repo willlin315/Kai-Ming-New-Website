@@ -18,6 +18,8 @@ import { navigationFromNodes, markResponsiveNode } from '../lib/responsive';
 import responsiveCss from '../content/responsive-css.json';
 import mobileTypography from '../content/mobile-typography.json';
 import EligibilityCalculator from './EligibilityCalculator';
+import { brandCss } from '../lib/brand';
+const brandedResponsiveCss = brandCss(responsiveCss);
 
 export default function PageView({ page }) {
   // page.people / page.posts / page.homeRecord are published CMS data fetched at build time.
@@ -74,8 +76,8 @@ export default function PageView({ page }) {
   return <div className="km-responsive" lang={htmlLang(page.locale)}>
     <LanguageSwitcher locale={page.locale} pageKey={page.slug||page.key}/>
     <style dangerouslySetInnerHTML={{ __html: page.css }} />
-    <style dangerouslySetInnerHTML={{ __html: responsiveCss }} />
-    {mobileTypography[page.key]&&<style dangerouslySetInnerHTML={{ __html: mobileTypography[page.key] }} />}
+    <style dangerouslySetInnerHTML={{ __html: brandedResponsiveCss }} />
+    {mobileTypography[page.key]&&<style dangerouslySetInnerHTML={{ __html: brandCss(mobileTypography[page.key]) }} />}
     {page.key==='home'?<HomeContentProvider locale={page.locale} initialRecord={page.homeRecord}>{parse(page.html, options)}</HomeContentProvider>:parse(page.html, options)}
     <Interactions />
   </div>;

@@ -19,7 +19,7 @@ export default function MobileNavigation({ groups = [],locale='en' }) {
   };
   return <div className="km-mobile-header" onKeyDown={onKeyDown}>
     <div className="km-mobile-bar">
-      <a href={`${basePath}/${localePaths[locale]}/`} aria-label="Kai Ming Head Start home"><img src={`${basePath}/media/kai-ming-logo.png`} alt="Kai Ming Head Start" width="60" height="60" /></a>
+      <a href={`${basePath}/${localePaths[locale]}/`} aria-label="Kai Ming Head Start home"><img src={`${basePath}/brand/kai-ming-stacked.svg`} alt="Kai Ming Head Start" width="60" height="60" /></a>
       <a className="km-mobile-apply" href={`${basePath}/${localePaths[locale]}/how-to-enroll/`}>{translate('Apply Now',locale)}</a>
       <button ref={button} type="button" aria-expanded={open} aria-controls={navigationId} aria-label={translate(open ? 'Close menu' : 'Open menu',locale)} onClick={() => setOpen(!open)}>{open ? '✕' : '☰'}</button>
     </div>
