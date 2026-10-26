@@ -154,6 +154,12 @@ def audit(session, doc, action):
     session.add(Audit(kind=doc.kind, document_id=doc.id, action=action,
                       revision=doc.revision, snapshot=copy.deepcopy(doc.draft)))
 
+# Migration provenance (original Wix URLs) stays in the CMS but is not published.
+PRIVATE_FIELDS = {'sourceUrl', 'sourcePhoto'}
+
+def public_record(doc):
+    return {**{k: v for k, v in doc.published.items() if k not in PRIVATE_FIELDS}, 'id': doc.id}
+
 def seed_database(engine):
     """Idempotent initial import. Existing drafts and published versions are untouched."""
     people = initial_people()
@@ -172,6 +178,82 @@ def seed_database(engine):
                                published=copy.deepcopy(content), published_revision=1)
                 session.add(doc)
                 audit(session, doc, 'initial-import')
+
+def slugify(title: str = '', key: str = '') -> str:
+    """Title -> lowercase ASCII hyphenated slug. Mirrors lib/slug.js."""
+    import unicodedata
+    text = unicodedata.normalize('NFKD', str(title or ''))
+    text = ''.join(c for c in text if not unicodedata.combining(c)).lower().replace('&', ' and ')
+    slug = re.sub(r'[^a-z0-9]+', '-', text).strip('-')
+    if len(slug) > 80:
+        cut = slug[:80]
+        slug = cut.rsplit('-', 1)[0] if '-' in cut else cut
+    slug = slug.rstrip('-')
+    if slug:
+        return slug
+    suffix = re.sub(r'[^a-z0-9]', '', str(key).lower())[:8]
+    return f'post-{suffix}' if suffix else 'post'
+
+def unique_slug(session, base: str, language: str, key: str) -> str:
+    taken = set()
+    for doc in session.scalars(select(Document).where(Document.kind == 'posts', Document.id != key)):
+        if doc.published_locale == language and doc.published_slug:
+            taken.add(doc.published_slug)
+        for content in (doc.draft, doc.published):
+            if content and content.get('language', 'en') == language and content.get('slug'):
+                taken.add(content['slug'])
+    slug, n = base, 2
+    while slug in taken:
+        slug, n = f'{base}-{n}', n + 1
+    return slug
+
+def backfill_post_slugs(engine):
+    """Give every post without a URL slug one generated from its title."""
+    with Session(engine) as session, session.begin():
+        for doc in session.scalars(select(Document).where(Document.kind == 'posts').with_for_update()):
+            if doc.draft.get('slug') and (doc.published is None or doc.published.get('slug')):
+                continue
+            same = doc.draft == doc.published
+            source = doc.published if doc.published and doc.published.get('slug') else doc.draft
+            slug = source.get('slug') or unique_slug(session, slugify(source.get('title', ''), doc.id), source.get('language', 'en'), doc.id)
+            doc.draft = {**doc.draft, 'slug': doc.draft.get('slug') or slug}
+            if doc.published is not None:
+                doc.published = {**doc.published, 'slug': slug}
+                doc.published_slug = slug
+                doc.published_locale = doc.published.get('language', 'en')
+            doc.revision += 1
+            if same and doc.published is not None:
+                doc.published_revision = doc.revision
+            audit(session, doc, 'generate-slug')
+            session.flush()
+
+FILENAME_ALT = re.compile(r'(\.(jpe?g|png|webp|gif)$)|^(screenshot|image by|img_|dsc)', re.I)
+
+def backfill_home_alts(engine):
+    """Replace empty or file-name image alt text on Home with the descriptive defaults."""
+    defaults = json.loads((ROOT / 'content/home-content.json').read_text())['values']
+    def fix(content):
+        if not content or not isinstance(content.get('values'), dict):
+            return content
+        result = copy.deepcopy(content)
+        for key, value in result['values'].items():
+            seed = defaults.get(key) or {}
+            if key.startswith('image-') and isinstance(value, dict) and value.get('src') == seed.get('src') \
+                    and seed.get('alt') and (not value.get('alt', '').strip() or FILENAME_ALT.search(value.get('alt', '').strip())):
+                value['alt'] = seed['alt']
+        return result
+    with Session(engine) as session, session.begin():
+        doc = session.scalar(select(Document).where(Document.kind == 'pages', Document.id == 'home').with_for_update())
+        if not doc:
+            return
+        same = doc.draft == doc.published
+        draft, published = fix(doc.draft), fix(doc.published)
+        if draft != doc.draft or published != doc.published:
+            doc.draft, doc.published = draft, published
+            doc.revision += 1
+            if same and published is not None:
+                doc.published_revision = doc.revision
+            audit(session, doc, 'fix-image-alt')
 
 def backfill_translations(engine):
     """Add exact-source translations once; preserve edits and pending drafts."""
@@ -233,6 +315,8 @@ def create_app(database_url=None, token=None, *, initialize=True):
             Base.metadata.create_all(engine)
             seed_database(engine)
             backfill_translations(engine)
+            backfill_post_slugs(engine)
+            backfill_home_alts(engine)
         yield
         engine.dispose()
     app = FastAPI(title='Kai Ming development CMS', lifespan=lifespan)
@@ -365,7 +449,8 @@ def create_app(database_url=None, token=None, *, initialize=True):
                 doc=locked(session,kind,key,body.expected_revision)
                 if kind=='posts':
                     if not doc.draft.get('slug'):
-                        raise HTTPException(422,'A URL slug is required before publishing.')
+                        language=doc.draft.get('language','en')
+                        doc.draft={**doc.draft,'slug':unique_slug(session,slugify(doc.draft.get('title',''),key),language,key)}
                     if not (doc.draft.get('bodyHtml','').strip() or doc.draft.get('body','').strip()):
                         raise HTTPException(422,'Article content is required before publishing.')
                     duplicate=session.scalar(select(Document).where(Document.kind=='posts',Document.published_slug==doc.draft['slug'],Document.published_locale==doc.draft['language'],Document.id!=key))
@@ -408,12 +493,12 @@ def create_app(database_url=None, token=None, *, initialize=True):
         with Session(engine) as session:
             docs=session.scalars(select(Document).where(Document.kind==kind,Document.published.is_not(None)).order_by(Document.id)).all()
             # JSON null can be represented differently across DB drivers; filter explicitly.
-            return [{**d.published,'id':d.id} for d in docs if isinstance(d.published,dict)]
+            return [public_record(d) for d in docs if isinstance(d.published,dict)]
     @app.get('/public/posts/{slug}')
     def article(slug: str, language: str='en'):
         with Session(engine) as session:
             doc=session.scalar(select(Document).where(Document.kind=='posts',Document.published_slug==slug,Document.published_locale==language))
             if not doc or not isinstance(doc.published,dict):
                 raise HTTPException(404,'Published article not found.')
-            return {**doc.published,'id':doc.id}
+            return public_record(doc)
     return app

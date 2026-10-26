@@ -1,0 +1,65 @@
+{
+  "_source": "Site-wide settings used across headers, footers and contact blocks. Engineers can move these into the CMS as a single settings record.",
+  "siteName": {
+    "en": "Kai Ming Head Start",
+    "zh-Hant": "啟明 Head Start",
+    "es": "Kai Ming Head Start"
+  },
+  "slogan": {
+    "en": "Potential Has No Limits",
+    "zh-Hant": "潛能無限",
+    "es": "El potencial no tiene límites"
+  },
+  "contact": {
+    "phone": "(415) 982-4777",
+    "phoneHref": "tel:+14159824777",
+    "email": "info@kaiming.org",
+    "address": {
+      "street": "934 Howard Street",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip": "94103"
+    }
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/kaimingheadstart",
+    "instagram": "https://www.instagram.com/kaimingheadstart/",
+    "linkedin": "https://www.linkedin.com/company/kai-ming-inc./",
+    "youtube": "https://www.youtube.com/channel/UC5Nr-pw-bS9MuYWMhg1UM1g/videos"
+  },
+  "links": {
+    "enrollmentApplication": "https://www.kaiming.org/Enrollment.aspx?lang=",
+    "stepPortal": "https://www.ecestep.org"
+  },
+  "homeVideoUrl": null,
+  "funders": [
+    "Office of Head Start",
+    "California Department of Social Services",
+    "California Department of Education",
+    "San Francisco Department of Early Childhood",
+    "CACFP"
+  ],
+  "seo": {
+    "siteUrlEnv": "SITE_URL",
+    "indexingEnv": "SITE_INDEXABLE",
+    "ogImage": "/brand/og-default.png",
+    "pageDescriptions": "content/seo.json"
+  },
+  "languages": [
+    {
+      "code": "en",
+      "path": "/en/",
+      "label": "English"
+    },
+    {
+      "code": "zh-Hant",
+      "path": "/zh/",
+      "label": "繁體中文"
+    },
+    {
+      "code": "es",
+      "path": "/es/",
+      "label": "Español"
+    }
+  ]
+}
