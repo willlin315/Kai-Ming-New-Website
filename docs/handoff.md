@@ -33,7 +33,7 @@ built here. The forms are layout only and do not submit anything.
 
 ## Redirects (`vercel.json`)
 
-- `/` → `/en/` (temporary).
+- English lives at the root (no `/en` prefix, like Wix). `/en` and `/en/:path*` redirect permanently (308) to the same page without the prefix. This differs from the pilot `CLAUDE.md` (`/en/…` with `/` → `/en`); it was a product decision on 2026-10-26.
 - Old kaiming.org pages (`Default.aspx`, `About.aspx`, `People.aspx`, `Centers.aspx`, `CenterDetail.aspx?Cid=1…9`, `Preschool.aspx`, `IT.aspx`, `HomeBased.aspx`, `Curriculum.aspx`, `Enrollment.aspx?lang=…`, `Careers.aspx`, `Volunteer.aspx`, `DonateMain.aspx`, …) → new pages, permanent. The old site switched language by postback, so only Enrollment has language-specific targets.
 - Original Wix page names (`copy-of-…`) → clean URLs.
 

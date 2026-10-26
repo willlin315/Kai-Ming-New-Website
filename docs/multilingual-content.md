@@ -1,6 +1,6 @@
 # English, Traditional Chinese and Spanish content
 
-Public routes use `/en/`, `/zh/` and `/es/`. The Chinese content locale is `zh-Hant`. The language switcher preserves the page key, and article switches preserve the slug and source language. Existing page keys are retained so internal links and People placements remain stable.
+Public routes: English has no prefix (`/our-centers/`, like Wix); Chinese and Spanish use `/zh/` and `/es/`. Old `/en/…` URLs redirect permanently to the root (`vercel.json`). The Chinese content locale is `zh-Hant`. The language switcher preserves the page key, and article switches preserve the slug and source language. Existing page keys are retained so internal links and People placements remain stable.
 
 Fixed page text and shared navigation translations are versioned in `content/i18n/site.json`. Server rendering translates exact source text nodes and selected accessibility attributes; styles, scripts, links to forms, field values and image assets are not translated as text. Names and addresses remain unchanged where appropriate. Text embedded inside images is not translated. New source wording needs a new dictionary entry.
 

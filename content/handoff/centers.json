@@ -4,7 +4,7 @@
     {
       "id": "dr-tkl-center",
       "pageKey": "copy-of-broadway-center",
-      "url": "/en/dr-tkl-center/",
+      "url": "/dr-tkl-center/",
       "legacyUrl": "https://www.kaiming.org/CenterDetail.aspx?Cid=1",
       "name": {
         "en": "Dr. T.K.L Center",
@@ -45,7 +45,7 @@
     {
       "id": "broadway-center",
       "pageKey": "copy-of-learning-approach-1",
-      "url": "/en/broadway-center/",
+      "url": "/broadway-center/",
       "legacyUrl": "https://www.kaiming.org/CenterDetail.aspx?Cid=2",
       "name": {
         "en": "Broadway Center",
@@ -86,7 +86,7 @@
     {
       "id": "geary-center",
       "pageKey": "copy-of-broadway-center-1",
-      "url": "/en/geary-center/",
+      "url": "/geary-center/",
       "legacyUrl": "https://www.kaiming.org/CenterDetail.aspx?Cid=3",
       "name": {
         "en": "Geary Center",
@@ -126,7 +126,7 @@
     {
       "id": "north-beach-center",
       "pageKey": "copy-of-broadway-center-2",
-      "url": "/en/north-beach-center/",
+      "url": "/north-beach-center/",
       "legacyUrl": "https://www.kaiming.org/CenterDetail.aspx?Cid=4",
       "name": {
         "en": "North Beach Center",
@@ -168,7 +168,7 @@
     {
       "id": "richmond-center",
       "pageKey": "copy-of-rainbow-center",
-      "url": "/en/richmond-center/",
+      "url": "/richmond-center/",
       "legacyUrl": "https://www.kaiming.org/CenterDetail.aspx?Cid=5",
       "name": {
         "en": "Richmond Center",
@@ -208,7 +208,7 @@
     {
       "id": "sunset-center",
       "pageKey": "copy-of-rainbow-center-2",
-      "url": "/en/sunset-center/",
+      "url": "/sunset-center/",
       "legacyUrl": "https://www.kaiming.org/CenterDetail.aspx?Cid=6",
       "name": {
         "en": "Sunset Center",
@@ -248,7 +248,7 @@
     {
       "id": "st-lukes-center",
       "pageKey": "copy-of-rainbow-center-1",
-      "url": "/en/st-lukes-center/",
+      "url": "/st-lukes-center/",
       "legacyUrl": "https://www.kaiming.org/CenterDetail.aspx?Cid=7",
       "name": {
         "en": "St. Luke’s Center",
@@ -289,7 +289,7 @@
     {
       "id": "rainbow-center",
       "pageKey": "copy-of-pmsquare-children-s-center",
-      "url": "/en/rainbow-center/",
+      "url": "/rainbow-center/",
       "legacyUrl": "https://www.kaiming.org/CenterDetail.aspx?Cid=8",
       "name": {
         "en": "Rainbow Center",
@@ -329,7 +329,7 @@
     {
       "id": "pmsquare-childrens-center",
       "pageKey": "copy-of-north-beach-center",
-      "url": "/en/pmsquare-childrens-center/",
+      "url": "/pmsquare-childrens-center/",
       "legacyUrl": "https://www.kaiming.org/CenterDetail.aspx?Cid=9",
       "name": {
         "en": "PMsquare Children’s Center",

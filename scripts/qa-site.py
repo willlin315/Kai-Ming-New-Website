@@ -10,8 +10,9 @@ paths=[]
 for loc in ['en','zh','es']:
     for r in routes:
         k=r['key']; s=r.get('slug') or k
-        paths.append(f'/{loc}/' if k=='home' else f'/{loc}/{s}/')
-    for st in ['test-post','kron4']: paths.append(f'/{loc}/stories/{st}/')
+        pre='' if loc=='en' else f'/{loc}'
+        paths.append(f'{pre}/' if k=='home' else f'{pre}/{s}/')
+    for st in ['test-post','kron4']: paths.append(('' if loc=='en' else f'/{loc}')+f'/stories/{st}/')
 issues=[]; links=set(); people=set()
 def add(p,vp,kind,detail): issues.append({'path':p,'viewport':vp,'kind':kind,'detail':detail})
 with sync_playwright() as pw:
@@ -43,13 +44,13 @@ with sync_playwright() as pw:
             if d['scrollW']>d['clientW']+1: add(p,vp,'overflow',f"{d['scrollW']}>{d['clientW']} {d['over']}")
             for k in ['broken','noalt','unnamed','inputs','dupIds']:
                 if d[k]: add(p,vp,k,d[k][:6])
-            exp={'en':'en','zh':'zh-Hant','es':'es'}[p.split('/')[1]]
+            exp={'zh':'zh-Hant','es':'es'}.get(p.split('/')[1],'en')
             if d['lang']!=exp: add(p,vp,'lang',d['lang'])
             if d['h1']!=1: add(p,vp,'h1count',d['h1'])
             if errs: add(p,vp,'console',[e[:160] for e in errs[:4]])
             links.update(d['links']); people.update(d['people'])
             # keyboard: first 12 tab stops should be visible and show a focus indicator
-            if vp=='desktop' and p.endswith(('/en/','/en/blog/','/en/eligibility/')) or vp=='desktop' and p.count('/')==2:
+            if vp=='desktop' and p in ('/','/blog/','/eligibility/') or vp=='desktop' and p.count('/')==2 and p.split('/')[1] in ('zh','es'):
                 bad=[]
                 for i in range(15):
                     pg.keyboard.press('Tab')

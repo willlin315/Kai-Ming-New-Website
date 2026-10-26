@@ -1,5 +1,5 @@
 'use client';
-import {translate,localizedRecord,localePaths} from '../lib/i18n';
+import {translate,localizedRecord,localePaths,localePrefix} from '../lib/i18n';
 import {useEffect,useState} from 'react';
 import {basePath} from '../lib/client-routes';
 import {publicApiUrl,requestCms} from '../lib/cms-api';
@@ -29,7 +29,7 @@ export default function BlogList({locale='en',initialPosts=null}){
  return <div className="km-news-list">{posts.map(raw=>{
   const post=localizedRecord(raw,locale);
   const image=safeImage(post.image?.replaceAll('__BASE__',basePath));
-  const href=`${basePath}/${localePaths[locale]}/stories/${encodeURIComponent(raw.slug)}/`;
+  const href=`${basePath}${localePrefix(locale)}/stories/${encodeURIComponent(raw.slug)}/`;
   return <article key={raw.id||raw.slug} className="km-news-card">
    {image&&<img src={image} alt={post.title||''} width="454" height="341"/>}
    <div className="km-news-card-content"><h2>{post.title}</h2>{post.summary&&<p>{post.summary}</p>}<a href={href}>{translate('Read more',locale)}</a></div>
