@@ -43,7 +43,7 @@ with sync_playwright() as pw:
             if d['scrollW']>d['clientW']+1: add(p,vp,'overflow',f"{d['scrollW']}>{d['clientW']} {d['over']}")
             for k in ['broken','noalt','unnamed','inputs','dupIds']:
                 if d[k]: add(p,vp,k,d[k][:6])
-            exp={'en':'en','zh':'zh-HK','es':'es'}[p.split('/')[1]]
+            exp={'en':'en','zh':'zh-Hant','es':'es'}[p.split('/')[1]]
             if d['lang']!=exp: add(p,vp,'lang',d['lang'])
             if d['h1']!=1: add(p,vp,'h1count',d['h1'])
             if errs: add(p,vp,'console',[e[:160] for e in errs[:4]])

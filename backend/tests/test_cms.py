@@ -166,3 +166,36 @@ def test_publish_and_unpublish_trigger_deploy_hooks(monkeypatch,api,auth):
     assert calls==[('https://hooks.example.test/one','POST'),('https://hooks.example.test/two','POST')]
     assert client.post('/admin/posts/'+key+'/unpublish',headers=auth,json={'expected_revision':1}).status_code==200
     assert len(calls)==4
+
+def test_publish_generates_slug_from_title(api,auth):
+    client,_=api
+    title='Auto Slug '+uuid.uuid4().hex[:6]+': Café & Play'
+    keys=['auto-'+uuid.uuid4().hex for _ in range(2)]
+    slugs=[]
+    for key in keys:
+        assert client.put('/admin/posts/'+key,headers=auth,json={'expected_revision':0,'content':{'title':title,'slug':'','language':'en','bodyHtml':'<p>Body</p>'}}).status_code==200
+        result=client.post('/admin/posts/'+key+'/publish',headers=auth,json={'expected_revision':1})
+        assert result.status_code==200,result.text
+        slugs.append(result.json()['slug'])
+    assert slugs[0].startswith('auto-slug-') and slugs[0].endswith('-cafe-and-play')
+    assert slugs[1]==slugs[0]+'-2'
+    assert client.get('/public/posts/'+slugs[1]).status_code==200
+    chinese='zh-'+uuid.uuid4().hex
+    assert client.put('/admin/posts/'+chinese,headers=auth,json={'expected_revision':0,'content':{'title':'中文標題','language':'zh-Hant','bodyHtml':'<p>內容</p>'}}).status_code==200
+    assert client.post('/admin/posts/'+chinese+'/publish',headers=auth,json={'expected_revision':1}).json()['slug']=='post-'+chinese.replace('-','')[:8]
+
+def test_legacy_posts_get_slugs(api,auth):
+    client,_=api
+    posts=client.get('/public/posts').json()
+    assert posts and all(p['slug'] for p in posts)
+
+def test_home_alt_backfill(api,auth):
+    client,_=api
+    home=[p for p in client.get('/public/pages').json() if p['id']=='home'][0]
+    alts=[v['alt'] for k,v in home['values'].items() if k.startswith('image-')]
+    assert not any(a.lower().endswith(('.png','.jpg')) for a in alts)
+
+def test_public_records_hide_migration_sources(api):
+    client,_=api
+    for kind in ['people','posts']:
+        assert not any('sourceUrl' in r or 'sourcePhoto' in r for r in client.get('/public/'+kind).json())

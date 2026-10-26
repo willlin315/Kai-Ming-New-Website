@@ -1,0 +1,123 @@
+{
+  "_note": "Per-page meta descriptions (search results and social previews). Keys are page keys from content/routes.json. Keep each under ~160 characters.",
+  "home": {
+    "en": "Kai Ming Head Start offers high-quality early education in San Francisco, free for eligible families: prenatal and home-based services, infant and toddler care, and preschool.",
+    "zh-Hant": "啟明 Head Start 在舊金山提供優質幼兒教育，符合資格的家庭免費：產前與到宅服務、嬰幼兒照護及學前教育。",
+    "es": "Kai Ming Head Start ofrece educación temprana de calidad en San Francisco, gratuita para familias elegibles: servicios prenatales y en el hogar, bebés y niños pequeños, y preescolar."
+  },
+  "our-story": {
+    "en": "Since 1975, Kai Ming Head Start has helped San Francisco children and families grow. Learn our history and how we serve the community.",
+    "zh-Hant": "自 1975 年起，啟明 Head Start 陪伴舊金山的兒童與家庭成長。了解我們的歷史與社區服務。",
+    "es": "Desde 1975, Kai Ming Head Start ayuda a los niños y familias de San Francisco a crecer. Conozca nuestra historia y nuestro servicio a la comunidad."
+  },
+  "our-mission-1": {
+    "en": "Our mission, vision and values: Potential Has No Limits. How Kai Ming supports every child and family in San Francisco.",
+    "zh-Hant": "我們的使命、願景與價值：潛能無限。啟明如何支持舊金山的每一個孩子與家庭。",
+    "es": "Nuestra misión, visión y valores: El potencial no tiene límites. Cómo Kai Ming apoya a cada niño y familia en San Francisco."
+  },
+  "our-people": {
+    "en": "Meet the Kai Ming Head Start leadership team, center directors and staff who care for children and families across San Francisco.",
+    "zh-Hant": "認識啟明 Head Start 的領導團隊、中心主任與員工，他們在舊金山各地照顧兒童與家庭。",
+    "es": "Conozca al equipo directivo, a los directores de centro y al personal de Kai Ming Head Start que cuidan a niños y familias en San Francisco."
+  },
+  "blog": {
+    "en": "News and stories from Kai Ming Head Start: classroom moments, family events and community updates.",
+    "zh-Hant": "啟明 Head Start 的新聞與故事：課堂點滴、家庭活動與社區消息。",
+    "es": "Noticias e historias de Kai Ming Head Start: momentos en el aula, eventos familiares y novedades de la comunidad."
+  },
+  "preschool": {
+    "en": "Preschool for children ages 3 to 5 in San Francisco, free for eligible families, with a research-based curriculum that prepares children for kindergarten.",
+    "zh-Hant": "舊金山 3 至 5 歲兒童的學前教育，符合資格的家庭免費，以研究為基礎的課程幫助孩子為上幼兒園做好準備。",
+    "es": "Preescolar para niños de 3 a 5 años en San Francisco, gratuito para familias elegibles, con un currículo basado en la investigación que los prepara para el kínder."
+  },
+  "infantandtoddler": {
+    "en": "Infant and toddler care for children 3 months to 3 years at Kai Ming centers in San Francisco, with caring teachers and small groups.",
+    "zh-Hant": "啟明在舊金山的中心為 3 個月至 3 歲的嬰幼兒提供照護，師資用心、小組照顧。",
+    "es": "Cuidado de bebés y niños pequeños de 3 meses a 3 años en los centros Kai Ming de San Francisco, con maestros atentos y grupos pequeños."
+  },
+  "prenatalandhomebased": {
+    "en": "Prenatal and home-based services: home visits and group activities that support expectant parents and families with children under 3.",
+    "zh-Hant": "產前與到宅服務：透過家訪與團體活動，支持準父母及有 3 歲以下孩子的家庭。",
+    "es": "Servicios prenatales y en el hogar: visitas a domicilio y actividades grupales para futuros padres y familias con niños menores de 3 años."
+  },
+  "learningapproach": {
+    "en": "How children learn at Kai Ming: Creative Curriculum, the Project Approach and developmentally appropriate practice.",
+    "zh-Hant": "孩子在啟明如何學習：創意課程、方案教學與適性發展的教學方式。",
+    "es": "Cómo aprenden los niños en Kai Ming: Creative Curriculum, el enfoque por proyectos y prácticas apropiadas para su desarrollo."
+  },
+  "familysupport": {
+    "en": "Family support at Kai Ming: health, nutrition, mental health, disability services and resources that help the whole family thrive.",
+    "zh-Hant": "啟明的家庭支援：健康、營養、心理健康、特殊需求服務及各項資源，幫助全家一起成長。",
+    "es": "Apoyo familiar en Kai Ming: salud, nutrición, salud mental, servicios para discapacidades y recursos para que toda la familia prospere."
+  },
+  "copy-of-family-support": {
+    "en": "Find a Kai Ming Head Start center near you. 9 locations across San Francisco offering infant, toddler and preschool programs.",
+    "zh-Hant": "尋找離您最近的啟明 Head Start 中心。舊金山共 9 個地點，提供嬰兒、幼兒及學前課程。",
+    "es": "Encuentre un centro Kai Ming Head Start cerca de usted. 9 ubicaciones en San Francisco con programas para bebés, niños pequeños y preescolar."
+  },
+  "copy-of-broadway-center-1": {
+    "en": "Geary Center, 6221 Geary Blvd., San Francisco: toddler care and preschool for children 18 months to 5 years in the Richmond District.",
+    "zh-Hant": "Geary 中心，舊金山 6221 Geary Blvd.：位於列治文區，為 18 個月至 5 歲兒童提供幼兒照護與學前教育。",
+    "es": "Centro Geary, 6221 Geary Blvd., San Francisco: cuidado de niños pequeños y preescolar para niños de 18 meses a 5 años en el distrito Richmond."
+  },
+  "copy-of-learning-approach-1": {
+    "en": "Broadway Center, 820 Battery St., San Francisco: infant, toddler and preschool care near the Embarcadero for children 3 months to 5 years.",
+    "zh-Hant": "Broadway 中心，舊金山 820 Battery St.：鄰近 Embarcadero，為 3 個月至 5 歲兒童提供嬰兒、幼兒及學前照護。",
+    "es": "Centro Broadway, 820 Battery St., San Francisco: bebés, niños pequeños y preescolar cerca del Embarcadero, de 3 meses a 5 años."
+  },
+  "copy-of-broadway-center-2": {
+    "en": "North Beach Center, 1170 Columbus Ave., San Francisco: our dual language site serving infants, toddlers and preschoolers.",
+    "zh-Hant": "North Beach 中心，舊金山 1170 Columbus Ave.：我們的雙語示範中心，服務嬰兒、幼兒與學前兒童。",
+    "es": "Centro North Beach, 1170 Columbus Ave., San Francisco: nuestro centro bilingüe para bebés, niños pequeños y preescolares."
+  },
+  "copy-of-north-beach-center": {
+    "en": "PMsquare Children’s Center, 671 China Basin St., Mission Bay: infant, toddler and preschool care for children 3 months to 5 years.",
+    "zh-Hant": "PMsquare 兒童中心，Mission Bay 671 China Basin St.：為 3 個月至 5 歲兒童提供嬰兒、幼兒及學前照護。",
+    "es": "Centro infantil PMsquare, 671 China Basin St., Mission Bay: bebés, niños pequeños y preescolar, de 3 meses a 5 años."
+  },
+  "copy-of-broadway-center": {
+    "en": "Dr. T.K.L Center, 950 Powell St., San Francisco: Kai Ming’s first center, offering preschool for children 2 to 5 years.",
+    "zh-Hant": "Dr. T.K.L 中心，舊金山 950 Powell St.：啟明的第一個中心，為 2 至 5 歲兒童提供學前教育。",
+    "es": "Centro Dr. T.K.L, 950 Powell St., San Francisco: el primer centro de Kai Ming, con preescolar para niños de 2 a 5 años."
+  },
+  "copy-of-rainbow-center-2": {
+    "en": "Sunset Center, 2800 Taraval St., San Francisco: toddler care and preschool in the Parkside neighborhood with multilingual teachers.",
+    "zh-Hant": "Sunset 中心，舊金山 2800 Taraval St.：位於 Parkside 社區，多語師資提供幼兒照護與學前教育。",
+    "es": "Centro Sunset, 2800 Taraval St., San Francisco: cuidado de niños pequeños y preescolar en Parkside con maestros multilingües."
+  },
+  "copy-of-rainbow-center-1": {
+    "en": "St. Luke’s Center, 1755 Clay St., San Francisco: toddler care and preschool between Nob Hill and Pacific Heights.",
+    "zh-Hant": "St. Luke’s 中心，舊金山 1755 Clay St.：位於 Nob Hill 與 Pacific Heights 之間，提供幼兒照護與學前教育。",
+    "es": "Centro St. Luke’s, 1755 Clay St., San Francisco: cuidado de niños pequeños y preescolar entre Nob Hill y Pacific Heights."
+  },
+  "copy-of-rainbow-center": {
+    "en": "Richmond Center, 426 33rd Ave., San Francisco: preschool for children 3 to 5 years across from Lincoln Park.",
+    "zh-Hant": "Richmond 中心，舊金山 426 33rd Ave.：位於林肯公園對面，為 3 至 5 歲兒童提供學前教育。",
+    "es": "Centro Richmond, 426 33rd Ave., San Francisco: preescolar para niños de 3 a 5 años frente a Lincoln Park."
+  },
+  "copy-of-pmsquare-children-s-center": {
+    "en": "Rainbow Center, 799 Pacific Ave., Chinatown, San Francisco: infant, toddler and preschool care for children 3 months to 5 years.",
+    "zh-Hant": "Rainbow 中心，舊金山華埠 799 Pacific Ave.：為 3 個月至 5 歲兒童提供嬰兒、幼兒及學前照護。",
+    "es": "Centro Rainbow, 799 Pacific Ave., Chinatown, San Francisco: bebés, niños pequeños y preescolar, de 3 meses a 5 años."
+  },
+  "how-to-enroll": {
+    "en": "How to enroll at Kai Ming Head Start: check eligibility, prepare documents and apply for early education in San Francisco.",
+    "zh-Hant": "如何申請入讀啟明 Head Start：確認資格、準備文件，申請舊金山的幼兒教育服務。",
+    "es": "Cómo inscribirse en Kai Ming Head Start: verifique su elegibilidad, prepare sus documentos y solicite educación temprana en San Francisco."
+  },
+  "copy-of-our-story-2": {
+    "en": "Careers at Kai Ming Head Start: teaching and support jobs in early childhood education in San Francisco.",
+    "zh-Hant": "加入啟明 Head Start：舊金山幼兒教育的教學與支援職位。",
+    "es": "Empleos en Kai Ming Head Start: puestos de enseñanza y apoyo en educación temprana en San Francisco."
+  },
+  "copy-of-careers": {
+    "en": "Volunteer with Kai Ming Head Start and help young children and families in San Francisco learn and grow.",
+    "zh-Hant": "成為啟明 Head Start 志工，幫助舊金山的幼兒與家庭學習成長。",
+    "es": "Sea voluntario en Kai Ming Head Start y ayude a niños pequeños y familias de San Francisco a aprender y crecer."
+  },
+  "donate": {
+    "en": "Support early education in San Francisco. Your gift to Kai Ming Head Start helps children and families reach their potential.",
+    "zh-Hant": "支持舊金山的幼兒教育。您對啟明 Head Start 的捐款，幫助孩子與家庭發揮潛能。",
+    "es": "Apoye la educación temprana en San Francisco. Su donación a Kai Ming Head Start ayuda a niños y familias a alcanzar su potencial."
+  }
+}

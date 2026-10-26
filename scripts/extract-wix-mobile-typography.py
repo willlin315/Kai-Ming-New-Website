@@ -162,7 +162,7 @@ def main():
         for locale, rules in by_locale.items():
             if locale == 'en':
                 continue
-            lang = 'zh-HK' if locale == 'zh' else locale
+            lang = 'zh-Hant' if locale == 'zh' else locale
             for selector, decl in sorted(rules.items()):
                 extra = {p: v for p, v in decl.items() if base.get(selector, {}).get(p) != v}
                 if extra:

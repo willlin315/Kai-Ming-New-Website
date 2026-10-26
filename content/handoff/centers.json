@@ -1,0 +1,371 @@
+{
+  "_source": "Collected from www.kaiming.org CenterDetail pages on 2026-10-26. licenseNumber is not published on either site; fill in from Community Care Licensing. capacity is null where the old site does not state it. photo is null: center pages currently show only staff photos; choose an exterior/classroom photo per center.",
+  "centers": [
+    {
+      "id": "dr-tkl-center",
+      "pageKey": "copy-of-broadway-center",
+      "url": "/en/dr-tkl-center/",
+      "legacyUrl": "https://www.kaiming.org/CenterDetail.aspx?Cid=1",
+      "name": {
+        "en": "Dr. T.K.L Center",
+        "zh-Hant": "Dr. T.K.L 中心",
+        "es": "Centro Dr. T.K.L"
+      },
+      "address": {
+        "street": "950 Powell St. (Clay St.)",
+        "city": "San Francisco",
+        "state": "CA",
+        "zip": "94108-2014"
+      },
+      "phone": "(415) 766-6092",
+      "email": "info@kaiming.org",
+      "hours": {
+        "days": "Monday – Friday",
+        "time": "8:00 am – 4:30 pm"
+      },
+      "neighborhood": "Chinatown / Nob Hill",
+      "ages": "2 to 5 years",
+      "capacity": 20,
+      "programs": [
+        "preschool",
+        "home-based"
+      ],
+      "classrooms": "1 preschool classroom",
+      "features": [
+        "Community playground",
+        "Parent activity room"
+      ],
+      "note": "Founded in 1975; Kai Ming’s first center.",
+      "photo": null,
+      "mapUrl": "https://goo.gl/maps/7rf6kaDRrk4NUvok7",
+      "virtualTourUrl": "https://my.matterport.com/show/?m=NH8m98TEpex",
+      "tourRequest": "mailto:info@kaiming.org?subject=Tour%20request%3A%20Dr.%20T.K.L%20Center",
+      "licenseNumber": null
+    },
+    {
+      "id": "broadway-center",
+      "pageKey": "copy-of-learning-approach-1",
+      "url": "/en/broadway-center/",
+      "legacyUrl": "https://www.kaiming.org/CenterDetail.aspx?Cid=2",
+      "name": {
+        "en": "Broadway Center",
+        "zh-Hant": "Broadway 中心",
+        "es": "Centro Broadway"
+      },
+      "address": {
+        "street": "820 Battery St. (Broadway)",
+        "city": "San Francisco",
+        "state": "CA",
+        "zip": "94111-1504"
+      },
+      "phone": "(415) 982-4570",
+      "email": "info@kaiming.org",
+      "hours": {
+        "days": "Monday – Friday",
+        "time": "8:00 am – 4:30 pm"
+      },
+      "neighborhood": "Embarcadero",
+      "ages": "0 to 5 years (from 3 months)",
+      "capacity": 45,
+      "programs": [
+        "infant-toddler",
+        "preschool"
+      ],
+      "classrooms": "1 infant, 2 toddler, 1 preschool classroom",
+      "features": [
+        "Outdoor playground",
+        "Parent resources room"
+      ],
+      "note": "Kai Ming’s pioneer infant and toddler location.",
+      "photo": null,
+      "mapUrl": "https://goo.gl/maps/eHRLNLSK4XAiGgwH9",
+      "virtualTourUrl": "https://my.matterport.com/show/?m=HCAsvVEZfat",
+      "tourRequest": "mailto:info@kaiming.org?subject=Tour%20request%3A%20Broadway%20Center",
+      "licenseNumber": null
+    },
+    {
+      "id": "geary-center",
+      "pageKey": "copy-of-broadway-center-1",
+      "url": "/en/geary-center/",
+      "legacyUrl": "https://www.kaiming.org/CenterDetail.aspx?Cid=3",
+      "name": {
+        "en": "Geary Center",
+        "zh-Hant": "Geary 中心",
+        "es": "Centro Geary"
+      },
+      "address": {
+        "street": "6221 Geary Blvd. (26th Ave)",
+        "city": "San Francisco",
+        "state": "CA",
+        "zip": "94121-1887"
+      },
+      "phone": "(415) 387-3133",
+      "email": "info@kaiming.org",
+      "hours": {
+        "days": "Monday – Friday",
+        "time": "8:00 am – 4:30 pm"
+      },
+      "neighborhood": "Richmond District",
+      "ages": "18 months to 5 years",
+      "capacity": 36,
+      "programs": [
+        "infant-toddler",
+        "preschool"
+      ],
+      "classrooms": "2 toddler, 1 preschool classroom",
+      "features": [
+        "Outdoor playground"
+      ],
+      "note": "Newly renovated for the toddler program.",
+      "photo": null,
+      "mapUrl": "https://goo.gl/maps/HQ2449pPVXrguzYH8",
+      "virtualTourUrl": "https://my.matterport.com/show/?m=4HWmUdGqbYk",
+      "tourRequest": "mailto:info@kaiming.org?subject=Tour%20request%3A%20Geary%20Center",
+      "licenseNumber": null
+    },
+    {
+      "id": "north-beach-center",
+      "pageKey": "copy-of-broadway-center-2",
+      "url": "/en/north-beach-center/",
+      "legacyUrl": "https://www.kaiming.org/CenterDetail.aspx?Cid=4",
+      "name": {
+        "en": "North Beach Center",
+        "zh-Hant": "North Beach 中心",
+        "es": "Centro North Beach"
+      },
+      "address": {
+        "street": "1170 Columbus Ave. (Bay St)",
+        "city": "San Francisco",
+        "state": "CA",
+        "zip": "94133-1708"
+      },
+      "phone": "(415) 931-1088",
+      "email": "info@kaiming.org",
+      "hours": {
+        "days": "Monday – Friday",
+        "time": "8:00 am – 4:30 pm"
+      },
+      "neighborhood": "North Beach",
+      "ages": "3 months to 5 years",
+      "capacity": 44,
+      "programs": [
+        "infant-toddler",
+        "preschool"
+      ],
+      "classrooms": "1 infant, 2 toddler, 1 preschool classroom",
+      "features": [
+        "Outdoor playground",
+        "Infant room",
+        "Children’s lending library"
+      ],
+      "note": "Dual language demonstration site.",
+      "photo": null,
+      "mapUrl": "https://goo.gl/maps/BBPmqCXJYbW8ECSd8",
+      "virtualTourUrl": "https://my.matterport.com/show/?m=T7kWq5maGpV",
+      "tourRequest": "mailto:info@kaiming.org?subject=Tour%20request%3A%20North%20Beach%20Center",
+      "licenseNumber": null
+    },
+    {
+      "id": "richmond-center",
+      "pageKey": "copy-of-rainbow-center",
+      "url": "/en/richmond-center/",
+      "legacyUrl": "https://www.kaiming.org/CenterDetail.aspx?Cid=5",
+      "name": {
+        "en": "Richmond Center",
+        "zh-Hant": "Richmond 中心",
+        "es": "Centro Richmond"
+      },
+      "address": {
+        "street": "426 33rd Ave. (Geary Blvd)",
+        "city": "San Francisco",
+        "state": "CA",
+        "zip": "94121-1606"
+      },
+      "phone": "(415) 386-3096",
+      "email": "info@kaiming.org",
+      "hours": {
+        "days": "Monday – Friday",
+        "time": "8:00 am – 4:30 pm"
+      },
+      "neighborhood": "Outer Richmond (Lincoln Park)",
+      "ages": "3 to 5 years",
+      "capacity": 30,
+      "programs": [
+        "preschool"
+      ],
+      "classrooms": "2 preschool classrooms",
+      "features": [
+        "Community playground",
+        "Parent and child library"
+      ],
+      "note": "Housed in Pine United Methodist Church.",
+      "photo": null,
+      "mapUrl": "https://goo.gl/maps/nyRQppMgvqrsZG6V8",
+      "virtualTourUrl": "https://my.matterport.com/show/?m=STdv9sxKpvL",
+      "tourRequest": "mailto:info@kaiming.org?subject=Tour%20request%3A%20Richmond%20Center",
+      "licenseNumber": null
+    },
+    {
+      "id": "sunset-center",
+      "pageKey": "copy-of-rainbow-center-2",
+      "url": "/en/sunset-center/",
+      "legacyUrl": "https://www.kaiming.org/CenterDetail.aspx?Cid=6",
+      "name": {
+        "en": "Sunset Center",
+        "zh-Hant": "Sunset 中心",
+        "es": "Centro Sunset"
+      },
+      "address": {
+        "street": "2800 Taraval St. (38th Ave)",
+        "city": "San Francisco",
+        "state": "CA",
+        "zip": "94116-2157"
+      },
+      "phone": "(415) 759-8980",
+      "email": "info@kaiming.org",
+      "hours": {
+        "days": "Monday – Friday",
+        "time": "8:00 am – 4:30 pm"
+      },
+      "neighborhood": "Parkside",
+      "ages": "2 to 5 years",
+      "capacity": 36,
+      "programs": [
+        "infant-toddler",
+        "preschool"
+      ],
+      "classrooms": "2 toddler, 1 preschool classroom",
+      "features": [
+        "Rooftop playground"
+      ],
+      "note": "Multilingual teachers; Montessori-inspired curriculum.",
+      "photo": null,
+      "mapUrl": "https://goo.gl/maps/396eCrKwuouAN5uU6",
+      "virtualTourUrl": "https://my.matterport.com/show/?m=ZC5pZprqm9c",
+      "tourRequest": "mailto:info@kaiming.org?subject=Tour%20request%3A%20Sunset%20Center",
+      "licenseNumber": null
+    },
+    {
+      "id": "st-lukes-center",
+      "pageKey": "copy-of-rainbow-center-1",
+      "url": "/en/st-lukes-center/",
+      "legacyUrl": "https://www.kaiming.org/CenterDetail.aspx?Cid=7",
+      "name": {
+        "en": "St. Luke’s Center",
+        "zh-Hant": "St. Luke’s 中心",
+        "es": "Centro St. Luke’s"
+      },
+      "address": {
+        "street": "1755 Clay St. (Van Ness Ave.)",
+        "city": "San Francisco",
+        "state": "CA",
+        "zip": "94109-3612"
+      },
+      "phone": "(415) 690-1014",
+      "email": "info@kaiming.org",
+      "hours": {
+        "days": "Monday – Friday",
+        "time": "8:00 am – 4:30 pm"
+      },
+      "neighborhood": "Nob Hill / Pacific Heights",
+      "ages": "2 to 5 years",
+      "capacity": null,
+      "programs": [
+        "infant-toddler",
+        "preschool"
+      ],
+      "classrooms": "2 toddler, 2 preschool classrooms",
+      "features": [
+        "Rooftop playground",
+        "Gross motor room"
+      ],
+      "note": "",
+      "photo": null,
+      "mapUrl": "https://goo.gl/maps/6ggx3GbxTTL42vtE7",
+      "virtualTourUrl": "https://my.matterport.com/show/?m=cS9GKbX9sS7",
+      "tourRequest": "mailto:info@kaiming.org?subject=Tour%20request%3A%20St.%20Luke’s%20Center",
+      "licenseNumber": null
+    },
+    {
+      "id": "rainbow-center",
+      "pageKey": "copy-of-pmsquare-children-s-center",
+      "url": "/en/rainbow-center/",
+      "legacyUrl": "https://www.kaiming.org/CenterDetail.aspx?Cid=8",
+      "name": {
+        "en": "Rainbow Center",
+        "zh-Hant": "Rainbow 中心",
+        "es": "Centro Rainbow"
+      },
+      "address": {
+        "street": "799 Pacific Ave",
+        "city": "San Francisco",
+        "state": "CA",
+        "zip": "94133-4411"
+      },
+      "phone": "(415) 982-6522",
+      "email": "info@kaiming.org",
+      "hours": {
+        "days": "Monday – Friday",
+        "time": "8:00 am – 4:30 pm"
+      },
+      "neighborhood": "Chinatown",
+      "ages": "3 months to 5 years",
+      "capacity": 41,
+      "programs": [
+        "infant-toddler",
+        "preschool"
+      ],
+      "classrooms": "1 infant, 1 toddler, 1 preschool classroom",
+      "features": [
+        "Onsite playground (Ping Yuen courtyard)"
+      ],
+      "note": "Newly renovated.",
+      "photo": null,
+      "mapUrl": "https://goo.gl/maps/WeXYW6cX2T18DYfB6",
+      "virtualTourUrl": "https://my.matterport.com/show/?m=qPkeC4sjEE2",
+      "tourRequest": "mailto:info@kaiming.org?subject=Tour%20request%3A%20Rainbow%20Center",
+      "licenseNumber": null
+    },
+    {
+      "id": "pmsquare-childrens-center",
+      "pageKey": "copy-of-north-beach-center",
+      "url": "/en/pmsquare-childrens-center/",
+      "legacyUrl": "https://www.kaiming.org/CenterDetail.aspx?Cid=9",
+      "name": {
+        "en": "PMsquare Children’s Center",
+        "zh-Hant": "PMsquare 兒童中心",
+        "es": "Centro infantil PMsquare"
+      },
+      "address": {
+        "street": "671 China Basin St.",
+        "city": "San Francisco",
+        "state": "CA",
+        "zip": "94158"
+      },
+      "phone": "(415) 387-3688",
+      "email": "info@kaiming.org",
+      "hours": {
+        "days": "Monday – Friday",
+        "time": "8:00 am – 5:00 pm"
+      },
+      "neighborhood": "Mission Bay",
+      "ages": "3 months to 5 years",
+      "capacity": 45,
+      "programs": [
+        "infant-toddler",
+        "preschool"
+      ],
+      "classrooms": "1 infant, 2 toddler, 1 preschool classroom",
+      "features": [
+        "Private outdoor playground",
+        "Project room"
+      ],
+      "note": "Kai Ming’s newest location.",
+      "photo": null,
+      "mapUrl": "https://goo.gl/maps/YRcXcH4FRjGgrBV56",
+      "virtualTourUrl": "https://my.matterport.com/show/?m=mbmvKg4TMKh",
+      "tourRequest": "mailto:info@kaiming.org?subject=Tour%20request%3A%20PMsquare%20Children’s%20Center",
+      "licenseNumber": null
+    }
+  ]
+}

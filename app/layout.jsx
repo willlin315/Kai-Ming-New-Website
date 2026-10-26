@@ -8,9 +8,11 @@ const comfortaa = Comfortaa({ subsets: ['latin', 'latin-ext'], weight: ['400', '
 const notoTc = Noto_Sans_TC({ weight: ['400', '500', '700'], variable: '--font-noto-tc', display: 'swap', preload: false });
 
 export const metadata = {
-  ...(process.env.SITE_URL ? { metadataBase: new URL(process.env.SITE_URL) } : {}),
+  // Absolute URLs for OG images; falls back to the current production host.
+  metadataBase: new URL(process.env.SITE_URL || 'https://kai-ming-new-website.vercel.app'),
   title: 'Kai Ming Head Start',
-  robots: { index: false, follow: false },
+  // Indexing stays off until launch (SITE_INDEXABLE=true). See app/robots.js.
+  robots: process.env.SITE_INDEXABLE === 'true' ? { index: true, follow: true } : { index: false, follow: false },
   icons: {
     icon: [{ url: `${basePath}/brand/favicon-32.png`, sizes: '32x32', type: 'image/png' }, { url: `${basePath}/brand/icon-192.png`, sizes: '192x192', type: 'image/png' }],
     apple: `${basePath}/brand/apple-touch-icon.png`,

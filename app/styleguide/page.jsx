@@ -16,7 +16,7 @@ const typeScale = [
 ];
 const languages = [
   ['English', 'en', 'Potential Has No Limits', 'Nine centers across San Francisco, each offering care and education close to home.'],
-  ['繁體中文', 'zh-HK', '潛能無限', '九個中心遍布舊金山，在住家附近提供照護與教育。'],
+  ['繁體中文', 'zh-Hant', '潛能無限', '九個中心遍布舊金山，在住家附近提供照護與教育。'],
   ['Español', 'es', 'El potencial no tiene límites', 'Nueve centros en San Francisco ofrecen cuidado y educación cerca de casa.'],
 ];
 
@@ -70,7 +70,7 @@ export default function Styleguide() {
       <p className="sg-lede">Comfortaa × 思源柔黑體. Latin text uses Comfortaa; Traditional Chinese uses Noto Sans TC (the open-source 思源 family) until a licensed web build of 源柔黑體 is chosen.</p>
       <div className="sg-fonts">
         <article><h3 className="sg-font-name" style={{ fontFamily: BRAND_FONTS.heading }}>Comfortaa</h3><p><code>--font-heading</code>, <code>--font-body</code></p><p className="sg-glyphs" style={{ fontFamily: BRAND_FONTS.heading }}>Aa Bb Cc 0123456789</p></article>
-        <article><h3 className="sg-font-name" style={{ fontFamily: BRAND_FONTS.zh }}>思源黑體 Noto Sans TC</h3><p><code>--font-zh</code> (applied to <code>lang="zh-HK"</code>)</p><p className="sg-glyphs" style={{ fontFamily: BRAND_FONTS.zh }}>幼兒園 潛能無限 照護與教育 0123</p></article>
+        <article><h3 className="sg-font-name" style={{ fontFamily: BRAND_FONTS.zh }}>思源黑體 Noto Sans TC</h3><p><code>--font-zh</code> (applied to <code>lang="zh-Hant"</code>)</p><p className="sg-glyphs" style={{ fontFamily: BRAND_FONTS.zh }}>幼兒園 潛能無限 照護與教育 0123</p></article>
       </div>
       <table className="sg-table">
         <caption>Type scale</caption>

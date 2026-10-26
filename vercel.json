@@ -6,6 +6,479 @@
   "outputDirectory": null,
   "redirects": [
     {
+      "source": "/",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/CenterDetail.aspx",
+      "has": [
+        {
+          "type": "query",
+          "key": "Cid",
+          "value": "1"
+        }
+      ],
+      "destination": "/en/dr-tkl-center/",
+      "permanent": true
+    },
+    {
+      "source": "/centerdetail.aspx",
+      "has": [
+        {
+          "type": "query",
+          "key": "Cid",
+          "value": "1"
+        }
+      ],
+      "destination": "/en/dr-tkl-center/",
+      "permanent": true
+    },
+    {
+      "source": "/CenterDetail.aspx",
+      "has": [
+        {
+          "type": "query",
+          "key": "Cid",
+          "value": "2"
+        }
+      ],
+      "destination": "/en/broadway-center/",
+      "permanent": true
+    },
+    {
+      "source": "/centerdetail.aspx",
+      "has": [
+        {
+          "type": "query",
+          "key": "Cid",
+          "value": "2"
+        }
+      ],
+      "destination": "/en/broadway-center/",
+      "permanent": true
+    },
+    {
+      "source": "/CenterDetail.aspx",
+      "has": [
+        {
+          "type": "query",
+          "key": "Cid",
+          "value": "3"
+        }
+      ],
+      "destination": "/en/geary-center/",
+      "permanent": true
+    },
+    {
+      "source": "/centerdetail.aspx",
+      "has": [
+        {
+          "type": "query",
+          "key": "Cid",
+          "value": "3"
+        }
+      ],
+      "destination": "/en/geary-center/",
+      "permanent": true
+    },
+    {
+      "source": "/CenterDetail.aspx",
+      "has": [
+        {
+          "type": "query",
+          "key": "Cid",
+          "value": "4"
+        }
+      ],
+      "destination": "/en/north-beach-center/",
+      "permanent": true
+    },
+    {
+      "source": "/centerdetail.aspx",
+      "has": [
+        {
+          "type": "query",
+          "key": "Cid",
+          "value": "4"
+        }
+      ],
+      "destination": "/en/north-beach-center/",
+      "permanent": true
+    },
+    {
+      "source": "/CenterDetail.aspx",
+      "has": [
+        {
+          "type": "query",
+          "key": "Cid",
+          "value": "5"
+        }
+      ],
+      "destination": "/en/richmond-center/",
+      "permanent": true
+    },
+    {
+      "source": "/centerdetail.aspx",
+      "has": [
+        {
+          "type": "query",
+          "key": "Cid",
+          "value": "5"
+        }
+      ],
+      "destination": "/en/richmond-center/",
+      "permanent": true
+    },
+    {
+      "source": "/CenterDetail.aspx",
+      "has": [
+        {
+          "type": "query",
+          "key": "Cid",
+          "value": "6"
+        }
+      ],
+      "destination": "/en/sunset-center/",
+      "permanent": true
+    },
+    {
+      "source": "/centerdetail.aspx",
+      "has": [
+        {
+          "type": "query",
+          "key": "Cid",
+          "value": "6"
+        }
+      ],
+      "destination": "/en/sunset-center/",
+      "permanent": true
+    },
+    {
+      "source": "/CenterDetail.aspx",
+      "has": [
+        {
+          "type": "query",
+          "key": "Cid",
+          "value": "7"
+        }
+      ],
+      "destination": "/en/st-lukes-center/",
+      "permanent": true
+    },
+    {
+      "source": "/centerdetail.aspx",
+      "has": [
+        {
+          "type": "query",
+          "key": "Cid",
+          "value": "7"
+        }
+      ],
+      "destination": "/en/st-lukes-center/",
+      "permanent": true
+    },
+    {
+      "source": "/CenterDetail.aspx",
+      "has": [
+        {
+          "type": "query",
+          "key": "Cid",
+          "value": "8"
+        }
+      ],
+      "destination": "/en/rainbow-center/",
+      "permanent": true
+    },
+    {
+      "source": "/centerdetail.aspx",
+      "has": [
+        {
+          "type": "query",
+          "key": "Cid",
+          "value": "8"
+        }
+      ],
+      "destination": "/en/rainbow-center/",
+      "permanent": true
+    },
+    {
+      "source": "/CenterDetail.aspx",
+      "has": [
+        {
+          "type": "query",
+          "key": "Cid",
+          "value": "9"
+        }
+      ],
+      "destination": "/en/pmsquare-childrens-center/",
+      "permanent": true
+    },
+    {
+      "source": "/centerdetail.aspx",
+      "has": [
+        {
+          "type": "query",
+          "key": "Cid",
+          "value": "9"
+        }
+      ],
+      "destination": "/en/pmsquare-childrens-center/",
+      "permanent": true
+    },
+    {
+      "source": "/CenterDetail.aspx",
+      "destination": "/en/our-centers/",
+      "permanent": true
+    },
+    {
+      "source": "/centerdetail.aspx",
+      "destination": "/en/our-centers/",
+      "permanent": true
+    },
+    {
+      "source": "/Enrollment.aspx",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "Chinese"
+        }
+      ],
+      "destination": "/zh/how-to-enroll/",
+      "permanent": true
+    },
+    {
+      "source": "/enrollment.aspx",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "Chinese"
+        }
+      ],
+      "destination": "/zh/how-to-enroll/",
+      "permanent": true
+    },
+    {
+      "source": "/Enrollment.aspx",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "Spanish"
+        }
+      ],
+      "destination": "/es/how-to-enroll/",
+      "permanent": true
+    },
+    {
+      "source": "/enrollment.aspx",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "Spanish"
+        }
+      ],
+      "destination": "/es/how-to-enroll/",
+      "permanent": true
+    },
+    {
+      "source": "/Enrollment.aspx",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "English"
+        }
+      ],
+      "destination": "/en/how-to-enroll/",
+      "permanent": true
+    },
+    {
+      "source": "/enrollment.aspx",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "English"
+        }
+      ],
+      "destination": "/en/how-to-enroll/",
+      "permanent": true
+    },
+    {
+      "source": "/Enrollment.aspx",
+      "destination": "/en/how-to-enroll/",
+      "permanent": true
+    },
+    {
+      "source": "/enrollment.aspx",
+      "destination": "/en/how-to-enroll/",
+      "permanent": true
+    },
+    {
+      "source": "/Default.aspx",
+      "destination": "/en/",
+      "permanent": true
+    },
+    {
+      "source": "/default.aspx",
+      "destination": "/en/",
+      "permanent": true
+    },
+    {
+      "source": "/About.aspx",
+      "destination": "/en/our-story/",
+      "permanent": true
+    },
+    {
+      "source": "/about.aspx",
+      "destination": "/en/our-story/",
+      "permanent": true
+    },
+    {
+      "source": "/People.aspx",
+      "destination": "/en/our-people/",
+      "permanent": true
+    },
+    {
+      "source": "/people.aspx",
+      "destination": "/en/our-people/",
+      "permanent": true
+    },
+    {
+      "source": "/Centers.aspx",
+      "destination": "/en/our-centers/",
+      "permanent": true
+    },
+    {
+      "source": "/centers.aspx",
+      "destination": "/en/our-centers/",
+      "permanent": true
+    },
+    {
+      "source": "/Preschool.aspx",
+      "destination": "/en/preschool/",
+      "permanent": true
+    },
+    {
+      "source": "/preschool.aspx",
+      "destination": "/en/preschool/",
+      "permanent": true
+    },
+    {
+      "source": "/IT.aspx",
+      "destination": "/en/infantandtoddler/",
+      "permanent": true
+    },
+    {
+      "source": "/it.aspx",
+      "destination": "/en/infantandtoddler/",
+      "permanent": true
+    },
+    {
+      "source": "/HomeBased.aspx",
+      "destination": "/en/prenatalandhomebased/",
+      "permanent": true
+    },
+    {
+      "source": "/homebased.aspx",
+      "destination": "/en/prenatalandhomebased/",
+      "permanent": true
+    },
+    {
+      "source": "/Curriculum.aspx",
+      "destination": "/en/learningapproach/",
+      "permanent": true
+    },
+    {
+      "source": "/curriculum.aspx",
+      "destination": "/en/learningapproach/",
+      "permanent": true
+    },
+    {
+      "source": "/Careers.aspx",
+      "destination": "/en/careers/",
+      "permanent": true
+    },
+    {
+      "source": "/careers.aspx",
+      "destination": "/en/careers/",
+      "permanent": true
+    },
+    {
+      "source": "/Volunteer.aspx",
+      "destination": "/en/volunteer/",
+      "permanent": true
+    },
+    {
+      "source": "/volunteer.aspx",
+      "destination": "/en/volunteer/",
+      "permanent": true
+    },
+    {
+      "source": "/DonateMain.aspx",
+      "destination": "/en/donate/",
+      "permanent": true
+    },
+    {
+      "source": "/donatemain.aspx",
+      "destination": "/en/donate/",
+      "permanent": true
+    },
+    {
+      "source": "/Contact.aspx",
+      "destination": "/en/",
+      "permanent": true
+    },
+    {
+      "source": "/contact.aspx",
+      "destination": "/en/",
+      "permanent": true
+    },
+    {
+      "source": "/Projects.aspx",
+      "destination": "/en/",
+      "permanent": true
+    },
+    {
+      "source": "/projects.aspx",
+      "destination": "/en/",
+      "permanent": true
+    },
+    {
+      "source": "/AlumniHub.aspx",
+      "destination": "/en/",
+      "permanent": true
+    },
+    {
+      "source": "/alumnihub.aspx",
+      "destination": "/en/",
+      "permanent": true
+    },
+    {
+      "source": "/Privacy.aspx",
+      "destination": "/en/",
+      "permanent": true
+    },
+    {
+      "source": "/privacy.aspx",
+      "destination": "/en/",
+      "permanent": true
+    },
+    {
+      "source": "/Terms.aspx",
+      "destination": "/en/",
+      "permanent": true
+    },
+    {
+      "source": "/terms.aspx",
+      "destination": "/en/",
+      "permanent": true
+    },
+    {
       "source": "/our-mission-1",
       "destination": "/en/our-mission/",
       "permanent": true

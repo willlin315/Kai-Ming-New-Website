@@ -16,4 +16,4 @@ npm run build
 
 The build generates out/ for static hosting. The Next.js static export is the current preview mode, not a constraint on future server-based hosting. Read [migration findings](docs/migration-notes.md) and [photo provenance](docs/photo-migration.json) before launching.
 
-The original index.html remains the existing GitHub Pages preview; it is not used by Next.js. The Next.js migration is on a separate review branch.
+The old single-file Wix layout draft (index.html) has been removed; the Next.js app is the only site.
