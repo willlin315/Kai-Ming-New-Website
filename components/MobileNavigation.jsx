@@ -1,5 +1,5 @@
 'use client';
-import {translate,localePaths} from '../lib/i18n';
+import {translate,localePaths,localePrefix} from '../lib/i18n';
 import { useEffect, useId, useRef, useState } from 'react';
 import { basePath } from '../lib/client-routes';
 
@@ -19,8 +19,8 @@ export default function MobileNavigation({ groups = [],locale='en' }) {
   };
   return <div className="km-mobile-header" onKeyDown={onKeyDown}>
     <div className="km-mobile-bar">
-      <a href={`${basePath}/${localePaths[locale]}/`} aria-label="Kai Ming Head Start home"><img src={`${basePath}/brand/kai-ming-stacked-no-tagline.svg`} alt="Kai Ming Head Start" width="60" height="60" /></a>
-      <a className="km-mobile-apply" href={`${basePath}/${localePaths[locale]}/how-to-enroll/`}>{translate('Apply Now',locale)}</a>
+      <a href={`${basePath}${localePrefix(locale)}/`} aria-label="Kai Ming Head Start home"><img src={`${basePath}/brand/kai-ming-stacked-no-tagline.svg`} alt="Kai Ming Head Start" width="60" height="60" /></a>
+      <a className="km-mobile-apply" href={`${basePath}${localePrefix(locale)}/how-to-enroll/`}>{translate('Apply Now',locale)}</a>
       <button ref={button} type="button" aria-expanded={open} aria-controls={navigationId} aria-label={translate(open ? 'Close menu' : 'Open menu',locale)} onClick={() => setOpen(!open)}>{open ? '✕' : '☰'}</button>
     </div>
     <nav id={navigationId} aria-label={translate('Mobile site navigation',locale)} hidden={!open}>
@@ -29,7 +29,7 @@ export default function MobileNavigation({ groups = [],locale='en' }) {
         {group.href && <a href={group.href}>{group.label}</a>}
         {group.links.map((link) => <a key={link.href} href={link.href} onClick={() => setOpen(false)}>{link.label}</a>)}
       </details> : <a key={group.label} href={group.href}>{group.label}</a>)}
-      <a href={`${basePath}/${localePaths[locale]}/our-centers/`}>{translate('Find A Center',locale)}</a>
+      <a href={`${basePath}${localePrefix(locale)}/our-centers/`}>{translate('Find A Center',locale)}</a>
     </nav>
   </div>;
 }

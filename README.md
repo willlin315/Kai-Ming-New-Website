@@ -7,7 +7,7 @@ npm ci
 npm run dev
 ```
 
-Open http://localhost:3000/en/. Each of the 24 English pages has its own URL. Page HTML/CSS lives in content/pages; photo assets live in public/media. Update the content provider in lib/content.js when the company CMS API is ready.
+Open http://localhost:3000/. English pages live at the root (`/our-centers/`); Chinese and Spanish use `/zh/` and `/es/`. Each of the 24 pages has its own URL. Page HTML/CSS lives in content/pages; photo assets live in public/media. Update the content provider in lib/content.js when the company CMS API is ready.
 
 ```sh
 npm run check

@@ -27,7 +27,7 @@ The Wix site is a design reference only. The existing company backend will own C
 
 - Review responsive layouts visually on real phones and tablets; the new reflow layer replaces the inherited desktop minimum width below 1001px.
 - Add complete Chinese and Spanish content, equivalent routes and language switching. Do not label English copies as translated pages.
-- Public URLs now use clean slugs (`content/routes.json` `slug`, e.g. `/en/geary-center/`). Internal page keys keep the original Wix names so CMS People placements stay stable. `vercel.json` permanently redirects the old `copy-of-…` paths (with or without a language prefix) and the Wix root paths (e.g. `/our-story`) to the new URLs. Repeat these redirects on the final company host if it is not Vercel.
+- Public URLs now use clean slugs (`content/routes.json` `slug`, e.g. `/geary-center/`). Internal page keys keep the original Wix names so CMS People placements stay stable. `vercel.json` permanently redirects the old `copy-of-…` paths (with or without a language prefix) and the Wix root paths (e.g. `/our-story`) to the new URLs. Repeat these redirects on the final company host if it is not Vercel.
 - Implement individual blog article pages and review links that still lead to the design-reference website or existing external systems.
 - Connect the company CMS and form APIs, with documented field contracts and content update strategy.
 - Add approved per-page descriptions, structured data and language annotations; set the final canonical domain and sitemap.

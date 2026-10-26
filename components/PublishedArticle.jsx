@@ -1,6 +1,6 @@
 'use client';
 import LanguageSwitcher from './LanguageSwitcher';
-import {localizedRecord,localePaths,htmlLang} from '../lib/i18n';
+import {localizedRecord,localePaths,localePrefix,htmlLang} from '../lib/i18n';
 import {useEffect,useState} from 'react';
 import RichContent from './RichContent';
 import {publicApiUrl,requestCms} from '../lib/cms-api';
@@ -12,7 +12,7 @@ const labels={
  'zh-Hant':{back:'所有文章',share:'分享文章',copy:'複製連結',copied:'已複製連結',related:'最新文章',seeAll:'查看全部',read:'閱讀文章',views:'次觀看',previous:'上一篇',next:'下一篇'},
  es:{back:'Todas las historias',share:'Compartir historia',copy:'Copiar enlace',copied:'Enlace copiado',related:'Publicaciones recientes',seeAll:'Ver todas',read:'Leer historia',views:'vistas',previous:'Anterior',next:'Siguiente'}
 };
-function storyUrl(item,locale){return `${basePath}/${localePaths[locale]}/stories/${encodeURIComponent(item.slug)}/`;}
+function storyUrl(item,locale){return `${basePath}${localePrefix(locale)}/stories/${encodeURIComponent(item.slug)}/`;}
 function Icon({name}) {
  const shared={fill:'none',stroke:'currentColor',strokeWidth:1.8,strokeLinecap:'round',strokeLinejoin:'round'};
  return <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" {...shared}>{name==='share'?<><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.7 10.7 6.6-4.3M8.7 13.3l6.6 4.3"/></>:name==='copy'?<><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></>:<><circle cx="12" cy="12" r="3"/><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/></>}</svg>;
@@ -57,7 +57,7 @@ export default function PublishedArticle({locale='en',initialPost=null,initialPo
  const formattedDate=date&&!Number.isNaN(new Date(date).getTime())?new Intl.DateTimeFormat(locale==='zh-Hant'?'zh-TW':locale,{year:'numeric',month:'long',day:'numeric'}).format(new Date(date)):null;
  return <main lang={htmlLang(locale)} className="km-published-article">
   <LanguageSwitcher locale={locale} story={!initialPost} storySlug={initialPost?.slug}/>
-  <a className="km-story-back" href={`${basePath}/${localePaths[locale]}/blog/`}>← {t.back}</a>
+  <a className="km-story-back" href={`${basePath}${localePrefix(locale)}/blog/`}>← {t.back}</a>
   {post?<article className="km-story-layout">
    <header className="km-story-header">
     <p className="km-story-eyebrow">KAI MING / NEWS & STORIES</p>
@@ -83,7 +83,7 @@ export default function PublishedArticle({locale='en',initialPost=null,initialPo
     {next?<a href={storyUrl(next,locale)}><small>{t.next} →</small><span>{localizedRecord(next,locale).title}</span></a>:<span/>}
    </nav>}
    <section className="km-story-related km-recent-posts" aria-label={t.related}>
-    <div className="km-recent-heading"><h2>{t.related}</h2><a href={`${basePath}/${localePaths[locale]}/blog/`}>{t.seeAll}</a></div>
+    <div className="km-recent-heading"><h2>{t.related}</h2><a href={`${basePath}${localePrefix(locale)}/blog/`}>{t.seeAll}</a></div>
     {recommendations.length>0?<div className="km-story-related-grid">{recommendations.map(item=>{
      const translated=localizedRecord(item,locale);
      const image=safeImage(item.image?.replaceAll('__BASE__',basePath));

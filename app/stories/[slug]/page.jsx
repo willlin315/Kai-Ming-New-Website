@@ -1,5 +1,5 @@
-import PublishedArticle from '../../../../components/PublishedArticle';
-import { storyParams, storyMetadata, storyProps } from '../../../../lib/story-page';
+import PublishedArticle from '../../../components/PublishedArticle';
+import { storyParams, storyMetadata, storyProps } from '../../../lib/story-page';
 export const dynamicParams = false;
 export function generateStaticParams() { return storyParams(); }
 export async function generateMetadata({ params }) { const { slug } = await params; return storyMetadata(slug, 'en'); }
