@@ -455,22 +455,22 @@
     },
     {
       "source": "/Privacy.aspx",
-      "destination": "/",
+      "destination": "/privacy-policy/",
       "permanent": true
     },
     {
       "source": "/privacy.aspx",
-      "destination": "/",
+      "destination": "/privacy-policy/",
       "permanent": true
     },
     {
       "source": "/Terms.aspx",
-      "destination": "/",
+      "destination": "/terms-of-use/",
       "permanent": true
     },
     {
       "source": "/terms.aspx",
-      "destination": "/",
+      "destination": "/terms-of-use/",
       "permanent": true
     },
     {

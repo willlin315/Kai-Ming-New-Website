@@ -8,7 +8,8 @@
     "start": "next start",
     "check": "node scripts/check-content.mjs",
     "cms:db": "node scripts/cms-dev-db.mjs",
-    "cms:test": "python scripts/test-cms-backend.py"
+    "cms:test": "python scripts/test-cms-backend.py",
+    "legal:build": "node scripts/build-legal-pages.mjs"
   },
   "dependencies": {
     "dom-serializer": "2.0.0",
