@@ -1,8 +1,8 @@
-name: CMS backend
+name: CMS API
 on:
   pull_request:
   push:
-    branches: [feat/cms-editor, nextjs-photo-migration]
+    branches: [nextjs-photo-migration]
 jobs:
   postgres-tests:
     runs-on: ubuntu-latest
@@ -19,10 +19,11 @@ jobs:
           --health-interval 5s --health-retries 10
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-node@v4
         with:
-          python-version: '3.12'
-      - run: pip install -r backend/requirements-dev.txt
-      - run: python -m pytest backend/tests -q
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run cms:test
         env:
-          TEST_DATABASE_URL: postgresql+psycopg://cms_test:ci-test-only@127.0.0.1:5432/cms_test
+          TEST_DATABASE_URL: postgresql://cms_test:ci-test-only@127.0.0.1:5432/cms_test?sslmode=disable
