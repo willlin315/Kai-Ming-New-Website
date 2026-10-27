@@ -10,6 +10,7 @@ import SiteHeader from './SiteHeader';
 import SiteFooter from './SiteFooter';
 import Gallery from './Gallery';
 import Interactions from './Interactions';
+import BoxFit from './BoxFit';
 import BlogList from './BlogList';
 import Tabs from './Tabs';
 import FormDropdown from './FormDropdown';
@@ -80,5 +81,6 @@ export default function PageView({ page }) {
     {mobileTypography[page.key]&&<style dangerouslySetInnerHTML={{ __html: brandCss(mobileTypography[page.key]) }} />}
     {page.key==='home'?<HomeContentProvider locale={page.locale} initialRecord={page.homeRecord}>{parse(page.html, options)}</HomeContentProvider>:parse(page.html, options)}
     <Interactions />
+    <BoxFit />
   </div>;
 }
