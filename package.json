@@ -8,7 +8,7 @@
     "start": "next start",
     "check": "node scripts/check-content.mjs",
     "cms:db": "node scripts/cms-dev-db.mjs",
-    "cms:test": "python scripts/test-cms-backend.py",
+    "cms:test": "node --experimental-detect-module --test --test-concurrency=1 scripts/test-cms.mjs",
     "legal:build": "node scripts/build-legal-pages.mjs"
   },
   "dependencies": {
@@ -16,8 +16,10 @@
     "html-react-parser": "5.2.13",
     "htmlparser2": "10.0.0",
     "next": "16.4.0",
+    "pg": "8.23.1",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "sharp": "0.34.5"
   },
   "devDependencies": {
     "@electric-sql/pglite": "^0.5.10",

@@ -1,83 +1,68 @@
-# Development database and publishing
+# CMS database and publishing
 
-The CMS can run in two explicit modes:
+The website and the CMS API are one Next.js app. The API is served by the site itself at `/api/cms/...` (`app/api/cms/[...path]/route.js`, logic in `lib/cms-server/`). There is no separate backend service. The previous FastAPI service (`backend/`) was removed on 2026-10-27; its API contract, tables and tests were carried over unchanged.
 
-- **Local draft mode:** the hosted preview works without an API. Save draft stays in the browser; no publishing action is shown.
-- **Database connected:** the editor authenticates to a development FastAPI backend. Save draft persists to PostgreSQL. Publish copies the saved revision to a separate public snapshot. Unpublish is available for Blog posts. Existing People slots cannot be removed through this API.
+The editor at `/admin/` runs in two modes:
 
-## Local development, one command
+- **Local draft mode:** works without a database. Save draft stays in the browser; no publishing action is shown.
+- **Database connected:** click **Connect CMS database** and enter the development token. Save draft writes to PostgreSQL. Publish copies the saved revision to a separate public snapshot and refreshes the public pages immediately (`revalidatePath`). Unpublish is available for Blog posts. Existing People slots cannot be removed.
 
-Requires Node.js and Python 3.12+. From the repository root:
+## Environment variables (server only)
+
+| Variable | Purpose |
+| --- | --- |
+| `DATABASE_URL` | PostgreSQL connection string. On Vercel use the Railway Postgres public (TCP proxy) URL. SSL is used unless the host is localhost or the URL has `sslmode=disable`. A `postgresql+psycopg://` prefix is accepted. |
+| `CMS_DEV_TOKEN` | Shared editor token, at least 32 characters. |
+| `CMS_ENV` | Must be `development`. Production mode is refused until company sign-in replaces the shared token. |
+| `CMS_ALLOWED_ORIGINS` | Optional extra comma-separated origins for cross-origin API calls. Same-origin requests need nothing. |
+| `CMS_LEGACY_MEDIA_ORIGIN` | Optional. Where images uploaded to the old FastAPI service are copied from on first start (default: the old Railway API). Set to empty to skip. |
+
+Never put the token or `DATABASE_URL` in a `NEXT_PUBLIC_` variable. `NEXT_PUBLIC_CMS_API_URL` is no longer used.
+
+Without `DATABASE_URL` the public site still builds and renders from the versioned content in `content/`, and `/api/cms` returns 503.
+
+## Local development
 
 ```bash
 npm ci
-python -m venv .venv
-source .venv/bin/activate
-pip install -r backend/requirements-dev.txt
-python scripts/run-cms-dev.py
+npm run cms:db        # local PostgreSQL engine (PGlite) on 127.0.0.1:55432, data in .cms-data/postgres
 ```
 
-Open http://localhost:3000/admin/. Click **Connect development API**, enter http://127.0.0.1:8000 and the local token from `.cms-data/dev-token.txt`. The launcher generates the credential privately; it is ignored by Git. Do not publish or share this file. Editor credentials remain in browser memory only and must be entered again after reloading.
-
-The local database runs PGlite (an embedded PostgreSQL engine) behind the PostgreSQL wire protocol. Its persistent data lives in `.cms-data/postgres`. This is a development convenience, not a hosted database or a production replacement for PostgreSQL. Back up draft data before deleting this directory. Do not run multiple launchers against the same directory or port.
-
-The runtime directory is not part of Git and is not durably hosted in the assistant workspace. Recreate it from the versioned source on a developer machine. Use company Cloud SQL or a separately provisioned development PostgreSQL service for shared/always-on access.
-
-## Standard PostgreSQL / Docker
-
-`compose.yaml` runs PostgreSQL 17 and the API, with a persistent named volume and API binding to loopback only. Create an ignored root `.env` with distinct, randomly generated `POSTGRES_PASSWORD` (URL-safe characters) and `CMS_DEV_TOKEN` values, then:
+In a second terminal:
 
 ```bash
-docker compose up --build
+DATABASE_URL='postgresql://postgres:postgres@127.0.0.1:55432/postgres?sslmode=disable' \
+CMS_DEV_TOKEN='<at least 32 random characters>' CMS_ENV=development CMS_DB_POOL_MAX=1 \
+npm run dev
 ```
 
-For another PostgreSQL instance, configure `DATABASE_URL` with a `postgresql+psycopg://` connection URL, `CMS_DEV_TOKEN` (at least 32 random characters), `CMS_ENV=development` and explicit comma-separated `CMS_ALLOWED_ORIGINS`, then run:
+Open http://localhost:3000/admin/, click **Connect CMS database** and enter the same token. PGlite accepts a single connection, so keep `CMS_DB_POOL_MAX=1` with it. For a standard PostgreSQL 17, run `docker compose up` (see `compose.yaml`) and point `DATABASE_URL` at it.
 
-```bash
-uvicorn backend.asgi:app --host 127.0.0.1 --port 8000
-```
-
-First startup creates the initial schema and imports the current 33 People records and three legacy Blog links. Repeated starts do not overwrite existing content. This is the initial schema; future structural changes need a reviewed migration before running against existing company data.
+First start creates the schema and imports the current 33 People records, the Home page and the three legacy Blog posts. Restarts never overwrite existing content.
 
 ## What Publish does
 
 - Draft and published JSON snapshots are separate. Save draft never changes published content.
-- Every save requires the current revision number. A stale save or publish returns HTTP 409 and leaves content unchanged.
-- Publish creates a snapshot and audit event in one database transaction. Public endpoints return only published snapshots, with no draft metadata.
-- Blog publishing requires a valid unique slug, supported language and article body. A PostgreSQL unique constraint also protects simultaneous slug publication.
-- People placement bindings come from the server's versioned registry, not arbitrary client-provided IDs. Existing slots and counts are retained.
-- Raster image drafts are currently stored as data URLs in the JSON document, limited by the request-size guard. Cloud Storage media upload is still a later integration.
-- API-connected pages read published content after loading. For this first integration they do not require a website rebuild. Set `NEXT_PUBLIC_CMS_API_URL` at build time for every visitor to use the same API.
-- Blog list stays at `/en/blog/`; new article details are at `/en/story/?slug=...&language=en`. Query-based article routes are a development compromise; server-rendered clean URLs and per-article SEO remain future work.
+- Every save requires the current revision number. A stale save or publish returns HTTP 409.
+- Publish writes the snapshot and an audit event in one transaction. Public endpoints return only published snapshots.
+- Blog publishing requires a unique slug (generated from the title when empty), a supported language and an article body. A unique constraint protects simultaneous slug publication.
+- People placements come from the server's versioned registry. Existing slots and counts are retained.
+- Pages read published content from the database on the server; publishing refreshes them right away. Story URLs are `/stories/<slug>/` (also `/zh/` and `/es/`); new slugs render on first request.
 
-## Hosted preview and shared database
+## Images
 
-As of 2026-10-16, the development Python API and PostgreSQL run on Railway. The HTTPS API is `https://kai-ming-new-website-production.up.railway.app`; its health check succeeds. Vercel preview branch `feat/cms-editor` has `NEXT_PUBLIC_CMS_API_URL` configured to this origin. The Railway environment label is `production`, but `CMS_ENV` remains `development`. Authenticated hosted save/publish acceptance is still pending. See [Daniel handoff](daniel-handoff.md) for launch blockers and company migration steps. Never set the admin token or DATABASE_URL in a NEXT_PUBLIC variable.
+Uploads go to `/api/cms/admin/media/upload`. The server re-encodes them as JPEG (max 1600 px, 20 MP limit, metadata removed) and stores the bytes in PostgreSQL (`cms_media.data`), addressed by SHA-256. They are served from `/api/cms/media/<hash>.jpg` with long-term caching. Maximum 1,000 images; deletion is intentionally unavailable so published pages never get broken links.
 
-Entering an API URL in the editor only configures that browser's public content reads. To make all devices read published updates, configure `NEXT_PUBLIC_CMS_API_URL` on the website deployment. Localhost API connections from an HTTPS preview can be blocked by browser local-network/mixed-content rules; use the local development website for local testing or an HTTPS hosted API for the preview.
-
-The single bearer credential grants all CMS editing/publishing permissions and is strictly for development. Production mode is refused. Company Google SSO, individual roles, actor identity, credential lifecycle and deployment review must replace it before staff rollout. API docs are available at `/docs` for integration work. Do not enter internal or sensitive data during this development phase.
-
-Database-connected preview links use a same-browser snapshot cache refreshed on connect/save/publish; this cache is for preview only and is not the authoritative storage. Other devices connect to the API to retrieve the durable drafts. Browser-local drafts are not automatically uploaded or overwritten when switching modes. Bulk migration of old browser drafts remains an explicit follow-up step.
+On first start against the old Railway database, images that were uploaded to the FastAPI service are copied into the database (hash verified) and their URLs in drafts, published snapshots and history are rewritten to `/api/cms/media/...`. Back up the database before that first start.
 
 ## Validation
 
 ```bash
-# Self-contained isolated PostgreSQL-compatible engine test:
-python scripts/test-cms-backend.py
-
-# Native PostgreSQL integration test (use an isolated test database):
-TEST_DATABASE_URL='postgresql+psycopg://.../cms_test' python -m pytest backend/tests -q
+npm run cms:test      # API tests; uses PGlite, or TEST_DATABASE_URL for a real PostgreSQL
 npm run check
 npm run build
 ```
 
-Tests cover authorization, seed counts, draft/public isolation, publish/unpublish, stale revision rejection, slug uniqueness, immutable People placements and idempotent import. GitHub Actions also runs the suite against native PostgreSQL 17. Existing source content is seeded as published solely to retain the current development site's output.
+Tests cover authorization, seed counts, draft/public isolation, publish/unpublish, stale revisions, slug uniqueness, People placements, idempotent import, image storage, legacy image copy and page refresh. GitHub Actions runs them against PostgreSQL 17.
 
-## Shared media library
-
-Connected editors upload covers, People photos and inline images to `/admin/media/upload` and reuse images through `/admin/media`. Configure `CMS_MEDIA_DIR` to a writable persistent volume and `CMS_PUBLIC_URL` to the API's HTTPS origin. Missing configuration returns 503 instead of writing to ephemeral container storage. Local-only editing continues to use data URLs. Existing embedded images remain supported; they are not silently migrated.
-
-The server validates raster images with Pillow, caps pixel dimensions, re-encodes JPEG without source metadata and stores immutable hash-addressed files. Original animation/transparency are flattened by the editor. Metadata is stored separately in `cms_media`; image bytes are stored on disk. New images are publicly readable immediately; unpublished article text stays private. A maximum of 1,000 stored images applies in this development version. Image deletion is intentionally unavailable so published pages and older revisions cannot acquire broken links.
-
-Back up both the database and media volume together. Before company Cloud Run deployment, replace filesystem storage with Cloud Storage, preserving the media API response contract (`id`, `name`, `alt`, `width`, `height`, `size`, `url`). Cloud Run container filesystems are not a persistent media backend. Google Cloud Storage is not yet implemented. Copy files and update image URLs in drafts, published snapshots and history during a reviewed migration; keep old URLs available until all references are verified.
+The single bearer token grants all editing and publishing permissions and is for development only. Company Google sign-in, roles and named audit must replace it before staff rollout.

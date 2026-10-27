@@ -29,7 +29,8 @@ built here. The forms are layout only and do not submit anything.
 | --- | --- | --- |
 | `SITE_URL` | `https://kai-ming-new-website.vercel.app` | `https://www.kaiming.org` (canonical, hreflang, sitemap, share links) |
 | `SITE_INDEXABLE` | not set → `robots.txt` blocks all, pages are `noindex` | `true` → allow indexing, block `/admin/` and `/styleguide/` |
-| `NEXT_PUBLIC_CMS_API_URL` | Railway CMS API | production CMS API |
+| `DATABASE_URL` | Railway Postgres (public URL) | company PostgreSQL |
+| `CMS_DEV_TOKEN` / `CMS_ENV` | shared development token / `development` | replace with company sign-in |
 
 ## Redirects (`vercel.json`)
 
