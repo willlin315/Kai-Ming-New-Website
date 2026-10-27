@@ -19,9 +19,4 @@ jobs:
       - run: npm run check
       - run: npm run build
         env:
-          NEXT_PUBLIC_BASE_PATH: /Kai-Ming-New-Website
-          SITE_URL: https://willlin315.github.io
-      - uses: actions/upload-artifact@v4
-        with:
-          name: nextjs-static-preview
-          path: out
+          SITE_URL: https://kai-ming-new-website.vercel.app
