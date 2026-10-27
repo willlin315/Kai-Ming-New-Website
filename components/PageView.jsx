@@ -73,7 +73,7 @@ export default function PageView({ page }) {
       }
     },
   };
-  return <div className="km-responsive" lang={htmlLang(page.locale)}>
+  return <div className="km-responsive" lang={htmlLang(page.locale)} data-page={page.slug||page.key}>
     <LanguageSwitcher locale={page.locale} pageKey={page.slug||page.key}/>
     <style dangerouslySetInnerHTML={{ __html: page.css }} />
     <style dangerouslySetInnerHTML={{ __html: brandedResponsiveCss }} />
