@@ -10,6 +10,7 @@ import SiteHeader from './SiteHeader';
 import SiteFooter from './SiteFooter';
 import Gallery from './Gallery';
 import Interactions from './Interactions';
+import BoxFit from './BoxFit';
 import BlogList from './BlogList';
 import Tabs from './Tabs';
 import FormDropdown from './FormDropdown';
@@ -73,12 +74,13 @@ export default function PageView({ page }) {
       }
     },
   };
-  return <div className="km-responsive" lang={htmlLang(page.locale)}>
+  return <div className="km-responsive" lang={htmlLang(page.locale)} data-page={page.slug||page.key}>
     <LanguageSwitcher locale={page.locale} pageKey={page.slug||page.key}/>
     <style dangerouslySetInnerHTML={{ __html: page.css }} />
     <style dangerouslySetInnerHTML={{ __html: brandedResponsiveCss }} />
     {mobileTypography[page.key]&&<style dangerouslySetInnerHTML={{ __html: brandCss(mobileTypography[page.key]) }} />}
     {page.key==='home'?<HomeContentProvider locale={page.locale} initialRecord={page.homeRecord}>{parse(page.html, options)}</HomeContentProvider>:parse(page.html, options)}
     <Interactions />
+    <BoxFit />
   </div>;
 }

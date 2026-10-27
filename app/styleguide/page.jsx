@@ -67,9 +67,10 @@ export default function Styleguide() {
 
     <section id="type" aria-labelledby="type-h">
       <h2 id="type-h">Typography</h2>
-      <p className="sg-lede">Comfortaa × 思源柔黑體. Latin text uses Comfortaa; Traditional Chinese uses Noto Sans TC (the open-source 思源 family) until a licensed web build of 源柔黑體 is chosen.</p>
+      <p className="sg-lede">Comfortaa × 思源柔黑體. Titles and headings use Comfortaa; all body text uses Arial. Traditional Chinese uses Noto Sans TC (the open-source 思源 family) until a licensed web build of 源柔黑體 is chosen.</p>
       <div className="sg-fonts">
-        <article><h3 className="sg-font-name" style={{ fontFamily: BRAND_FONTS.heading }}>Comfortaa</h3><p><code>--font-heading</code>, <code>--font-body</code></p><p className="sg-glyphs" style={{ fontFamily: BRAND_FONTS.heading }}>Aa Bb Cc 0123456789</p></article>
+        <article><h3 className="sg-font-name" style={{ fontFamily: BRAND_FONTS.heading }}>Comfortaa</h3><p><code>--font-heading</code> (titles and headings)</p><p className="sg-glyphs" style={{ fontFamily: BRAND_FONTS.heading }}>Aa Bb Cc 0123456789</p></article>
+        <article><h3 className="sg-font-name" style={{ fontFamily: BRAND_FONTS.body }}>Arial</h3><p><code>--font-body</code> (all body text)</p><p className="sg-glyphs" style={{ fontFamily: BRAND_FONTS.body }}>Aa Bb Cc 0123456789</p></article>
         <article><h3 className="sg-font-name" style={{ fontFamily: BRAND_FONTS.zh }}>思源黑體 Noto Sans TC</h3><p><code>--font-zh</code> (applied to <code>lang="zh-Hant"</code>)</p><p className="sg-glyphs" style={{ fontFamily: BRAND_FONTS.zh }}>幼兒園 潛能無限 照護與教育 0123</p></article>
       </div>
       <table className="sg-table">
