@@ -20,7 +20,7 @@ built here. The forms are layout only and do not submit anything.
 - **Tour requests**: the old Wix Bookings "Book a Tour" buttons now open an email to info@kaiming.org with the center in the subject. Replace with the real booking flow when it is chosen.
 - **Donation**: layout only. Share buttons point to the new site's Donate page.
 - **Center license numbers and photos**: not published on either site.
-- **Privacy / Terms pages**: the old site has Privacy.aspx and Terms.aspx; there is no equivalent page yet (they redirect to the home page).
+- **Privacy / Terms pages**: `/privacy-policy/` and `/terms-of-use/` (all 3 languages) carry over the old kaiming.org text (last updated July 28, 2020); Privacy.aspx and Terms.aspx redirect to them, and the footer copyright line links to both. The text does not yet cover the enrollment forms, donations or the CMS and needs review by Kai Ming before launch. Source text: `content/legal/*.html`; rebuild with `npm run legal:build`; zh-Hant/es strings are in `content/i18n/site.json` (the translations say the English version applies).
 - **Old enrollment URL**: `Enrollment.aspx` redirects to `/how-to-enroll/` once kaiming.org points to Vercel. The "Apply" links currently use `https://www.kaiming.org/Enrollment.aspx?lang=`, so move the application to its new home before the domain switch.
 
 ## Launch switches (environment variables)
