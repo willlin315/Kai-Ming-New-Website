@@ -10,6 +10,7 @@ import sharp from 'sharp';
 import { createCms, SCHEMA } from '../lib/cms-server/core.mjs';
 import { openSqlite } from '../lib/cms-server/sqlite.mjs';
 import { postgresImporter } from '../lib/cms-server/import-postgres.mjs';
+import { backupOnce } from '../lib/cms-server/backups.mjs';
 
 const read = (file) => JSON.parse(fs.readFileSync(new URL(`../content/${file}`, import.meta.url)));
 const sources = { people: read('people.json'), blogPosts: read('blog-posts.json'), homeContent: read('home-content.json'),
@@ -241,4 +242,31 @@ test('missing database or production mode is refused', async () => {
   assert.equal((await call(make({ pool: null }), 'GET', '/public/posts')).status, 503);
   assert.equal((await call(make({ environment: 'production' }), 'GET', '/admin/content', { headers: auth })).status, 503);
   assert.equal((await call(make({ token: 'short' }), 'GET', '/admin/content', { headers: { Authorization: 'Bearer short' } })).status, 503);
+});
+
+test('backup download is a complete, readable SQLite copy', async () => {
+  assert.equal((await get('/admin/backup')).status, 401);
+  const response = await get('/admin/backup', auth);
+  assert.equal(response.status, 200);
+  assert.match(response.headers.get('content-disposition'), /attachment; filename="kai-ming-cms-\d{4}-\d{2}-\d{2}\.sqlite"/);
+  const file = path.join(folder, 'restored.sqlite');
+  fs.writeFileSync(file, response.data);
+  const copy = openSqlite(file);
+  try {
+    const { rows: [{ count }] } = await copy.query('SELECT count(*) AS count FROM cms_documents');
+    const { rows: [live] } = await pool.query('SELECT count(*) AS count FROM cms_documents');
+    assert.equal(count, live.count);
+    const { rows: [media] } = await copy.query('SELECT count(*) AS count FROM cms_media WHERE data IS NOT NULL');
+    assert.ok(media.count > 0);
+  } finally { await copy.end(); }
+});
+
+test('daily backups keep one copy per day for a week', async () => {
+  const dir = path.join(folder, 'daily');
+  for (let day = 1; day <= 9; day += 1) await backupOnce(pool, dir, 7, new Date(Date.UTC(2026, 9, day, 12)));
+  await backupOnce(pool, dir, 7, new Date(Date.UTC(2026, 9, 9, 18))); // same day: no extra file
+  const files = fs.readdirSync(dir).sort();
+  assert.deepEqual(files, ['03', '04', '05', '06', '07', '08', '09'].map((d) => `cms-2026-10-${d}.sqlite`));
+  const copy = openSqlite(path.join(dir, files.at(-1)));
+  try { assert.ok((await copy.query('SELECT count(*) AS count FROM cms_documents')).rows[0].count > 0); } finally { await copy.end(); }
 });
