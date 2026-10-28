@@ -44,10 +44,10 @@ Open http://localhost:3000/admin/, click **Connect CMS database** and enter the 
 
 Everything (content, history, images) is in the one database file. Two layers:
 
-1. **Railway volume backups** (service → Backups tab): daily (kept 6 days) and weekly (kept about a month) are enabled. They are snapshots of the whole volume; restoring one needs the Railway Pro plan, and deleting the volume deletes its backups.
+1. **Daily copies on the volume:** the running server writes `/data/backups/cms-YYYY-MM-DD.sqlite` once a day and keeps 7 (`CMS_BACKUP_DIR`, `CMS_DAILY_BACKUPS=0` to turn off). They help after a bad edit or a damaged file, not if the volume is lost. Railway's own volume backups need a Pro workspace; enable them (daily + weekly) after upgrading.
 2. **A copy outside Railway:** in `/admin/`, after connecting, click **Download database backup**, or run `CMS_URL=https://<site> CMS_DEV_TOKEN=<token> npm run cms:backup` (saves `backups/kai-ming-cms-YYYY-MM-DD.sqlite`; the folder is git-ignored). The file is a consistent online copy (`/api/cms/admin/backup/`). Download one before large changes.
 
-To restore a downloaded copy, stop the service and replace `/data/cms.sqlite` with the file (and delete `cms.sqlite-wal` / `-shm`).
+To restore (a daily copy or a downloaded file): open a shell on the service (`railway ssh`), stop writes, replace `/data/cms.sqlite` with the copy and delete `cms.sqlite-wal` / `cms.sqlite-shm`, then redeploy.
 
 ## What Publish does
 
