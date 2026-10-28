@@ -9,7 +9,8 @@
     "check": "node scripts/check-content.mjs",
     "cms:test": "node --experimental-detect-module --test --test-concurrency=1 scripts/test-cms.mjs",
     "legal:build": "node scripts/build-legal-pages.mjs",
-    "start:railway": "next build && next start -H 0.0.0.0 -p ${PORT:-3000}"
+    "start:railway": "next start -H 0.0.0.0 -p ${PORT:-3000}",
+    "cms:backup": "node scripts/cms-backup.mjs"
   },
   "dependencies": {
     "better-sqlite3": "12.11.1",

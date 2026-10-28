@@ -10,7 +10,7 @@ SQLite needs a persistent disk, which Vercel functions do not have ([Vercel](htt
 
 - `Dockerfile` + `railway.json` (health check `/api/cms/health/`).
 - A Railway **volume mounted at `/data`**; the database is `/data/cms.sqlite` (plus `-wal`/`-shm` files).
-- The volume is only mounted at runtime, so the container runs `npm run start:railway` (`next build && next start`): pages are prerendered from the published database content at start-up. A deploy takes a few minutes; Railway keeps the previous deployment live until the health check passes.
+- The image is built without the database (the volume is only mounted at runtime), with `CMS_RENDER_ON_DEMAND=1`: pages are not prerendered in Docker. Each page renders from the live database on its first visit and is cached; Publish/Unpublish invalidates the cache. The container starts in about a second; the health check (`/api/cms/health/`) creates the schema before Railway switches traffic. Local and CI builds still prerender every page.
 - Run exactly **one replica**. SQLite is a single-server database.
 
 The editor at `/admin/`:
@@ -42,7 +42,12 @@ Open http://localhost:3000/admin/, click **Connect CMS database** and enter the 
 
 ## Backups
 
-Everything (content, history, images) is in the volume. Back up with Railway volume backups, or copy a consistent snapshot from the running service: `sqlite3 /data/cms.sqlite ".backup /data/backup.sqlite"`. Do not copy the `.sqlite` file alone while the server is writing; include the `-wal` file or use `.backup`.
+Everything (content, history, images) is in the one database file. Two layers:
+
+1. **Daily copies on the volume:** the running server writes `/data/backups/cms-YYYY-MM-DD.sqlite` once a day and keeps 7 (`CMS_BACKUP_DIR`, `CMS_DAILY_BACKUPS=0` to turn off). They help after a bad edit or a damaged file, not if the volume is lost. Railway's own volume backups need a Pro workspace; enable them (daily + weekly) after upgrading.
+2. **A copy outside Railway:** in `/admin/`, after connecting, click **Download database backup**, or run `CMS_URL=https://<site> CMS_DEV_TOKEN=<token> npm run cms:backup` (saves `backups/kai-ming-cms-YYYY-MM-DD.sqlite`; the folder is git-ignored). The file is a consistent online copy (`/api/cms/admin/backup/`). Download one before large changes.
+
+To restore (a daily copy or a downloaded file): open a shell on the service (`railway ssh`), stop writes, replace `/data/cms.sqlite` with the copy and delete `cms.sqlite-wal` / `cms.sqlite-shm`, then redeploy.
 
 ## What Publish does
 
