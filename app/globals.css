@@ -41,6 +41,21 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
   .km-responsive:is([lang="zh-Hant"],[lang="es"]) .km-mobile-header nav a { display:block; padding:12px 16px; min-height:44px; color:var(--primary); text-decoration:none; }
   .km-responsive:is([lang="zh-Hant"],[lang="es"]) .km-mobile-header a:focus-visible, .km-responsive:is([lang="zh-Hant"],[lang="es"]) .km-mobile-header button:focus-visible, .km-responsive:is([lang="zh-Hant"],[lang="es"]) .km-mobile-header summary:focus-visible { outline:2px solid var(--primary); outline-offset:3px; }
 }
+/* English header: nav and buttons collide below ~1150px, so use the compact header there too. */
+@media (min-width:1001px) and (max-width:1200px) {
+  .km-responsive[lang="en"] #SITE_HEADER { position:relative!important; width:100%!important; min-width:0!important; height:auto!important; min-height:0!important; top:auto!important; margin:0!important; }
+  .km-responsive[lang="en"] .km-desktop-header { display:none!important; }
+  .km-responsive[lang="en"] .km-mobile-header { display:block; background:white; color:var(--primary); font:16px/1.5 var(--font-body); border-bottom:1px solid #e3e8ec; }
+  .km-responsive[lang="en"] .km-mobile-bar { display:flex; align-items:center; gap:16px; max-width:960px; margin:auto; padding:12px 20px; }
+  .km-responsive[lang="en"] .km-mobile-bar img { display:block; object-fit:contain; width:60px; height:60px; }
+  .km-responsive[lang="en"] .km-mobile-apply { margin-left:auto; padding:10px 16px; background:var(--primary); color:white; text-decoration:none; border-radius:4px; }
+  .km-responsive[lang="en"] .km-mobile-bar button { min-width:44px; min-height:44px; border:1px solid #cad5da; border-radius:4px; color:var(--primary); background:white; font-size:26px; cursor:pointer; }
+  .km-responsive[lang="en"] .km-mobile-header nav { padding:0 20px 20px; max-width:960px; margin:auto; }
+  .km-responsive[lang="en"] .km-mobile-header nav[hidden] { display:none!important; }
+  .km-responsive[lang="en"] .km-mobile-header summary { padding:12px 0; cursor:pointer; font-weight:bold; border-bottom:1px solid #e3e8ec; }
+  .km-responsive[lang="en"] .km-mobile-header nav a { display:block; padding:12px 16px; min-height:44px; color:var(--primary); text-decoration:none; }
+  .km-responsive[lang="en"] .km-mobile-header a:focus-visible, .km-responsive[lang="en"] .km-mobile-header button:focus-visible, .km-responsive[lang="en"] .km-mobile-header summary:focus-visible { outline:2px solid var(--primary); outline-offset:3px; }
+}
 
 @media (min-width:1001px) {
   .km-responsive:is([lang="zh-Hant"],[lang="es"]) .km-localized-hero-title {
@@ -52,6 +67,15 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
   .km-responsive:is([lang="zh-Hant"],[lang="es"]) .km-localized-hero-title h1 span {
     font-size:clamp(44px,7vw,100px)!important; line-height:1.4!important; overflow-wrap:break-word;
   }
+}
+/* English page-title banners: keep the title inside the banner when the window narrows (Wix offsets it 253px left). */
+@media (min-width:1001px) {
+  .km-responsive[lang="en"]:not([data-page="donate"]) .km-localized-hero-title {
+    left:auto!important; margin-left:max(40px, calc((100% - 980px) / 2 - 253px))!important; margin-right:0!important;
+    width:auto!important; max-width:calc(100% - 80px)!important; min-width:0!important; justify-self:start!important;
+  }
+  .km-responsive[lang="en"]:not([data-page="donate"]) .km-localized-hero-title h1,
+  .km-responsive[lang="en"]:not([data-page="donate"]) .km-localized-hero-title h1 span { font-size:clamp(56px,7vw,100px)!important; overflow-wrap:break-word; }
 }
 .km-responsive:is([lang="zh-Hant"],[lang="es"]) :is(#comp-murgfuuf,#comp-murgfuui6,#comp-murgfuul7){height:auto!important;min-height:1.4em!important;overflow:visible!important}
 .km-responsive[lang="zh-Hant"] .wixui-rich-text :is(h1,h2,h3,h4,h5,h6){word-break:normal;line-break:strict;text-wrap:balance}
@@ -66,10 +90,10 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
 .km-responsive:is([lang="zh-Hant"],[lang="es"]) :is(#comp-murgfuuf,#comp-murgfuui6,#comp-murgfuul7){padding-bottom:8px;box-sizing:content-box}
 
 @media(max-width:1000px){
-  .km-responsive:is([lang="zh-Hant"],[lang="es"]) .km-localized-hero-layout[data-testid="mesh-container-content"]{
+  .km-responsive .km-localized-hero-layout[data-testid="mesh-container-content"]{
     min-height:clamp(240px,45vw,440px)!important;justify-content:flex-end!important;padding:24px!important;
   }
-  .km-responsive:is([lang="zh-Hant"],[lang="es"]) .km-localized-hero-title{margin:0!important}
+  .km-responsive .km-localized-hero-title{margin:0!important}
 }
 
 
@@ -153,7 +177,7 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
 .km-published-article .km-story-back{display:inline-flex;align-items:center;gap:8px;margin-bottom:34px;font-size:14px;font-weight:600;text-decoration:none}
 .km-story-header{margin:0 0 28px}
 .km-story-eyebrow{margin:0 0 18px;font:700 12px/1.5 var(--font-body);letter-spacing:.16em;color:var(--accent-strong)}
-.km-story-meta{display:flex;gap:14px;justify-content:space-between;align-items:center;flex-wrap:wrap;color:#627272;font-size:14px}
+.km-story-meta{display:flex;gap:14px;justify-content:space-between;align-items:center;flex-wrap:wrap;color:var(--charcoal);font-size:14px}
 .km-story-views{display:inline-flex;align-items:center;gap:6px}
 .km-story-summary{max-width:740px;margin:28px auto;font-size:clamp(19px,2vw,23px);line-height:1.65;font-weight:500;color:var(--foreground)}
 .km-story-footer{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:18px;margin-top:52px;padding:24px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);font-size:14px}
@@ -164,7 +188,7 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
 .km-story-pager{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;padding:26px 0}
 .km-story-pager a{display:flex;flex-direction:column;gap:7px;text-decoration:none;font-weight:600;line-height:1.4}
 .km-story-pager a:last-child{text-align:right}
-.km-story-pager small{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#596e69}
+.km-story-pager small{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--charcoal)}
 .km-story-related{margin-top:46px}
 .km-story-related h2{font-size:clamp(24px,2.5vw,32px);margin-bottom:22px}
 .km-story-related-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
@@ -195,7 +219,7 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
 /* Recent Posts final placement: override broad exported Wix typography. */
 .km-published-article .km-story-related.km-recent-posts{margin:48px 0 0;padding:0}
 .km-published-article .km-story-related.km-recent-posts .km-recent-heading{display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:16px;margin:0 0 22px}
-.km-published-article .km-story-related.km-recent-posts .km-recent-heading h2{font:400 24px/1.3 var(--font-body);margin:0;letter-spacing:0;color:var(--primary)}
+.km-published-article .km-story-related.km-recent-posts .km-recent-heading h2{font:400 24px/1.3 var(--font-heading);margin:0;letter-spacing:0;color:var(--primary)}
 .km-published-article .km-story-related.km-recent-posts .km-recent-heading a{font:400 16px/1.3 var(--font-body);color:var(--primary);text-decoration:none}
 .km-published-article .km-story-related.km-recent-posts .km-recent-card{color:var(--primary)}
 .km-published-article .km-story-related.km-recent-posts .km-recent-card h3{font-weight:700;font-size:20px}
@@ -259,3 +283,60 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
   .km-responsive form textarea { min-height:clamp(74px,23.125vw,99.44px)!important; padding-left:clamp(12px,3.75vw,16.13px)!important; padding-right:clamp(12px,3.75vw,16.13px)!important; }
   .km-responsive form .AOdmvk:not(.Kwoozo) { grid-template-columns:minmax(0,1fr)!important; }
 }
+/* Center pages: space between the two staff cards and above/below the row (desktop; mobile already stacks with a gap). */
+/* Center pages: staff cards get equal white space above and below at every width, whatever the card text length (CMS-editable). */
+.km-responsive[data-page$="-center"]{--km-staff-gap:56px}
+@media (max-width:1000px){.km-responsive[data-page$="-center"]{--km-staff-gap:40px}.km-responsive[data-page$="-center"] section.wixui-section:has(fluid-columns-repeater){padding-bottom:0!important}.km-responsive[data-page$="-center"] [data-mesh-id$="inlineContent-gridContainer"]:has(> div > fluid-columns-repeater,> div > div > fluid-columns-repeater){row-gap:0!important}}
+.km-responsive[data-page$="-center"] [data-mesh-id$="inlineContent-wedge-4"]{height:0!important}
+.km-responsive[data-page$="-center"] section.wixui-section:has(fluid-columns-repeater){margin-bottom:0!important}
+.km-responsive[data-page$="-center"] section.wixui-section:has(fluid-columns-repeater) section{margin-bottom:0!important}
+.km-responsive[data-page$="-center"] .wixui-repeater:has(fluid-columns-repeater){margin:0!important;height:auto!important;min-height:0!important}
+.km-responsive[data-page$="-center"] div:has(> fluid-columns-repeater){margin:0!important;padding:0!important;top:auto!important;height:auto!important}
+.km-responsive[data-page$="-center"] fluid-columns-repeater{height:auto!important;margin:0!important;padding:var(--km-staff-gap) 0!important}
+@media (min-width:1001px){.km-responsive[data-page$="-center"] fluid-columns-repeater{column-gap:32px;row-gap:32px}}
+/* Mobile: the next section already sits 20px below (stack gap), so trim that from the bottom padding. */
+@media (max-width:1000px){.km-responsive[data-page$="-center"] fluid-columns-repeater{padding-bottom:calc(var(--km-staff-gap) - 20px)!important}}
+/* Titles and headings in hand-built sections use the heading font (Comfortaa); body text stays Arial. */
+.km-published-article :is(h1,h2,h3,h4),.km-people-directory :is(h1,h2,h3,h4){font-family:var(--font-heading)}
+@media (max-width:1000px){.km-responsive[data-page$="-center"] div:has(> fluid-columns-repeater){margin:0!important;padding:0!important;width:100%!important;left:auto!important}.km-responsive[data-page$="-center"] fluid-columns-repeater{row-gap:28px!important;column-gap:24px!important}}
+/* Buttons: keep every label centered in its button at all widths. */
+.km-responsive a[class*="StylableButton"][class*="__root"],.km-responsive button[class*="StylableButton"][class*="__root"]{display:flex!important;align-items:center!important;justify-content:center!important}
+.km-responsive [class*="StylableButton"][class*="__container"]{width:100%;height:100%;align-items:center;justify-content:center}
+.km-responsive :is(.wixui-button__label,[class*="StylableButton"][class*="__label"]){text-align:center}
+.km-responsive button.wixui-button{align-items:center;justify-content:center;text-align:center}
+@media (max-width:1000px){
+  /* Colored boxes whose text touches the edge (marked by BoxFit) get inner padding and grow to fit. */
+  .km-responsive [data-km-boxfit]{height:auto!important;min-height:0!important}
+  .km-responsive [data-km-boxfit] > :not([id^="bgLayers"]):not(.jv9xi4){padding:20px!important;box-sizing:border-box!important;height:auto!important}
+  /* Form submit buttons sit in a zero-height wrapper; keep them in the flow inside the form. */
+  .km-responsive .wixui-form [data-responsive-item]:has(> button.wixui-button){height:auto!important;min-height:44px}
+  .km-responsive .wixui-form [data-responsive-item] > button.wixui-button{position:relative!important;width:100%!important;min-height:44px}
+}
+
+/* Privacy Policy and Terms of Use: same container as News & Stories, story typography. */
+.km-legal-page{max-width:980px;margin:0 auto;padding:60px 24px 88px;box-sizing:border-box}
+.km-legal-article{max-width:760px;font:16px/1.75 var(--font-body);color:var(--foreground);overflow-wrap:break-word}
+.km-legal-article .km-legal-eyebrow{margin:0 0 14px;font:700 12px/1.5 var(--font-body);letter-spacing:.16em;color:var(--accent-strong)}
+.km-legal-article h1{margin:0 0 10px;font:400 clamp(30px,3.4vw,40px)/1.25 var(--font-heading,var(--font-body));color:var(--primary)}
+.km-legal-article .km-legal-updated{margin:0 0 32px;padding-bottom:24px;border-bottom:1px solid var(--border);font-size:14px;color:var(--logo-text)}
+.km-legal-article .km-legal-notice{margin:0 0 28px;padding:12px 16px;background:var(--muted);border-left:3px solid var(--accent-strong);font-size:14px}
+.km-responsive[lang="en"] .km-legal-notice{display:none}
+.km-legal-article h2{margin:2.1em 0 .6em;font:700 clamp(19px,1.8vw,22px)/1.4 var(--font-body);color:var(--primary)}
+.km-legal-article p{margin:0 0 1.15em}
+.km-legal-article ul{margin:0 0 1.15em;padding-left:1.4em}
+.km-legal-article li{margin-bottom:.45em}
+.km-legal-article a{color:var(--accent-strong);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.km-legal-article a:focus-visible{outline:3px solid var(--accent-strong);outline-offset:3px}
+.km-legal-contact{display:flex;flex-direction:column;gap:4px;margin-top:8px;padding:20px 22px;border:1px solid var(--border);border-radius:8px;font-style:normal}
+.km-legal-contact strong{color:var(--primary)}
+@media(max-width:600px){.km-legal-page{padding:36px 20px 64px}.km-legal-article{font-size:15.5px}}
+
+/* Footer legal links beside the copyright line. */
+.km-footer-legal{color:rgb(var(--color_11,255,255,255));display:inline-flex;flex-wrap:wrap;justify-content:center;gap:0 6px;margin-left:10px;letter-spacing:normal}
+.km-footer-legal a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+.km-footer-legal a:hover{text-decoration-thickness:2px}
+.km-footer-legal a:focus-visible{outline:2px solid currentColor;outline-offset:2px}
+
+/* CTA buttons: same colors as the header "Apply Now" (primary blue, white label); hover keeps each button's existing hover. */
+.km-responsive :is(a,button)[class*="StylableButton"][class*="__root"]:not(:hover):not(:disabled){background:var(--primary)!important}
+.km-responsive :is(a,button)[class*="StylableButton"][class*="__root"]:not(:disabled) [class*="StylableButton"][class*="__label"]{color:#fff!important}

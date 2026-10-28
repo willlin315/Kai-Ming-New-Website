@@ -403,7 +403,7 @@
     "zh-Hant": "North Beach",
     "es": "North Beach"
   },
-  "PMsquare Children�’s Center": {
+  "PMsquare Children’s Center": {
     "zh-Hant": "PMsquare 兒童中心",
     "es": "Centro infantil PMsquare"
   },
@@ -2690,5 +2690,285 @@
   "Preschoolers painting with their teacher": {
     "zh-Hant": "學齡前兒童與老師一起畫畫",
     "es": "Preescolares pintando con su maestra"
+  },
+  "KAI MING HEAD START": {
+    "zh-Hant": "啟明 HEAD START",
+    "es": "KAI MING HEAD START"
+  },
+  "Privacy Policy": {
+    "zh-Hant": "隱私權政策",
+    "es": "Política de privacidad"
+  },
+  "Last updated: July 28, 2020": {
+    "zh-Hant": "最後更新：2020 年 7 月 28 日",
+    "es": "Última actualización: 28 de julio de 2020"
+  },
+  "This translation is provided for reference. If it differs from the English version, the English version applies.": {
+    "zh-Hant": "本中文翻譯僅供參考。如與英文版本有任何不一致，以英文版本為準。",
+    "es": "Esta traducción se ofrece como referencia. Si difiere de la versión en inglés, prevalece la versión en inglés."
+  },
+  "Kai Ming Inc. (“us”, “we”, or “our”) operates www.kaiming.org (the “Site”). This page informs you of our policies regarding the collection, use and disclosure of Personal Information we receive from users of the Site. We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about our policy, or our practices with regards to your personal information, please contact us.": {
+    "zh-Hant": "Kai Ming Inc.（以下稱「我們」）經營 www.kaiming.org（以下稱「本網站」）。本頁說明我們對於從本網站使用者取得之個人資料的收集、使用及揭露政策。我們致力保護您的個人資料與隱私權。如您對本政策或我們處理個人資料的方式有任何疑問或疑慮，請與我們聯絡。",
+    "es": "Kai Ming Inc. (“nosotros” o “nuestro”) opera www.kaiming.org (el “Sitio”). Esta página le informa sobre nuestras políticas de recopilación, uso y divulgación de la Información Personal que recibimos de los usuarios del Sitio. Nos comprometemos a proteger su información personal y su derecho a la privacidad. Si tiene preguntas o inquietudes sobre nuestra política o nuestras prácticas con respecto a su información personal, comuníquese con nosotros."
+  },
+  "This Privacy Policy governs the privacy policies and practices of our Website, located at www.kaiming.org. Please read our Privacy Policy carefully as it will help you make informed decisions about sharing your personal information with us. We use your Personal Information only for providing and improving the Site. By using the Site, you agree to the collection and use of information in accordance with this policy.": {
+    "zh-Hant": "本隱私權政策適用於我們位於 www.kaiming.org 之網站的隱私權政策與作法。請詳閱本政策，以便您在與我們分享個人資料時做出知情的決定。我們僅將您的個人資料用於提供及改善本網站。使用本網站即表示您同意我們依本政策收集及使用資訊。",
+    "es": "Esta Política de privacidad rige las políticas y prácticas de privacidad de nuestro Sitio web, ubicado en www.kaiming.org. Lea atentamente nuestra Política de privacidad, ya que le ayudará a tomar decisiones informadas sobre compartir su información personal con nosotros. Usamos su Información Personal solo para proporcionar y mejorar el Sitio. Al usar el Sitio, usted acepta la recopilación y el uso de información de acuerdo con esta política."
+  },
+  "Information Collection and Use": {
+    "zh-Hant": "資料的收集與使用",
+    "es": "Recopilación y uso de información"
+  },
+  "While using our Site, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you. Personally identifiable information may include, but is not limited to, your name (“Personal Information”).": {
+    "zh-Hant": "在您使用本網站時，我們可能會請您提供可用於聯絡或識別您的特定個人識別資料。個人識別資料可能包括但不限於您的姓名（以下稱「個人資料」）。",
+    "es": "Mientras usa nuestro Sitio, podemos pedirle que nos proporcione cierta información de identificación personal que pueda usarse para comunicarnos con usted o identificarlo. La información de identificación personal puede incluir, entre otros, su nombre (“Información Personal”)."
+  },
+  "Log Data": {
+    "zh-Hant": "日誌資料",
+    "es": "Datos de registro"
+  },
+  "Like many site operators, we automatically collect information that your browser sends whenever you visit our Site (“Log Data”). This information includes the name of the website from which you entered our Website, if any, the time and date of your visit, and the time spent on those pages, as well as the name of the website to which you are headed when you leave our website. This information also includes the IP address of the computer or proxy server that you use to access the Internet, your Internet service provider name, web browser type, type of mobile device, and computer operating system. We use all of this information to analyze trends among our users to help improve our Website.": {
+    "zh-Hant": "與許多網站經營者一樣，每當您造訪本網站時，我們會自動收集您的瀏覽器所傳送的資訊（以下稱「日誌資料」）。這些資訊包括您進入本網站前所在的網站名稱（如有）、造訪的日期與時間、在各頁面停留的時間，以及您離開本網站後前往的網站名稱。這些資訊也包括您上網所使用的電腦或代理伺服器的 IP 位址、網際網路服務供應商名稱、瀏覽器類型、行動裝置類型及電腦作業系統。我們使用這些資訊分析使用者的使用趨勢，以協助改善本網站。",
+    "es": "Como muchos operadores de sitios web, recopilamos automáticamente la información que su navegador envía cada vez que visita nuestro Sitio (“Datos de registro”). Esta información incluye el nombre del sitio web desde el cual ingresó a nuestro Sitio web, si corresponde, la fecha y hora de su visita y el tiempo que pasó en esas páginas, así como el nombre del sitio web al que se dirige cuando sale de nuestro sitio. Esta información también incluye la dirección IP de la computadora o del servidor proxy que usa para acceder a Internet, el nombre de su proveedor de servicios de Internet, el tipo de navegador, el tipo de dispositivo móvil y el sistema operativo de su computadora. Usamos toda esta información para analizar tendencias entre nuestros usuarios y mejorar nuestro Sitio web."
+  },
+  "Service Providers": {
+    "zh-Hant": "服務供應商",
+    "es": "Proveedores de servicios"
+  },
+  "We employ third-party companies and individuals to facilitate our Website (“Service Providers”), to provide our Website on our behalf, to perform Website-related services or to assist us in analyzing how our Website is used. These third parties have access to your personal information only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose.": {
+    "zh-Hant": "我們會聘請第三方公司及個人協助營運本網站（以下稱「服務供應商」），代表我們提供本網站、執行網站相關服務，或協助我們分析本網站的使用情形。這些第三方僅能為代表我們執行上述工作而存取您的個人資料，並有義務不得為其他目的揭露或使用這些資料。",
+    "es": "Contratamos a empresas y personas externas para facilitar nuestro Sitio web (“Proveedores de servicios”), proporcionar nuestro Sitio web en nuestro nombre, prestar servicios relacionados con el Sitio web o ayudarnos a analizar cómo se usa. Estos terceros tienen acceso a su información personal solo para realizar estas tareas en nuestro nombre y están obligados a no divulgarla ni usarla para ningún otro fin."
+  },
+  "Analytics": {
+    "zh-Hant": "網站分析",
+    "es": "Análisis"
+  },
+  "Google Analytics is a web analytics service offered by Google that tracks and reports website traffic. Google uses the data collected to track and monitor the use of our Service. This data is shared with other Google services. Google may use the collected data to contextualize and personalize the ads of its own advertising network.": {
+    "zh-Hant": "Google Analytics 是 Google 提供的網站分析服務，用於追蹤並回報網站流量。Google 會使用所收集的資料追蹤及監測本服務的使用情形，這些資料也會與其他 Google 服務共用。Google 可能會使用所收集的資料，為其廣告聯播網的廣告提供情境化及個人化內容。",
+    "es": "Google Analytics es un servicio de análisis web ofrecido por Google que rastrea e informa el tráfico del sitio web. Google usa los datos recopilados para rastrear y supervisar el uso de nuestro Servicio. Estos datos se comparten con otros servicios de Google. Google puede usar los datos recopilados para contextualizar y personalizar los anuncios de su propia red publicitaria."
+  },
+  "You can opt out of having your activity on the Service made available to Google Analytics by installing the Google Analytics opt-out browser add-on. The add-on prevents the Google Analytics JavaScript (ga.js, analytics.js and dc.js) from sharing information with Google Analytics about visit activity.": {
+    "zh-Hant": "您可以安裝 Google Analytics 停用瀏覽器外掛程式，選擇不讓 Google Analytics 取得您在本服務上的活動資料。此外掛程式可防止 Google Analytics JavaScript（ga.js、analytics.js 及 dc.js）與 Google Analytics 分享造訪活動資訊。",
+    "es": "Puede optar por que su actividad en el Servicio no esté disponible para Google Analytics instalando el complemento de inhabilitación de Google Analytics para el navegador. El complemento impide que el JavaScript de Google Analytics (ga.js, analytics.js y dc.js) comparta información sobre la actividad de las visitas con Google Analytics."
+  },
+  "For more information on the privacy practices of Google, please visit the Google Privacy Policy:": {
+    "zh-Hant": "如需進一步了解 Google 的隱私權作法，請參閱 Google 隱私權政策：",
+    "es": "Para obtener más información sobre las prácticas de privacidad de Google, consulte la Política de privacidad de Google:"
+  },
+  "Communications": {
+    "zh-Hant": "聯絡通訊",
+    "es": "Comunicaciones"
+  },
+  "We may use your Personal Information to contact you with newsletters, marketing or promotional materials.": {
+    "zh-Hant": "我們可能會使用您的個人資料，寄送電子報、行銷或宣傳資料給您。",
+    "es": "Podemos usar su Información Personal para enviarle boletines, materiales de marketing o promocionales."
+  },
+  "Cookies": {
+    "zh-Hant": "Cookie",
+    "es": "Cookies"
+  },
+  "Cookies are files with a small amount of data, which may include an anonymous unique identifier. Cookies are sent to your browser from a website and stored on your computer’s hard drive.": {
+    "zh-Hant": "Cookie 是含有少量資料的檔案，其中可能包括匿名的唯一識別碼。Cookie 由網站傳送至您的瀏覽器，並儲存在您電腦的硬碟中。",
+    "es": "Las cookies son archivos con una pequeña cantidad de datos, que pueden incluir un identificador único anónimo. Las cookies se envían a su navegador desde un sitio web y se almacenan en el disco duro de su computadora."
+  },
+  "Like many sites, we use “cookies” to collect information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Site.": {
+    "zh-Hant": "與許多網站一樣，我們使用 Cookie 收集資訊。您可以設定瀏覽器拒絕所有 Cookie，或在傳送 Cookie 時通知您。但如果您不接受 Cookie，可能無法使用本網站的部分功能。",
+    "es": "Como muchos sitios, usamos “cookies” para recopilar información. Puede configurar su navegador para que rechace todas las cookies o para que le avise cuando se envíe una cookie. Sin embargo, si no acepta las cookies, es posible que no pueda usar algunas partes de nuestro Sitio."
+  },
+  "Security": {
+    "zh-Hant": "資料安全",
+    "es": "Seguridad"
+  },
+  "The security of your Personal Information is important to us, but remember that no method of transmission over the Internet, or method of electronic storage, is 100% secure. While we strive to use commercially acceptable means to protect your Personal Information, we cannot guarantee its absolute security.": {
+    "zh-Hant": "我們重視您個人資料的安全，但請注意，沒有任何網際網路傳輸方式或電子儲存方式是百分之百安全的。我們雖致力以商業上可接受的方式保護您的個人資料，但無法保證其絕對安全。",
+    "es": "La seguridad de su Información Personal es importante para nosotros, pero recuerde que ningún método de transmisión por Internet ni de almacenamiento electrónico es 100 % seguro. Aunque nos esforzamos por usar medios comercialmente aceptables para proteger su Información Personal, no podemos garantizar su seguridad absoluta."
+  },
+  "Changes to This Privacy Policy": {
+    "zh-Hant": "本隱私權政策的變更",
+    "es": "Cambios a esta Política de privacidad"
+  },
+  "This Privacy Policy is effective as of July 28, 2020 and will remain in effect except with respect to any changes in its provisions in the future, which will be in effect immediately after being posted on this page.": {
+    "zh-Hant": "本隱私權政策自 2020 年 7 月 28 日起生效，並將持續有效；日後如有任何條款變更，將於公布在本頁後立即生效。",
+    "es": "Esta Política de privacidad entra en vigor el 28 de julio de 2020 y permanecerá vigente, salvo los cambios futuros en sus disposiciones, que entrarán en vigor inmediatamente después de publicarse en esta página."
+  },
+  "We reserve the right to update or change our Privacy Policy at any time and you should check this Privacy Policy periodically. Your continued use of the Service after we post any modifications to the Privacy Policy on this page will constitute your acknowledgment of the modifications and your consent to abide and be bound by the modified Privacy Policy.": {
+    "zh-Hant": "我們保留隨時更新或變更本隱私權政策的權利，請您定期查閱。我們在本頁公布隱私權政策的任何修改後，您繼續使用本服務，即表示您已知悉這些修改，並同意遵守修改後的隱私權政策並受其約束。",
+    "es": "Nos reservamos el derecho de actualizar o cambiar nuestra Política de privacidad en cualquier momento, y usted debe revisarla periódicamente. Si continúa usando el Servicio después de que publiquemos modificaciones a la Política de privacidad en esta página, ello constituirá su reconocimiento de las modificaciones y su consentimiento para cumplir y quedar obligado por la Política de privacidad modificada."
+  },
+  "If we make any material changes to this Privacy Policy, we will notify you either through the email address you have provided us, or by placing a prominent notice on our website.": {
+    "zh-Hant": "如本隱私權政策有任何重大變更，我們將透過您提供的電子郵件地址通知您，或在本網站顯著位置公告。",
+    "es": "Si realizamos cambios importantes a esta Política de privacidad, se lo notificaremos a través de la dirección de correo electrónico que nos proporcionó o mediante un aviso destacado en nuestro sitio web."
+  },
+  "Contact Us": {
+    "zh-Hant": "聯絡我們",
+    "es": "Contáctenos"
+  },
+  "If you have any questions about this Privacy Policy, please contact us.": {
+    "zh-Hant": "如您對本隱私權政策有任何疑問，請與我們聯絡。",
+    "es": "Si tiene alguna pregunta sobre esta Política de privacidad, comuníquese con nosotros."
+  },
+  "Terms of Use": {
+    "zh-Hant": "使用條款",
+    "es": "Términos de uso"
+  },
+  "These Terms and Conditions (“Agreement”) constitute a legally binding agreement made between you, whether personally or on behalf of an entity (“you”), and Kai Ming Inc. (“we”, “us” or “our”), concerning your access to and use of the www.kaiming.org website (“Website”).": {
+    "zh-Hant": "本條款與細則（以下稱「本協議」）是您（無論以個人身分或代表某一實體，以下稱「您」）與 Kai Ming Inc.（以下稱「我們」）之間，就您存取及使用 www.kaiming.org 網站（以下稱「本網站」）所訂立具法律約束力的協議。",
+    "es": "Estos Términos y condiciones (“Acuerdo”) constituyen un acuerdo legalmente vinculante entre usted, ya sea a título personal o en nombre de una entidad (“usted”), y Kai Ming Inc. (“nosotros” o “nuestro”), con respecto a su acceso y uso del sitio web www.kaiming.org (“Sitio web”)."
+  },
+  "These Terms apply in full force and effect to your use of this Website and by using this Website, you expressly accept all terms and conditions contained herein in full. You must not use this Website if you have any objection to any of these Website Standard Terms and Conditions.": {
+    "zh-Hant": "本條款完全適用於您對本網站的使用；使用本網站即表示您明確且完整接受本條款所載的所有條款與條件。如您對本網站標準條款與細則有任何異議，請勿使用本網站。",
+    "es": "Estos Términos se aplican con plena vigencia y efecto a su uso de este Sitio web y, al usarlo, usted acepta expresamente y en su totalidad todos los términos y condiciones aquí contenidos. No debe usar este Sitio web si tiene alguna objeción a cualquiera de estos Términos y condiciones estándar del Sitio web."
+  },
+  "1. Content Disclaimer": {
+    "zh-Hant": "1. 內容免責聲明",
+    "es": "1. Descargo de responsabilidad sobre el contenido"
+  },
+  "Postings on our Website are made at such times as www.kaiming.org determines in its discretion. You should not assume that the information contained on our Website has been updated or otherwise contains current information. www.kaiming.org does not review past postings to determine whether they remain accurate and information contained in such postings may have been superseded. The information and materials on our Website are provided for your review in accordance with the notices, terms and conditions set forth herein. These materials are not guaranteed or represented to be complete, correct or up to date. These materials may be changed from time to time without notice.": {
+    "zh-Hant": "本網站內容的發布時間由 www.kaiming.org 自行決定。請勿假定本網站所載資訊已經更新或為最新資訊。www.kaiming.org 不會檢視過去發布的內容是否仍然正確，這些內容中的資訊可能已被取代。本網站的資訊與資料依本條款所載的聲明、條款與條件提供您參閱，我們不保證或表示這些資料完整、正確或為最新，且可能隨時變更而不另行通知。",
+    "es": "Las publicaciones en nuestro Sitio web se realizan en los momentos que www.kaiming.org determine a su discreción. No debe suponer que la información de nuestro Sitio web ha sido actualizada o que contiene información vigente. www.kaiming.org no revisa las publicaciones anteriores para determinar si siguen siendo precisas, y la información de dichas publicaciones puede haber sido reemplazada. La información y los materiales de nuestro Sitio web se proporcionan para su consulta de acuerdo con los avisos, términos y condiciones aquí establecidos. No se garantiza ni se declara que estos materiales sean completos, correctos o actualizados. Estos materiales pueden cambiar en cualquier momento sin previo aviso."
+  },
+  "2. Intellectual Property Rights": {
+    "zh-Hant": "2. 智慧財產權",
+    "es": "2. Derechos de propiedad intelectual"
+  },
+  "Other than content you own, which you may have opted to include on this Website, under these Terms, Kai Ming Inc. and/or its licensors own all rights to the intellectual property and material contained in this Website, and all such rights are reserved. You are granted a limited license only, subject to the restrictions provided in these Terms, for purposes of viewing the material contained on this Website.": {
+    "zh-Hant": "除您選擇放在本網站上、屬於您所有的內容外，依本條款，本網站所載的智慧財產及資料之一切權利均屬 Kai Ming Inc. 及／或其授權人所有，並保留所有權利。您僅獲得有限的授權，且須受本條款所載限制的約束，僅得為瀏覽本網站內容之目的使用。",
+    "es": "Salvo el contenido de su propiedad que usted haya decidido incluir en este Sitio web, conforme a estos Términos, Kai Ming Inc. y/o sus licenciantes son titulares de todos los derechos sobre la propiedad intelectual y el material de este Sitio web, y se reservan todos esos derechos. Se le otorga únicamente una licencia limitada, sujeta a las restricciones de estos Términos, con el fin de ver el material de este Sitio web."
+  },
+  "3. Restrictions": {
+    "zh-Hant": "3. 使用限制",
+    "es": "3. Restricciones"
+  },
+  "You are expressly and emphatically restricted from all of the following:": {
+    "zh-Hant": "您明確且嚴格禁止從事下列所有行為：",
+    "es": "Se le prohíbe expresa y categóricamente todo lo siguiente:"
+  },
+  "Publishing any Website material in any media;": {
+    "zh-Hant": "在任何媒體上發布本網站的任何資料；",
+    "es": "Publicar cualquier material del Sitio web en cualquier medio;"
+  },
+  "Selling, sublicensing and/or otherwise commercializing any Website material;": {
+    "zh-Hant": "販售、再授權及／或以其他方式將本網站的任何資料商業化；",
+    "es": "Vender, sublicenciar y/o comercializar de cualquier otra forma cualquier material del Sitio web;"
+  },
+  "Publicly performing and/or showing any Website material;": {
+    "zh-Hant": "公開演出及／或展示本網站的任何資料；",
+    "es": "Representar y/o mostrar públicamente cualquier material del Sitio web;"
+  },
+  "Using this Website in any way that is, or may be, damaging to this Website;": {
+    "zh-Hant": "以任何會或可能損害本網站的方式使用本網站；",
+    "es": "Usar este Sitio web de cualquier forma que sea, o pueda ser, perjudicial para este Sitio web;"
+  },
+  "Using this Website in any way that impacts user access to this Website;": {
+    "zh-Hant": "以任何會影響其他使用者存取本網站的方式使用本網站；",
+    "es": "Usar este Sitio web de cualquier forma que afecte el acceso de los usuarios a este Sitio web;"
+  },
+  "Using this Website contrary to applicable laws and regulations, or in a way that causes, or may cause, harm to the Website, or to any person or business entity;": {
+    "zh-Hant": "違反相關法律法規使用本網站，或以會或可能對本網站、任何個人或企業實體造成傷害的方式使用本網站；",
+    "es": "Usar este Sitio web en contra de las leyes y regulaciones aplicables, o de una forma que cause, o pueda causar, daño al Sitio web o a cualquier persona o entidad comercial;"
+  },
+  "Engaging in any data mining, data harvesting, data extracting or any other similar activity in relation to this Website, or while using this Website;": {
+    "zh-Hant": "針對本網站或在使用本網站時，從事任何資料探勘、資料蒐集、資料擷取或其他類似活動；",
+    "es": "Realizar cualquier minería de datos, recolección de datos, extracción de datos u otra actividad similar en relación con este Sitio web o mientras lo usa;"
+  },
+  "Using this Website to engage in any advertising or marketing.": {
+    "zh-Hant": "利用本網站從事任何廣告或行銷活動。",
+    "es": "Usar este Sitio web para realizar cualquier tipo de publicidad o marketing."
+  },
+  "Certain areas of this Website are restricted from access by you and Kai Ming Inc. may further restrict access by you to any areas of this Website, at any time, in its sole and absolute discretion. Any user ID and password you may have for this Website are confidential and you must maintain confidentiality of such information.": {
+    "zh-Hant": "本網站的部分區域限制您存取，Kai Ming Inc. 亦得隨時依其單方及絕對之裁量，進一步限制您存取本網站的任何區域。您在本網站擁有的任何使用者帳號及密碼均屬機密，您必須妥善保密。",
+    "es": "Ciertas áreas de este Sitio web tienen acceso restringido para usted, y Kai Ming Inc. puede restringir aún más su acceso a cualquier área de este Sitio web, en cualquier momento, a su exclusiva y absoluta discreción. Cualquier identificación de usuario y contraseña que tenga para este Sitio web son confidenciales y usted debe mantener la confidencialidad de dicha información."
+  },
+  "4. Your Content": {
+    "zh-Hant": "4. 您的內容",
+    "es": "4. Su contenido"
+  },
+  "In these Website Standard Terms and Conditions, “Your Content” shall mean any audio, video, text, images or other material you choose to display on this Website. With respect to Your Content, by displaying it, you grant Kai Ming Inc. a non-exclusive, worldwide, irrevocable, royalty-free, sublicensable license to use, reproduce, adapt, publish, translate and distribute it in any and all media.": {
+    "zh-Hant": "在本網站標準條款與細則中，「您的內容」係指您選擇在本網站上展示的任何音訊、影片、文字、圖片或其他資料。您展示您的內容，即表示您授予 Kai Ming Inc. 非專屬、全球性、不可撤銷、免權利金且可再授權的授權，得於任何媒體使用、重製、改編、發布、翻譯及散布該內容。",
+    "es": "En estos Términos y condiciones estándar del Sitio web, “Su contenido” significa cualquier audio, video, texto, imagen u otro material que usted decida mostrar en este Sitio web. Con respecto a Su contenido, al mostrarlo, usted otorga a Kai Ming Inc. una licencia no exclusiva, mundial, irrevocable, libre de regalías y sublicenciable para usarlo, reproducirlo, adaptarlo, publicarlo, traducirlo y distribuirlo en todos los medios."
+  },
+  "Your Content must be your own and must not be infringing on any third party’s rights. Kai Ming Inc. reserves the right to remove any of Your Content from this Website at any time, and for any reason, without notice.": {
+    "zh-Hant": "您的內容必須為您所有，且不得侵害任何第三方的權利。Kai Ming Inc. 保留隨時以任何理由、不經通知自本網站移除您任何內容的權利。",
+    "es": "Su contenido debe ser de su propiedad y no debe infringir los derechos de terceros. Kai Ming Inc. se reserva el derecho de eliminar cualquier parte de Su contenido de este Sitio web en cualquier momento y por cualquier motivo, sin previo aviso."
+  },
+  "5. Third-Party Website Links and Content": {
+    "zh-Hant": "5. 第三方網站連結與內容",
+    "es": "5. Enlaces y contenido de sitios web de terceros"
+  },
+  "Our Website may contain links to other websites (“Third-Party Websites”) owned or operated by parties other than www.kaiming.org.": {
+    "zh-Hant": "本網站可能包含連往由 www.kaiming.org 以外之人士擁有或經營的其他網站（以下稱「第三方網站」）的連結。",
+    "es": "Nuestro Sitio web puede contener enlaces a otros sitios web (“Sitios web de terceros”) que son propiedad de, u operados por, partes distintas de www.kaiming.org."
+  },
+  "Such links are provided for your reference only. www.kaiming.org does not monitor or control outside Third-Party Websites and is not responsible for their content. The inclusion by www.kaiming.org of links to a Third-Party Website does not imply any endorsement of the material on that website or, unless expressly disclosed otherwise, any sponsorship, affiliation or association with its owner, operator or sponsor, nor does the inclusion of the links imply that www.kaiming.org is authorized to use any trade name, trademark, logo, legal or official seal, or copyrighted symbol that may be reflected in the linked Third-Party Website.": {
+    "zh-Hant": "這些連結僅供您參考。www.kaiming.org 不會監控或管理外部第三方網站，亦不對其內容負責。www.kaiming.org 提供第三方網站的連結，並不代表我們認可該網站的內容；除另有明確揭露外，亦不代表我們與該網站的擁有者、經營者或贊助者有任何贊助、附屬或合作關係，也不代表 www.kaiming.org 獲授權使用該第三方網站上可能出現的任何商號、商標、標誌、法定或官方印章或受著作權保護的標誌。",
+    "es": "Dichos enlaces se proporcionan solo como referencia. www.kaiming.org no supervisa ni controla los Sitios web de terceros y no es responsable de su contenido. La inclusión por parte de www.kaiming.org de enlaces a un Sitio web de terceros no implica que respalde el material de ese sitio ni, salvo que se indique expresamente lo contrario, ningún patrocinio, afiliación o asociación con su propietario, operador o patrocinador, ni implica que www.kaiming.org esté autorizado a usar cualquier nombre comercial, marca, logotipo, sello legal u oficial o símbolo protegido por derechos de autor que pueda aparecer en el Sitio web de terceros enlazado."
+  },
+  "6. No Warranties": {
+    "zh-Hant": "6. 不提供保證",
+    "es": "6. Sin garantías"
+  },
+  "This Website is provided “as is,” with all faults, and Kai Ming Inc. makes no express or implied representations or warranties of any kind related to this Website or the materials contained on this Website. Additionally, nothing contained on this Website shall be construed as providing consultation or advice to you.": {
+    "zh-Hant": "本網站係依「現狀」提供，包含其所有缺陷；Kai Ming Inc. 對本網站或本網站所載資料不作任何明示或默示的陳述或保證。此外，本網站所載的任何內容均不得解釋為向您提供諮詢或建議。",
+    "es": "Este Sitio web se proporciona “tal cual”, con todos sus defectos, y Kai Ming Inc. no ofrece declaraciones ni garantías de ningún tipo, expresas o implícitas, relacionadas con este Sitio web o con los materiales que contiene. Además, nada de lo contenido en este Sitio web se interpretará como una consulta o un consejo para usted."
+  },
+  "7. Limitation of Liability": {
+    "zh-Hant": "7. 責任限制",
+    "es": "7. Limitación de responsabilidad"
+  },
+  "In no event shall Kai Ming Inc., nor any of its officers, directors and employees, be liable to you for anything arising out of or in any way connected with your use of this Website, whether such liability is under contract, tort or otherwise, and Kai Ming Inc., including its officers, directors and employees, shall not be liable for any indirect, consequential or special liability arising out of or in any way related to your use of this Website.": {
+    "zh-Hant": "在任何情況下，Kai Ming Inc. 及其任何主管、董事與員工，均不就因您使用本網站所生或與之有任何關聯的事項對您負責，無論該責任係基於契約、侵權行為或其他原因；且 Kai Ming Inc.（包括其主管、董事與員工）對於因您使用本網站所生或與之有任何關聯的任何間接、衍生或特殊責任，概不負責。",
+    "es": "En ningún caso Kai Ming Inc., ni ninguno de sus funcionarios, directores y empleados, será responsable ante usted por nada que surja de, o esté relacionado de alguna manera con, su uso de este Sitio web, ya sea que dicha responsabilidad sea contractual, extracontractual o de otro tipo, y Kai Ming Inc., incluidos sus funcionarios, directores y empleados, no será responsable de ninguna responsabilidad indirecta, consecuente o especial que surja de, o esté relacionada de alguna manera con, su uso de este Sitio web."
+  },
+  "8. Indemnification": {
+    "zh-Hant": "8. 賠償",
+    "es": "8. Indemnización"
+  },
+  "You hereby indemnify Kai Ming Inc. to the fullest extent from and against any and all liabilities, costs, demands, causes of action, damages and expenses (including reasonable attorney’s fees) arising out of or in any way related to your breach of any of the provisions of these Terms.": {
+    "zh-Hant": "對於因您違反本條款任何規定所生或與之有任何關聯的一切責任、費用、請求、訴因、損害及開支（包括合理的律師費），您同意在最大範圍內賠償 Kai Ming Inc. 並使其免受損害。",
+    "es": "Por la presente, usted indemniza a Kai Ming Inc. en la mayor medida posible frente a todas y cada una de las responsabilidades, costos, reclamaciones, causas de acción, daños y gastos (incluidos los honorarios razonables de abogados) que surjan de, o estén relacionados de alguna manera con, su incumplimiento de cualquiera de las disposiciones de estos Términos."
+  },
+  "9. Severability": {
+    "zh-Hant": "9. 可分割性",
+    "es": "9. Divisibilidad"
+  },
+  "If any provision of these Terms is found to be unenforceable or invalid under any applicable law, such unenforceability or invalidity shall not render these Terms unenforceable or invalid as a whole, and such provisions shall be deleted without affecting the remaining provisions herein.": {
+    "zh-Hant": "如本條款任何規定依相關法律被認定無法執行或無效，不影響本條款整體的可執行性或效力；該規定應予刪除，其餘規定不受影響。",
+    "es": "Si alguna disposición de estos Términos se considera inaplicable o inválida conforme a cualquier ley aplicable, ello no hará que estos Términos en su conjunto sean inaplicables o inválidos, y dichas disposiciones se eliminarán sin afectar las disposiciones restantes."
+  },
+  "10. Variation of Terms": {
+    "zh-Hant": "10. 條款修訂",
+    "es": "10. Modificación de los Términos"
+  },
+  "Kai Ming Inc. is permitted to revise these Terms at any time as it sees fit, and by using this Website you are expected to review these Terms on a regular basis to ensure you understand all terms and conditions governing use of this Website.": {
+    "zh-Hant": "Kai Ming Inc. 得隨時視需要修訂本條款。使用本網站時，您應定期查閱本條款，以確保您了解規範本網站使用的所有條款與條件。",
+    "es": "Kai Ming Inc. puede revisar estos Términos en cualquier momento según lo considere oportuno y, al usar este Sitio web, se espera que usted revise estos Términos periódicamente para asegurarse de comprender todos los términos y condiciones que rigen el uso de este Sitio web."
+  },
+  "11. Assignment": {
+    "zh-Hant": "11. 權利轉讓",
+    "es": "11. Cesión"
+  },
+  "Kai Ming Inc. shall be permitted to assign, transfer and subcontract its rights and/or obligations under these Terms without any notification or consent required. However, you shall not be permitted to assign, transfer or subcontract any of your rights and/or obligations under these Terms.": {
+    "zh-Hant": "Kai Ming Inc. 得轉讓、移轉及轉包其依本條款享有的權利及／或負擔的義務，無須通知或取得同意。但您不得轉讓、移轉或轉包您依本條款享有的任何權利及／或負擔的義務。",
+    "es": "Kai Ming Inc. podrá ceder, transferir y subcontratar sus derechos y/u obligaciones conforme a estos Términos sin necesidad de notificación ni consentimiento. Sin embargo, usted no podrá ceder, transferir ni subcontratar ninguno de sus derechos y/u obligaciones conforme a estos Términos."
+  },
+  "12. Entire Agreement": {
+    "zh-Hant": "12. 完整協議",
+    "es": "12. Acuerdo completo"
+  },
+  "These Terms, including any legal notices and disclaimers contained on this Website, constitute the entire agreement between Kai Ming Inc. and you in relation to your use of this Website, and supersede all prior agreements and understandings with respect to the same.": {
+    "zh-Hant": "本條款（包括本網站所載的任何法律聲明及免責聲明）構成 Kai Ming Inc. 與您之間關於您使用本網站的完整協議，並取代先前就同一事項所達成的一切協議與共識。",
+    "es": "Estos Términos, incluidos los avisos legales y descargos de responsabilidad contenidos en este Sitio web, constituyen el acuerdo completo entre Kai Ming Inc. y usted en relación con su uso de este Sitio web, y reemplazan todos los acuerdos y entendimientos anteriores al respecto."
+  },
+  "13. Governing Law and Jurisdiction": {
+    "zh-Hant": "13. 準據法與管轄",
+    "es": "13. Ley aplicable y jurisdicción"
+  },
+  "These Terms will be governed by and construed in accordance with the laws of the State of California, and you submit to the non-exclusive jurisdiction of the state and federal courts located in California for the resolution of any disputes.": {
+    "zh-Hant": "本條款受美國加州法律管轄並依其解釋；您同意任何爭議由位於加州的州法院及聯邦法院非專屬管轄。",
+    "es": "Estos Términos se regirán e interpretarán de acuerdo con las leyes del Estado de California, y usted se somete a la jurisdicción no exclusiva de los tribunales estatales y federales ubicados en California para la resolución de cualquier disputa."
+  },
+  "If you have any questions about these Terms of Use, please contact us.": {
+    "zh-Hant": "如您對本使用條款有任何疑問，請與我們聯絡。",
+    "es": "Si tiene alguna pregunta sobre estos Términos de uso, comuníquese con nosotros."
   }
 }
