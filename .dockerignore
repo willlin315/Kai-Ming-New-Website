@@ -1,0 +1,9 @@
+node_modules
+.next
+out
+.git
+.cms-data
+qa-report.json
+*.sqlite*
+.env*
+!.env.example

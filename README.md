@@ -1,6 +1,6 @@
 # Kai Ming new website
 
-Single Next.js app: the public website (English, Traditional Chinese, Spanish), the CMS editor at `/admin/` and the CMS API at `/api/cms/`, backed by PostgreSQL.
+Single Next.js app: the public website (English, Traditional Chinese, Spanish), the CMS editor at `/admin/` and the CMS API at `/api/cms/`, backed by a SQLite database file.
 
 ```sh
 npm ci
@@ -15,4 +15,4 @@ npm run cms:test
 npm run build
 ```
 
-Hosting is Vercel (Next.js server build). Read [migration findings](docs/migration-notes.md), [handoff](docs/handoff.md) and [photo provenance](docs/photo-migration.json) before launching.
+Hosting is one Railway service (`Dockerfile`, `railway.json`) with the SQLite file on a Railway volume; see [CMS database and publishing](docs/cms-database.md). Read [migration findings](docs/migration-notes.md), [handoff](docs/handoff.md) and [photo provenance](docs/photo-migration.json) before launching.

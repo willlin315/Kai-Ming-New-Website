@@ -1,6 +1,4 @@
-// CMS API integration tests against PostgreSQL.
-// Uses TEST_DATABASE_URL when set (CI: native PostgreSQL 17); otherwise starts an
-// isolated embedded PGlite instance on a temporary directory and removes it afterwards.
+// CMS API integration tests against a temporary SQLite database (removed afterwards).
 // Run: npm run cms:test
 import test, { after, before } from 'node:test';
 import assert from 'node:assert/strict';
@@ -8,9 +6,10 @@ import crypto from 'node:crypto';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import pg from 'pg';
 import sharp from 'sharp';
 import { createCms, SCHEMA } from '../lib/cms-server/core.mjs';
+import { openSqlite } from '../lib/cms-server/sqlite.mjs';
+import { postgresImporter } from '../lib/cms-server/import-postgres.mjs';
 
 const read = (file) => JSON.parse(fs.readFileSync(new URL(`../content/${file}`, import.meta.url)));
 const sources = { people: read('people.json'), blogPosts: read('blog-posts.json'), homeContent: read('home-content.json'),
@@ -19,7 +18,7 @@ const TOKEN = 'test-only-token-' + 'x'.repeat(40);
 const auth = { Authorization: 'Bearer ' + TOKEN };
 const uid = () => crypto.randomUUID().replaceAll('-', '');
 
-let pool, server, db, folder, changes = 0, hooks = [];
+let pool, folder, changes = 0, hooks = [];
 const legacy = new Map();
 const fakeFetch = async (url) => (legacy.has(url) ? new Response(legacy.get(url)) : new Response('missing', { status: 404 }));
 const make = (overrides = {}) => createCms({ pool, token: TOKEN, sources, legacyMediaOrigin: 'https://old-cms.example.test',
@@ -41,36 +40,22 @@ const put = (url, body, headers = auth) => call(app, 'PUT', url, { headers, body
 const post = (url, body, headers = auth) => call(app, 'POST', url, { headers, body });
 
 before(async () => {
-  let url = process.env.TEST_DATABASE_URL;
-  if (!url) {
-    const { PGlite } = await import('@electric-sql/pglite');
-    const { PGLiteSocketServer } = await import('@electric-sql/pglite-socket');
-    folder = fs.mkdtempSync(path.join(os.tmpdir(), 'km-cms-test-'));
-    db = await PGlite.create(folder);
-    const port = 55000 + Math.floor(Math.random() * 900);
-    server = new PGLiteSocketServer({ db, host: '127.0.0.1', port });
-    await server.start();
-    url = `postgresql://postgres:postgres@127.0.0.1:${port}/postgres?sslmode=disable`;
-  }
-  // PGlite serves one connection at a time.
-  pool = new pg.Pool({ connectionString: url, max: process.env.TEST_DATABASE_URL ? 5 : 1 });
-  await pool.query('DROP TABLE IF EXISTS cms_documents, cms_audit, cms_media');
+  folder = fs.mkdtempSync(path.join(os.tmpdir(), 'km-cms-test-'));
+  pool = openSqlite(path.join(folder, 'cms.sqlite'));
   // A media row left by the former API (file on its disk, no bytes in the database) and a post using it.
   const old = await sharp({ create: { width: 8, height: 6, channels: 3, background: 'red' } }).jpeg().toBuffer();
   const oldId = crypto.createHash('sha256').update(old).digest('hex');
   legacy.set(`https://old-cms.example.test/media/${oldId}.jpg`, old);
   await pool.query(SCHEMA);
-  await pool.query("INSERT INTO cms_media (id,name,alt,width,height,size,created_at) VALUES ($1,'old.jpg','',8,6,$2,now())", [oldId, old.length]);
+  await pool.query("INSERT INTO cms_media (id,name,alt,width,height,size,created_at) VALUES ($1,'old.jpg','',8,6,$2,'2026-01-01T00:00:00.000Z')", [oldId, old.length]);
   const content = { title: 'Legacy image post', slug: 'legacy-image-post', language: 'en', image: `https://old-cms.example.test/media/${oldId}.jpg`, bodyHtml: '<p>x</p>' };
   await pool.query(`INSERT INTO cms_documents (kind,id,revision,draft,published,published_revision,published_slug,published_locale,updated_at)
-    VALUES ('posts','legacy-image',1,$1,$1,1,'legacy-image-post','en',now())`, [JSON.stringify(content)]);
+    VALUES ('posts','legacy-image',1,$1,$1,1,'legacy-image-post','en','2026-01-01T00:00:00.000Z')`, [JSON.stringify(content)]);
   hooks.oldId = oldId;
   app = make();
 });
 after(async () => {
   await pool?.end();
-  await server?.stop();
-  await db?.close();
   if (folder) fs.rmSync(folder, { recursive: true, force: true });
 });
 
