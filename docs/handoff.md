@@ -21,7 +21,7 @@ built here. The forms are layout only and do not submit anything.
 - **Donation**: layout only. Share buttons point to the new site's Donate page.
 - **Center license numbers and photos**: not published on either site.
 - **Privacy / Terms pages**: `/privacy-policy/` and `/terms-of-use/` (all 3 languages) carry over the old kaiming.org text (last updated July 28, 2020); Privacy.aspx and Terms.aspx redirect to them, and the footer copyright line links to both. The text does not yet cover the enrollment forms, donations or the CMS and needs review by Kai Ming before launch. Source text: `content/legal/*.html`; rebuild with `npm run legal:build`; zh-Hant/es strings are in `content/i18n/site.json` (the translations say the English version applies).
-- **Old enrollment URL**: `Enrollment.aspx` redirects to `/how-to-enroll/` once kaiming.org points to Vercel. The "Apply" links currently use `https://www.kaiming.org/Enrollment.aspx?lang=`, so move the application to its new home before the domain switch.
+- **Old enrollment URL**: `Enrollment.aspx` redirects to `/how-to-enroll/` once kaiming.org points to the new site. The "Apply" links currently use `https://www.kaiming.org/Enrollment.aspx?lang=`, so move the application to its new home before the domain switch.
 
 ## Launch switches (environment variables)
 
@@ -29,9 +29,10 @@ built here. The forms are layout only and do not submit anything.
 | --- | --- | --- |
 | `SITE_URL` | `https://kai-ming-new-website.vercel.app` | `https://www.kaiming.org` (canonical, hreflang, sitemap, share links) |
 | `SITE_INDEXABLE` | not set → `robots.txt` blocks all, pages are `noindex` | `true` → allow indexing, block `/admin/` and `/styleguide/` |
-| `NEXT_PUBLIC_CMS_API_URL` | Railway CMS API | production CMS API |
+| `CMS_DATABASE_PATH` | `/data/cms.sqlite` (Railway volume) | same, on the production service volume |
+| `CMS_DEV_TOKEN` / `CMS_ENV` | shared development token / `development` | replace with company sign-in |
 
-## Redirects (`vercel.json`)
+## Redirects (`redirects.json`, applied by `next.config.mjs`)
 
 - English lives at the root (no `/en` prefix, like Wix). `/en` and `/en/:path*` redirect permanently (308) to the same page without the prefix. This differs from the pilot `CLAUDE.md` (`/en/…` with `/` → `/en`); it was a product decision on 2026-10-26.
 - Old kaiming.org pages (`Default.aspx`, `About.aspx`, `People.aspx`, `Centers.aspx`, `CenterDetail.aspx?Cid=1…9`, `Preschool.aspx`, `IT.aspx`, `HomeBased.aspx`, `Curriculum.aspx`, `Enrollment.aspx?lang=…`, `Careers.aspx`, `Volunteer.aspx`, `DonateMain.aspx`, …) → new pages, permanent. The old site switched language by postback, so only Enrollment has language-specific targets.

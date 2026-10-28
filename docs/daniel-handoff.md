@@ -1,6 +1,8 @@
 # Kai Ming website: deployment handoff
 
-Status recorded: 2026-10-16. This is a development deployment, not a production launch approval.
+Status recorded: 2026-10-16, architecture updated 2026-10-27. This is a development deployment, not a production launch approval.
+
+> **2026-10-28:** the FastAPI service was replaced by API routes inside the Next.js app (`/api/cms`, `lib/cms-server/`), and PostgreSQL by a SQLite file. The whole site (pages, editor, API, images) now runs as one Railway service with the database on a Railway volume; Vercel and Railway Postgres are no longer needed. Same endpoints and rules. See `docs/cms-database.md`. Sections below that mention FastAPI, `NEXT_PUBLIC_CMS_API_URL`, `backend/Dockerfile` or the media volume are historical.
 
 ## Source and preview
 
@@ -50,13 +52,10 @@ The current standalone shared bearer token grants all editorial permissions and 
 
 | Variable | Current development usage | Production requirement |
 | --- | --- | --- |
-| `NEXT_PUBLIC_CMS_API_URL` | Public Railway HTTPS API origin, Vercel preview branch only | Public company API origin; never credentials |
-| `DATABASE_URL` | Private Railway Postgres references with `postgresql+psycopg://` scheme | Cloud SQL connection, supplied privately by Secret Manager/runtime configuration |
+| `CMS_DATABASE_PATH` | `/data/cms.sqlite` on the Railway volume | Same, on the production volume; back up the file |
 | `CMS_ENV` | `development` | Production support must first be implemented with company authentication |
-| `CMS_DEV_TOKEN` | Development credential in Railway only | Remove from production authentication flow |
-| `CMS_ALLOWED_ORIGINS` | Exact preview origin | Exact approved website/CMS origins |
-| `PORT` | Railway runtime port | Cloud Run runtime port |
-| `RAILWAY_DOCKERFILE_PATH` | `backend/Dockerfile`, repository root build context | Not needed on Cloud Run; build the same Dockerfile with repository root context |
+| `CMS_DEV_TOKEN` | Development credential on the Railway service (server only) | Remove from production authentication flow |
+| `CMS_ALLOWED_ORIGINS` | Not needed (same origin) | Only if another origin calls the API |
 
 Never copy credentials into Git, frontend bundles, screenshots or this handoff. Transfer secrets through an approved secret manager. Existing content is imported only when absent; restarting does not overwrite editorial data.
 

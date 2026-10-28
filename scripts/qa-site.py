@@ -1,4 +1,4 @@
-# Site-wide QA: serve the static build on :3100 (python3 -m http.server 3100 -d out), then run this.
+# Site-wide QA: run the production server on :3100 (npm run build && npx next start -p 3100), then run this.
 # Checks status, horizontal overflow, broken images, alt text, accessible names, labels,
 # duplicate ids, html lang, one main heading, console errors, keyboard focus and internal links.
 import json, os, re, sys, urllib.request
@@ -12,7 +12,7 @@ for loc in ['en','zh','es']:
         k=r['key']; s=r.get('slug') or k
         pre='' if loc=='en' else f'/{loc}'
         paths.append(f'{pre}/' if k=='home' else f'{pre}/{s}/')
-    for st in ['test-post','kron4']: paths.append(('' if loc=='en' else f'/{loc}')+f'/stories/{st}/')
+    for st in ['quality-early-childhood-education-matters-kai-ming-on-kron4']: paths.append(('' if loc=='en' else f'/{loc}')+f'/stories/{st}/')
 issues=[]; links=set(); people=set()
 def add(p,vp,kind,detail): issues.append({'path':p,'viewport':vp,'kind':kind,'detail':detail})
 with sync_playwright() as pw:

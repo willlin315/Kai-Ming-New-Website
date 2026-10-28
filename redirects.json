@@ -1,0 +1,1005 @@
+[
+  {
+    "source": "/CenterDetail.aspx",
+    "has": [
+      {
+        "type": "query",
+        "key": "Cid",
+        "value": "1"
+      }
+    ],
+    "destination": "/dr-tkl-center/",
+    "permanent": true
+  },
+  {
+    "source": "/centerdetail.aspx",
+    "has": [
+      {
+        "type": "query",
+        "key": "Cid",
+        "value": "1"
+      }
+    ],
+    "destination": "/dr-tkl-center/",
+    "permanent": true
+  },
+  {
+    "source": "/CenterDetail.aspx",
+    "has": [
+      {
+        "type": "query",
+        "key": "Cid",
+        "value": "2"
+      }
+    ],
+    "destination": "/broadway-center/",
+    "permanent": true
+  },
+  {
+    "source": "/centerdetail.aspx",
+    "has": [
+      {
+        "type": "query",
+        "key": "Cid",
+        "value": "2"
+      }
+    ],
+    "destination": "/broadway-center/",
+    "permanent": true
+  },
+  {
+    "source": "/CenterDetail.aspx",
+    "has": [
+      {
+        "type": "query",
+        "key": "Cid",
+        "value": "3"
+      }
+    ],
+    "destination": "/geary-center/",
+    "permanent": true
+  },
+  {
+    "source": "/centerdetail.aspx",
+    "has": [
+      {
+        "type": "query",
+        "key": "Cid",
+        "value": "3"
+      }
+    ],
+    "destination": "/geary-center/",
+    "permanent": true
+  },
+  {
+    "source": "/CenterDetail.aspx",
+    "has": [
+      {
+        "type": "query",
+        "key": "Cid",
+        "value": "4"
+      }
+    ],
+    "destination": "/north-beach-center/",
+    "permanent": true
+  },
+  {
+    "source": "/centerdetail.aspx",
+    "has": [
+      {
+        "type": "query",
+        "key": "Cid",
+        "value": "4"
+      }
+    ],
+    "destination": "/north-beach-center/",
+    "permanent": true
+  },
+  {
+    "source": "/CenterDetail.aspx",
+    "has": [
+      {
+        "type": "query",
+        "key": "Cid",
+        "value": "5"
+      }
+    ],
+    "destination": "/richmond-center/",
+    "permanent": true
+  },
+  {
+    "source": "/centerdetail.aspx",
+    "has": [
+      {
+        "type": "query",
+        "key": "Cid",
+        "value": "5"
+      }
+    ],
+    "destination": "/richmond-center/",
+    "permanent": true
+  },
+  {
+    "source": "/CenterDetail.aspx",
+    "has": [
+      {
+        "type": "query",
+        "key": "Cid",
+        "value": "6"
+      }
+    ],
+    "destination": "/sunset-center/",
+    "permanent": true
+  },
+  {
+    "source": "/centerdetail.aspx",
+    "has": [
+      {
+        "type": "query",
+        "key": "Cid",
+        "value": "6"
+      }
+    ],
+    "destination": "/sunset-center/",
+    "permanent": true
+  },
+  {
+    "source": "/CenterDetail.aspx",
+    "has": [
+      {
+        "type": "query",
+        "key": "Cid",
+        "value": "7"
+      }
+    ],
+    "destination": "/st-lukes-center/",
+    "permanent": true
+  },
+  {
+    "source": "/centerdetail.aspx",
+    "has": [
+      {
+        "type": "query",
+        "key": "Cid",
+        "value": "7"
+      }
+    ],
+    "destination": "/st-lukes-center/",
+    "permanent": true
+  },
+  {
+    "source": "/CenterDetail.aspx",
+    "has": [
+      {
+        "type": "query",
+        "key": "Cid",
+        "value": "8"
+      }
+    ],
+    "destination": "/rainbow-center/",
+    "permanent": true
+  },
+  {
+    "source": "/centerdetail.aspx",
+    "has": [
+      {
+        "type": "query",
+        "key": "Cid",
+        "value": "8"
+      }
+    ],
+    "destination": "/rainbow-center/",
+    "permanent": true
+  },
+  {
+    "source": "/CenterDetail.aspx",
+    "has": [
+      {
+        "type": "query",
+        "key": "Cid",
+        "value": "9"
+      }
+    ],
+    "destination": "/pmsquare-childrens-center/",
+    "permanent": true
+  },
+  {
+    "source": "/centerdetail.aspx",
+    "has": [
+      {
+        "type": "query",
+        "key": "Cid",
+        "value": "9"
+      }
+    ],
+    "destination": "/pmsquare-childrens-center/",
+    "permanent": true
+  },
+  {
+    "source": "/CenterDetail.aspx",
+    "destination": "/our-centers/",
+    "permanent": true
+  },
+  {
+    "source": "/centerdetail.aspx",
+    "destination": "/our-centers/",
+    "permanent": true
+  },
+  {
+    "source": "/Enrollment.aspx",
+    "has": [
+      {
+        "type": "query",
+        "key": "lang",
+        "value": "Chinese"
+      }
+    ],
+    "destination": "/zh/how-to-enroll/",
+    "permanent": true
+  },
+  {
+    "source": "/enrollment.aspx",
+    "has": [
+      {
+        "type": "query",
+        "key": "lang",
+        "value": "Chinese"
+      }
+    ],
+    "destination": "/zh/how-to-enroll/",
+    "permanent": true
+  },
+  {
+    "source": "/Enrollment.aspx",
+    "has": [
+      {
+        "type": "query",
+        "key": "lang",
+        "value": "Spanish"
+      }
+    ],
+    "destination": "/es/how-to-enroll/",
+    "permanent": true
+  },
+  {
+    "source": "/enrollment.aspx",
+    "has": [
+      {
+        "type": "query",
+        "key": "lang",
+        "value": "Spanish"
+      }
+    ],
+    "destination": "/es/how-to-enroll/",
+    "permanent": true
+  },
+  {
+    "source": "/Enrollment.aspx",
+    "has": [
+      {
+        "type": "query",
+        "key": "lang",
+        "value": "English"
+      }
+    ],
+    "destination": "/how-to-enroll/",
+    "permanent": true
+  },
+  {
+    "source": "/enrollment.aspx",
+    "has": [
+      {
+        "type": "query",
+        "key": "lang",
+        "value": "English"
+      }
+    ],
+    "destination": "/how-to-enroll/",
+    "permanent": true
+  },
+  {
+    "source": "/Enrollment.aspx",
+    "destination": "/how-to-enroll/",
+    "permanent": true
+  },
+  {
+    "source": "/enrollment.aspx",
+    "destination": "/how-to-enroll/",
+    "permanent": true
+  },
+  {
+    "source": "/Default.aspx",
+    "destination": "/",
+    "permanent": true
+  },
+  {
+    "source": "/default.aspx",
+    "destination": "/",
+    "permanent": true
+  },
+  {
+    "source": "/About.aspx",
+    "destination": "/our-story/",
+    "permanent": true
+  },
+  {
+    "source": "/about.aspx",
+    "destination": "/our-story/",
+    "permanent": true
+  },
+  {
+    "source": "/People.aspx",
+    "destination": "/our-people/",
+    "permanent": true
+  },
+  {
+    "source": "/people.aspx",
+    "destination": "/our-people/",
+    "permanent": true
+  },
+  {
+    "source": "/Centers.aspx",
+    "destination": "/our-centers/",
+    "permanent": true
+  },
+  {
+    "source": "/centers.aspx",
+    "destination": "/our-centers/",
+    "permanent": true
+  },
+  {
+    "source": "/Preschool.aspx",
+    "destination": "/preschool/",
+    "permanent": true
+  },
+  {
+    "source": "/preschool.aspx",
+    "destination": "/preschool/",
+    "permanent": true
+  },
+  {
+    "source": "/IT.aspx",
+    "destination": "/infantandtoddler/",
+    "permanent": true
+  },
+  {
+    "source": "/it.aspx",
+    "destination": "/infantandtoddler/",
+    "permanent": true
+  },
+  {
+    "source": "/HomeBased.aspx",
+    "destination": "/prenatalandhomebased/",
+    "permanent": true
+  },
+  {
+    "source": "/homebased.aspx",
+    "destination": "/prenatalandhomebased/",
+    "permanent": true
+  },
+  {
+    "source": "/Curriculum.aspx",
+    "destination": "/learningapproach/",
+    "permanent": true
+  },
+  {
+    "source": "/curriculum.aspx",
+    "destination": "/learningapproach/",
+    "permanent": true
+  },
+  {
+    "source": "/Careers.aspx",
+    "destination": "/careers/",
+    "permanent": true
+  },
+  {
+    "source": "/careers.aspx",
+    "destination": "/careers/",
+    "permanent": true
+  },
+  {
+    "source": "/Volunteer.aspx",
+    "destination": "/volunteer/",
+    "permanent": true
+  },
+  {
+    "source": "/volunteer.aspx",
+    "destination": "/volunteer/",
+    "permanent": true
+  },
+  {
+    "source": "/DonateMain.aspx",
+    "destination": "/donate/",
+    "permanent": true
+  },
+  {
+    "source": "/donatemain.aspx",
+    "destination": "/donate/",
+    "permanent": true
+  },
+  {
+    "source": "/Contact.aspx",
+    "destination": "/",
+    "permanent": true
+  },
+  {
+    "source": "/contact.aspx",
+    "destination": "/",
+    "permanent": true
+  },
+  {
+    "source": "/Projects.aspx",
+    "destination": "/",
+    "permanent": true
+  },
+  {
+    "source": "/projects.aspx",
+    "destination": "/",
+    "permanent": true
+  },
+  {
+    "source": "/AlumniHub.aspx",
+    "destination": "/",
+    "permanent": true
+  },
+  {
+    "source": "/alumnihub.aspx",
+    "destination": "/",
+    "permanent": true
+  },
+  {
+    "source": "/Privacy.aspx",
+    "destination": "/privacy-policy/",
+    "permanent": true
+  },
+  {
+    "source": "/privacy.aspx",
+    "destination": "/privacy-policy/",
+    "permanent": true
+  },
+  {
+    "source": "/Terms.aspx",
+    "destination": "/terms-of-use/",
+    "permanent": true
+  },
+  {
+    "source": "/terms.aspx",
+    "destination": "/terms-of-use/",
+    "permanent": true
+  },
+  {
+    "source": "/our-mission-1",
+    "destination": "/our-mission/",
+    "permanent": true
+  },
+  {
+    "source": "/our-mission-1/",
+    "destination": "/our-mission/",
+    "permanent": true
+  },
+  {
+    "source": "/en/our-mission-1",
+    "destination": "/our-mission/",
+    "permanent": true
+  },
+  {
+    "source": "/en/our-mission-1/",
+    "destination": "/our-mission/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/our-mission-1",
+    "destination": "/zh/our-mission/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/our-mission-1/",
+    "destination": "/zh/our-mission/",
+    "permanent": true
+  },
+  {
+    "source": "/es/our-mission-1",
+    "destination": "/es/our-mission/",
+    "permanent": true
+  },
+  {
+    "source": "/es/our-mission-1/",
+    "destination": "/es/our-mission/",
+    "permanent": true
+  },
+  {
+    "source": "/copy-of-family-support",
+    "destination": "/our-centers/",
+    "permanent": true
+  },
+  {
+    "source": "/copy-of-family-support/",
+    "destination": "/our-centers/",
+    "permanent": true
+  },
+  {
+    "source": "/en/copy-of-family-support",
+    "destination": "/our-centers/",
+    "permanent": true
+  },
+  {
+    "source": "/en/copy-of-family-support/",
+    "destination": "/our-centers/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/copy-of-family-support",
+    "destination": "/zh/our-centers/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/copy-of-family-support/",
+    "destination": "/zh/our-centers/",
+    "permanent": true
+  },
+  {
+    "source": "/es/copy-of-family-support",
+    "destination": "/es/our-centers/",
+    "permanent": true
+  },
+  {
+    "source": "/es/copy-of-family-support/",
+    "destination": "/es/our-centers/",
+    "permanent": true
+  },
+  {
+    "source": "/copy-of-broadway-center-1",
+    "destination": "/geary-center/",
+    "permanent": true
+  },
+  {
+    "source": "/copy-of-broadway-center-1/",
+    "destination": "/geary-center/",
+    "permanent": true
+  },
+  {
+    "source": "/en/copy-of-broadway-center-1",
+    "destination": "/geary-center/",
+    "permanent": true
+  },
+  {
+    "source": "/en/copy-of-broadway-center-1/",
+    "destination": "/geary-center/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/copy-of-broadway-center-1",
+    "destination": "/zh/geary-center/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/copy-of-broadway-center-1/",
+    "destination": "/zh/geary-center/",
+    "permanent": true
+  },
+  {
+    "source": "/es/copy-of-broadway-center-1",
+    "destination": "/es/geary-center/",
+    "permanent": true
+  },
+  {
+    "source": "/es/copy-of-broadway-center-1/",
+    "destination": "/es/geary-center/",
+    "permanent": true
+  },
+  {
+    "source": "/copy-of-learning-approach-1",
+    "destination": "/broadway-center/",
+    "permanent": true
+  },
+  {
+    "source": "/copy-of-learning-approach-1/",
+    "destination": "/broadway-center/",
+    "permanent": true
+  },
+  {
+    "source": "/en/copy-of-learning-approach-1",
+    "destination": "/broadway-center/",
+    "permanent": true
+  },
+  {
+    "source": "/en/copy-of-learning-approach-1/",
+    "destination": "/broadway-center/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/copy-of-learning-approach-1",
+    "destination": "/zh/broadway-center/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/copy-of-learning-approach-1/",
+    "destination": "/zh/broadway-center/",
+    "permanent": true
+  },
+  {
+    "source": "/es/copy-of-learning-approach-1",
+    "destination": "/es/broadway-center/",
+    "permanent": true
+  },
+  {
+    "source": "/es/copy-of-learning-approach-1/",
+    "destination": "/es/broadway-center/",
+    "permanent": true
+  },
+  {
+    "source": "/copy-of-broadway-center-2",
+    "destination": "/north-beach-center/",
+    "permanent": true
+  },
+  {
+    "source": "/copy-of-broadway-center-2/",
+    "destination": "/north-beach-center/",
+    "permanent": true
+  },
+  {
+    "source": "/en/copy-of-broadway-center-2",
+    "destination": "/north-beach-center/",
+    "permanent": true
+  },
+  {
+    "source": "/en/copy-of-broadway-center-2/",
+    "destination": "/north-beach-center/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/copy-of-broadway-center-2",
+    "destination": "/zh/north-beach-center/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/copy-of-broadway-center-2/",
+    "destination": "/zh/north-beach-center/",
+    "permanent": true
+  },
+  {
+    "source": "/es/copy-of-broadway-center-2",
+    "destination": "/es/north-beach-center/",
+    "permanent": true
+  },
+  {
+    "source": "/es/copy-of-broadway-center-2/",
+    "destination": "/es/north-beach-center/",
+    "permanent": true
+  },
+  {
+    "source": "/copy-of-north-beach-center",
+    "destination": "/pmsquare-childrens-center/",
+    "permanent": true
+  },
+  {
+    "source": "/copy-of-north-beach-center/",
+    "destination": "/pmsquare-childrens-center/",
+    "permanent": true
+  },
+  {
+    "source": "/en/copy-of-north-beach-center",
+    "destination": "/pmsquare-childrens-center/",
+    "permanent": true
+  },
+  {
+    "source": "/en/copy-of-north-beach-center/",
+    "destination": "/pmsquare-childrens-center/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/copy-of-north-beach-center",
+    "destination": "/zh/pmsquare-childrens-center/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/copy-of-north-beach-center/",
+    "destination": "/zh/pmsquare-childrens-center/",
+    "permanent": true
+  },
+  {
+    "source": "/es/copy-of-north-beach-center",
+    "destination": "/es/pmsquare-childrens-center/",
+    "permanent": true
+  },
+  {
+    "source": "/es/copy-of-north-beach-center/",
+    "destination": "/es/pmsquare-childrens-center/",
+    "permanent": true
+  },
+  {
+    "source": "/copy-of-broadway-center",
+    "destination": "/dr-tkl-center/",
+    "permanent": true
+  },
+  {
+    "source": "/copy-of-broadway-center/",
+    "destination": "/dr-tkl-center/",
+    "permanent": true
+  },
+  {
+    "source": "/en/copy-of-broadway-center",
+    "destination": "/dr-tkl-center/",
+    "permanent": true
+  },
+  {
+    "source": "/en/copy-of-broadway-center/",
+    "destination": "/dr-tkl-center/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/copy-of-broadway-center",
+    "destination": "/zh/dr-tkl-center/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/copy-of-broadway-center/",
+    "destination": "/zh/dr-tkl-center/",
+    "permanent": true
+  },
+  {
+    "source": "/es/copy-of-broadway-center",
+    "destination": "/es/dr-tkl-center/",
+    "permanent": true
+  },
+  {
+    "source": "/es/copy-of-broadway-center/",
+    "destination": "/es/dr-tkl-center/",
+    "permanent": true
+  },
+  {
+    "source": "/copy-of-rainbow-center-2",
+    "destination": "/sunset-center/",
+    "permanent": true
+  },
+  {
+    "source": "/copy-of-rainbow-center-2/",
+    "destination": "/sunset-center/",
+    "permanent": true
+  },
+  {
+    "source": "/en/copy-of-rainbow-center-2",
+    "destination": "/sunset-center/",
+    "permanent": true
+  },
+  {
+    "source": "/en/copy-of-rainbow-center-2/",
+    "destination": "/sunset-center/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/copy-of-rainbow-center-2",
+    "destination": "/zh/sunset-center/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/copy-of-rainbow-center-2/",
+    "destination": "/zh/sunset-center/",
+    "permanent": true
+  },
+  {
+    "source": "/es/copy-of-rainbow-center-2",
+    "destination": "/es/sunset-center/",
+    "permanent": true
+  },
+  {
+    "source": "/es/copy-of-rainbow-center-2/",
+    "destination": "/es/sunset-center/",
+    "permanent": true
+  },
+  {
+    "source": "/copy-of-rainbow-center-1",
+    "destination": "/st-lukes-center/",
+    "permanent": true
+  },
+  {
+    "source": "/copy-of-rainbow-center-1/",
+    "destination": "/st-lukes-center/",
+    "permanent": true
+  },
+  {
+    "source": "/en/copy-of-rainbow-center-1",
+    "destination": "/st-lukes-center/",
+    "permanent": true
+  },
+  {
+    "source": "/en/copy-of-rainbow-center-1/",
+    "destination": "/st-lukes-center/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/copy-of-rainbow-center-1",
+    "destination": "/zh/st-lukes-center/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/copy-of-rainbow-center-1/",
+    "destination": "/zh/st-lukes-center/",
+    "permanent": true
+  },
+  {
+    "source": "/es/copy-of-rainbow-center-1",
+    "destination": "/es/st-lukes-center/",
+    "permanent": true
+  },
+  {
+    "source": "/es/copy-of-rainbow-center-1/",
+    "destination": "/es/st-lukes-center/",
+    "permanent": true
+  },
+  {
+    "source": "/copy-of-rainbow-center",
+    "destination": "/richmond-center/",
+    "permanent": true
+  },
+  {
+    "source": "/copy-of-rainbow-center/",
+    "destination": "/richmond-center/",
+    "permanent": true
+  },
+  {
+    "source": "/en/copy-of-rainbow-center",
+    "destination": "/richmond-center/",
+    "permanent": true
+  },
+  {
+    "source": "/en/copy-of-rainbow-center/",
+    "destination": "/richmond-center/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/copy-of-rainbow-center",
+    "destination": "/zh/richmond-center/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/copy-of-rainbow-center/",
+    "destination": "/zh/richmond-center/",
+    "permanent": true
+  },
+  {
+    "source": "/es/copy-of-rainbow-center",
+    "destination": "/es/richmond-center/",
+    "permanent": true
+  },
+  {
+    "source": "/es/copy-of-rainbow-center/",
+    "destination": "/es/richmond-center/",
+    "permanent": true
+  },
+  {
+    "source": "/copy-of-pmsquare-children-s-center",
+    "destination": "/rainbow-center/",
+    "permanent": true
+  },
+  {
+    "source": "/copy-of-pmsquare-children-s-center/",
+    "destination": "/rainbow-center/",
+    "permanent": true
+  },
+  {
+    "source": "/en/copy-of-pmsquare-children-s-center",
+    "destination": "/rainbow-center/",
+    "permanent": true
+  },
+  {
+    "source": "/en/copy-of-pmsquare-children-s-center/",
+    "destination": "/rainbow-center/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/copy-of-pmsquare-children-s-center",
+    "destination": "/zh/rainbow-center/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/copy-of-pmsquare-children-s-center/",
+    "destination": "/zh/rainbow-center/",
+    "permanent": true
+  },
+  {
+    "source": "/es/copy-of-pmsquare-children-s-center",
+    "destination": "/es/rainbow-center/",
+    "permanent": true
+  },
+  {
+    "source": "/es/copy-of-pmsquare-children-s-center/",
+    "destination": "/es/rainbow-center/",
+    "permanent": true
+  },
+  {
+    "source": "/copy-of-our-story-2",
+    "destination": "/careers/",
+    "permanent": true
+  },
+  {
+    "source": "/copy-of-our-story-2/",
+    "destination": "/careers/",
+    "permanent": true
+  },
+  {
+    "source": "/en/copy-of-our-story-2",
+    "destination": "/careers/",
+    "permanent": true
+  },
+  {
+    "source": "/en/copy-of-our-story-2/",
+    "destination": "/careers/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/copy-of-our-story-2",
+    "destination": "/zh/careers/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/copy-of-our-story-2/",
+    "destination": "/zh/careers/",
+    "permanent": true
+  },
+  {
+    "source": "/es/copy-of-our-story-2",
+    "destination": "/es/careers/",
+    "permanent": true
+  },
+  {
+    "source": "/es/copy-of-our-story-2/",
+    "destination": "/es/careers/",
+    "permanent": true
+  },
+  {
+    "source": "/copy-of-careers",
+    "destination": "/volunteer/",
+    "permanent": true
+  },
+  {
+    "source": "/copy-of-careers/",
+    "destination": "/volunteer/",
+    "permanent": true
+  },
+  {
+    "source": "/en/copy-of-careers",
+    "destination": "/volunteer/",
+    "permanent": true
+  },
+  {
+    "source": "/en/copy-of-careers/",
+    "destination": "/volunteer/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/copy-of-careers",
+    "destination": "/zh/volunteer/",
+    "permanent": true
+  },
+  {
+    "source": "/zh/copy-of-careers/",
+    "destination": "/zh/volunteer/",
+    "permanent": true
+  },
+  {
+    "source": "/es/copy-of-careers",
+    "destination": "/es/volunteer/",
+    "permanent": true
+  },
+  {
+    "source": "/es/copy-of-careers/",
+    "destination": "/es/volunteer/",
+    "permanent": true
+  },
+  {
+    "source": "/en",
+    "destination": "/",
+    "permanent": true
+  },
+  {
+    "source": "/en/",
+    "destination": "/",
+    "permanent": true
+  },
+  {
+    "source": "/en/:path(.*)",
+    "destination": "/:path",
+    "permanent": true
+  }
+]
