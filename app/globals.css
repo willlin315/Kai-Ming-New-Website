@@ -284,10 +284,21 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
   .km-responsive form .AOdmvk:not(.Kwoozo) { grid-template-columns:minmax(0,1fr)!important; }
 }
 /* Center pages: space between the two staff cards and above/below the row (desktop; mobile already stacks with a gap). */
-@media (min-width:1001px){.km-responsive[data-page$="-center"] fluid-columns-repeater{column-gap:32px;row-gap:32px;padding:48px 0}}
+/* Center pages: staff cards get equal white space above and below at every width, whatever the card text length (CMS-editable). */
+.km-responsive[data-page$="-center"]{--km-staff-gap:56px}
+@media (max-width:1000px){.km-responsive[data-page$="-center"]{--km-staff-gap:40px}.km-responsive[data-page$="-center"] section.wixui-section:has(fluid-columns-repeater){padding-bottom:0!important}.km-responsive[data-page$="-center"] [data-mesh-id$="inlineContent-gridContainer"]:has(> div > fluid-columns-repeater,> div > div > fluid-columns-repeater){row-gap:0!important}}
+.km-responsive[data-page$="-center"] [data-mesh-id$="inlineContent-wedge-4"]{height:0!important}
+.km-responsive[data-page$="-center"] section.wixui-section:has(fluid-columns-repeater){margin-bottom:0!important}
+.km-responsive[data-page$="-center"] section.wixui-section:has(fluid-columns-repeater) section{margin-bottom:0!important}
+.km-responsive[data-page$="-center"] .wixui-repeater:has(fluid-columns-repeater){margin:0!important;height:auto!important;min-height:0!important}
+.km-responsive[data-page$="-center"] div:has(> fluid-columns-repeater){margin:0!important;padding:0!important;top:auto!important;height:auto!important}
+.km-responsive[data-page$="-center"] fluid-columns-repeater{height:auto!important;margin:0!important;padding:var(--km-staff-gap) 0!important}
+@media (min-width:1001px){.km-responsive[data-page$="-center"] fluid-columns-repeater{column-gap:32px;row-gap:32px}}
+/* Mobile: the next section already sits 20px below (stack gap), so trim that from the bottom padding. */
+@media (max-width:1000px){.km-responsive[data-page$="-center"] fluid-columns-repeater{padding-bottom:calc(var(--km-staff-gap) - 20px)!important}}
 /* Titles and headings in hand-built sections use the heading font (Comfortaa); body text stays Arial. */
 .km-published-article :is(h1,h2,h3,h4),.km-people-directory :is(h1,h2,h3,h4){font-family:var(--font-heading)}
-@media (max-width:1000px){.km-responsive[data-page$="-center"] div:has(> fluid-columns-repeater){margin:0!important;padding:0!important;width:100%!important;left:auto!important}.km-responsive[data-page$="-center"] fluid-columns-repeater{margin:0!important;padding:24px 0!important;row-gap:28px!important;column-gap:24px!important}}
+@media (max-width:1000px){.km-responsive[data-page$="-center"] div:has(> fluid-columns-repeater){margin:0!important;padding:0!important;width:100%!important;left:auto!important}.km-responsive[data-page$="-center"] fluid-columns-repeater{row-gap:28px!important;column-gap:24px!important}}
 /* Buttons: keep every label centered in its button at all widths. */
 .km-responsive a[class*="StylableButton"][class*="__root"],.km-responsive button[class*="StylableButton"][class*="__root"]{display:flex!important;align-items:center!important;justify-content:center!important}
 .km-responsive [class*="StylableButton"][class*="__container"]{width:100%;height:100%;align-items:center;justify-content:center}
@@ -325,3 +336,7 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
 .km-footer-legal a{color:inherit;text-decoration:underline;text-underline-offset:2px}
 .km-footer-legal a:hover{text-decoration-thickness:2px}
 .km-footer-legal a:focus-visible{outline:2px solid currentColor;outline-offset:2px}
+
+/* CTA buttons: same colors as the header "Apply Now" (primary blue, white label); hover keeps each button's existing hover. */
+.km-responsive :is(a,button)[class*="StylableButton"][class*="__root"]:not(:hover):not(:disabled){background:var(--primary)!important}
+.km-responsive :is(a,button)[class*="StylableButton"][class*="__root"]:not(:disabled) [class*="StylableButton"][class*="__label"]{color:#fff!important}
