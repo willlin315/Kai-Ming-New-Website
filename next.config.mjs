@@ -10,6 +10,11 @@ export default {
   images: { unoptimized: true },
   // Native SQLite driver: load it from node_modules at runtime instead of bundling it.
   serverExternalPackages: ['better-sqlite3'],
+  // Railway builds at start-up inside the running container; many parallel
+  // workers exceed its memory. NEXT_BUILD_CPUS limits them (default: Next.js).
+  ...(process.env.NEXT_BUILD_CPUS
+    ? { experimental: { cpus: Number(process.env.NEXT_BUILD_CPUS), workerThreads: false } }
+    : {}),
   async redirects() {
     return legacyRedirects;
   },
