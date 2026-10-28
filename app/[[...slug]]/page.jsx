@@ -1,9 +1,12 @@
 import { notFound } from 'next/navigation';
 import PageView from '../../components/PageView';
 import { getMetadata, pageRoutes } from '../../lib/content';
+import { renderOnDemand } from '../../lib/render-mode';
 import { loadPage } from '../../lib/page-data';
-export const dynamicParams = false;
+// Unknown paths fall through to loadPage(), which returns null -> 404.
+export const dynamicParams = true;
 export function generateStaticParams() {
+  if (renderOnDemand()) return [];
   return pageRoutes.map(({ key, slug }) => ({ slug: key === 'home' ? [] : [slug || key] }));
 }
 export async function generateMetadata({ params }) {

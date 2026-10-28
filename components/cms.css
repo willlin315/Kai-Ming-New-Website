@@ -8,3 +8,4 @@
 
 .km-cms .cms-home-sections{display:flex;flex-direction:column;gap:8px}.km-cms .cms-home-sections button{text-align:left;white-space:normal}.km-cms .cms-home-field{padding:20px 0;border-top:1px solid #d9e2e5}.km-cms .cms-home-field h4{margin:0 0 12px}.km-cms .cms-home-image{display:block;max-width:100%;width:420px;height:230px;object-fit:contain;background:#edf1f3;margin:16px 0}.km-cms .cms-home-field textarea{width:100%;box-sizing:border-box}.km-cms .cms-home-field label{display:flex;flex-direction:column;gap:6px;margin:12px 0}
 .km-cms .cms-warning{display:block;margin:4px 0 0;color:#8a1c1c;font-weight:600}.km-cms p.cms-warning{padding:10px 12px;background:#fdecec;border:1px solid #f3b9b9;border-radius:6px}
+.cms-connection .cms-connection-actions{display:flex;gap:10px;margin:0;font-size:inherit;color:inherit}.cms-connection>p[role=alert]{flex-basis:100%;margin:0;font-size:12px;color:#a32020}

@@ -2,8 +2,8 @@ import {locales} from '../lib/i18n';
 import { pageRoutes, hrefFor } from '../lib/content';
 import { publishedPosts } from '../lib/cms-build';
 import { storyPath } from '../lib/story-page';
-// Regenerated hourly so newly published stories appear.
-export const revalidate = 3600;
+// Built per request from published content (cheap), so new stories appear immediately.
+export const dynamic = 'force-dynamic';
 // Empty until SITE_URL (the public origin) is set for the production build.
 export default async function sitemap() {
   const origin = process.env.SITE_URL;

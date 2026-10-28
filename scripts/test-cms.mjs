@@ -242,3 +242,20 @@ test('missing database or production mode is refused', async () => {
   assert.equal((await call(make({ environment: 'production' }), 'GET', '/admin/content', { headers: auth })).status, 503);
   assert.equal((await call(make({ token: 'short' }), 'GET', '/admin/content', { headers: { Authorization: 'Bearer short' } })).status, 503);
 });
+
+test('backup download is a complete, readable SQLite copy', async () => {
+  assert.equal((await get('/admin/backup')).status, 401);
+  const response = await get('/admin/backup', auth);
+  assert.equal(response.status, 200);
+  assert.match(response.headers.get('content-disposition'), /attachment; filename="kai-ming-cms-\d{4}-\d{2}-\d{2}\.sqlite"/);
+  const file = path.join(folder, 'restored.sqlite');
+  fs.writeFileSync(file, response.data);
+  const copy = openSqlite(file);
+  try {
+    const { rows: [{ count }] } = await copy.query('SELECT count(*) AS count FROM cms_documents');
+    const { rows: [live] } = await pool.query('SELECT count(*) AS count FROM cms_documents');
+    assert.equal(count, live.count);
+    const { rows: [media] } = await copy.query('SELECT count(*) AS count FROM cms_media WHERE data IS NOT NULL');
+    assert.ok(media.count > 0);
+  } finally { await copy.end(); }
+});
