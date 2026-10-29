@@ -401,3 +401,31 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
   .km-responsive[data-page="home"] #comp-muhgx7x7 { order:1; } .km-responsive[data-page="home"] #comp-muhgx7xb { order:2; } .km-responsive[data-page="home"] #comp-muhgx7xa { order:3; }
   .km-responsive[data-page="home"] #comp-muhgx7xa1 { order:4; flex-basis:42%!important; width:42%!important; max-width:260px!important; } .km-responsive[data-page="home"] #comp-muhgx7xc { order:5; }
 }
+/* Footer, 1000px and below: old kaiming.org arrangement. Link groups two per row, contact card
+   with icons beside the text, social icons centered under the card, copyright centered. */
+@media (max-width:1000px) {
+  .km-responsive #SITE_FOOTER #comp-jruhwlv6 > div:has(> .wixui-column-strip__column) { display:grid!important; grid-template-columns:1fr 1fr; column-gap:12px; row-gap:8px; align-items:start; }
+  .km-responsive #SITE_FOOTER #comp-jruhwlv6 .wixui-column-strip__column { width:auto!important; min-width:0!important; margin:0!important; }
+  .km-responsive #SITE_FOOTER #comp-jruhwlv6 > div > :is(#comp-jruhwlwz,#comp-jrum1orj,#comp-jrum1tt9,#comp-munaxp24) [data-testid="mesh-container-content"] { padding-left:4px!important; padding-right:4px!important; }
+  .km-responsive #SITE_FOOTER #comp-jruhwlv6 .wixui-column-strip__column [data-testid="mesh-container-content"] > .wixui-rich-text { width:auto!important; margin-left:0!important; margin-right:0!important; }
+  .km-responsive #SITE_FOOTER :is(#comp-jrum4vie,#comp-jrum2pny,#comp-jrum55j4,#comp-muh6vny6) :is(h2,h3,h4,p,span) { font-size:19px!important; white-space:nowrap; }
+  .km-responsive #SITE_FOOTER #comp-muh6vnyr { width:150px!important; height:116px!important; }
+  .km-responsive #SITE_FOOTER #comp-muh6vnyr :is(div,wow-image,img) { width:100%!important; height:100%!important; object-fit:contain!important; }
+  .km-responsive #SITE_FOOTER #comp-jrum1uyy { grid-column:1 / -1; padding-bottom:84px!important; }
+  .km-responsive #SITE_FOOTER #comp-mug52m35 > div:not(.wixui-box) { position:relative; }
+  .km-responsive #SITE_FOOTER #comp-mug52m35 [data-testid="mesh-container-content"] { display:grid!important; grid-template-columns:28px minmax(0,1fr)!important; grid-template-rows:none!important; column-gap:14px!important; row-gap:18px!important; align-items:center; }
+  .km-responsive #SITE_FOOTER #comp-mug52m35 [data-testid="mesh-container-content"] > * { grid-area:auto!important; justify-self:stretch; }
+  .km-responsive #SITE_FOOTER #comp-mug52m35 [data-testid="mesh-container-content"] > :is(#comp-mug52m8s,#comp-mug52m8s1) { grid-column:1 / -1!important; }
+  .km-responsive #SITE_FOOTER #comp-mug52m8s1 { margin-bottom:12px!important; }
+  .km-responsive #SITE_FOOTER #comp-mug52m8s1 :is(p,span) { font-size:20px!important; line-height:1.6!important; }
+  .km-responsive #SITE_FOOTER :is(#comp-mug52m8t,#comp-mug52m8u,#comp-mug52m8u1) { width:26px!important; height:26px!important; margin:2px 0 0!important; align-self:start; justify-self:start!important; }
+  .km-responsive #SITE_FOOTER :is(#comp-mug52m8t,#comp-mug52m8u,#comp-mug52m8u1) svg { width:100%!important; height:100%!important; }
+  .km-responsive #SITE_FOOTER :is(#comp-mug52m8s2,#comp-mug52m8s3,#comp-mug52m8s4) { width:auto!important; margin:0!important; }
+  .km-responsive #SITE_FOOTER :is(#comp-mug52m8s2,#comp-mug52m8s3,#comp-mug52m8s4) :is(p,span,a) { font-size:17px!important; line-height:1.5!important; }
+  .km-responsive #SITE_FOOTER #comp-muhjg2oj { position:absolute!important; top:auto!important; bottom:-72px!important; left:0!important; right:0!important; width:auto!important; height:40px!important; margin:0!important; }
+  .km-responsive #SITE_FOOTER #comp-muhjg2oj ul { position:static!important; display:flex!important; justify-content:center; gap:32px; width:100%!important; height:40px!important; }
+  .km-responsive #SITE_FOOTER #comp-muhjg2oj li { width:40px!important; height:40px!important; margin:0!important; }
+  .km-responsive #SITE_FOOTER #comp-muhjg2oj :is(a,img,wow-image,div) { width:40px!important; height:40px!important; }
+  .km-responsive #SITE_FOOTER #comp-muhjg2oj img { filter:invert(1); }
+  .km-responsive #SITE_FOOTER #comp-jrumb8rx { text-align:center; }
+}
