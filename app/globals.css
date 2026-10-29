@@ -429,3 +429,17 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
   .km-responsive #SITE_FOOTER #comp-muhjg2oj img { filter:invert(1); }
   .km-responsive #SITE_FOOTER #comp-jrumb8rx { text-align:center; }
 }
+/* Home hero video (components/HeroVideo.jsx): covers the hero on desktop; on phones the hero becomes a
+   full-width 16:9 frame so the whole video is visible, like the Hiba Academy mobile hero. */
+.km-hero-video { position:absolute; inset:0; overflow:hidden; }
+.km-hero-video__frame { position:absolute; inset:0; container-type:size; opacity:0; transition:opacity .6s ease; pointer-events:none; }
+.km-hero-video__frame.is-loaded { opacity:1; }
+.km-hero-video__frame iframe { position:absolute; top:50%; left:50%; width:max(100cqw, 177.78cqh); height:max(100cqh, 56.25cqw); transform:translate(-50%,-50%); border:0; }
+@media (max-width:1000px) {
+  .km-responsive[data-page="home"] #comp-mud43f15 { height:auto!important; min-height:0!important; aspect-ratio:16 / 9; }
+  .km-responsive[data-page="home"] #comp-mud43f15 > [data-testid="inline-content"] { display:none; }
+}
+/* Home value cards: semi-transparent bubbles that overlap and blend, like the old mobile site */
+@media (max-width:1000px) {
+  .km-responsive[data-page="home"] :is(#comp-mupzxrxa2,#comp-mupzxrxa3,#comp-mupzxrxa4) > .wixui-box { top:-14%!important; height:128%!important; opacity:.75; mix-blend-mode:multiply; }
+}
