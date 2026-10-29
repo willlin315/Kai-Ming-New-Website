@@ -460,3 +460,10 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
 }
 /* Home programs section: room above the cards now that its title sits on the hero */
 .km-responsive[data-page="home"] #comp-mud45vbv { padding-top:56px!important; }
+/* Page heroes (title over a photo), 1000px and below: the photo runs edge to edge directly under the
+   header, and the next section's heading sits closer to it. */
+@media (max-width:1000px) {
+  .km-responsive .wixui-section:has(.km-localized-hero-layout) { padding:0!important; margin:0!important; }
+  .km-responsive .wixui-section:has(.km-localized-hero-layout) :is(.wixui-column-strip,.wixui-column-strip__column) { margin:0!important; width:100%!important; left:auto!important; border-radius:0!important; }
+  .km-responsive .wixui-section:has(.km-localized-hero-layout) + .wixui-section { margin-top:0!important; padding-top:0!important; }
+}
