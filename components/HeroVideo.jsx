@@ -1,27 +1,31 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { HomeText } from './HomeContent';
 
-// Home hero: the same looping, muted YouTube video the old kaiming.org home page used ("KM website video").
-// The poster image renders first (server HTML) and stays visible until the player has loaded and its
-// start-up overlay has faded (about 3 s); the video plays
-// inline on phones (playsinline) because it is muted.
-const VIDEO_ID = '751rmSPf3Pg';
-const params = new URLSearchParams({ autoplay: '1', mute: '1', loop: '1', playlist: VIDEO_ID, controls: '0',
-  playsinline: '1', rel: '0', modestbranding: '1', disablekb: '1', iv_load_policy: '3' });
+// Home hero: the Kai Ming video, self-hosted (public/media/km-hero-video.mp4, served by the Railway app),
+// muted and looping like the old kaiming.org hero, with the programs section's title and intro (CMS fields
+// text-0 / text-1) in white over it. The poster image shows until the video is playing; it plays inline on
+// phones because it is muted. Visitors who prefer reduced motion see the poster only.
+const base = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 export default function HeroVideo({ attributes, children }) {
-  const [play, setPlay] = useState(false);
-  const [loaded, setLoaded] = useState(false);
+  const video = useRef(null);
+  const [playing, setPlaying] = useState(false);
   useEffect(() => {
-    const reduce = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
-    if (!reduce) setPlay(true);
+    const el = video.current;
+    if (!el) return;
+    if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) { el.pause(); return; }
+    el.muted = true;
+    el.play()?.catch(() => {});
   }, []);
   return <div {...attributes} className={`${attributes?.className || ''} km-hero-video`.trim()}>
     {children}
-    {play && <div className={`km-hero-video__frame${loaded ? ' is-loaded' : ''}`}>
-      <iframe src={`https://www.youtube-nocookie.com/embed/${VIDEO_ID}?${params}`} title="Kai Ming Head Start video"
-        allow="autoplay; encrypted-media; picture-in-picture" referrerPolicy="strict-origin-when-cross-origin"
-        tabIndex={-1} onLoad={() => setTimeout(() => setLoaded(true), 3000)} />
-    </div>}
+    <video ref={video} className={`km-hero-video__media${playing ? ' is-ready' : ''}`} src={`${base}/media/km-hero-video.mp4`}
+      poster={`${base}/media/km-hero-poster.jpg`} autoPlay muted loop playsInline preload="metadata" aria-hidden="true"
+      tabIndex={-1} onPlaying={() => setPlaying(true)} />
+    <div className="km-hero-overlay">
+      <h2><HomeText field="text-0" /></h2>
+      <p><HomeText field="text-1" /></p>
+    </div>
   </div>;
 }
