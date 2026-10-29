@@ -403,10 +403,6 @@
     "zh-Hant": "North Beach",
     "es": "North Beach"
   },
-  "PMsquare Children’s Center": {
-    "zh-Hant": "PMsquare 兒童中心",
-    "es": "Centro infantil PMsquare"
-  },
   "8:00 am - 5:00 pm": {
     "zh-Hant": "上午 8:00 至下午 5:00",
     "es": "8:00 a. m. a 5:00 p. m."
@@ -2970,5 +2966,41 @@
   "If you have any questions about these Terms of Use, please contact us.": {
     "zh-Hant": "如您對本使用條款有任何疑問，請與我們聯絡。",
     "es": "Si tiene alguna pregunta sobre estos Términos de uso, comuníquese con nosotros."
+  },
+  "Partner With Us | Kai Ming Head Start": {
+    "zh-Hant": "與我們合作 | 啟明 Head Start",
+    "es": "Colabore con nosotros | Kai Ming Head Start"
+  },
+  "Since 1975, Kai Ming has worked alongside families, schools, community organizations, and local businesses to give San Francisco’s children a strong start. Our partners help us reach more families and bring new experiences into our classrooms.": {
+    "zh-Hant": "自 1975 年以來，啟明與家庭、學校、社區組織和在地企業攜手合作，讓舊金山的孩子有好的起步。我們的合作夥伴幫助我們服務更多家庭，也為教室帶來新的體驗。",
+    "es": "Desde 1975, Kai Ming trabaja junto a familias, escuelas, organizaciones comunitarias y negocios locales para dar a los niños de San Francisco un buen comienzo. Nuestros aliados nos ayudan a llegar a más familias y a traer nuevas experiencias a nuestras aulas."
+  },
+  "Ways to partner": {
+    "zh-Hant": "合作方式",
+    "es": "Formas de colaborar"
+  },
+  "Community organizations: co-host family events and workshops, and connect families with the services they need.": {
+    "zh-Hant": "社區組織：一起舉辦家庭活動和講座，並協助家庭找到需要的服務。",
+    "es": "Organizaciones comunitarias: organice con nosotros eventos y talleres para familias, y conecte a las familias con los servicios que necesitan."
+  },
+  "Schools and colleges: offer student placements and early educator training, and help children move smoothly into kindergarten.": {
+    "zh-Hant": "學校與大專院校：提供學生實習和幼教老師培訓，並協助孩子順利銜接幼兒園。",
+    "es": "Escuelas y universidades: ofrezca prácticas para estudiantes y capacitación para educadores infantiles, y ayude a los niños a pasar sin dificultades al kínder."
+  },
+  "Businesses and foundations: sponsor classroom resources, enrichment programs, or special projects.": {
+    "zh-Hant": "企業與基金會：贊助教室資源、充實課程或特別計畫。",
+    "es": "Empresas y fundaciones: patrocine recursos para el aula, programas de enriquecimiento o proyectos especiales."
+  },
+  "In-kind support: donate books, learning materials, and supplies for children and families.": {
+    "zh-Hant": "物資捐贈：捐贈書籍、學習教材和兒童與家庭用品。",
+    "es": "Donaciones en especie: done libros, materiales de aprendizaje y artículos para niños y familias."
+  },
+  "Let’s work together": {
+    "zh-Hant": "一起合作",
+    "es": "Trabajemos juntos"
+  },
+  "To talk about a partnership, contact us and tell us a little about your organization. Our team will follow up with next steps.": {
+    "zh-Hant": "如果想討論合作，請聯絡我們，簡單介紹您的組織，我們的團隊會再跟您說明後續步驟。",
+    "es": "Para hablar sobre una colaboración, contáctenos y cuéntenos un poco sobre su organización. Nuestro equipo le indicará los siguientes pasos."
   }
 }
