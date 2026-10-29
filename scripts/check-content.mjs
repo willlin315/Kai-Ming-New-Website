@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import assert from 'node:assert/strict';
 const routes = JSON.parse(fs.readFileSync('content/routes.json', 'utf8'));
 const audit = JSON.parse(fs.readFileSync('docs/photo-migration.json', 'utf8'));
-assert.equal(routes.length, 26);
+assert.equal(routes.length, 27);
 for (const route of routes) {
   const page = JSON.parse(fs.readFileSync(`content/pages/${route.key}.json`, 'utf8'));
   assert(!page.html.includes('Image placeholder'), `Placeholder in ${route.key}`);

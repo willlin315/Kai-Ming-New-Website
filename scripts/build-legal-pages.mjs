@@ -1,4 +1,5 @@
-// Builds the Privacy Policy and Terms of Use pages from content/legal/*.html.
+// Builds the Privacy Policy and Terms of Use pages from content/legal/*.html,
+// and simple information pages (Partner With Us) from content/info/*.html.
 // They reuse the Blog page's exported Wix header, footer and CSS so the layout
 // matches the rest of the site. Run `npm run legal:build` after editing the text;
 // Chinese and Spanish strings live in content/i18n/site.json like every other page.
@@ -8,6 +9,7 @@ const template = JSON.parse(fs.readFileSync('content/pages/blog.json', 'utf8'));
 const pages = [
   ['privacy-policy', 'Privacy Policy | Kai Ming Head Start'],
   ['terms-of-use', 'Terms of Use | Kai Ming Head Start'],
+  ['partner-with-us', 'Partner With Us | Kai Ming Head Start', 'info'],
 ];
 const contact = '<address class="km-legal-contact"><strong>Kai Ming Inc.</strong>'
   + '<span>934 Howard Street, San Francisco, CA 94103</span>'
@@ -16,8 +18,8 @@ const contact = '<address class="km-legal-contact"><strong>Kai Ming Inc.</strong
 const newsMain = /<main class="km-news-page">[\s\S]*?<\/main>/;
 if (!newsMain.test(template.html)) throw new Error('Blog template main not found');
 
-for (const [key, title] of pages) {
-  const body = fs.readFileSync(`content/legal/${key}.html`, 'utf8').trim()
+for (const [key, title, dir = 'legal'] of pages) {
+  const body = fs.readFileSync(`content/${dir}/${key}.html`, 'utf8').trim()
     .replace('<km-legal-contact></km-legal-contact>', contact)
     .replace(/>\s+</g, '><');
   const html = template.html.replace(newsMain, `<main class="km-legal-page"><article class="km-legal-article">${body}</article></main>`);
