@@ -383,3 +383,21 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
 
 /* Footer: "Partner With Us" hidden for now (page /partner-with-us/ stays live). */
 #comp-mtiz2n7k{display:none!important}
+/* Home: "Supported by" shows logos only (the agency-name line stays in the CMS but is hidden) */
+.km-responsive[data-page="home"] #comp-mufv1pf5 > p { display:none; }
+@media (max-width:1000px) {
+  /* Home value cards: oversized soft ellipses behind full-width text, like the old mobile site */
+  .km-responsive[data-page="home"] #comp-mufv1oqq1 { overflow-x:clip; }
+  .km-responsive[data-page="home"] :is(#comp-mupzxrxa2,#comp-mupzxrxa3,#comp-mupzxrxa4) { width:100%!important; margin:0!important; }
+  .km-responsive[data-page="home"] :is(#comp-mupzxrxa2,#comp-mupzxrxa3,#comp-mupzxrxa4) > .wixui-box { top:-8%!important; left:-18%!important; width:136%!important; height:116%!important; border-radius:50%!important; }
+  .km-responsive[data-page="home"] :is(#comp-mupzxrxa2,#comp-mupzxrxa3,#comp-mupzxrxa4) > .wixui-box + div { padding:64px 4px!important; }
+  .km-responsive[data-page="home"] :is(#comp-mupzxrxa2,#comp-mupzxrxa3,#comp-mupzxrxa4) h3 { text-align:center!important; }
+  /* Home "Supported by": logos three to a row (two on the second), sized like the old site */
+  .km-responsive[data-page="home"] #comp-muh7bh9t [data-testid="mesh-container-content"] { flex-direction:row!important; flex-wrap:wrap!important; justify-content:center!important; align-items:center!important; gap:28px 4%!important; }
+  .km-responsive[data-page="home"] #comp-mufv1pf5 { flex:0 0 100%!important; }
+  .km-responsive[data-page="home"] #comp-muh7bh9t .wixui-image { flex:0 0 29%!important; width:29%!important; max-width:180px!important; height:64px!important; margin:0!important; }
+  .km-responsive[data-page="home"] #comp-muh7bh9t .wixui-image :is(div,wow-image,img) { width:100%!important; height:100%!important; }
+  .km-responsive[data-page="home"] #comp-muh7bh9t .wixui-image img { object-fit:contain!important; }
+  .km-responsive[data-page="home"] #comp-muhgx7x7 { order:1; } .km-responsive[data-page="home"] #comp-muhgx7xb { order:2; } .km-responsive[data-page="home"] #comp-muhgx7xa { order:3; }
+  .km-responsive[data-page="home"] #comp-muhgx7xa1 { order:4; flex-basis:42%!important; width:42%!important; max-width:260px!important; } .km-responsive[data-page="home"] #comp-muhgx7xc { order:5; }
+}
