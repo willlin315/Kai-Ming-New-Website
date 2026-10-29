@@ -504,8 +504,16 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
   .km-responsive[data-page$="-center"] [data-testid="mesh-container-content"]:has(> .wixui-vector-image + .wixui-rich-text + .wixui-rich-text):not(:has(> .wixui-vector-image + .wixui-rich-text + .wixui-vector-image)) > .wixui-vector-image + .wixui-rich-text + .wixui-rich-text:not(#km-id-boost) :is(p,span,li) { font-size:14px!important; line-height:1.45!important; text-align:center!important; }
   .km-responsive[data-page$="-center"] [data-testid="mesh-container-content"]:has(> .wixui-vector-image + .wixui-rich-text + .wixui-rich-text):not(:has(> .wixui-vector-image + .wixui-rich-text + .wixui-vector-image)) > :is(.wixui-vector-image:nth-child(odd of .wixui-vector-image):nth-last-child(1 of .wixui-vector-image), .wixui-vector-image:nth-child(odd of .wixui-vector-image):nth-last-child(1 of .wixui-vector-image) + .wixui-rich-text, .wixui-vector-image:nth-child(odd of .wixui-vector-image):nth-last-child(1 of .wixui-vector-image) + .wixui-rich-text + .wixui-rich-text) { grid-column:1 / -1!important; }
 }
+/* Center pages, 1000px and below: drop the empty spacer section above "A Place Where Your Child...",
+   so that heading follows the testimonials block directly. */
+@media (max-width:1000px) {
+  .km-responsive[data-page$="-center"] section.wixui-section:not(:has(img,svg,iframe,video,p,h1,h2,h3,h4,h5,h6,a,button,wow-image,input)) { display:none!important; }
+}
 /* Footer, 1000px and below: group headings bold and larger, links smaller, so the two levels read apart. */
 @media (max-width:1000px) {
   .km-responsive #SITE_FOOTER :is(#comp-jrum4vie,#comp-jrum2pny,#comp-jrum55j4,#comp-muh6vny6) :is(h2,h3,h4,p,span) { font-size:20px!important; font-weight:700!important; }
   .km-responsive #SITE_FOOTER #comp-jruhwlv6 > div > :is(#comp-jruhwlwz,#comp-jrum1orj,#comp-jrum1tt9) [data-testid="mesh-container-content"] > .wixui-rich-text:not(:first-child) :is(p,span,a) { font-size:15px!important; line-height:1.4!important; font-weight:400!important; }
+  /* STEP logo under "Resources": smaller, left-aligned, top lined up with "Volunteer" in the next column. */
+  .km-responsive #SITE_FOOTER #comp-muh6vnyr { width:88px!important; height:auto!important; margin-top:-10px!important; align-self:flex-start!important; }
+  .km-responsive #SITE_FOOTER #comp-muh6vnyr :is(a,img,wow-image,div) { width:88px!important; height:auto!important; object-fit:contain!important; object-position:left top!important; }
 }
