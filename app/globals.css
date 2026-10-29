@@ -340,3 +340,8 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
 /* CTA buttons: same colors as the header "Apply Now" (primary blue, white label); hover keeps each button's existing hover. */
 .km-responsive :is(a,button)[class*="StylableButton"][class*="__root"]:not(:hover):not(:disabled){background:var(--primary)!important}
 .km-responsive :is(a,button)[class*="StylableButton"][class*="__root"]:not(:disabled) [class*="StylableButton"][class*="__label"]{color:#fff!important}
+/* Home: Instagram preview */
+.km-instagram-feed { box-sizing:border-box; width:100%; padding:72px 20px 88px; background:var(--muted); }
+.km-instagram-feed h2 { margin:0 auto 40px; max-width:980px; text-align:center; color:var(--foreground); font:400 44px/1.2 var(--font-heading); }
+.km-instagram-feed__widget { max-width:1100px; min-height:200px; margin:0 auto; }
+@media (max-width:767px) { .km-instagram-feed { padding:48px 12px 56px; } .km-instagram-feed h2 { margin-bottom:24px; font-size:28px; } }
