@@ -14,6 +14,7 @@ import BoxFit from './BoxFit';
 import BlogList from './BlogList';
 import Tabs from './Tabs';
 import CenterMap from './CenterMap';
+import DonateWidget from './DonateWidget';
 import FormDropdown from './FormDropdown';
 import enrollmentFields from '../content/enrollment-fields.json';
 import { navigationFromNodes, markResponsiveNode } from '../lib/responsive';
@@ -58,6 +59,8 @@ export default function PageView({ page }) {
         const fields = centerFields(node, page.locale);
         if (fields) return <CenterMap locale={page.locale} id={node.attribs.id} fields={fields} />;
       }
+      // Donate page: the top Wix donation form becomes the Give Lively widget from the old site.
+      if (page.key === 'donate' && node.attribs.id === 'comp-mu3a4cee') return <DonateWidget locale={page.locale} attributes={{ id: node.attribs.id }} />;
       if (node.attribs.id === 'comp-muoke23s') {
         return <EligibilityCalculator locale={page.locale} attributes={attributesToProps(node.attribs)} />;
       }
