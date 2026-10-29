@@ -12,6 +12,7 @@ import Gallery from './Gallery';
 import Interactions from './Interactions';
 import BoxFit from './BoxFit';
 import BlogList from './BlogList';
+import HeroVideo from './HeroVideo';
 import InstagramFeed from './InstagramFeed';
 import Tabs from './Tabs';
 import CenterMap from './CenterMap';
@@ -54,6 +55,8 @@ export default function PageView({ page }) {
       if (page.key === 'our-people' && node.name === 'main') return <main id={node.attribs.id} tabIndex={-1}><PeopleDirectory locale={page.locale} initialPeople={page.people} /></main>;
       const person = people.find(p => p.placements?.some(slot => slot.nodeId && slot.page === page.key && slot.nodeId === node.attribs.id));
       if (person) return <PersonPlacement locale={page.locale} person={person} placement={person.placements.find(slot => slot.nodeId === node.attribs.id)} attributes={attributesToProps(node.attribs)} html={render(node.children)} />;
+      // Home hero: the old site's looping video over the poster image.
+      if (page.key === 'home' && node.attribs.id === 'videoContainer_comp-mud43f15') return <HeroVideo attributes={attributesToProps(node.attribs)}>{domToReact(node.children, options)}</HeroVideo>;
       markResponsiveNode(node);
       // Home centers: list + Google map (old kaiming.org layout).
       if (page.key === 'home' && node.attribs.id === 'comp-mufv1ode') {
