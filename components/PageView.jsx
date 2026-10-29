@@ -1,5 +1,5 @@
 import {HomeContentProvider,HomeText,HomeImage} from './HomeContent';
-import {htmlLang} from '../lib/i18n';
+import {htmlLang,localePrefix} from '../lib/i18n';
 import LanguageSwitcher from './LanguageSwitcher';
 import PersonPlacement from './PersonPlacement';
 import peopleRecords from '../content/people.json';
@@ -13,6 +13,7 @@ import Interactions from './Interactions';
 import BoxFit from './BoxFit';
 import BlogList from './BlogList';
 import Tabs from './Tabs';
+import CenterMap from './CenterMap';
 import DonateWidget from './DonateWidget';
 import FormDropdown from './FormDropdown';
 import enrollmentFields from '../content/enrollment-fields.json';
@@ -22,6 +23,24 @@ import mobileTypography from '../content/mobile-typography.json';
 import EligibilityCalculator from './EligibilityCalculator';
 import { brandCss } from '../lib/brand';
 const brandedResponsiveCss = brandCss(responsiveCss);
+
+// Home centers section: collect its CMS text fields (title, intro, 9 × name/program/address, button) and links.
+function centerFields(node, locale) {
+  const items = [];
+  const walk = (n, href) => {
+    if (n.type !== 'tag') return;
+    const link = n.name === 'a' ? (n.attribs.href || '') : href;
+    if (n.name === 'km-home-text') items.push({ field: n.attribs['data-home-field'], href: link });
+    n.children?.forEach((c) => walk(c, link));
+  };
+  walk(node, '');
+  if (items.length !== 30) return null;
+  const base = process.env.NEXT_PUBLIC_BASE_PATH || '';
+  const centers = [];
+  for (let i = 2; i < 29; i += 3) centers.push({ name: items[i].field, program: items[i + 1].field, address: items[i + 2].field,
+    href: items[i].href || `${base}${localePrefix(locale)}/dr-tkl-center/` });
+  return { title: items[0].field, intro: items[1].field, centers, allLabel: items[29].field, allHref: items[29].href };
+}
 
 export default function PageView({ page }) {
   // page.people / page.posts / page.homeRecord are published CMS data fetched at build time.
@@ -35,6 +54,11 @@ export default function PageView({ page }) {
       const person = people.find(p => p.placements?.some(slot => slot.nodeId && slot.page === page.key && slot.nodeId === node.attribs.id));
       if (person) return <PersonPlacement locale={page.locale} person={person} placement={person.placements.find(slot => slot.nodeId === node.attribs.id)} attributes={attributesToProps(node.attribs)} html={render(node.children)} />;
       markResponsiveNode(node);
+      // Home centers: list + Google map (old kaiming.org layout).
+      if (page.key === 'home' && node.attribs.id === 'comp-mufv1ode') {
+        const fields = centerFields(node, page.locale);
+        if (fields) return <CenterMap locale={page.locale} id={node.attribs.id} fields={fields} />;
+      }
       // Donate page: the top Wix donation form becomes the Give Lively widget from the old site.
       if (page.key === 'donate' && node.attribs.id === 'comp-mu3a4cee') return <DonateWidget locale={page.locale} attributes={{ id: node.attribs.id }} />;
       if (node.attribs.id === 'comp-muoke23s') {

@@ -16,5 +16,6 @@ export function HomeContentProvider({locale,initialRecord=null,children}){
  },[]);
  return <HomeContext.Provider value={{record,locale}}>{children}</HomeContext.Provider>;
 }
-export function HomeText({field}){const {record,locale}=useContext(HomeContext);const value=record.values?.[field];return <>{typeof value?.[locale]==='string'?value[locale]:value?.en??homeSeed.values[field]?.[locale]??''}</>}
+export function useHomeText(field){const {record,locale}=useContext(HomeContext);const value=record.values?.[field];return typeof value?.[locale]==='string'?value[locale]:value?.en??homeSeed.values[field]?.[locale]??''}
+export function HomeText({field}){return <>{useHomeText(field)}</>}
 export function HomeImage({field,attributes}){const {record}=useContext(HomeContext);const value=record.values?.[field]||homeSeed.values[field];const src=safeImage(value?.src);return <img {...attributes} src={src||attributes.src} srcSet={undefined} alt={value?.alt??attributes.alt} style={{...attributes.style,objectPosition:value?.position||'50% 50%'}}/>}
