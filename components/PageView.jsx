@@ -12,6 +12,7 @@ import Gallery from './Gallery';
 import Interactions from './Interactions';
 import BoxFit from './BoxFit';
 import BlogList from './BlogList';
+import InstagramFeed from './InstagramFeed';
 import Tabs from './Tabs';
 import FormDropdown from './FormDropdown';
 import enrollmentFields from '../content/enrollment-fields.json';
@@ -68,6 +69,7 @@ export default function PageView({ page }) {
         const Component = node.name === 'km-site-header' ? SiteHeader : SiteFooter;
         return <Component locale={page.locale} attributes={attributesToProps(node.attribs)} html={render(node.children)} groups={navigationFromNodes(node.children)} />;
       }
+      if (node.name === 'km-instagram-feed') return <InstagramFeed locale={page.locale} />;
       if (node.name === 'km-news-list') return <BlogList locale={page.locale} initialPosts={page.posts} />;
       if (node.attribs?.['data-gallery']) {
         return <Gallery id={node.attribs.id} className={node.attribs.class} items={JSON.parse(node.attribs['data-gallery'])} />;
