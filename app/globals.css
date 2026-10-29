@@ -528,3 +528,8 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
 .km-responsive[data-page$="-center"] .km-gallery:not(#km-id-boost) .km-gallery-controls > button[aria-label="Next photo"] { right:12px; }
 .km-responsive[data-page$="-center"] .km-gallery:not(#km-id-boost) .km-gallery-controls > span { display:none!important; }
 .km-responsive[data-page$="-center"] .km-gallery:not(#km-id-boost) .km-gallery-controls > button[aria-label$="slideshow"] { display:none!important; }
+/* Our Story, 1000px and below: the "50+ years / 10,000+ Children / 15,000+ Families" repeater keeps Wix's desktop
+   -40px gutter margins, which shifted the stats 40px left and pushed the last one past the section. Reset them. */
+@media (max-width:1000px) {
+  .km-responsive[data-page="our-story"] #comp-mthu0s1e fluid-columns-repeater { margin:0!important; row-gap:0!important; }
+}
