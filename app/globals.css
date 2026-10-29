@@ -323,7 +323,7 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
 .km-responsive[lang="en"] .km-legal-notice{display:none}
 .km-legal-article h2{margin:2.1em 0 .6em;font:700 clamp(19px,1.8vw,22px)/1.4 var(--font-body);color:var(--primary)}
 .km-legal-article p{margin:0 0 1.15em}
-.km-legal-article ul{margin:0 0 1.15em;padding-left:1.4em}
+.km-legal-article ul{margin:0 0 1.15em;padding-left:1.4em;list-style:disc}
 .km-legal-article li{margin-bottom:.45em}
 .km-legal-article a{color:var(--accent-strong);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
 .km-legal-article a:focus-visible{outline:3px solid var(--accent-strong);outline-offset:3px}
@@ -340,3 +340,12 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
 /* CTA buttons: same colors as the header "Apply Now" (primary blue, white label); hover keeps each button's existing hover. */
 .km-responsive :is(a,button)[class*="StylableButton"][class*="__root"]:not(:hover):not(:disabled){background:var(--primary)!important}
 .km-responsive :is(a,button)[class*="StylableButton"][class*="__root"]:not(:disabled) [class*="StylableButton"][class*="__label"]{color:#fff!important}
+
+/* Donate: top section is the Give Lively widget from the old site. */
+.km-responsive #comp-mu3a4cee.km-donate-top{display:block;box-sizing:border-box;width:100%;height:auto!important;min-height:0!important;padding:56px 24px 72px;background:#fff}
+.km-donate-top__inner{max-width:1100px;margin:0 auto}
+.km-donate-top h1{margin:0 0 16px;font:400 clamp(32px,3.6vw,44px)/1.2 var(--font-heading,var(--font-body));color:var(--primary)}
+.km-donate-top p{max-width:860px;margin:0 0 28px;font:16px/1.7 var(--font-body);color:var(--foreground)}
+.km-donate-top #give-lively-widget{min-height:480px}
+.km-donate-top__fallback{display:inline-block;padding:12px 24px;border-radius:999px;background:var(--primary);color:#fff;font:16px/1.4 var(--font-body);text-decoration:none}
+@media(max-width:600px){.km-responsive #comp-mu3a4cee.km-donate-top{padding:36px 16px 48px}}

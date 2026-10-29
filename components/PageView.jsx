@@ -13,6 +13,7 @@ import Interactions from './Interactions';
 import BoxFit from './BoxFit';
 import BlogList from './BlogList';
 import Tabs from './Tabs';
+import DonateWidget from './DonateWidget';
 import FormDropdown from './FormDropdown';
 import enrollmentFields from '../content/enrollment-fields.json';
 import { navigationFromNodes, markResponsiveNode } from '../lib/responsive';
@@ -34,6 +35,8 @@ export default function PageView({ page }) {
       const person = people.find(p => p.placements?.some(slot => slot.nodeId && slot.page === page.key && slot.nodeId === node.attribs.id));
       if (person) return <PersonPlacement locale={page.locale} person={person} placement={person.placements.find(slot => slot.nodeId === node.attribs.id)} attributes={attributesToProps(node.attribs)} html={render(node.children)} />;
       markResponsiveNode(node);
+      // Donate page: the top Wix donation form becomes the Give Lively widget from the old site.
+      if (page.key === 'donate' && node.attribs.id === 'comp-mu3a4cee') return <DonateWidget locale={page.locale} attributes={{ id: node.attribs.id }} />;
       if (node.attribs.id === 'comp-muoke23s') {
         return <EligibilityCalculator locale={page.locale} attributes={attributesToProps(node.attribs)} />;
       }
