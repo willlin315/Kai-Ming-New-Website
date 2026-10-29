@@ -380,3 +380,6 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
 .km-donate-top #give-lively-widget{min-height:480px}
 .km-donate-top__fallback{display:inline-block;padding:12px 24px;border-radius:999px;background:var(--primary);color:#fff;font:16px/1.4 var(--font-body);text-decoration:none}
 @media(max-width:600px){.km-responsive #comp-mu3a4cee.km-donate-top{padding:36px 16px 48px}}
+
+/* Footer: "Partner With Us" hidden for now (page /partner-with-us/ stays live). */
+#comp-mtiz2n7k{display:none!important}
