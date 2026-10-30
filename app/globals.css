@@ -510,10 +510,14 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
   .km-responsive[data-page="home"] :is(#comp-mud45vek,#comp-mud45vh4,#comp-mud45vhw) { width:min(360px,100%)!important; height:auto!important; aspect-ratio:1 / 1; align-self:center!important; margin-left:auto!important; margin-right:auto!important; }
   .km-responsive[data-page="home"] :is(#comp-mud45vek,#comp-mud45vh4,#comp-mud45vhw) :is(div,wow-image,img) { width:100%!important; height:100%!important; object-fit:cover!important; }
 }
-/* Home program cards, above 1000px: bigger photos (120px -> 170px), still centred in each card. */
+/* Home program cards, above 1000px: bigger photos (120px -> 210px, centred; cards 568px -> 628px tall) and every
+   "Learn More" pinned to the same line at the bottom of its description. */
 @media (min-width:1001px) {
-  .km-responsive[data-page="home"] :is(#comp-mud45vek,#comp-mud45vh4,#comp-mud45vhw) { width:170px!important; height:170px!important; translate:-25px 0; }
+  .km-responsive[data-page="home"] :is(#comp-mud45vek,#comp-mud45vh4,#comp-mud45vhw) { width:210px!important; height:210px!important; translate:-45px 0; }
   .km-responsive[data-page="home"] :is(#comp-mud45vek,#comp-mud45vh4,#comp-mud45vhw) :is(div,wow-image,img) { width:100%!important; height:100%!important; object-fit:cover!important; }
+  .km-responsive[data-page="home"] :is(#comp-mud45vgx,#comp-mud45vhm,#comp-mud45vj3) { height:230px!important; display:flex!important; flex-direction:column!important; }
+  .km-responsive[data-page="home"] :is(#comp-mud45vgx,#comp-mud45vhm,#comp-mud45vj3) > :last-child { margin-top:auto!important; }
+  .km-responsive[data-page="home"] :is(#comp-mupzxrx7,#comp-mupzxrxa,#comp-mupzxrxa1) { height:628px!important; }
 }
 /* Page heroes (title over a photo), 1000px and below: the photo runs edge to edge directly under the
    header, and the next section's heading sits closer to it. */
