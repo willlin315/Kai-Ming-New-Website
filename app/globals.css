@@ -465,15 +465,17 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
 .km-responsive[data-page="home"] #comp-mupzxrxa4 > .wixui-box { border-radius:0!important; -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 441 441' preserveAspectRatio='none'%3E%3Cpath d='M338 358C332 365 325 372 318 378C311 385 304 391 297 397C290 403 283 409 275 414C267 419 259 424 250 428C241 432 232 436 223 438C214 440 204 441 195 440C186 439 176 436 167 433C158 430 150 426 142 421C134 417 126 412 118 406C110 400 103 394 96 387C89 381 83 374 76 367C70 360 63 353 57 346C51 339 45 332 40 324C35 316 30 308 25 300C20 292 16 283 12 274C8 265 5 256 3 247C1 238 0 228 0 219C0 210 1 200 3 191C5 182 9 173 13 164C17 155 21 147 26 139C31 131 37 123 43 116C49 109 55 102 62 95C69 88 76 82 83 76C90 70 97 65 105 59C113 54 121 48 129 43C137 38 145 35 154 31C163 27 172 23 181 20C190 17 199 14 208 12C217 10 227 8 236 6C245 4 255 3 264 2C273 1 283 0 292 0C301 -0 311 0 320 1C329 2 339 3 348 5C357 7 366 10 375 14C384 18 393 23 400 29C407 35 413 42 418 50C423 58 428 66 431 75C434 84 437 94 438 103C440 112 440 122 440 131C440 140 440 150 439 159C438 168 437 178 435 187C433 196 431 206 428 215C425 224 423 233 419 242C415 251 411 259 406 267C402 275 397 284 392 292C387 300 381 308 375 315C369 323 363 330 357 337C351 344 345 351 338 358Z'/%3E%3C/svg%3E") center / 100% 100% no-repeat; mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 441 441' preserveAspectRatio='none'%3E%3Cpath d='M338 358C332 365 325 372 318 378C311 385 304 391 297 397C290 403 283 409 275 414C267 419 259 424 250 428C241 432 232 436 223 438C214 440 204 441 195 440C186 439 176 436 167 433C158 430 150 426 142 421C134 417 126 412 118 406C110 400 103 394 96 387C89 381 83 374 76 367C70 360 63 353 57 346C51 339 45 332 40 324C35 316 30 308 25 300C20 292 16 283 12 274C8 265 5 256 3 247C1 238 0 228 0 219C0 210 1 200 3 191C5 182 9 173 13 164C17 155 21 147 26 139C31 131 37 123 43 116C49 109 55 102 62 95C69 88 76 82 83 76C90 70 97 65 105 59C113 54 121 48 129 43C137 38 145 35 154 31C163 27 172 23 181 20C190 17 199 14 208 12C217 10 227 8 236 6C245 4 255 3 264 2C273 1 283 0 292 0C301 -0 311 0 320 1C329 2 339 3 348 5C357 7 366 10 375 14C384 18 393 23 400 29C407 35 413 42 418 50C423 58 428 66 431 75C434 84 437 94 438 103C440 112 440 122 440 131C440 140 440 150 439 159C438 168 437 178 435 187C433 196 431 206 428 215C425 224 423 233 419 242C415 251 411 259 406 267C402 275 397 284 392 292C387 300 381 308 375 315C369 323 363 330 357 337C351 344 345 351 338 358Z'/%3E%3C/svg%3E") center / 100% 100% no-repeat; }
 /* Home "Potential Has No Limits" bubbles, laid out like the old kaiming.org: 3 in a row on desktop, 2 + 1 on
    tablets (768-1000px), 1 per row on phones. Each blob keeps its own proportions (square, never stretched),
-   sits centred behind its column and is a little wider than the text, so neighbours overlap as on the old site. */
+   sits centred behind its column and is always bigger than its text (at least --km-blob, and never shorter than the
+   text block), so neighbours overlap as on the old site. */
 .km-responsive[data-page="home"] [data-mesh-id="comp-mufv1oqq1inlineContent-gridContainer"] { display:grid!important; grid-template-columns:repeat(3,minmax(0,300px))!important; grid-template-rows:none!important; grid-auto-rows:auto!important; justify-content:center!important; column-gap:48px!important; row-gap:0!important; height:auto!important; min-height:0!important; padding-bottom:72px!important; }
 .km-responsive[data-page="home"] [data-mesh-id="comp-mufv1oqq1inlineContent-gridContainer"] > :is(#comp-mufv1p631,#comp-mufv1p65) { grid-column:1 / -1!important; grid-row:auto!important; justify-self:center!important; left:auto!important; margin-left:0!important; margin-right:0!important; max-width:100%!important; }
-.km-responsive[data-page="home"] #comp-mufv1oqq1 { height:auto!important; min-height:0!important; overflow:clip!important; }
-.km-responsive[data-page="home"] :is(#comp-mupzxrxa2,#comp-mupzxrxa3,#comp-mupzxrxa4) { grid-area:auto!important; position:relative!important; left:auto!important; top:auto!important; width:auto!important; height:auto!important; min-height:var(--km-blob)!important; margin:24px 0 0!important; display:flex!important; align-items:center!important; --km-blob:360px; }
+.km-responsive[data-page="home"] #comp-mufv1oqq1 { height:auto!important; min-height:0!important; overflow:visible!important; }
+.km-responsive[data-page="home"] { overflow-x:clip; }
+.km-responsive[data-page="home"] :is(#comp-mupzxrxa2,#comp-mupzxrxa3,#comp-mupzxrxa4) { grid-area:auto!important; position:relative!important; left:auto!important; top:auto!important; width:auto!important; height:auto!important; min-height:var(--km-blob)!important; margin:24px 0 0!important; display:flex!important; align-items:center!important; --km-blob:420px; }
 .km-responsive[data-page="home"] #comp-mupzxrxa2 { order:1; }
 .km-responsive[data-page="home"] #comp-mupzxrxa3 { order:2; }
 .km-responsive[data-page="home"] #comp-mupzxrxa4 { order:3; }
-.km-responsive[data-page="home"] :is(#comp-mupzxrxa2,#comp-mupzxrxa3,#comp-mupzxrxa4) > .wixui-box { position:absolute!important; top:50%!important; left:50%!important; width:var(--km-blob)!important; height:var(--km-blob)!important; transform:translate(-50%,-50%)!important; margin:0!important; }
+.km-responsive[data-page="home"] :is(#comp-mupzxrxa2,#comp-mupzxrxa3,#comp-mupzxrxa4) > .wixui-box { position:absolute!important; top:50%!important; left:50%!important; width:auto!important; height:max(var(--km-blob),calc(100% + 24px))!important; aspect-ratio:1 / 1!important; transform:translate(-50%,-50%)!important; margin:0!important; }
 .km-responsive[data-page="home"] :is(#comp-mupzxrxa2,#comp-mupzxrxa3,#comp-mupzxrxa4) > .wixui-box + div { position:relative!important; width:100%!important; height:auto!important; padding:48px 0!important; }
 /* Inside each bubble: drop Wix's absolute offsets so the title and list stack as one centred column. */
 .km-responsive[data-page="home"] :is(#comp-mupzxrxa2,#comp-mupzxrxa3,#comp-mupzxrxa4) [data-testid="mesh-container-content"] { display:block!important; height:auto!important; min-height:0!important; }
@@ -484,17 +486,18 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
 .km-responsive[data-page="home"] :is(#comp-mupzxrxa2,#comp-mupzxrxa3,#comp-mupzxrxa4) h3 { text-align:center!important; }
 @media (min-width:1001px) and (max-width:1199px) {
   .km-responsive[data-page="home"] [data-mesh-id="comp-mufv1oqq1inlineContent-gridContainer"] { grid-template-columns:repeat(3,minmax(0,280px))!important; column-gap:36px!important; }
-  .km-responsive[data-page="home"] :is(#comp-mupzxrxa2,#comp-mupzxrxa3,#comp-mupzxrxa4) { --km-blob:330px; }
+  .km-responsive[data-page="home"] :is(#comp-mupzxrxa2,#comp-mupzxrxa3,#comp-mupzxrxa4) { --km-blob:380px; }
 }
 @media (max-width:1000px) {
-  .km-responsive[data-page="home"] [data-mesh-id="comp-mufv1oqq1inlineContent-gridContainer"] { grid-template-columns:repeat(2,minmax(0,300px))!important; column-gap:56px!important; }
-  .km-responsive[data-page="home"] #comp-mupzxrxa4 { grid-column:1 / -1!important; justify-self:center!important; width:min(300px,100%)!important; }
+  .km-responsive[data-page="home"] [data-mesh-id="comp-mufv1oqq1inlineContent-gridContainer"] { grid-template-columns:repeat(2,minmax(0,280px))!important; column-gap:72px!important; }
+  .km-responsive[data-page="home"] :is(#comp-mupzxrxa2,#comp-mupzxrxa3,#comp-mupzxrxa4) { --km-blob:min(440px,57vw); margin-top:40px!important; }
+  .km-responsive[data-page="home"] #comp-mupzxrxa4 { grid-column:1 / -1!important; justify-self:center!important; width:min(280px,100%)!important; }
 }
 @media (max-width:767px) {
-  .km-responsive[data-page="home"] [data-mesh-id="comp-mufv1oqq1inlineContent-gridContainer"] { grid-template-columns:minmax(0,340px)!important; }
-  .km-responsive[data-page="home"] :is(#comp-mupzxrxa2,#comp-mupzxrxa3,#comp-mupzxrxa4) { --km-blob:min(400px,112vw); margin-top:8px!important; }
+  .km-responsive[data-page="home"] [data-mesh-id="comp-mufv1oqq1inlineContent-gridContainer"] { grid-template-columns:minmax(0,1fr)!important; }
+  .km-responsive[data-page="home"] :is(#comp-mupzxrxa2,#comp-mupzxrxa3,#comp-mupzxrxa4) { --km-blob:min(460px,114vw); margin-top:48px!important; }
   .km-responsive[data-page="home"] #comp-mupzxrxa4 { width:auto!important; }
-  .km-responsive[data-page="home"] :is(#comp-mupzxrxa2,#comp-mupzxrxa3,#comp-mupzxrxa4) > .wixui-box + div { padding:64px 8px!important; }
+  .km-responsive[data-page="home"] :is(#comp-mupzxrxa2,#comp-mupzxrxa3,#comp-mupzxrxa4) > .wixui-box + div { padding:48px max(24px,calc(50% - 160px))!important; box-sizing:border-box!important; }
 }
 /* Home programs section: room above the cards now that its title sits on the hero */
 .km-responsive[data-page="home"] #comp-mud45vbv { padding-top:56px!important; }
