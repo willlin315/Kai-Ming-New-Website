@@ -501,6 +501,15 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
 }
 /* Home programs section: room above the cards now that its title sits on the hero */
 .km-responsive[data-page="home"] #comp-mud45vbv { padding-top:56px!important; }
+/* Home program cards (Prenatal / Infant & Toddler / Preschool): photos get the same 20px rounded corners as the
+   card frame, at every width. On tablets (768-1000px) the photo is capped at 360px and centred instead of
+   spanning the whole column. */
+.km-responsive[data-page="home"] :is(#comp-mud45vek,#comp-mud45vh4,#comp-mud45vhw) { border-radius:20px!important; overflow:hidden!important; }
+.km-responsive[data-page="home"] :is(#comp-mud45vek,#comp-mud45vh4,#comp-mud45vhw) :is(div,wow-image,img) { border-radius:20px!important; }
+@media (min-width:768px) and (max-width:1000px) {
+  .km-responsive[data-page="home"] :is(#comp-mud45vek,#comp-mud45vh4,#comp-mud45vhw) { width:min(360px,100%)!important; height:auto!important; aspect-ratio:1 / 1; align-self:center!important; margin-left:auto!important; margin-right:auto!important; }
+  .km-responsive[data-page="home"] :is(#comp-mud45vek,#comp-mud45vh4,#comp-mud45vhw) :is(div,wow-image,img) { width:100%!important; height:100%!important; object-fit:cover!important; }
+}
 /* Page heroes (title over a photo), 1000px and below: the photo runs edge to edge directly under the
    header, and the next section's heading sits closer to it. */
 @media (max-width:1000px) {
