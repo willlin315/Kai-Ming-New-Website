@@ -533,3 +533,22 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
 @media (max-width:1000px) {
   .km-responsive[data-page="our-story"] #comp-mthu0s1e fluid-columns-repeater { margin:0!important; row-gap:0!important; }
 }
+/* Careers / Volunteer, above 1000px: "View Opening" and "Apply to Volunteer" start at the paragraph's left edge
+   (Wix placed them 90px further right; the paragraph uses left:14px). Below 1000px they already span the text column. */
+@media (min-width:1001px) {
+  .km-responsive :is(#comp-mu36qqdq,#comp-mu395z7n) { left:14px!important; }
+}
+/* Careers, 1000px and below: keep the desktop column order when the benefit columns stack —
+   each highlight card is followed by its own list (24 days -> Time Off & Health, 100% -> Financial Security,
+   15% -> Wellbeing & Commute) instead of three cards then three lists. All three cards get the same inner padding. */
+@media (max-width:1000px) {
+  .km-responsive[data-page="careers"] #comp-murgfutx { order:1; }
+  .km-responsive[data-page="careers"] #comp-murggfu8 { order:2; }
+  .km-responsive[data-page="careers"] #comp-murgfuuh { order:3; }
+  .km-responsive[data-page="careers"] #comp-murggfu81 { order:4; }
+  .km-responsive[data-page="careers"] #comp-murgfuuk4 { order:5; }
+  .km-responsive[data-page="careers"] #comp-murggfu82 { order:6; }
+  .km-responsive[data-page="careers"] :is(#comp-murggfu8,#comp-murggfu81,#comp-murggfu82) { margin-top:20px!important; }
+  .km-responsive[data-page="careers"] :is(#comp-murgfuuh,#comp-murgfuuk4) { margin-top:36px!important; }
+  .km-responsive[data-page="careers"] :is(#comp-murgfuuh,#comp-murgfuuk4) [data-testid="mesh-container-content"] { padding:20px!important; box-sizing:border-box; }
+}
