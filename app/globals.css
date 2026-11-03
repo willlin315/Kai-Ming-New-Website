@@ -479,6 +479,14 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
   .km-responsive .km-four-card-layout[data-testid] > .wixui-image img { width:100%!important; height:100%!important; object-fit:cover!important; object-position:center; }
   .km-responsive .km-four-card-layout[data-testid] > .wixui-rich-text { width:100%!important; margin-left:0!important; margin-right:0!important; left:auto!important; }
 }
+/* Four-card image + text layouts, above 1000px (Infant & Toddler, Preschool, Our Mission): the description starts
+   24px under its title in every card (4px + the grid's 20px row gap), the same as the space above the title,
+   whether the title takes one line or two. */
+@media (min-width:1001px) {
+  .km-responsive .km-four-card-layout[data-testid] { grid-template-rows:auto 1fr!important; }
+  .km-responsive .km-four-card-layout[data-testid] > .wixui-rich-text { align-self:start!important; margin-top:0!important; margin-bottom:0!important; top:auto!important; }
+  .km-responsive .km-four-card-layout[data-testid] > .wixui-rich-text + .wixui-rich-text { margin-top:4px!important; }
+}
 /* Center pages, 1000px and below.
    Contact blocks (address / phone / hours, staff email / phone): small icons beside the text instead of a
    large icon on its own line. Feature blocks (ages, staff language, ratio, facility): icon + title + value
