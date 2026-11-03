@@ -610,10 +610,11 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
   .km-responsive[data-page$="dr-tkl-center"] :is(#comp-mtxlce9r, #comp-mtxlce9r > [data-testid="inline-content"], #comp-mtxlce9r > [data-testid="inline-content"] > [data-testid="mesh-container-content"]) { display:contents!important; }
   .km-responsive[data-page$="dr-tkl-center"] #comp-mtxlce9r > [data-hook="bgLayers"] { display:none!important; }
 }
-/* Center pages, 1000px and below: each staff card's content sits as a centred column (max 400px, text still
-   left-aligned) instead of hugging the card's left edge when the card is wide. */
+/* Center pages, 1000px and below: each staff card's content sits as a centred column (max 340px, text still
+   left-aligned) with the photo centred in the card, instead of hugging the card's left edge when the card is wide. */
 @media (max-width:1000px) {
-  .km-responsive[data-page$="-center"] fluid-columns-repeater > * > [data-testid="inline-content"] { max-width:400px!important; margin-left:auto!important; margin-right:auto!important; }
+  .km-responsive[data-page$="-center"] fluid-columns-repeater > * > [data-testid="inline-content"] { max-width:340px!important; margin-left:auto!important; margin-right:auto!important; }
+  .km-responsive[data-page$="-center"] fluid-columns-repeater > * > [data-testid="inline-content"] > [data-testid="mesh-container-content"] > .wixui-image { justify-self:center!important; margin-left:auto!important; margin-right:auto!important; left:auto!important; }
 }
 /* Center pages, 1000px and below: drop the empty spacer section above "A Place Where Your Child...",
    so that heading follows the testimonials block directly. */
