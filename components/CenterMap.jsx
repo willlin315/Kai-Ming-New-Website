@@ -5,12 +5,26 @@ import { useHomeText } from './HomeContent';
 // Home "Discover Our Centers Near You": center list on the left, selected center + Google map on the right
 // (same layout as the old kaiming.org home page). Text still comes from the Home CMS fields.
 // The map uses Google's keyless embed, so no API key is needed.
-const COORDS = [
-  [37.8001313114391, -122.40070958309667], [37.79779652166321, -122.40731902352566],
-  [37.79515443367511, -122.40809660475077], [37.806398013928636, -122.41439501267433],
-  [37.79312672064887, -122.421548760876], [37.78136475594817, -122.48591985118844],
-  [37.781733493864266, -122.49563961650259], [37.74398623828355, -122.49510784241618],
-  [37.772712444854136, -122.39214205705017],
+// PLACES: each center's Google Maps listing name + street address (checked 2026-11-03: every query opens that
+// center's own Google Maps place). Directions opens that place page.
+// PIN: the exact coordinates of each of those Google places. The embedded map is pointed at the coordinates rather
+// than the place name so it shows only the red pin, without Google's place-info box in the corner.
+// Order matches the center list on the home page.
+const PLACES = [
+  'Kai Ming Head Start Broadway Center, 820 Battery St, San Francisco, CA 94133',
+  'Kai Ming Head Start Rainbow Center, 799 Pacific Ave, San Francisco, CA 94133',
+  'Kai Ming Head Start Dr. T.K.L. Center, 950 Powell St, San Francisco, CA 94108',
+  'Kai Ming Head Start North Beach Center, 1170 Columbus Ave, San Francisco, CA 94133',
+  "Kai Ming Head Start St. Luke's Center, 1755 Clay St, San Francisco, CA 94109",
+  'Kai Ming Head Start Geary Center, 6221 Geary Blvd, San Francisco, CA 94121',
+  'Kai Ming Head Start Richmond Center, 426 33rd Ave, San Francisco, CA 94121',
+  'Kai Ming Head Start Sunset Center, 2800 Taraval St, San Francisco, CA 94116',
+  'Kai Ming Head Start PMsquare Center, 671 China Basin St, San Francisco, CA 94158',
+];
+const PIN = [
+  [37.7990376, -122.4010161], [37.7966594, -122.4076874], [37.7935972, -122.409325],
+  [37.8048328, -122.4164561], [37.7920526, -122.4222367], [37.779676, -122.4863517],
+  [37.7810497, -122.4931908], [37.7423131, -122.4962156], [37.7717345, -122.3923388],
 ];
 const MAP_LANG = { en: 'en', 'zh-Hant': 'zh-TW', es: 'es' };
 const TEXT = {
@@ -34,9 +48,11 @@ export default function CenterMap({ locale = 'en', id, fields }) {
   const name = stripNumber(useHomeText(center.name));
   const program = useHomeText(center.program);
   const address = useHomeText(center.address);
-  const [lat, lng] = COORDS[active] || COORDS[0];
-  const mapSrc = `https://maps.google.com/maps?q=${lat},${lng}&z=15&hl=${MAP_LANG[locale] || 'en'}&output=embed`;
-  const directions = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
+  const place = encodeURIComponent(PLACES[active] || PLACES[0]);
+  const [lat, lng] = PIN[active] || PIN[0];
+  const mapSrc = `https://maps.google.com/maps?q=${lat},${lng}&z=16&hl=${MAP_LANG[locale] || 'en'}&output=embed`;
+  // Opens the center's Google Maps page (with its own Directions button), not a bare coordinate.
+  const directions = `https://www.google.com/maps/search/?api=1&query=${place}`;
   return <section id={id} className="km-centers" aria-labelledby="km-centers-title">
     <div className="km-centers__inner">
       <div className="km-centers__list">
