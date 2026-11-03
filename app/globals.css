@@ -571,6 +571,50 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
   .km-responsive[data-page$="-center"] [data-testid="mesh-container-content"]:has(> .wixui-vector-image + .wixui-rich-text + .wixui-rich-text):not(:has(> .wixui-vector-image + .wixui-rich-text + .wixui-vector-image)) > .wixui-vector-image + .wixui-rich-text + .wixui-rich-text:not(#km-id-boost) :is(p,span,li) { font-size:14px!important; line-height:1.45!important; text-align:center!important; }
   .km-responsive[data-page$="-center"] [data-testid="mesh-container-content"]:has(> .wixui-vector-image + .wixui-rich-text + .wixui-rich-text):not(:has(> .wixui-vector-image + .wixui-rich-text + .wixui-vector-image)) > :is(.wixui-vector-image:nth-child(odd of .wixui-vector-image):nth-last-child(1 of .wixui-vector-image), .wixui-vector-image:nth-child(odd of .wixui-vector-image):nth-last-child(1 of .wixui-vector-image) + .wixui-rich-text, .wixui-vector-image:nth-child(odd of .wixui-vector-image):nth-last-child(1 of .wixui-vector-image) + .wixui-rich-text + .wixui-rich-text) { grid-column:1 / -1!important; }
 }
+/* Centers with four feature icons (Richmond, Dr. T.K.L.), 1000px and below: Wix keeps "Preschool" in a different
+   box from the other three, which stacked them 1 + 2 + 1. Flatten the second box into the same grid and place the
+   four cells 2 x 2: Preschool | Staff Language, Teacher: Child Ratio | Facility Features. */
+@media (max-width:1000px) {
+  .km-responsive[data-page$="richmond-center"] #comp-mu32d3dg6 > [data-testid="inline-content"] > [data-testid="mesh-container-content"] { display:grid!important; grid-template-columns:repeat(2,minmax(0,1fr))!important; grid-auto-flow:row!important; column-gap:16px!important; row-gap:0!important; align-items:start; }
+  .km-responsive[data-page$="richmond-center"] #comp-mu32d3dg6 > [data-testid="inline-content"] > [data-testid="mesh-container-content"] > :not(.wixui-vector-image):not(.wixui-rich-text + .wixui-rich-text):not(.wixui-vector-image + .wixui-rich-text):not(#comp-mu32d3dm4) { grid-column:1 / -1!important; grid-row:1!important; }
+  :is(.km-responsive[data-page$="richmond-center"] #comp-mu32d3dm4, .km-responsive[data-page$="richmond-center"] #comp-mu32d3dm4 > [data-testid="inline-content"], .km-responsive[data-page$="richmond-center"] #comp-mu32d3dm4 > [data-testid="inline-content"] > [data-testid="mesh-container-content"]) { display:contents!important; }
+  .km-responsive[data-page$="richmond-center"] #comp-mu32d3dm4 > [data-hook="bgLayers"] { display:none!important; }
+  .km-responsive[data-page$="richmond-center"] #comp-mu32d3di { grid-column:1!important; grid-row:2!important; }
+  .km-responsive[data-page$="richmond-center"] #comp-mu32d3di7 { grid-column:1!important; grid-row:3!important; }
+  .km-responsive[data-page$="richmond-center"] #comp-mu32d3di13 { grid-column:1!important; grid-row:4!important; }
+  .km-responsive[data-page$="richmond-center"] #comp-mu32d3dn { grid-column:2!important; grid-row:2!important; }
+  .km-responsive[data-page$="richmond-center"] #comp-mu32d3dn7 { grid-column:2!important; grid-row:3!important; }
+  .km-responsive[data-page$="richmond-center"] #comp-mu32d3dn13 { grid-column:2!important; grid-row:4!important; }
+  .km-responsive[data-page$="richmond-center"] #comp-mu32d3do5 { grid-column:1!important; grid-row:5!important; }
+  .km-responsive[data-page$="richmond-center"] #comp-mu32d3do12 { grid-column:1!important; grid-row:6!important; }
+  .km-responsive[data-page$="richmond-center"] #comp-mu32d3dp { grid-column:1!important; grid-row:7!important; }
+  .km-responsive[data-page$="richmond-center"] #comp-mu32d3dp6 { grid-column:2!important; grid-row:5!important; }
+  .km-responsive[data-page$="richmond-center"] #comp-mu32d3dp13 { grid-column:2!important; grid-row:6!important; }
+  .km-responsive[data-page$="richmond-center"] #comp-mu32d3dq3 { grid-column:2!important; grid-row:7!important; }
+  .km-responsive[data-page$="dr-tkl-center"] #comp-mtxl675j > [data-testid="inline-content"] > [data-testid="mesh-container-content"] { display:grid!important; grid-template-columns:repeat(2,minmax(0,1fr))!important; grid-auto-flow:row!important; column-gap:16px!important; row-gap:0!important; align-items:start; }
+  .km-responsive[data-page$="dr-tkl-center"] #comp-mtxl675j > [data-testid="inline-content"] > [data-testid="mesh-container-content"] > :not(.wixui-vector-image):not(.wixui-rich-text + .wixui-rich-text):not(.wixui-vector-image + .wixui-rich-text):not(#comp-mtxl675q7) { grid-column:1 / -1!important; grid-row:1!important; }
+  :is(.km-responsive[data-page$="dr-tkl-center"] #comp-mtxl675q7, .km-responsive[data-page$="dr-tkl-center"] #comp-mtxl675q7 > [data-testid="inline-content"], .km-responsive[data-page$="dr-tkl-center"] #comp-mtxl675q7 > [data-testid="inline-content"] > [data-testid="mesh-container-content"]) { display:contents!important; }
+  .km-responsive[data-page$="dr-tkl-center"] #comp-mtxl675q7 > [data-hook="bgLayers"] { display:none!important; }
+  .km-responsive[data-page$="dr-tkl-center"] #comp-mtxl675l { grid-column:1!important; grid-row:2!important; }
+  .km-responsive[data-page$="dr-tkl-center"] #comp-mtxl675l7 { grid-column:1!important; grid-row:3!important; }
+  .km-responsive[data-page$="dr-tkl-center"] #comp-mtxl675m { grid-column:1!important; grid-row:4!important; }
+  .km-responsive[data-page$="dr-tkl-center"] #comp-mtxl675s3 { grid-column:2!important; grid-row:2!important; }
+  .km-responsive[data-page$="dr-tkl-center"] #comp-mtxl675t { grid-column:2!important; grid-row:3!important; }
+  .km-responsive[data-page$="dr-tkl-center"] #comp-mtxl675t6 { grid-column:2!important; grid-row:4!important; }
+  .km-responsive[data-page$="dr-tkl-center"] #comp-mtxl675u { grid-column:1!important; grid-row:5!important; }
+  .km-responsive[data-page$="dr-tkl-center"] #comp-mtxl675u7 { grid-column:1!important; grid-row:6!important; }
+  .km-responsive[data-page$="dr-tkl-center"] #comp-mtxl675v4 { grid-column:1!important; grid-row:7!important; }
+  .km-responsive[data-page$="dr-tkl-center"] #comp-mtxl675v10 { grid-column:2!important; grid-row:5!important; }
+  .km-responsive[data-page$="dr-tkl-center"] #comp-mtxl675v17 { grid-column:2!important; grid-row:6!important; }
+  .km-responsive[data-page$="dr-tkl-center"] #comp-mtxl675w5 { grid-column:2!important; grid-row:7!important; }
+  .km-responsive[data-page$="dr-tkl-center"] :is(#comp-mtxlce9r, #comp-mtxlce9r > [data-testid="inline-content"], #comp-mtxlce9r > [data-testid="inline-content"] > [data-testid="mesh-container-content"]) { display:contents!important; }
+  .km-responsive[data-page$="dr-tkl-center"] #comp-mtxlce9r > [data-hook="bgLayers"] { display:none!important; }
+}
+/* Center pages, 1000px and below: each staff card's content sits as a centred column (max 400px, text still
+   left-aligned) instead of hugging the card's left edge when the card is wide. */
+@media (max-width:1000px) {
+  .km-responsive[data-page$="-center"] fluid-columns-repeater > * > [data-testid="inline-content"] { max-width:400px!important; margin-left:auto!important; margin-right:auto!important; }
+}
 /* Center pages, 1000px and below: drop the empty spacer section above "A Place Where Your Child...",
    so that heading follows the testimonials block directly. */
 @media (max-width:1000px) {
