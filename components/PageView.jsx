@@ -16,6 +16,7 @@ import HeroVideo from './HeroVideo';
 import InstagramFeed from './InstagramFeed';
 import Tabs from './Tabs';
 import CenterMap from './CenterMap';
+import CentersOverviewMap from './CentersOverviewMap';
 import DonateWidget from './DonateWidget';
 import FormDropdown from './FormDropdown';
 import enrollmentFields from '../content/enrollment-fields.json';
@@ -63,16 +64,8 @@ export default function PageView({ page }) {
         const fields = centerFields(node, page.locale);
         if (fields) return <CenterMap locale={page.locale} id={node.attribs.id} fields={fields} />;
       }
-      // Our Centers: the empty Wix map slot becomes a Google map with every Kai Ming center pinned (like the old
-      // kaiming.org/Centers.aspx). Google's keyless search embed pins all the centers, so no API key is needed.
-      if (page.key === 'copy-of-family-support' && node.attribs.id === 'comp-mtm31xsd') {
-        const hl = { 'zh-Hant': 'zh-TW', es: 'es' }[page.locale] || 'en';
-        const title = { 'zh-Hant': '啟明各中心地圖', es: 'Mapa de los centros de Kai Ming' }[page.locale] || 'Map of Kai Ming centers';
-        return <div id={node.attribs.id} className={node.attribs.class}>
-          <iframe className="km-centers-map" src={`https://maps.google.com/maps?q=Kai+Ming+Head+Start+San+Francisco&z=12&hl=${hl}&output=embed`}
-            title={title} loading="lazy" referrerPolicy="no-referrer-when-downgrade" allowFullScreen />
-        </div>;
-      }
+      // Our Centers: the empty Wix map slot becomes a map with a pin on each of the nine centers (old kaiming.org/Centers.aspx).
+      if (page.key === 'copy-of-family-support' && node.attribs.id === 'comp-mtm31xsd') return <CentersOverviewMap locale={page.locale} id={node.attribs.id} className={node.attribs.class} />;
       // Donate page: the top Wix donation form becomes the Give Lively widget from the old site.
       if (page.key === 'donate' && node.attribs.id === 'comp-mu3a4cee') return <DonateWidget locale={page.locale} attributes={{ id: node.attribs.id }} />;
       if (node.attribs.id === 'comp-muoke23s') {
