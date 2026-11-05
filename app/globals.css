@@ -491,7 +491,8 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
 @media (max-width:1000px) {
   .km-responsive[data-page="home"] [data-mesh-id="comp-mufv1oqq1inlineContent-gridContainer"] { grid-template-columns:repeat(2,minmax(0,280px))!important; column-gap:72px!important; }
   .km-responsive[data-page="home"] :is(#comp-mupzxrxa2,#comp-mupzxrxa3,#comp-mupzxrxa4) { --km-blob:min(440px,57vw); margin-top:40px!important; }
-  .km-responsive[data-page="home"] #comp-mupzxrxa4 { grid-column:1 / -1!important; justify-self:center!important; width:min(280px,100%)!important; }
+  /* Third bubble sits under the first one, so its text lines up with the top-left bubble's text. */
+  .km-responsive[data-page="home"] #comp-mupzxrxa4 { grid-column:1!important; justify-self:stretch!important; width:auto!important; }
 }
 @media (max-width:767px) {
   .km-responsive[data-page="home"] [data-mesh-id="comp-mufv1oqq1inlineContent-gridContainer"] { grid-template-columns:minmax(0,1fr)!important; }
