@@ -664,3 +664,13 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
   .km-responsive[data-page="careers"] :is(#comp-murgfuuh,#comp-murgfuuk4) { margin-top:36px!important; }
   .km-responsive[data-page="careers"] :is(#comp-murgfuuh,#comp-murgfuuk4) [data-testid="mesh-container-content"] { padding:20px!important; box-sizing:border-box; }
 }
+
+/* Our Centers: Google map with every center pinned, filling the old Wix map slot (#comp-mtm31xsd). */
+.km-responsive #comp-mtm31xsd { overflow: hidden; border-radius: 12px; }
+.km-responsive #comp-mtm31xsd .km-centers-map { display: block; width: 100%; height: 100% !important; border: 0; }
+@media (max-width:1000px) {
+  .km-responsive[data-page="our-centers"] #comp-mtm31xsd:not(#km-id-boost) { height:460px!important; }
+  /* the empty white backdrop strip behind the map/text on desktop stacks as a blank box on tablet/phone */
+  .km-responsive[data-page="our-centers"] #comp-muyrkx1b { display:none!important; }
+}
+@media (max-width:767px) { .km-responsive[data-page="our-centers"] #comp-mtm31xsd:not(#km-id-boost) { height:340px!important; } }
