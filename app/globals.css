@@ -629,17 +629,17 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
   .km-responsive #SITE_FOOTER #comp-muh6vnyr { width:88px!important; height:auto!important; margin-top:-10px!important; align-self:flex-start!important; }
   .km-responsive #SITE_FOOTER #comp-muh6vnyr :is(a,img,wow-image,div) { width:88px!important; height:auto!important; object-fit:contain!important; object-position:left top!important; }
 }
-/* Center pages: photo gallery arrows (plain light-gray glyphs, shown only while the photo is hovered/tapped or focused)
+/* Center pages and Family Support: photo gallery arrows (plain light-gray glyphs, shown only while the photo is hovered/tapped or focused)
    sit at the vertical middle of the left and right edges of the photo;
    the photo counter ("7 / 8") and the Pause button are hidden (the slideshow still pauses on hover/focus).
    :not(#km-id-boost) adds ID weight so these beat the per-component rules in content/mobile-typography.json. */
-.km-responsive[data-page$="-center"] .km-gallery:not(#km-id-boost) .km-gallery-controls { inset:0; max-width:none; transform:none; display:block; padding:0; border-radius:0; background:transparent; pointer-events:none; }
-.km-responsive[data-page$="-center"] .km-gallery:not(#km-id-boost) .km-gallery-controls > button:is([aria-label="Previous photo"],[aria-label="Next photo"]) { position:absolute; top:50%; transform:translateY(-50%); display:flex; align-items:center; justify-content:center; width:40px; height:56px; padding:0 0 4px; border-radius:0; background:transparent; color:#e0e0e0; text-shadow:0 1px 3px rgba(0,0,0,.45); font-size:44px!important; line-height:1!important; pointer-events:auto; opacity:0; transition:opacity .2s; }
-.km-responsive[data-page$="-center"] .km-gallery:not(#km-id-boost):is(:hover,:focus-within) .km-gallery-controls > button:is([aria-label="Previous photo"],[aria-label="Next photo"]) { opacity:1; }
-.km-responsive[data-page$="-center"] .km-gallery:not(#km-id-boost) .km-gallery-controls > button[aria-label="Previous photo"] { left:12px; }
-.km-responsive[data-page$="-center"] .km-gallery:not(#km-id-boost) .km-gallery-controls > button[aria-label="Next photo"] { right:12px; }
-.km-responsive[data-page$="-center"] .km-gallery:not(#km-id-boost) .km-gallery-controls > span { display:none!important; }
-.km-responsive[data-page$="-center"] .km-gallery:not(#km-id-boost) .km-gallery-controls > button[aria-label$="slideshow"] { display:none!important; }
+.km-responsive:is([data-page$="-center"],[data-page="familysupport"]) .km-gallery:not(#km-id-boost) .km-gallery-controls { inset:0; max-width:none; transform:none; display:block; padding:0; border-radius:0; background:transparent; pointer-events:none; }
+.km-responsive:is([data-page$="-center"],[data-page="familysupport"]) .km-gallery:not(#km-id-boost) .km-gallery-controls > button:is([aria-label="Previous photo"],[aria-label="Next photo"]) { position:absolute; top:50%; transform:translateY(-50%); display:flex; align-items:center; justify-content:center; width:40px; height:56px; padding:0 0 4px; border-radius:0; background:transparent; color:#e0e0e0; text-shadow:0 1px 3px rgba(0,0,0,.45); font-size:44px!important; line-height:1!important; pointer-events:auto; opacity:0; transition:opacity .2s; }
+.km-responsive:is([data-page$="-center"],[data-page="familysupport"]) .km-gallery:not(#km-id-boost):is(:hover,:focus-within) .km-gallery-controls > button:is([aria-label="Previous photo"],[aria-label="Next photo"]) { opacity:1; }
+.km-responsive:is([data-page$="-center"],[data-page="familysupport"]) .km-gallery:not(#km-id-boost) .km-gallery-controls > button[aria-label="Previous photo"] { left:12px; }
+.km-responsive:is([data-page$="-center"],[data-page="familysupport"]) .km-gallery:not(#km-id-boost) .km-gallery-controls > button[aria-label="Next photo"] { right:12px; }
+.km-responsive:is([data-page$="-center"],[data-page="familysupport"]) .km-gallery:not(#km-id-boost) .km-gallery-controls > span { display:none!important; }
+.km-responsive:is([data-page$="-center"],[data-page="familysupport"]) .km-gallery:not(#km-id-boost) .km-gallery-controls > button[aria-label$="slideshow"] { display:none!important; }
 /* Our Story, 1000px and below: the "50+ years / 10,000+ Children / 15,000+ Families" repeater keeps Wix's desktop
    -40px gutter margins, which shifted the stats 40px left and pushed the last one past the section. Reset them. */
 @media (max-width:1000px) {
