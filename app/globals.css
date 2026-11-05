@@ -666,8 +666,12 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
 }
 
 /* Our Centers: Google map with every center pinned, filling the old Wix map slot (#comp-mtm31xsd). */
-.km-responsive #comp-mtm31xsd { overflow: hidden; border-radius: 12px; }
-.km-responsive #comp-mtm31xsd .km-centers-map { display: block; width: 100%; height: 100% !important; border: 0; }
+.km-responsive #comp-mtm31xsd { position: relative; overflow: hidden; border-radius: 12px; }
+.km-responsive #comp-mtm31xsd .km-centers-map { display: block; width: 100%; height: 100% !important; border: 0; pointer-events: none; }
+.km-centers-overview__open { position: absolute; inset: 0; }
+.km-centers-overview__pin { position: absolute; width: 24px; height: 34px; margin: -34px 0 0 -12px; filter: drop-shadow(0 1px 2px rgba(0,0,0,.35)); transition: transform .15s; transform-origin: 50% 100%; }
+.km-centers-overview__pin:hover, .km-centers-overview__pin:focus-visible { transform: scale(1.2); z-index: 1; }
+.km-centers-overview__pin svg { display: block; width: 100%; height: 100%; }
 @media (max-width:1000px) {
   .km-responsive[data-page="our-centers"] #comp-mtm31xsd:not(#km-id-boost) { height:460px!important; }
   /* the empty white backdrop strip behind the map/text on desktop stacks as a blank box on tablet/phone */
