@@ -433,8 +433,9 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
 }
 /* Home hero (components/HeroVideo.jsx): self-hosted looping video (public/media/km-hero-video.mp4) with the
    section's title and intro in white over it, sized like the old kaiming.org hero (viewport height minus the
-   header; taller on phones). The original title/intro blocks below are hidden; the CMS still edits them. */
-.km-responsive[data-page="home"] #comp-mud43f15 { height:calc(100vh - 135px)!important; min-height:420px!important; }
+   header; taller on phones), but never taller than a 16:9 frame, so tall screens such as an iPad in portrait
+   get a wide, short hero instead of one that fills the whole screen. The original title/intro blocks below are hidden; the CMS still edits them. */
+.km-responsive[data-page="home"] #comp-mud43f15 { height:min(calc(100vh - 135px), 56.25vw)!important; min-height:420px!important; }
 .km-hero-video { position:absolute; inset:0; overflow:hidden; }
 .km-hero-video__media { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; transition:opacity .6s ease; }
 .km-hero-video__media.is-ready { opacity:1; }
@@ -443,7 +444,7 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
 .km-hero-overlay p { margin:0; max-width:760px; color:#fff; font:400 21px/1.5 var(--font-heading); text-shadow:0 1px 10px rgba(0,0,0,.35); }
 .km-responsive[data-page="home"] :is(#comp-mud45vef,#comp-mud45vei) { display:none!important; }
 @media (max-width:1000px) {
-  .km-responsive[data-page="home"] #comp-mud43f15 { height:calc(100svh - 135px)!important; min-height:360px!important; }
+  .km-responsive[data-page="home"] #comp-mud43f15 { height:min(calc(100svh - 135px), 56.25vw)!important; min-height:400px!important; }
   .km-responsive[data-page="home"] #comp-mud43f15 > [data-testid="inline-content"] { display:none; }
 }
 @media (max-width:480px) {
