@@ -446,6 +446,9 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
 @media (max-width:1000px) {
   .km-responsive[data-page="home"] #comp-mud43f15 { height:min(calc(100svh - 135px), 56.25vw)!important; min-height:400px!important; }
   .km-responsive[data-page="home"] #comp-mud43f15 > [data-testid="inline-content"] { display:none; }
+  /* smaller title/intro to suit the shorter tablet hero */
+  .km-hero-overlay h2 { font-size:32px; margin-bottom:10px; max-width:640px; }
+  .km-hero-overlay p { font-size:17px; max-width:560px; }
 }
 @media (max-width:480px) {
   .km-responsive[data-page="home"] #comp-mud43f15 { height:calc(100svh - 206px)!important; }
