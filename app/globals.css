@@ -772,8 +772,8 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
 .km-timeline__tick { width:2px; height:28px; background:#1F1F1F; }
 .km-timeline__item--no-year .km-timeline__tick { visibility:hidden; }
 .km-timeline__text { margin:10px 0 16px; font-size:16px; line-height:1.45; font-weight:600; color:#1F1F1F; }
-.km-timeline__photo { width:100%; max-width:220px; aspect-ratio:3/2; object-fit:cover; border-radius:6px; align-self:end; }
-.km-timeline__photo--logo { object-fit:contain; background:#fff; }
+.km-timeline__photo { display:block; width:100%; max-width:220px; background-repeat:no-repeat; border-radius:6px; align-self:end; }
+.km-timeline__photo--logo { border-radius:0; }
 @media (max-width:750px) {
   .km-timeline__list { grid-template-columns:1fr; row-gap:28px; padding:8px 0 8px 28px; }
   .km-timeline__list::before { left:6px; right:auto; top:14px; bottom:14px; width:2px; height:auto; }
