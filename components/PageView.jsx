@@ -17,12 +17,14 @@ import InstagramFeed from './InstagramFeed';
 import Tabs from './Tabs';
 import CenterMap from './CenterMap';
 import CentersOverviewMap from './CentersOverviewMap';
+import OurStoryTimeline from './OurStoryTimeline';
 import DonateWidget from './DonateWidget';
 import FormDropdown from './FormDropdown';
 import enrollmentFields from '../content/enrollment-fields.json';
 import { navigationFromNodes, markResponsiveNode } from '../lib/responsive';
 import responsiveCss from '../content/responsive-css.json';
 import mobileTypography from '../content/mobile-typography.json';
+import { phoneTypeScale } from '../lib/type-scale';
 import EligibilityCalculator from './EligibilityCalculator';
 import { brandCss } from '../lib/brand';
 const brandedResponsiveCss = brandCss(responsiveCss);
@@ -66,6 +68,8 @@ export default function PageView({ page }) {
       }
       // Our Centers: the empty Wix map slot becomes a map with a pin on each of the nine centers (old kaiming.org/Centers.aspx).
       if (page.key === 'copy-of-family-support' && node.attribs.id === 'comp-mtm31xsd') return <CentersOverviewMap locale={page.locale} id={node.attribs.id} className={node.attribs.class} />;
+      // Our Story: the timeline picture becomes a real (translatable, phone-readable) timeline.
+      if (page.key === 'our-story' && node.attribs.id === 'comp-mv1egpnl') return <OurStoryTimeline locale={page.locale} id={node.attribs.id} className={node.attribs.class} />;
       // Donate page: the top Wix donation form becomes the Give Lively widget from the old site.
       if (page.key === 'donate' && node.attribs.id === 'comp-mu3a4cee') return <DonateWidget locale={page.locale} attributes={{ id: node.attribs.id }} />;
       if (node.attribs.id === 'comp-muoke23s') {
@@ -113,7 +117,7 @@ export default function PageView({ page }) {
     <LanguageSwitcher locale={page.locale} pageKey={page.slug||page.key}/>
     <style dangerouslySetInnerHTML={{ __html: page.css }} />
     <style dangerouslySetInnerHTML={{ __html: brandedResponsiveCss }} />
-    {mobileTypography[page.key]&&<style dangerouslySetInnerHTML={{ __html: brandCss(mobileTypography[page.key]) }} />}
+    {mobileTypography[page.key]&&<style dangerouslySetInnerHTML={{ __html: brandCss(phoneTypeScale(mobileTypography[page.key])) }} />}
     {page.key==='home'?<HomeContentProvider locale={page.locale} initialRecord={page.homeRecord}>{parse(page.html, options)}</HomeContentProvider>:parse(page.html, options)}
     <Interactions />
     <BoxFit />
