@@ -5,7 +5,7 @@ import { useEffect, useRef } from 'react';
 // It can be dragged and zoomed directly (drag / pinch / double-click / +- buttons; the mouse wheel zooms after the
 // map has been clicked, so scrolling the page never gets stuck on it). Clicking a pin shows the center's name and a
 // link to its Google Maps page.
-// Built with Leaflet (loaded from cdnjs) on OpenStreetMap/CARTO tiles: Google's free embed can't show our own pins
+// Built with Leaflet (loaded from cdnjs) on OpenStreetMap tiles: Google's free embed can't show our own pins
 // and still be moved, and the Google Maps JavaScript API needs an API key.
 const CENTERS = [
   ['Broadway Center', '820 Battery St, San Francisco, CA 94133', 37.7990376, -122.4010161],
@@ -48,9 +48,9 @@ export default function CentersOverviewMap({ locale = 'en', id, className }) {
     loadLeaflet().then((L) => {
       if (cancelled || !box.current) return;
       map = L.map(box.current, { scrollWheelZoom: false, zoomSnap: 0.25 });
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-        maxZoom: 19, subdomains: 'abcd',
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       }).addTo(map);
       const icon = L.divIcon({ className: 'km-centers-overview__pin', html: PIN, iconSize: [24, 34], iconAnchor: [12, 34], popupAnchor: [0, -30] });
       const points = CENTERS.map(([name, address, lat, lng]) => {
