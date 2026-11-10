@@ -698,14 +698,10 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
   .km-responsive[data-page="careers"] :is(#comp-murgfuuh,#comp-murgfuuk4) [data-testid="mesh-container-content"] { padding:20px!important; box-sizing:border-box; }
 }
 
-/* Our Centers: map with every center pinned (components/CentersOverviewMap.jsx), filling the old Wix map slot. */
+/* Our Centers: Google My Maps map with every center pinned (components/CentersOverviewMap.jsx), filling the old Wix
+   map slot. The iframe starts 68px higher than the frame so My Maps' title bar stays hidden. */
 .km-responsive #comp-mtm31xsd { position: relative; overflow: hidden; border-radius: 12px; background:#e8eef1; }
-.km-responsive #comp-mtm31xsd .km-centers-map { display: block; width: 100%; height: 100% !important; border: 0; z-index:0; }
-.km-centers-overview__pin { background:none; border:0; filter: drop-shadow(0 1px 2px rgba(0,0,0,.35)); }
-.km-centers-overview__pin svg { display: block; width: 24px; height: 34px; transition: transform .15s; transform-origin: 50% 100%; }
-.km-centers-overview__pin:hover svg, .km-centers-overview__pin:focus-visible svg { transform: scale(1.2); }
-.km-centers-overview .leaflet-popup-content { font:14px/1.45 var(--font-body, sans-serif); margin:12px 14px; }
-.km-centers-overview .leaflet-popup-content a { color:var(--primary); font-weight:600; }
+.km-responsive #comp-mtm31xsd .km-centers-map { display: block; width: 100%; height: calc(100% + 68px) !important; margin-top:-68px; border: 0; }
 @media (max-width:1000px) {
   .km-responsive[data-page="our-centers"] #comp-mtm31xsd:not(#km-id-boost) { height:460px!important; }
   /* the empty white backdrop strip behind the map/text on desktop stacks as a blank box on tablet/phone */
