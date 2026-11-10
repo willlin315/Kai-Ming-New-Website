@@ -1,6 +1,7 @@
 'use client';
 import { useEffect } from 'react';
 import { basePath, legacyRoutes, slugFor } from '../lib/client-routes';
+import { prepareForm, sendForm } from '../lib/site-forms';
 
 export default function Interactions() {
   useEffect(() => {
@@ -82,8 +83,11 @@ export default function Interactions() {
         event.preventDefault(); event.target.click();
       }
     };
+    // Connected forms (lib/site-forms.js) are emailed; any other exported form stays preview-only.
+    document.querySelectorAll('main form').forEach(prepareForm);
     const submit = (event) => {
       event.preventDefault();
+      if (event.target instanceof HTMLFormElement && event.target.dataset.kmForm) { sendForm(event.target); return; }
       window.alert('Preview only: your information has not been submitted.');
     };
     document.addEventListener('click', click);
