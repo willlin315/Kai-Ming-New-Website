@@ -2,6 +2,14 @@
   "id": "home",
   "title": "Home",
   "values": {
+    "announcement-text": {
+      "en": "Welcome to the new Kai Ming Head Start website!",
+      "zh-Hant": "歡迎來到啟明 Head Start 全新網站！",
+      "es": "¡Bienvenidos al nuevo sitio web de Kai Ming Head Start!"
+    },
+    "announcement-link": {
+      "href": "/"
+    },
     "image-0": {
       "src": "/media/4ee2d0f7d5ab171fcc71.webp",
       "alt": "Children working at tables in a busy Kai Ming preschool classroom",
