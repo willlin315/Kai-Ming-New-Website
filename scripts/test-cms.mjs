@@ -53,6 +53,11 @@ before(async () => {
   await pool.query(`INSERT INTO cms_documents (kind,id,revision,draft,published,published_revision,published_slug,published_locale,updated_at)
     VALUES ('posts','legacy-image',1,$1,$1,1,'legacy-image-post','en','2026-01-01T00:00:00.000Z')`, [JSON.stringify(content)]);
   hooks.oldId = oldId;
+  // A Home record saved before the announcement bar existed: startup adds the new fields with their defaults.
+  const oldHome = structuredClone(sources.homeContent);
+  delete oldHome.values['announcement-text']; delete oldHome.values['announcement-link'];
+  await pool.query(`INSERT INTO cms_documents (kind,id,revision,draft,published,published_revision,updated_at)
+    VALUES ('pages','home',1,$1,$1,1,'2026-01-01T00:00:00.000Z')`, [JSON.stringify({ title: 'Home', values: oldHome.values })]);
   app = make();
 });
 after(async () => {
@@ -230,6 +235,17 @@ test('publish generates a slug from the title', async () => {
   assert.equal((await get(`/public/posts/${result.data.slug}?language=zh-Hant`)).status, 200);
 });
 
+test('announcement bar fields are added to an older Home record and links are checked', async () => {
+  const home = (await get('/public/pages')).data.find((p) => p.id === 'home');
+  assert.deepEqual(home.values['announcement-link'], { href: '/' });
+  assert.equal(home.values['announcement-text'].en, sources.homeContent.values['announcement-text'].en);
+  const page = (await get('/admin/content', auth)).data.pages[0];
+  const content = structuredClone(page);
+  content.values['announcement-link'].href = 'javascript:alert(1)';
+  assert.equal((await put('/admin/pages/home', { expected_revision: page._revision, content })).status, 422);
+  content.values['announcement-link'].href = '/how-to-enroll/';
+  assert.equal((await put('/admin/pages/home', { expected_revision: page._revision, content })).status, 200);
+});
 test('legacy posts get slugs and Home image alts are descriptive', async () => {
   const posts = (await get('/public/posts')).data;
   assert.ok(posts.length && posts.every((p) => p.slug));
