@@ -521,12 +521,16 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
   .km-responsive[data-page="home"] :is(#comp-mupzxrxa2,#comp-mupzxrxa3,#comp-mupzxrxa4) > .wixui-box + div { padding:48px max(36px,calc(50% - 150px))!important; box-sizing:border-box!important; }
   /* Phones: the blob is always well taller than its text (text in the middle ~60%), so every line stays inside the
      curved shape rather than near its edges. */
-  .km-responsive[data-page="home"] :is(#comp-mupzxrxa2,#comp-mupzxrxa3,#comp-mupzxrxa4) { --km-blob:min(540px,132vw); }
-  .km-responsive[data-page="home"] :is(#comp-mupzxrxa2,#comp-mupzxrxa3,#comp-mupzxrxa4) > .wixui-box { height:max(var(--km-blob),calc(100% + 150px))!important; }
-  /* Each blob reaches ~75px past its text, so space the bubbles to keep a ~40px overlap and clear the intro above. */
-  .km-responsive[data-page="home"] #comp-mupzxrxa2:not(#km-id-boost) { margin-top:96px!important; }
-  .km-responsive[data-page="home"] :is(#comp-mupzxrxa3,#comp-mupzxrxa4):not(#km-id-boost) { margin-top:110px!important; }
-  .km-responsive[data-page="home"] [data-mesh-id="comp-mufv1oqq1inlineContent-gridContainer"]:not(#km-id-boost) { padding-bottom:110px!important; }
+  .km-responsive[data-page="home"] :is(#comp-mupzxrxa2,#comp-mupzxrxa3,#comp-mupzxrxa4):not(#km-id-boost) { --km-blob:min(400px,100vw); min-height:0!important; }
+  .km-responsive[data-page="home"] :is(#comp-mupzxrxa2,#comp-mupzxrxa3,#comp-mupzxrxa4) > .wixui-box + div:not(#km-id-boost) { padding:0 max(40px,calc(50% - 150px))!important; }
+  .km-responsive[data-page="home"] :is(#comp-mupzxrxa2,#comp-mupzxrxa3,#comp-mupzxrxa4) > .wixui-box { height:max(var(--km-blob),calc(100% + 120px))!important; }
+  /* Tighter lines inside the bubbles so the text block (and so the blob around it) stays compact. */
+  .km-responsive[data-page="home"] :is(#comp-mupzxrxa2,#comp-mupzxrxa3,#comp-mupzxrxa4) .wixui-rich-text :is(p,li,span):not(#km-id-boost) { line-height:1.45!important; }
+  .km-responsive[data-page="home"] :is(#comp-mupzxrxa2,#comp-mupzxrxa3,#comp-mupzxrxa4) .wixui-rich-text + .wixui-rich-text:not(#km-id-boost) { margin-top:12px!important; }
+  /* Each blob reaches ~60px past its text, so space the bubbles to keep a small overlap and clear the intro above. */
+  .km-responsive[data-page="home"] #comp-mupzxrxa2:not(#km-id-boost) { margin-top:88px!important; }
+  .km-responsive[data-page="home"] :is(#comp-mupzxrxa3,#comp-mupzxrxa4):not(#km-id-boost) { margin-top:96px!important; }
+  .km-responsive[data-page="home"] [data-mesh-id="comp-mufv1oqq1inlineContent-gridContainer"]:not(#km-id-boost) { padding-bottom:96px!important; }
 }
 /* Home bubbles, tablets and phones: pull each lower row up so its bubble overlaps the one above a little
    (about 40px), like the old site, instead of leaving a gap between them. */
