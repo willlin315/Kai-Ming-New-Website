@@ -824,6 +824,12 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
   .km-responsive main [data-testid="columns"]:has(> .wixui-column-strip__column > [data-hook="bgLayers"] img, > .wixui-column-strip__column .wixui-image) > .wixui-column-strip__column:has(.wixui-rich-text):not(:has(.wixui-image, h1, .wixui-column-strip, > [data-hook="bgLayers"] img)) > [data-testid="inline-content"] > [data-testid="mesh-container-content"] > :first-child { margin-top:0!important; }
   .km-responsive main [data-testid="columns"]:has(> .wixui-column-strip__column > [data-hook="bgLayers"] img, > .wixui-column-strip__column .wixui-image) > .wixui-column-strip__column:has(.wixui-rich-text):not(:has(.wixui-image, h1, .wixui-column-strip, > [data-hook="bgLayers"] img)) > [data-testid="inline-content"] > [data-testid="mesh-container-content"] > :nth-last-child(1 of :not([data-mesh-id*="-wedge-"])) { margin-bottom:0!important; }
   .km-responsive main [data-testid="columns"]:has(> .wixui-column-strip__column .wixui-rich-text) > .wixui-column-strip__column:not(:has(h1, .wixui-rich-text)) > [data-hook="bgLayers"]:has(img) { border-radius:16px; overflow:hidden; }
+  /* The text panel's background runs on behind the photo, so the photo's rounded corners show the panel colour
+     (not a sliver of the page background) next to the text. Columns are marked in lib/responsive.js. */
+  .km-responsive main [data-km-photo-side] { position:relative; z-index:0; }
+  .km-responsive main [data-km-photo-side] ~ .wixui-column-strip__column, .km-responsive main .wixui-column-strip__column:has(~ [data-km-photo-side="left"]) { position:relative; z-index:1; }
+  .km-responsive main [data-km-photo-side="right"] > [data-hook="bgLayers"]:not(#km-id-boost) { right:-24px!important; width:auto!important; }
+  .km-responsive main [data-km-photo-side="left"] > [data-hook="bgLayers"]:not(#km-id-boost) { left:-24px!important; width:auto!important; }
 }
 
 /* Our People: the "Leadership Team" / "Board Members" switch uses bold labels. */
