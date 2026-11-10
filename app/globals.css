@@ -504,7 +504,15 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
   .km-responsive[data-page="home"] [data-mesh-id="comp-mufv1oqq1inlineContent-gridContainer"] { grid-template-columns:minmax(0,1fr)!important; }
   .km-responsive[data-page="home"] :is(#comp-mupzxrxa2,#comp-mupzxrxa3,#comp-mupzxrxa4) { --km-blob:min(460px,114vw); margin-top:48px!important; }
   .km-responsive[data-page="home"] #comp-mupzxrxa4 { width:auto!important; }
-  .km-responsive[data-page="home"] :is(#comp-mupzxrxa2,#comp-mupzxrxa3,#comp-mupzxrxa4) > .wixui-box + div { padding:48px max(24px,calc(50% - 160px))!important; box-sizing:border-box!important; }
+  .km-responsive[data-page="home"] :is(#comp-mupzxrxa2,#comp-mupzxrxa3,#comp-mupzxrxa4) > .wixui-box + div { padding:48px max(36px,calc(50% - 150px))!important; box-sizing:border-box!important; }
+  /* Phones: the blob is always well taller than its text (text in the middle ~60%), so every line stays inside the
+     curved shape rather than near its edges. */
+  .km-responsive[data-page="home"] :is(#comp-mupzxrxa2,#comp-mupzxrxa3,#comp-mupzxrxa4) { --km-blob:min(540px,132vw); }
+  .km-responsive[data-page="home"] :is(#comp-mupzxrxa2,#comp-mupzxrxa3,#comp-mupzxrxa4) > .wixui-box { height:max(var(--km-blob),calc(100% + 150px))!important; }
+  /* Each blob reaches ~75px past its text, so space the bubbles to keep a ~40px overlap and clear the intro above. */
+  .km-responsive[data-page="home"] #comp-mupzxrxa2:not(#km-id-boost) { margin-top:96px!important; }
+  .km-responsive[data-page="home"] :is(#comp-mupzxrxa3,#comp-mupzxrxa4):not(#km-id-boost) { margin-top:110px!important; }
+  .km-responsive[data-page="home"] [data-mesh-id="comp-mufv1oqq1inlineContent-gridContainer"]:not(#km-id-boost) { padding-bottom:110px!important; }
 }
 /* Home bubbles, tablets and phones: pull each lower row up so its bubble overlaps the one above a little
    (about 40px), like the old site, instead of leaving a gap between them. */
@@ -686,13 +694,14 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
   .km-responsive[data-page="careers"] :is(#comp-murgfuuh,#comp-murgfuuk4) [data-testid="mesh-container-content"] { padding:20px!important; box-sizing:border-box; }
 }
 
-/* Our Centers: Google map with every center pinned, filling the old Wix map slot (#comp-mtm31xsd). */
-.km-responsive #comp-mtm31xsd { position: relative; overflow: hidden; border-radius: 12px; }
-.km-responsive #comp-mtm31xsd .km-centers-map { display: block; width: 100%; height: 100% !important; border: 0; pointer-events: none; }
-.km-centers-overview__open { position: absolute; inset: 0; }
-.km-centers-overview__pin { position: absolute; width: 24px; height: 34px; margin: -34px 0 0 -12px; filter: drop-shadow(0 1px 2px rgba(0,0,0,.35)); transition: transform .15s; transform-origin: 50% 100%; }
-.km-centers-overview__pin:hover, .km-centers-overview__pin:focus-visible { transform: scale(1.2); z-index: 1; }
-.km-centers-overview__pin svg { display: block; width: 100%; height: 100%; }
+/* Our Centers: map with every center pinned (components/CentersOverviewMap.jsx), filling the old Wix map slot. */
+.km-responsive #comp-mtm31xsd { position: relative; overflow: hidden; border-radius: 12px; background:#e8eef1; }
+.km-responsive #comp-mtm31xsd .km-centers-map { display: block; width: 100%; height: 100% !important; border: 0; z-index:0; }
+.km-centers-overview__pin { background:none; border:0; filter: drop-shadow(0 1px 2px rgba(0,0,0,.35)); }
+.km-centers-overview__pin svg { display: block; width: 24px; height: 34px; transition: transform .15s; transform-origin: 50% 100%; }
+.km-centers-overview__pin:hover svg, .km-centers-overview__pin:focus-visible svg { transform: scale(1.2); }
+.km-centers-overview .leaflet-popup-content { font:14px/1.45 var(--font-body, sans-serif); margin:12px 14px; }
+.km-centers-overview .leaflet-popup-content a { color:var(--primary); font-weight:600; }
 @media (max-width:1000px) {
   .km-responsive[data-page="our-centers"] #comp-mtm31xsd:not(#km-id-boost) { height:460px!important; }
   /* the empty white backdrop strip behind the map/text on desktop stacks as a blank box on tablet/phone */
@@ -790,3 +799,25 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
   .km-timeline__text { margin:6px 0 12px; font-size:16px; }
   .km-timeline__photo { max-width:75%; justify-self:start; }
 }
+
+/* Text + photo sections (e.g. "A Strong Start Begins at Home", "Our Story Began in the Community"), above 1000px:
+   the text sits in the middle of its column with the same space above and below, and every photo in these sections
+   has the same 16px rounded corners. */
+@media (min-width:1001px) {
+  .km-responsive main [data-testid="columns"]:has(> .wixui-column-strip__column > [data-hook="bgLayers"] img, > .wixui-column-strip__column .wixui-image) > .wixui-column-strip__column:has(.wixui-rich-text):not(:has(.wixui-image, h1, .wixui-column-strip, > [data-hook="bgLayers"] img)) > [data-testid="inline-content"] { height:100%; }
+  .km-responsive main [data-testid="columns"]:has(> .wixui-column-strip__column > [data-hook="bgLayers"] img, > .wixui-column-strip__column .wixui-image) > .wixui-column-strip__column:has(.wixui-rich-text):not(:has(.wixui-image, h1, .wixui-column-strip, > [data-hook="bgLayers"] img)) > [data-testid="inline-content"] > [data-testid="mesh-container-content"]:not(#km-id-boost) { grid-template-rows:none!important; grid-auto-rows:min-content; align-content:center; height:100%; min-height:100%; padding:48px 0; box-sizing:border-box; }
+  .km-responsive main [data-testid="columns"]:has(> .wixui-column-strip__column > [data-hook="bgLayers"] img, > .wixui-column-strip__column .wixui-image) > .wixui-column-strip__column:has(.wixui-rich-text):not(:has(.wixui-image, h1, .wixui-column-strip, > [data-hook="bgLayers"] img)) > [data-testid="inline-content"] > [data-testid="mesh-container-content"] > [data-mesh-id*="-wedge-"] { display:none!important; }
+  .km-responsive main [data-testid="columns"]:has(> .wixui-column-strip__column > [data-hook="bgLayers"] img, > .wixui-column-strip__column .wixui-image) > .wixui-column-strip__column:has(.wixui-rich-text):not(:has(.wixui-image, h1, .wixui-column-strip, > [data-hook="bgLayers"] img)) > [data-testid="inline-content"] > [data-testid="mesh-container-content"] > :first-child { margin-top:0!important; }
+  .km-responsive main [data-testid="columns"]:has(> .wixui-column-strip__column > [data-hook="bgLayers"] img, > .wixui-column-strip__column .wixui-image) > .wixui-column-strip__column:has(.wixui-rich-text):not(:has(.wixui-image, h1, .wixui-column-strip, > [data-hook="bgLayers"] img)) > [data-testid="inline-content"] > [data-testid="mesh-container-content"] > :nth-last-child(1 of :not([data-mesh-id*="-wedge-"])) { margin-bottom:0!important; }
+  .km-responsive main [data-testid="columns"]:has(> .wixui-column-strip__column .wixui-rich-text) > .wixui-column-strip__column:not(:has(h1, .wixui-rich-text)) > [data-hook="bgLayers"]:has(img) { border-radius:16px; overflow:hidden; }
+}
+
+/* Our People: the "Leadership Team" / "Board Members" switch uses bold labels. */
+.km-people-nav button { font-weight:700!important; }
+
+/* Our Centers and center pages: "(View Map)" after an address starts on its own line. */
+.km-responsive:is([data-page="our-centers"],[data-page$="-center"]) main .wixui-rich-text a:is([href*="goo.gl/maps"],[href*="maps.app.goo.gl"],[href*="google.com/maps"]) { display:block; width:fit-content; }
+
+/* Our Centers / Family Support "Contact": more room between the section's top edge and the title. */
+.km-responsive :is(#comp-mtm2zw4n11,#comp-mtj79zjk):not(#km-id-boost) { margin-top:64px!important; }
+@media (max-width:1000px) { .km-responsive :is(#comp-mtm2zw4n11,#comp-mtj79zjk):not(#km-id-boost) { margin-top:48px!important; } }
