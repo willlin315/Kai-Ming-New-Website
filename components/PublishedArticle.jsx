@@ -25,7 +25,7 @@ function BrandIcon({name}){
 }
 // initialPost / initialPosts come from the static build (clean /stories/<slug>/ URLs).
 // Without them, the legacy /story/?slug= route loads the published post in the browser.
-export default function PublishedArticle({locale='en',initialPost=null,initialPosts=null,canonicalUrl=''}){
+export default function PublishedArticle({locale='en',initialPost=null,initialPosts=null,canonicalUrl='',announcement=null}){
  const [post,setPost]=useState(initialPost?localizedRecord(initialPost,locale):null),[allPosts,setAllPosts]=useState(initialPosts||[]),[message,setMessage]=useState('Loading story…'),[copied,setCopied]=useState(false),[shareUrl,setShareUrl]=useState(canonicalUrl);
  const t=labels[locale]||labels.en;
  useEffect(()=>{
@@ -56,7 +56,7 @@ export default function PublishedArticle({locale='en',initialPost=null,initialPo
  const date=post?.publishedAt||post?.published_at||post?.date||post?.createdAt;
  const formattedDate=date&&!Number.isNaN(new Date(date).getTime())?new Intl.DateTimeFormat(locale==='zh-Hant'?'zh-TW':locale,{year:'numeric',month:'long',day:'numeric'}).format(new Date(date)):null;
  return <main lang={htmlLang(locale)} className="km-published-article">
-  <LanguageSwitcher locale={locale} story={!initialPost} storySlug={initialPost?.slug}/>
+  <LanguageSwitcher locale={locale} story={!initialPost} storySlug={initialPost?.slug} announcement={announcement}/>
   <a className="km-story-back" href={`${basePath}${localePrefix(locale)}/blog/`}>← {t.back}</a>
   {post?<article className="km-story-layout">
    <header className="km-story-header">
