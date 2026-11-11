@@ -1,5 +1,21 @@
 [
   {
+    "id": "announcement-text",
+    "type": "text",
+    "group": "Announcement bar",
+    "label": "Announcement text",
+    "value": "Welcome to the new Kai Ming Head Start website!",
+    "owner": "km-topbar"
+  },
+  {
+    "id": "announcement-link",
+    "type": "link",
+    "group": "Announcement bar",
+    "label": "Announcement link",
+    "value": "/",
+    "owner": "km-topbar"
+  },
+  {
     "id": "image-0",
     "type": "image",
     "group": "Home section 1",
