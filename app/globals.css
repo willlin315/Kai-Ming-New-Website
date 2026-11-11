@@ -835,3 +835,8 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
 /* Our Centers / Family Support "Contact": more room between the section's top edge and the title. */
 .km-responsive :is(#comp-mtm2zw4n11,#comp-mtj79zjk):not(#km-id-boost) { margin-top:64px!important; }
 @media (max-width:1000px) { .km-responsive :is(#comp-mtm2zw4n11,#comp-mtj79zjk):not(#km-id-boost) { margin-top:48px!important; } }
+
+/* Website forms (lib/site-forms.js): sending / sent / error message under the form. */
+.km-form-status { margin:16px 0 0; padding:12px 14px; border-radius:8px; font:15px/1.5 var(--font-body, sans-serif); background:#eef4fa; color:var(--primary); }
+.km-form-status[data-state="sent"] { background:#e8f5ec; color:#1e6b3a; }
+.km-form-status[data-state="error"] { background:#fdecea; color:#a3261b; }
