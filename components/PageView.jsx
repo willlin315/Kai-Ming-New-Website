@@ -11,6 +11,7 @@ import SiteFooter from './SiteFooter';
 import Gallery from './Gallery';
 import Interactions from './Interactions';
 import BoxFit from './BoxFit';
+import SectionRhythm from './SectionRhythm';
 import BlogList from './BlogList';
 import HeroVideo from './HeroVideo';
 import InstagramFeed from './InstagramFeed';
@@ -121,5 +122,6 @@ export default function PageView({ page }) {
     {page.key==='home'?<HomeContentProvider locale={page.locale} initialRecord={page.homeRecord}>{parse(page.html, options)}</HomeContentProvider>:parse(page.html, options)}
     <Interactions />
     <BoxFit />
+    <SectionRhythm />
   </div>;
 }
