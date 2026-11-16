@@ -92,7 +92,7 @@ export default function SectionRhythm() {
     const controlled = new Set();
 
     const reset = () => {
-      for (const el of controlled) { el.style.removeProperty('top'); el.style.removeProperty('height'); el.style.removeProperty('min-height'); el.style.removeProperty('position'); }
+      for (const el of controlled) { for (const k of ['top', 'bottom', 'height', 'min-height', 'position', 'z-index']) el.style.removeProperty(k); }
       controlled.clear();
     };
 
@@ -100,12 +100,59 @@ export default function SectionRhythm() {
       frame = 0; busy = true;
       reset();
       const width = window.innerWidth, S = space(), T = titleGap();
+      // Text + photo strips (marked in lib/responsive.js): on a page with several, every photo gets the size of the
+      // smallest one, centred beside its text, so the photos match (desktop only; smaller screens stack them).
+      if (width > 1000) {
+        const photos = [...root.querySelectorAll('main [data-km-photo-side]')]
+          .map((t) => (t.dataset.kmPhotoSide === 'right' ? t.nextElementSibling : t.previousElementSibling)?.querySelector(':scope > [data-hook="bgLayers"]'))
+          .filter((layer) => layer && shown(layer));
+        if (photos.length > 1) {
+          const size = Math.min(...photos.map((layer) => layer.getBoundingClientRect().height));
+          for (const layer of photos) {
+            const extra = layer.getBoundingClientRect().height - size;
+            if (extra < 2) continue;
+            layer.style.setProperty('top', `${Math.round(extra / 2)}px`, 'important');
+            layer.style.setProperty('bottom', 'auto', 'important');
+            layer.style.setProperty('height', `${Math.round(size)}px`, 'important');
+            controlled.add(layer);
+          }
+        }
+      }
+      // Several strips stacked inside one section (e.g. Family Support): the same SPACE between their content
+      // (desktop; on smaller screens each strip already stacks with its own spacing).
+      for (const section of width > 1000 ? sectionsOf(root) : []) {
+        const strips = [...section.querySelectorAll('section.wixui-column-strip')]
+          .filter((strip) => strip.parentElement.closest('section.wixui-section, section.wixui-column-strip') === section && shown(strip))
+          .sort((a, b) => a.getBoundingClientRect().top - b.getBoundingClientRect().top);
+        for (let i = 1; i < strips.length; i += 1) {
+          const prev = strips[i - 1], strip = strips[i];
+          if (background(prev, width) !== background(strip, width) || background(strip, width) === null) continue;
+          const a = measure(prev), b = measure(strip);
+          if (!a || !b) continue;
+          const gap = (strip.getBoundingClientRect().top + b.top) - (prev.getBoundingClientRect().top + a.bottom);
+          const shift = Math.round(S - gap);
+          if (Math.abs(shift) < 2) continue;
+          // Move the strip's content, not the strip, so its background never covers the strip above.
+          for (const w of [...strip.children].filter((c) => c.getAttribute('data-hook') !== 'bgLayers')) {
+            if (getComputedStyle(w).position === 'static') w.style.setProperty('position', 'relative', 'important');
+            w.style.setProperty('top', `${shift}px`, 'important');
+            controlled.add(w);
+          }
+        }
+      }
       const list = sectionsOf(root).filter(shown).map((section) => {
         const bg = background(section, width);
         const wrappers = [...section.children].filter((c) => c.getAttribute('data-hook') !== 'bgLayers' && !c.id?.startsWith('bgLayers'));
         const fixed = !section.id || bg === null || section.querySelector('h1') || wrappers.some((w) => getComputedStyle(w).position === 'absolute' || getComputedStyle(w).position === 'fixed');
         const m = fixed ? null : measure(section);
         return { section, bg, wrappers, m, height: section.getBoundingClientRect().height };
+      });
+      // Content pulled up into the space above may carry a background band with it; earlier sections paint on top,
+      // so that band never covers the panel or photo above it.
+      list.forEach((item, i) => {
+        if (getComputedStyle(item.section).position === 'static') item.section.style.setProperty('position', 'relative', 'important');
+        item.section.style.setProperty('z-index', String(list.length - i), 'important');
+        controlled.add(item.section);
       });
       list.forEach((item, i) => {
         if (!item.m) return;
