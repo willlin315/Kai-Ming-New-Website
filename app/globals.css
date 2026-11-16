@@ -835,6 +835,12 @@ html:is([lang=es],[lang=zh-Hant]) #SITE_HEADER wix-dropdown-menu nav>ul>li p{whi
   .km-responsive main [data-km-photo-side="right"] > [data-hook="bgLayers"]:not(#km-id-boost) { right:-24px!important; width:auto!important; }
   .km-responsive main [data-km-photo-side="left"] > [data-hook="bgLayers"]:not(#km-id-boost) { left:-24px!important; width:auto!important; }
 }
+/* Text + photo strips on tablets and phones: the columns stack, and the photo always comes first (photo, text, photo,
+   text down the page), whichever side it is on at desktop width, with the same 16px rounded corners as on desktop. */
+@media (max-width:1000px) {
+  .km-responsive main [data-km-photo-side="right"] + .wixui-column-strip__column { order:-1; }
+  .km-responsive main :is([data-km-photo-side="right"] + .wixui-column-strip__column, .wixui-column-strip__column:has(+ [data-km-photo-side="left"])) > [data-hook="bgLayers"] { border-radius:16px; overflow:hidden; }
+}
 
 /* Our People: the "Leadership Team" / "Board Members" switch uses bold labels. */
 .km-people-nav button { font-weight:700!important; }
