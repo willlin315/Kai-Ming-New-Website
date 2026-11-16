@@ -100,15 +100,32 @@ export default function SectionRhythm() {
       frame = 0; busy = true;
       reset();
       const width = window.innerWidth, S = space(), T = titleGap();
-      // Text + photo strips (marked in lib/responsive.js): on a page with several, every photo gets the size of the
-      // smallest one, centred beside its text, so the photos match (desktop only; smaller screens stack them).
+      // Text + photo strips (marked in lib/responsive.js), desktop only (smaller screens stack them):
+      //   - a text panel (coloured box) is exactly its text plus SPACE above and below, and its photo is the same height;
+      //   - on a page with several strips every photo gets one size (the panel photo's, else the smallest), centred
+      //     beside its text, so the photos match.
       if (width > 1000) {
-        const photos = [...root.querySelectorAll('main [data-km-photo-side]')]
-          .map((t) => (t.dataset.kmPhotoSide === 'right' ? t.nextElementSibling : t.previousElementSibling)?.querySelector(':scope > [data-hook="bgLayers"]'))
-          .filter((layer) => layer && shown(layer));
-        if (photos.length > 1) {
-          const size = Math.min(...photos.map((layer) => layer.getBoundingClientRect().height));
-          for (const layer of photos) {
+        const strips = [...root.querySelectorAll('main [data-km-photo-side]')].map((text) => {
+          const photo = text.dataset.kmPhotoSide === 'right' ? text.nextElementSibling : text.previousElementSibling;
+          const fill = text.querySelector(':scope > [data-hook="bgLayers"] [data-testid="colorUnderlay"]');
+          const panel = !!fill && fill.getBoundingClientRect().width > 2 && !clear(getComputedStyle(fill).backgroundColor);
+          return { text, photo, panel, layer: photo?.querySelector(':scope > [data-hook="bgLayers"]') };
+        }).filter((s) => s.layer && shown(s.layer) && shown(s.text));
+        for (const s of strips) {
+          if (!s.panel) continue;
+          const m = measure(s.text);
+          if (!m) continue;
+          const height = `${Math.round(m.bottom - m.top + 2 * S)}px`;
+          for (const col of [s.text, s.photo]) {
+            col.style.setProperty('height', height, 'important');
+            col.style.setProperty('min-height', '0px', 'important');
+            controlled.add(col);
+          }
+        }
+        if (strips.length > 1) {
+          const paneled = strips.filter((s) => s.panel);
+          const size = Math.min(...(paneled.length ? paneled : strips).map((s) => s.layer.getBoundingClientRect().height));
+          for (const { layer } of strips) {
             const extra = layer.getBoundingClientRect().height - size;
             if (extra < 2) continue;
             layer.style.setProperty('top', `${Math.round(extra / 2)}px`, 'important');
